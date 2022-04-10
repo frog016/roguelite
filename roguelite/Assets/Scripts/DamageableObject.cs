@@ -5,11 +5,13 @@ public class DamageableObject : MonoBehaviour
 {
     [SerializeField] private float _health;
 
-    public UnityEvent OnHealthChanged;
+    public UnityEvent OnHealthChanged { get; private set; }
+    public UnityEvent OnObjectDeath { get; private set; }
 
     private void Awake()
     {
         OnHealthChanged = new UnityEvent();
+        OnObjectDeath = new UnityEvent();
     }
 
     public void ApplyDamage(float damage)
@@ -22,6 +24,8 @@ public class DamageableObject : MonoBehaviour
 
     private void OnDestroy()
     {
-        OnHealthChanged?.RemoveAllListeners();
+        OnObjectDeath.Invoke();
+        OnObjectDeath.RemoveAllListeners();
+        OnHealthChanged.RemoveAllListeners();
     }
 }

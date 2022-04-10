@@ -17,4 +17,9 @@ public class CameraTracking : MonoBehaviour
         var newPosition = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, newPosition, _sensitivity * Time.fixedDeltaTime);
     }
+
+    private void OnDestroy()
+    {
+        _trackingObject?.GetComponent<DamageableObject>().OnObjectDeath.RemoveListener(FollowAtObject);
+    }
 }
