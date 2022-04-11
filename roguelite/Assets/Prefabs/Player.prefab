@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4220373220129136649}
   - component: {fileID: 6024414174934488545}
+  - component: {fileID: 8250526467791401152}
   - component: {fileID: 3970555738323336064}
   - component: {fileID: 7135618809809972302}
   m_Layer: 0
@@ -43,6 +44,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b23e640d7eb6d4a42a5b5d47c3c46ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8250526467791401152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777401335885284307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d05e505deae9e408c777c4338ed820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &3970555738323336064
@@ -97,7 +110,8 @@ GameObject:
   - component: {fileID: 4449213130970805138}
   - component: {fileID: 4449213130970805137}
   - component: {fileID: 4449213130970805136}
-  - component: {fileID: 8939620751464834196}
+  - component: {fileID: 591786994073621786}
+  - component: {fileID: 470487444414315112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -171,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 2
---- !u!114 &8939620751464834196
+--- !u!114 &591786994073621786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,10 +194,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4449213130970805148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69e3c878e674b241a62fa6a92a95eee, type: 3}
+  m_Script: {fileID: 11500000, guid: 278da4093692bf249bd9c545015105d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 1
+--- !u!114 &470487444414315112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449213130970805148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f162e6c432d2943924eda48052451a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4449213132913984178
 GameObject:
   m_ObjectHideFlags: 0

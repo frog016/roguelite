@@ -17,7 +17,7 @@ namespace Database
 
         public T GetDataByType(Type type)
         {
-            return _list.FirstOrDefault(e => e.DataType.Equals(TypeConvertor.ConvertTypeToEnum(type)));
+            return _list.FirstOrDefault(e => e.GetDataType().Equals(TypeConvertor.ConvertTypeToEnum(type)));
         }
 
         public void SaveDataToFile()

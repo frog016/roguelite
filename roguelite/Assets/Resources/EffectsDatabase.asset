@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list:
     _list:
-    - _name: 
+    - _name: Fire Effect
       _attackParameters:
-        _damage: 0
-        _attackSpeed: 0
-      _procProbability: 0
-      _duration: 0
+        _damage: 1
+        _attackSpeed: 1
+      _procProbability: 0.15
+      _duration: 3

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list:
     _list:
-    - _name: 
+    - _name: Dual Katanas
       _attackParameters:
-        _damage: 0
-        _attackSpeed: 0
+        _damage: 2
+        _attackSpeed: 2
