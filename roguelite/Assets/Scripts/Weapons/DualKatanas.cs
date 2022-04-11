@@ -1,19 +1,14 @@
 using System.Collections.Generic;
-using UnityEngine;
 
-public class DualKatanas : MonoBehaviour, IWeapon
+public class DualKatanas : IWeapon
 {
     private List<IEffect> _weaponEffects;
     private AttackParameters _parameters;
 
-    private void Awake()
+    public DualKatanas(WeaponData data)
     {
         _weaponEffects = new List<IEffect>();
-    }
-
-    public void Initialize(AttackParameters parameters)
-    {
-        _parameters = parameters;
+        _parameters = data.AttackParameters;
     }
 
     public void Attack(DamageableObject target)

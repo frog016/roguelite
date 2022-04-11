@@ -1,0 +1,360 @@
+1943474030256
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+4
+7
+ContractSystem
+0
+0
+1943474030472
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+5
+7
+DataClasses
+0
+0
+1943474030688
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+6
+7
+ExtentedScriptableObject
+0
+0
+1943474030904
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractsDB.cs
+1
+7
+ContractSystem
+0
+0
+1943474031120
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractsDB.cs
+2
+7
+ExtentedScriptableObject
+0
+0
+1943474031336
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/DamageTypeSpritesDB.cs
+4
+7
+DataClasses
+0
+0
+1943474031552
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/DamageTypeSpritesDB.cs
+5
+7
+ExtentedScriptableObject
+0
+0
+1943474031768
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelIndicatorSpritesDB.cs
+4
+7
+DataClasses
+0
+0
+1943474031984
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelIndicatorSpritesDB.cs
+5
+7
+ExtentedScriptableObject
+0
+0
+1943474032200
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelStarsSprites.cs
+4
+7
+DataClasses
+0
+0
+1943474032416
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelStarsSprites.cs
+5
+7
+ExtentedScriptableObject
+0
+0
+1943474032632
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ResultStarsDB.cs
+4
+7
+DataClasses
+0
+0
+1943474032848
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ResultStarsDB.cs
+5
+7
+ExtentedScriptableObject
+0
+0
+1943474033064
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/TrapSpritesDB.cs
+4
+7
+ExtentedScriptableObject
+0
+0
+1943474033280
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabase.cs
+2
+7
+ExtentedScriptableObject
+0
+0
+1943474033496
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/EnemiesDatabase.cs
+3
+7
+ExtentedScriptableObject
+0
+0
+1943474033712
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+2
+24
+DefaultNamespace.DataClasses
+0
+0
+1943474033928
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+3
+7
+ExtentedScriptableObject
+0
+0
+1943474034144
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/TrapsDatabase.cs
+3
+7
+ExtentedScriptableObject
+0
+0
+1943474034360
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+9
+35
+SingletonScriptableObject<>
+0
+0
+1943474034576
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+14
+21
+LevelData
+0
+0
+1943474034792
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+16
+16
+LevelData
+0
+0
+1943474035008
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+13
+38
+SingletonScriptableObject<>
+0
+0
+1943474035224
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/LevelsDatabase.cs
+11
+39
+LevelData
+0
+0
+1943474035440
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+24
+46
+ContractUIType
+0
+0
+1943474035656
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+24
+16
+ContractUICard
+0
+0
+1943474035872
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelStarsSprites.cs
+11
+38
+SingletonScriptableObject<>
+0
+0
+1943474036088
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+18
+20
+ContractUIType
+0
+0
+1943474036304
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/DamageTypeSpritesDB.cs
+11
+40
+SingletonScriptableObject<>
+0
+0
+1943474036520
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractPrefabsDB.cs
+19
+20
+ContractUICard
+0
+0
+1943474036736
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/DamageTypeSpritesDB.cs
+22
+39
+DamageType
+0
+0
+1943474036952
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractsDB.cs
+8
+32
+SingletonScriptableObject<>
+0
+0
+1943474037168
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/DamageTypeSpritesDB.cs
+16
+20
+DamageType
+0
+0
+1943474037384
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ResultStarsDB.cs
+11
+34
+SingletonScriptableObject<>
+0
+0
+1943474037600
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractsDB.cs
+12
+16
+Contract
+0
+0
+1943474037816
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/LevelIndicatorSpritesDB.cs
+11
+44
+SingletonScriptableObject<>
+0
+0
+1943474038032
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/ContractsDB.cs
+10
+34
+Contract
+0
+0
+1943474038248
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/TrapSpritesDB.cs
+10
+34
+SingletonScriptableObject<>
+0
+0
+1943474038464
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/EnemiesDatabase.cs
+9
+52
+EnemyData
+0
+0
+1943474038680
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/TrapSpritesDB.cs
+21
+33
+TrapType
+0
+0
+1943474038896
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabase.cs
+7
+39
+SingletonScriptableObject<>
+0
+0
+1943474039112
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabase.cs
+7
+86
+IJSONSerialazable
+0
+0
+1943474039328
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/ImmutableDatabases/TrapSpritesDB.cs
+15
+20
+TrapType
+0
+0
+1943474039544
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabases/TrapsDatabase.cs
+9
+50
+TrapData
+0
+0
+1943474039760
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Database/MutableDatabase.cs
+7
+114
+UnitData
+0
+0

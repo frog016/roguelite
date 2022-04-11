@@ -7,10 +7,11 @@ public class FireEffect : MonoBehaviour, IEffect
     private float _procProbability;
     private float _duration;
 
-    public void Initialize(AttackParameters parameters, float chance)
+    public FireEffect(EffectData data)
     {
-        _parameters = parameters;
-        _procProbability = chance;
+        _parameters = data.AttackParameters;
+        _procProbability = data.ProcProbability;
+        _duration = data.Duration;
     }
 
     public void ApplyEffect(DamageableObject target)

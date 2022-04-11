@@ -20,6 +20,6 @@ public class CameraTracking : MonoBehaviour
 
     private void OnDestroy()
     {
-        _trackingObject?.GetComponent<DamageableObject>().OnObjectDeath.RemoveListener(FollowAtObject);
+        _trackingObject?.GetComponent<DamageableObject>()?.OnObjectDeath?.RemoveListener(FollowAtObject);
     }
 }

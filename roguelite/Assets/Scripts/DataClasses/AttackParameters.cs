@@ -1,11 +1,12 @@
+using System;
+using UnityEngine;
+
+[Serializable]
 public class AttackParameters
 {
-    public float Damage { get; set; }
-    public float AttackSpeed { get; set; }
+    [SerializeField] private float _damage;
+    [SerializeField] private float _attackSpeed;
 
-    public AttackParameters(float damage, float attackSpeed)
-    {
-        Damage = damage;
-        AttackSpeed = attackSpeed;
-    }
+    public float Damage => _damage;
+    public float AttackSpeed => _attackSpeed;
 }
