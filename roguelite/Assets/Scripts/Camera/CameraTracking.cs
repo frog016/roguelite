@@ -9,7 +9,7 @@ public class CameraTracking : MonoBehaviour
     private void Start()
     {
         transform.position = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
-        _trackingObject.GetComponent<MoveController>().OnPlayerMove.AddListener(FollowAtObject);
+        _trackingObject.GetComponent<PlayerMoveController>().OnPlayerMove.AddListener(FollowAtObject);
     }
 
     private void FollowAtObject()

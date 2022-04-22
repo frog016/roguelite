@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlayerAttackController : MonoBehaviour
 {
-    private Attacker _attacker;
+    private IWeapon _weapon;
 
     private void Awake()
     {
-        _attacker = GetComponentInChildren<Attacker>();
+        _weapon = GetComponentInChildren<IWeapon>();
     }
 
     private void Update()
@@ -20,8 +20,8 @@ public class PlayerAttackController : MonoBehaviour
     private void HandleKeyboardInput()
     {
         if (Mathf.Abs(Input.GetAxis("Fire1")) > 1e-12)
-            _attacker.Attack();
+            _weapon.Attack();
         if (Mathf.Abs(Input.GetAxis("Fire2")) > 1e-12)
-            _attacker.AlternateAttack();
+            _weapon.AlternateAttack();
     }
 }

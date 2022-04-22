@@ -15,6 +15,9 @@ MonoBehaviour:
   _list:
     _list:
     - _name: Dual Katanas
+      _weaponType: 0
       _attackParameters:
         _damage: 2
         _attackSpeed: 2
+        _attackRadius: 1
+        _attackAngleDegrees: 180

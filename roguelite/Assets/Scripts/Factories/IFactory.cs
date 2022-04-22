@@ -1,6 +1,7 @@
 using System;
+using UnityEngine;
 
 public interface IFactory<T>
 {
-    T CreateObject(Type objectType);
+    void CreateObject(GameObject parent, Type objectType);
 }

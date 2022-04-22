@@ -5,9 +5,11 @@ using UnityEngine;
 public class WeaponData : Data
 {
     [SerializeField] private WeaponType _weaponType;
-    [SerializeField] private AttackParameters _attackParameters;
+    [SerializeField] private AttackData _firstAttackData;
+    [SerializeField] private AttackData _secondAttackData;
 
-    public AttackParameters AttackParameters => _attackParameters;
+    public AttackData FirstAttackData => _firstAttackData;
+    public AttackData SecondAttackData => _secondAttackData;
 
     public override Enum GetDataType()
     {

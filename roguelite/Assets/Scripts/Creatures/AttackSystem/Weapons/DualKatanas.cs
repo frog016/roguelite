@@ -1,38 +1,43 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(IAttack), typeof(IAttack))]
 public class DualKatanas : IWeapon
 {
-    private readonly WeaponData _parameters;
-    private readonly List<IEffect> _weaponEffects;
+    private List<IEffect> _weaponEffects;
 
-    public DualKatanas(WeaponData data)
+    private IAttack _firstAttack;
+    private IAttack _secondAttack;
+
+    public DualKatanas(WeaponData data, TargetsFinder targetsFinder)
     {
         _weaponEffects = new List<IEffect>();
-        _parameters = data;
+        _firstAttack = new CommonAttack(data.FirstAttackData, targetsFinder);
+        _secondAttack = new AlternateAttack(data.SecondAttackData, targetsFinder);
     }
 
-    public WeaponData GetWeaponData()
+    public void Attack()
     {
-        return _parameters;
+        if (!_firstAttack.IsReady())
+            return;
+
+        (_firstAttack as Attack)?.OnAttack.AddListener(ActivateEffects);
+        _firstAttack.Attack();
     }
 
-    public void Attack(DamageableObject target)
+    public void AlternateAttack()
     {
-        ActivateEffects(target);
-        target.ApplyDamage(_parameters.AttackParameters.Damage);
-        Debug.Log($"{target} apply common attack with {_parameters.AttackParameters.Damage}, current HP = {target.Health}");
+        if (!_secondAttack.IsReady())
+            return;
+
+        (_secondAttack as Attack)?.OnAttack.AddListener(ActivateEffects);
+        _secondAttack.Attack();
     }
 
-    public void AlternateAttack(DamageableObject target)
+    private void ActivateEffects(List<DamageableObject> targets)
     {
-        ActivateEffects(target);
-        target.ApplyDamage(_parameters.AttackParameters.Damage);
-        Debug.Log($"{target} apply alternate attack with {_parameters.AttackParameters.Damage}, current HP = {target.Health}");
-    }
-
-    private void ActivateEffects(DamageableObject target)
-    {
+        var target = targets.FirstOrDefault();
         foreach (var effect in _weaponEffects)
             effect.ApplyEffect(target);
     }

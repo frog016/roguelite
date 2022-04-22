@@ -20,14 +20,16 @@ public class DamageableObject : MonoBehaviour
     {
         _health -= damage;
         OnHealthChanged?.Invoke();
-        if (_health <= 0)
-            Destroy(gameObject);
+        if (_health > 0)
+            return;
+
+        OnObjectDeath?.Invoke();
+        Destroy(gameObject);
     }
 
     private void OnDestroy()
     {
-        OnObjectDeath.Invoke();
-        OnObjectDeath.RemoveAllListeners();
-        OnHealthChanged.RemoveAllListeners();
+        OnObjectDeath?.RemoveAllListeners();
+        OnHealthChanged?.RemoveAllListeners();
     }
 }

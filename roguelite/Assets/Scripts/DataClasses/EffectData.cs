@@ -5,11 +5,11 @@ using UnityEngine;
 public class EffectData : Data
 {
     [SerializeField] private EffectType _effectType;
-    [SerializeField] private AttackParameters _attackParameters;
+    [SerializeField] private AttackData _attackData;
     [SerializeField] private float _procProbability;
     [SerializeField] private float _duration;
 
-    public AttackParameters AttackParameters => _attackParameters;
+    public AttackData AttackData => _attackData;
     public float ProcProbability => _procProbability;
     public float Duration => _duration;
 

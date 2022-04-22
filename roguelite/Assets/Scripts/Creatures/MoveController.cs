@@ -4,32 +4,15 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveController : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] float _speed;
 
-    public UnityEvent OnPlayerMove { get; private set; }
+    public Vector2 Direction { get; private set; }
+    protected Rigidbody2D _rigidbody;
 
-    private Rigidbody2D _rigidbody;
-
-    private void Awake()
+    protected void Move(Vector3 direction)
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        OnPlayerMove = new UnityEvent();
-    }
-
-    private void FixedUpdate()
-    {
-        TryMove();
-    }
-
-    private void TryMove()
-    {
-        var moveHorizontal = Input.GetAxis("Horizontal");
-        var moveVertical = Input.GetAxis("Vertical");
-        if (Mathf.Abs(moveHorizontal) < 1e-12 && Mathf.Abs(moveVertical) < 1e-12)
-            return;
-
-        var direction = new Vector3(moveHorizontal, moveVertical);
+        Direction = Mathf.Abs(direction.x) >= Mathf.Abs(direction.y)
+            ? new Vector2(direction.x, 0) : new Vector2(0, direction.y);
         _rigidbody.MovePosition(transform.position + direction * _speed * Time.fixedDeltaTime);
-        OnPlayerMove.Invoke();
     }
 }
