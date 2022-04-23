@@ -13,18 +13,18 @@ public class TargetsFinder : MonoBehaviour
         _myColliders = new HashSet<Collider2D>(transform.parent.GetComponentsInChildren<Collider2D>());
     }
 
-    public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle)
+    public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle) // TODO: Работает верно
     {
         return FindTargetsInCircle(radius)
             .Where(damageableObject => Vector2.Angle(
                 _moveController.Direction, 
-                damageableObject.transform.position - transform.position) - sectorAngle / 2 < 1e-10)
+                damageableObject.transform.position - transform.parent.position) < sectorAngle / 2)
             .ToList(); ;
     }
 
-    public List<DamageableObject> FindTargetsInCircle(float radius)
+    public List<DamageableObject> FindTargetsInCircle(float radius) // TODO: Работает верно
     {
-        return Physics2D.CircleCastAll(transform.position, radius, _moveController.Direction, 0)
+        return Physics2D.CircleCastAll(transform.parent.position, radius, _moveController.Direction, 0)
             .Where(raycast => IsEnemy(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)
@@ -34,7 +34,7 @@ public class TargetsFinder : MonoBehaviour
     public List<DamageableObject> FindTargetsInBox(Vector2 size, float distance)
     {
         var angle = Vector2.Angle(Vector2.right, _moveController.Direction);
-        return Physics2D.BoxCastAll(transform.position, size, angle, _moveController.Direction)
+        return Physics2D.BoxCastAll(transform.parent.position, size, angle, _moveController.Direction)
             .Where(raycast => IsEnemy(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)

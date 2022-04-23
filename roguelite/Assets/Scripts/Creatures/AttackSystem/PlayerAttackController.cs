@@ -4,9 +4,9 @@ public class PlayerAttackController : MonoBehaviour
 {
     private IWeapon _weapon;
 
-    private void Awake()
+    private void Start()
     {
-        _weapon = GetComponentInChildren<IWeapon>();
+        _weapon = GetComponentInChildren<Weapon>().CurrentWeapon;
     }
 
     private void Update()

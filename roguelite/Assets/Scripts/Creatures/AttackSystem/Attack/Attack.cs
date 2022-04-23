@@ -1,10 +1,8 @@
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 
 public class Attack
 {
-    public UnityEvent<List<DamageableObject>> OnAttack { get; protected set; }
+    public List<DamageableObject> LastTargets { get; protected set; }
 
     protected readonly AttackData _data;
     protected readonly Cooldown _cooldown;
@@ -15,5 +13,6 @@ public class Attack
         _data = attackData;
         _cooldown = attackData.Cooldown;
         _targetsFinder = targetsFinder;
+        LastTargets = new List<DamageableObject>();
     }
 }
