@@ -20,5 +20,6 @@ public class WeaponData : Data
 public enum WeaponType
 {
     DualKatanas,
-    TwoHandedTati
+    TwoHandedTati,
+    EnemyWeapon
 }

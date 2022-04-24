@@ -28,3 +28,17 @@ MonoBehaviour:
         _attackSpeed: 1
         _attackRadius: 1
         _attackAngleDegrees: 180
+    - _name: Enemy Weapon
+      _weaponType: 2
+      _firstAttackData:
+        _name: 
+        _damage: 0
+        _attackSpeed: 1
+        _attackRadius: 0.5
+        _attackAngleDegrees: 180
+      _secondAttackData:
+        _name: 
+        _damage: 1
+        _attackSpeed: 0.5
+        _attackRadius: 1
+        _attackAngleDegrees: 180

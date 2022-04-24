@@ -13,7 +13,7 @@ public class WeaponFactory : SingletonObject<WeaponFactory>, IFactory<IWeapon>
         data.SecondAttackData.AddCooldown(weaponObject.AddComponent<Cooldown>());
 
         var weapon = weaponObject.gameObject.AddComponent<Weapon>();
-        weapon.SetWeapon((IWeapon)Activator.CreateInstance(weaponType, data, weaponObject.gameObject.AddComponent<TargetsFinder>()));
+        weapon.SetWeapon((IWeapon)Activator.CreateInstance(weaponType, data, weaponObject.gameObject.AddComponent<TargetsFinder>()), data);
 
         weaponObject.transform.SetParent(parent.transform);
     }

@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class EnemyMoveController : MoveController
 {
-    [SerializeField] private float _radius;
+    public UnityEvent OnTargetReached { get; private set; }
 
+    private float _radius;
     private DamageableObject _target;
     private CircleCollider2D _circleCollider;
 
@@ -12,6 +14,12 @@ public class EnemyMoveController : MoveController
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _circleCollider = GetComponent<CircleCollider2D>();
+        OnTargetReached = new UnityEvent();
+    }
+
+    private void Start()
+    {
+        _radius = GetComponentInChildren<Weapon>().Data.FirstAttackData.AttackRadius;
     }
 
     private void FixedUpdate()
@@ -21,10 +29,14 @@ public class EnemyMoveController : MoveController
 
     private void TryMove() //TODO: Сделать нормальное приследование цели
     {
-        if (_target is null || Mathf.Abs(Vector2.Distance(_target.transform.position, transform.position)) < _radius)
+        if (_target == null || Mathf.Abs(Vector2.Distance(_target.transform.position, transform.position)) < _radius)
+        {
+            if (_target != null)
+                OnTargetReached.Invoke();
             return;
+        }
 
-        var direction = (_target.transform.position - transform.position).normalized;
+        var direction = (_target.transform.position - transform.position);
         Move(direction);
     }
 

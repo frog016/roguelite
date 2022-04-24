@@ -3,7 +3,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(IAttack), typeof(IAttack))]
 public class DualKatanas : IWeapon
 {
     public UnityEvent<List<DamageableObject>> OnAttack { get; set; }

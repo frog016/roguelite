@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
     public IWeapon CurrentWeapon { get; private set; }
+    public WeaponData Data { get; private set; }
 
     private List<IEffect> _weaponEffects;
 
@@ -13,9 +13,10 @@ public class Weapon : MonoBehaviour
         _weaponEffects = new List<IEffect>();
     }
 
-    public void SetWeapon(IWeapon weapon)
+    public void SetWeapon(IWeapon weapon, WeaponData data)
     {
         CurrentWeapon = weapon;
+        Data = data;
         CurrentWeapon.OnAttack.AddListener(ActivateEffects);
     }
 
