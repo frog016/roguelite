@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.Events;
-
 public class CommonAttack : Attack, IAttack
 {
     public CommonAttack(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)

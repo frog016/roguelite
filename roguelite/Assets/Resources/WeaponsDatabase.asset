@@ -32,7 +32,7 @@ MonoBehaviour:
       _weaponType: 2
       _firstAttackData:
         _name: 
-        _damage: 0
+        _damage: 1
         _attackSpeed: 1
         _attackRadius: 0.5
         _attackAngleDegrees: 180
