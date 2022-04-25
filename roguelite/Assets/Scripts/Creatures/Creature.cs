@@ -4,8 +4,9 @@ public class Creature : DamageableObject
 {
     [SerializeField] private WeaponType _weaponType;
 
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
         WeaponFactory.Instance.CreateObject(gameObject, TypeConvertor.ConvertEnumToType(_weaponType));
     }
 }

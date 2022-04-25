@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveController : MonoBehaviour
 {
-    [SerializeField] float _speed;
+    [SerializeField] protected float _speed;
 
     public Vector2 Direction { get; private set; }
     protected Rigidbody2D _rigidbody;

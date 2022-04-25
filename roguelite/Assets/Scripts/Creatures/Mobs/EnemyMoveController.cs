@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.AI;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D), typeof(NavMeshAgent))]
 public class EnemyMoveController : MoveController
 {
     private float _radius;
@@ -18,6 +19,20 @@ public class EnemyMoveController : MoveController
     {
         _radius = GetComponentInChildren<Weapon>().Data.FirstAttackData.AttackRadius;
         _stateHandler = GetComponent<StateHandler>();
+        InitializeAgent();
+    }
+
+    private void InitializeAgent()
+    {
+        var agent = GetComponent<NavMeshAgent>();
+        var capsuleCollider = GetComponent<CapsuleCollider2D>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        agent.speed = _speed;
+        agent.stoppingDistance = _radius;
+        agent.baseOffset = capsuleCollider.size.y / 2;
+        agent.radius = capsuleCollider.size.x / 2;
+        agent.height = capsuleCollider.size.y;
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)

@@ -1,0 +1,2 @@
+D:\2rd course game\roguelite\roguelite\obj\Debug\Edgar.Unity.Editor.csproj.AssemblyReference.cache
+D:\2rd course game\roguelite\roguelite\obj\Debug\Edgar.Unity.Editor.csproj.CoreCompileInputs.cache
