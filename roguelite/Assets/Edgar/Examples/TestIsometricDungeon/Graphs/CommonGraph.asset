@@ -17,6 +17,23 @@ MonoBehaviour:
   IndividualRoomTemplates:
   - {fileID: 3223408172635755039, guid: ee2c3de7d60bc5440a0fc775dcf8df10, type: 3}
   RoomTemplateSets: []
+--- !u!114 &-7088966744971227043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position: {x: 400, y: 208}
+  Name: Room
+  IndividualRoomTemplates:
+  - {fileID: 3223408172635755039, guid: ee2c3de7d60bc5440a0fc775dcf8df10, type: 3}
+  RoomTemplateSets: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8400baee4cafd34091c865089a167b2, type: 3}
   m_Name: CommonGraph
   m_EditorClassIdentifier: 
-  Connections: []
+  Connections:
+  - {fileID: 6543799263944730035}
   CorridorIndividualRoomTemplates:
   - {fileID: 8845238177376917465, guid: 54e41bf19547f7a4aa3c20dfea96bd62, type: 3}
   CorridorRoomTemplateSets: []
@@ -40,8 +58,23 @@ MonoBehaviour:
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: -8804008876944311675}
+  - {fileID: -7088966744971227043}
   EditorData:
     PanOffset: {x: -48.5375, y: 51.48993}
     Zoom: 1.4275318
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
+--- !u!114 &6543799263944730035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f692f83df7c1b5468af64edd22287dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  From: {fileID: -7088966744971227043}
+  To: {fileID: -8804008876944311675}
