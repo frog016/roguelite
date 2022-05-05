@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class AirEffect : MonoBehaviour, IEffect //доделать эволв и отталкивание
+public class AirEffect : MonoBehaviour, IEffect //доделать эволв
 {
     private AttackParameters _parameters;
     private float _procProbability;
     private float _knockBackForce;
     //private PolygonCollider2D _area;
-    private bool isEvolved;
+    private bool _isEvolved;
+    private GameObject _player;
 
     public AirEffect(EffectData data)
     {
         _parameters = data.AttackParameters;
         _procProbability = data.ProcProbability;
         _knockBackForce = data.KnockBackForce;
+        _isEvolved = data.IsEvolved;
+        _player = data.Player;
     }
 
     public void ApplyEffect(DamageableObject target)
@@ -31,6 +34,8 @@ public class AirEffect : MonoBehaviour, IEffect //доделать эволв и отталкивание
 
     private void KnockBack(DamageableObject target)
     {
-        
+        target.GetComponent<Rigidbody2D>().
+            AddForce((_player.transform.position - target.GetComponent<Transform>().position) * _knockBackForce, 
+            ForceMode2D.Impulse);
     }
 }
