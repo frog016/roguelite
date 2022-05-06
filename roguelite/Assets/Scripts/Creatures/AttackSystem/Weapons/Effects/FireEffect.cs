@@ -1,15 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-public class FireEffect : MonoBehaviour, IEffect
+public class FireEffect : Effect, IEffect
 {
-    private AttackData _data;
+    private AttackData _parameters;
     private float _procProbability;
     private float _duration;
 
-    public FireEffect(EffectData data) //TODO: поработать над эффектами
+    public override void InitializeEffect(EffectData data)
     {
-        _data = data.AttackData;
+        base.InitializeEffect(data);
+        _parameters = data.AttackParameters;
         _procProbability = data.ProcProbability;
         _duration = data.Duration;
     }
@@ -27,8 +28,8 @@ public class FireEffect : MonoBehaviour, IEffect
         var counter = 0;
         while (counter < _duration)
         {
-            target.ApplyDamage(_data.Damage);
-            yield return new WaitForSeconds(_data.AttackSpeed);
+            target.ApplyDamage(_parameters.Damage);
+            yield return new WaitForSeconds(_parameters.AttackSpeed);
             counter++;
         }
     }

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637864956406363080
-    m_Hash: 2990525853
+      ticks: 637874130415994581
+    m_Hash: 4176834087
   m_LockFileStatus:
     m_FilePath: D:/2rd course game/roguelite/roguelite/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637864956406899950
-    m_Hash: 3504823602
+      ticks: 637874130415994581
+    m_Hash: 1674973428
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
