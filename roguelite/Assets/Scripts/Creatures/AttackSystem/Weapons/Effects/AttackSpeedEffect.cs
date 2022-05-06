@@ -1,10 +1,9 @@
-using UnityEngine;
+using System.Collections.Generic;
 
 public class AttackSpeedEffect : Effect, IEffect
 {
-    private float _duration;
     private int _maxStacks;
-    private int Stacks;
+    private int _stacksCount;
 
     public override void InitializeEffect(EffectData data)
     {
@@ -13,9 +12,9 @@ public class AttackSpeedEffect : Effect, IEffect
         _maxStacks = data.MaxStacks;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
-        if (Stacks < _maxStacks)
-            Stacks++;
+        if (_stacksCount < _maxStacks)
+            _stacksCount++;
     }
 }

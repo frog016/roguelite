@@ -22,8 +22,7 @@ public class Weapon : MonoBehaviour
 
     private void ActivateEffects(List<DamageableObject> targets)
     {
-        foreach (var target in targets)
-            foreach (var effect in _weaponEffects)
-                effect.ApplyEffect(target);
+        foreach (var effect in _weaponEffects)
+            effect.ApplyEffect(targets);
     }
 }

@@ -1,34 +1,30 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BleedingEffect : Effect, IEffect
 {
-    private AttackData _parameters;
-    private float _procProbability;
-    private float _duration;
-
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
-        _parameters = data.AttackParameters;
-        _procProbability = data.ProcProbability;
         _duration = data.Duration;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
-        if (!RandomChanceGenerator.IsEventHappen(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        StartCoroutine(ApplyDamageOverTime(target));
+        StartCoroutine(ApplyDamageOverTime(targets));
     }
 
-    private IEnumerator ApplyDamageOverTime(DamageableObject target)
+    private IEnumerator ApplyDamageOverTime(List<DamageableObject> targets)
     {
         var counter = 0;
         while (counter < _duration)
         {
-            target.ApplyDamage(_parameters.Damage);
+            foreach (var target in targets)
+                target.ApplyDamage(_parameters.Damage);
             yield return new WaitForSeconds(_parameters.AttackSpeed);
             counter++;
         }

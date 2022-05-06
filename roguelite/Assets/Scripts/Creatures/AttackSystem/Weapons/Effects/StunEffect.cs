@@ -1,12 +1,9 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class StunEffect : Effect, IEffect
 {
-    private AttackData _parameters;
-    private float _procProbability;
-    private float _duration;
-
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
@@ -15,16 +12,18 @@ public class StunEffect : Effect, IEffect
         _duration = data.Duration;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
-        if (!RandomChanceGenerator.IsEventHappen(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        target.ApplyDamage(_parameters.Damage);
-        StartCoroutine(Stun(target));
+        foreach (var target in targets)
+            target.ApplyDamage(_parameters.Damage);
+
+        StartCoroutine(Stun(targets));
     }
 
-    public IEnumerator Stun(DamageableObject target)
+    public IEnumerator Stun(List<DamageableObject> targets)
     {
         yield return new WaitForSeconds(_duration);
     }

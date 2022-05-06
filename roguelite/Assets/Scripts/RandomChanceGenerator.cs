@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class RandomChanceGenerator
 {
-    public static bool IsEventHappen(float chance)
+    public static bool IsEventHappened(float chance)
     {
         return GetChance() <= chance;
     }

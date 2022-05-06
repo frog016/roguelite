@@ -1,31 +1,29 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LifeStealEffect : Effect, IEffect
 {
-    private AttackData _parameters;
-    private float _lifestealAmount;
-    private GameObject _player;
+    private float _lifeStealAmount;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
-        _parameters = data.AttackParameters;
-        _lifestealAmount = data.LifestealAmount;
-        _player = data.Player;
+        _lifeStealAmount = data.LifeStealAmount;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
         IncreaseHealthPoints();
-        StealPowerDamage(target);
+        StealPowerDamage(targets);
     }
 
     private void IncreaseHealthPoints()
     {
+        
         //_player.GetComponent<DamageableObject>()._health += _lifestealAmount;
     }
 
-    private void StealPowerDamage(DamageableObject target)
+    private void StealPowerDamage(List<DamageableObject> targets)
     {
 
     }

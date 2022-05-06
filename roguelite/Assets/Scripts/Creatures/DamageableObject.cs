@@ -10,7 +10,7 @@ public class DamageableObject : MonoBehaviour
 
     public float Health => _health;
 
-    protected virtual void Awake()
+    protected virtual void Awake() // Добавить MaxHealth
     {
         OnHealthChanged = new UnityEvent();
         OnObjectDeath = new UnityEvent();

@@ -1,4 +1,6 @@
+using System.Collections.Generic;
+
 public interface IEffect
 {
-    void ApplyEffect(DamageableObject target);
+    void ApplyEffect(List<DamageableObject> targets);
 }

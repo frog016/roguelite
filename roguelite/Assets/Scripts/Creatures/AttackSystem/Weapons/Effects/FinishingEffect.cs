@@ -1,22 +1,22 @@
-using UnityEngine;
+using System.Collections.Generic;
+using System.Linq;
 
 public class FinishingEffect : Effect, IEffect
 {
-    private float _procProbability;
     private float _finishingThreshold;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
-        _procProbability = data.ProcProbability;
         _finishingThreshold = data.FinishingThreshold;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
-        if (!RandomChanceGenerator.IsEventHappen(_procProbability) || target.Health > _finishingThreshold)
+        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        target.ApplyDamage(_finishingThreshold);
+        foreach (var target in targets.Where(t => t.Health <= _finishingThreshold))
+            target.ApplyDamage(_finishingThreshold);
     }
 }

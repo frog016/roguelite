@@ -1,39 +1,37 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AirEffect : Effect, IEffect
 {
-    private AttackData _parameters;
-    private float _procProbability;
     private float _knockBackForce;
-    private GameObject _player;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
-        _parameters = data.AttackParameters;
-        _procProbability = data.ProcProbability;
         _knockBackForce = data.KnockBackForce;
-        _player = data.Player;
     }
 
-    public void ApplyEffect(DamageableObject target)
+    public void ApplyEffect(List<DamageableObject> targets)
     {
-        if (!RandomChanceGenerator.IsEventHappen(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        ApplyDamage(target);
-        KnockBack(target);
+        ApplyDamage(targets);
     }
 
-    private void ApplyDamage(DamageableObject target)
+    private void ApplyDamage(List<DamageableObject> targets)
     {
-        target.ApplyDamage(_parameters.Damage);
+        foreach (var target in targets)
+        {
+            target.ApplyDamage(_parameters.Damage);
+            KnockBack(target);
+        }
     }
 
     private void KnockBack(DamageableObject target)
     {
         target.GetComponent<Rigidbody2D>().
-            AddForce((_player.transform.position - target.transform.position) * _knockBackForce,
+            AddForce((transform.parent.parent.position - target.transform.position) * _knockBackForce,
                 ForceMode2D.Impulse);
     }
 }

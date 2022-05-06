@@ -32,7 +32,8 @@ public static class TypeConvertor
         var typesParents = new List<Tuple<Type, Type>>
         {
             Tuple.Create(typeof(IWeapon), typeof(WeaponType)), 
-            Tuple.Create(typeof(IEffect), typeof(EffectType))
+            Tuple.Create(typeof(IEffect), typeof(EffectType)),
+            Tuple.Create(typeof(Creature), typeof(CreatureType))
         };
 
         foreach (var parent in typesParents)
