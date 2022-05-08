@@ -1,7 +1,6 @@
 using Edgar.Unity;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 
 [CreateAssetMenu(menuName = "Edgar/Room Detection/Post-processing", fileName = "RoomDetectionPostProcessing")]
@@ -18,7 +17,7 @@ public class RoomDetectionPostProcessing : DungeonGeneratorPostProcessingGrid2D
             var floor = tilemaps.Single(x => x.name == "Floor").gameObject;
             AddFloorCollider(floor);
 
-            if (roomInstance.IsCorridor)
+            if (roomInstance.IsCorridor || roomTemplateInstance.GetComponent<HeroSpawn>() != null)
                 continue;
 
             floor.AddComponent<RoomDetector>();

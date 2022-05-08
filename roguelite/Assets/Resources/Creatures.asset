@@ -15,6 +15,10 @@ MonoBehaviour:
   _list:
     _list:
     - _name: Samurai
-      _health: 1
+      _creatureType: 0
+      _maxHealth: 5
+      _prefab: {fileID: 4449213130970805148, guid: 6112b179b1207e34394fa4baca9798d0, type: 3}
     - _name: SkeletonSamurai
-      _health: 1
+      _creatureType: 1
+      _maxHealth: 5
+      _prefab: {fileID: 6304618589418651911, guid: deaaa7d79b38ca148bfc366485672329, type: 3}

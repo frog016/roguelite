@@ -93,7 +93,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 560, y: 288}
   Name: Room
-  IndividualRoomTemplates: []
+  IndividualRoomTemplates:
+  - {fileID: 897912413787522924, guid: e18694bb8c824214598d63f0dcf707c2, type: 3}
   RoomTemplateSets: []
 --- !u!114 &4074274157269199496
 MonoBehaviour:

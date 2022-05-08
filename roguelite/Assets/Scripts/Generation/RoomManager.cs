@@ -19,7 +19,6 @@ public class RoomManager : SingletonObject<RoomManager>
     public void EnterInRoom(RoomInstanceGrid2D room)
     {
         CurrentRoom = room;
-        Debug.Log(CurrentRoom.Room.name);
         OnRoomEnter.Invoke();
     }
 

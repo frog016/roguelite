@@ -4,6 +4,7 @@ using UnityEngine;
 [Serializable]
 public class CreatureData : Data
 {
+    [SerializeField] private CreatureType _creatureType;
     [SerializeField] private float _maxHealth;
     [SerializeField] private GameObject _prefab;
 
@@ -12,6 +13,6 @@ public class CreatureData : Data
 
     public override Enum GetDataType()
     {
-        throw new NotImplementedException();
+        return _creatureType;
     }
 }

@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class SpawnUnitsData : MonoBehaviour
+[Serializable]
+public class SpawnUnitsData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public readonly CreatureType CreatureType;
+    public readonly int Count;
 
-    // Update is called once per frame
-    void Update()
+    public SpawnUnitsData(CreatureType creatureType, int count)
     {
-        
+        CreatureType = creatureType;
+        Count = count;
     }
 }
