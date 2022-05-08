@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 400, y: 288}
   Name: Spawn
-  IndividualRoomTemplates:
-  - {fileID: 3223408172635755039, guid: ee2c3de7d60bc5440a0fc775dcf8df10, type: 3}
+  IndividualRoomTemplates: []
   RoomTemplateSets: []
 --- !u!114 &-7088966744971227043
 MonoBehaviour:
@@ -31,8 +30,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 400, y: 208}
   Name: Room
-  IndividualRoomTemplates:
-  - {fileID: 3223408172635755039, guid: ee2c3de7d60bc5440a0fc775dcf8df10, type: 3}
+  IndividualRoomTemplates: []
   RoomTemplateSets: []
 --- !u!114 &11400000
 MonoBehaviour:

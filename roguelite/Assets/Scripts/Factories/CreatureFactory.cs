@@ -8,5 +8,9 @@ public class CreatureFactory : SingletonObject<CreatureFactory>, IFactory<Creatu
     {
         var data = CreatureDatabase.Instance.GetDataByType(objectType);
         var creature = Instantiate(data.Prefab, parent.transform.position, parent.transform.rotation);
+
+        var damageableObject = creature.GetComponent<DamageableObject>();
+        damageableObject.Health = data.MaxHealth;
+        damageableObject.MaxHealth = data.MaxHealth;
     }
 }

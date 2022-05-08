@@ -13,8 +13,10 @@ public class CustomTilemapLayersHandler : TilemapLayersHandlerBaseGrid2D
         grid.cellLayout = GridLayout.CellLayout.Isometric;
 
         CreateTilemapGameObject("Floor", gameObject, 0);
-        AddCompositeCollider(CreateTilemapGameObject("Walls", gameObject, 1));
 
+        var walls = CreateTilemapGameObject("Walls", gameObject, 1);
+        AddCompositeCollider(walls);
+        AddNavMeshModifier(walls);
         //CreateTilemapGameObject("Additional layer 1", gameObject, 2);
         //CreateTilemapGameObject("Additional layer 2", gameObject, 3);
     }
@@ -41,6 +43,10 @@ public class CustomTilemapLayersHandler : TilemapLayersHandlerBaseGrid2D
         compositeCollider2d.isTrigger = isTrigger;
 
         tilemapGameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+    }
+
+    private void AddNavMeshModifier(GameObject tilemapGameObject)
+    {
         var modifier = tilemapGameObject.AddComponent<NavMeshModifier>();
         modifier.overrideArea = true;
         modifier.area = 1;

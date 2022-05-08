@@ -8,9 +8,9 @@ public class Weapon : MonoBehaviour
 
     private List<IEffect> _weaponEffects;
 
-    private void Awake()
+    private void Start()
     {
-        _weaponEffects = new List<IEffect>();
+        _weaponEffects = GetComponentInChildren<EffectsList>().Effects;
     }
 
     public void SetWeapon(IWeapon weapon, WeaponData data)
