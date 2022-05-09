@@ -1,5 +1,4 @@
 using Edgar.Unity;
-using UnityEngine;
 using UnityEngine.Events;
 
 public class RoomManager : SingletonObject<RoomManager>

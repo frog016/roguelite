@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Database.MutableDatabases;
-using Edgar.Utils;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
-public class Spawner : SingletonObject<Spawner>
+public class Spawner : SingletonObject<Spawner> //  Сделать GameManager, который будет вызывать rebake и generate.
 {
     [SerializeField] private Vector2Int _unitsRange;
     [SerializeField] private Vector2Int _currentUnitRange;
@@ -24,6 +24,7 @@ public class Spawner : SingletonObject<Spawner>
         RoomManager.Instance.OnRoomEnter.AddListener(GetCurrentRoomPoints);
         RoomManager.Instance.OnRoomEnter.AddListener(() => SpawnUnits());
         RoomManager.Instance.OnRoomExit.AddListener(() => Destroy(RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponentInChildren<RoomDetector>()));
+        FindObjectOfType<NavMeshSurface>().BuildNavMesh();
     }
 
     public void SpawnUnits(SpawnData data = null)

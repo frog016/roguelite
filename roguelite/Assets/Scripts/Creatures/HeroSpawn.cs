@@ -8,11 +8,7 @@ public class HeroSpawn : MonoBehaviour
     private void Awake()
     {
         _grid = GetComponentInChildren<Grid>();
-    }
-
-    private void Start()
-    {
-        SpawnHero();
+        LevelGenerationManager.Instance.OnEndGeneration.AddListener(SpawnHero);
     }
 
     private void SpawnHero()
@@ -23,6 +19,7 @@ public class HeroSpawn : MonoBehaviour
         var hero = CreatureFactory.Instance.CreateObject(creatureObject, typeof(HeroSamurai));
         Camera.main.GetComponent<CameraTracking>().SetObject(hero.transform);
 
+        LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(SpawnHero);
         Destroy(creatureObject);
     }
 

@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-[CreateAssetMenu(menuName = "Edgar/Room Detection/Post-processing", fileName = "RoomDetectionPostProcessing")]
+[CreateAssetMenu(menuName = "Edgar/Post processing/Room Detection", fileName = "RoomDetectionPostProcessing")]
 public class RoomDetectionPostProcessing : DungeonGeneratorPostProcessingGrid2D
 {
     public override void Run(DungeonGeneratorLevelGrid2D level)
