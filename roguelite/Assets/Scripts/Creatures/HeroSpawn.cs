@@ -17,6 +17,7 @@ public class HeroSpawn : MonoBehaviour
         creatureObject.transform.position = FindPosition();
 
         var hero = CreatureFactory.Instance.CreateObject(creatureObject, typeof(HeroSamurai));
+        hero.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnPlayerDeathEvent.Invoke);
         Camera.main.GetComponent<CameraTracking>().SetObject(hero.transform);
 
         LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(SpawnHero);

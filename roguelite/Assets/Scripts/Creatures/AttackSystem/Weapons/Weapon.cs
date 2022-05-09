@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -22,7 +23,11 @@ public class Weapon : MonoBehaviour
 
     private void ActivateEffects(List<DamageableObject> targets)
     {
-        foreach (var effect in _weaponEffects)
+        var effects = _weaponEffects.ToList();
+        foreach (var effect in effects)
+        {
             effect.ApplyEffect(targets);
+            Debug.Log($"{effect} worked on {targets.Count} targets.");
+        }
     }
 }

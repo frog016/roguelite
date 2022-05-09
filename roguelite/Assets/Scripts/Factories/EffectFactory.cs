@@ -7,6 +7,8 @@ public class EffectFactory : SingletonObject<EffectFactory>, IFactory<IEffect>
     public IEffect CreateObject(GameObject parent, Type effectType)
     {
         var data = EffectsDatabase.Instance.GetDataByType(effectType);
-        return parent.GetComponent<EffectsList>().AddEffect(effectType, data);
+        var effect = parent.GetComponentInChildren<EffectsList>().AddEffect(effectType, data);
+        Debug.Log($"You got the {effect}.");
+        return effect;
     }
 }

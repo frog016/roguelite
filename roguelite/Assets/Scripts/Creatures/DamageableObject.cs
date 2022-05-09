@@ -18,6 +18,7 @@ public class DamageableObject : MonoBehaviour
     public void ApplyDamage(float damage)
     {
         Health -= damage;
+        Debug.Log($"{gameObject?.name} took {damage} damage. Remaining health is {Health}");
         OnHealthChanged?.Invoke();
         if (Health > 0)
             return;

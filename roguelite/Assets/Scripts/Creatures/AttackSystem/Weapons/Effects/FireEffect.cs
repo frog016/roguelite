@@ -24,7 +24,7 @@ public class FireEffect : Effect, IEffect
         while (counter < _duration)
         {
             foreach (var target in targets)
-                target.ApplyDamage(_parameters.Damage);
+                target?.ApplyDamage(_parameters.Damage);
             yield return new WaitForSeconds(_parameters.AttackSpeed);
             counter++;
         }

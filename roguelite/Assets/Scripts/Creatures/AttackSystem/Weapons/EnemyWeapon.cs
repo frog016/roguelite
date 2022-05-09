@@ -11,7 +11,7 @@ public class EnemyWeapon : IWeapon
     public EnemyWeapon(WeaponData data, TargetsFinder targetsFinder)
     {
         _firstAttack = new CommonAttack(data.FirstAttackData, targetsFinder);
-        _secondAttack = new AlternateAttack(data.SecondAttackData, targetsFinder);
+        _secondAttack = new CircleAttack(data.SecondAttackData, targetsFinder);
         OnAttack = new UnityEvent<List<DamageableObject>>();
     }
 
@@ -20,8 +20,7 @@ public class EnemyWeapon : IWeapon
         if (!_firstAttack.IsReady())
             return;
 
-        _firstAttack.Attack();
-        OnAttack.Invoke((_firstAttack as Attack)?.LastTargets);
+        OnAttack.Invoke(_firstAttack.Attack());
     }
 
     public void AlternateAttack()

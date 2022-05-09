@@ -11,7 +11,7 @@ public class DualKatanas : IWeapon
     public DualKatanas(WeaponData data, TargetsFinder targetsFinder)
     {
         _firstAttack = new CommonAttack(data.FirstAttackData, targetsFinder);
-        _secondAttack = new AlternateAttack(data.SecondAttackData, targetsFinder);
+        _secondAttack = new CircleAttack(data.SecondAttackData, targetsFinder);
         OnAttack = new UnityEvent<List<DamageableObject>>();
     }
 
@@ -20,8 +20,7 @@ public class DualKatanas : IWeapon
         if (!_firstAttack.IsReady())
             return;
 
-        _firstAttack.Attack();
-        OnAttack.Invoke((_firstAttack as Attack)?.LastTargets);
+        OnAttack.Invoke(_firstAttack.Attack());
     }
 
     public void AlternateAttack()
@@ -29,7 +28,6 @@ public class DualKatanas : IWeapon
         if (!_secondAttack.IsReady())
             return;
 
-        _secondAttack.Attack();
-        OnAttack.Invoke((_firstAttack as Attack)?.LastTargets);
+        OnAttack.Invoke(_secondAttack.Attack());
     }
 }

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine.Events;
 
 public interface IAttack
 {
-    void Attack();
+    List<DamageableObject> Attack();
     bool IsReady();
 }

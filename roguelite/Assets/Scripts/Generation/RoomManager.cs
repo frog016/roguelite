@@ -1,5 +1,8 @@
+using System;
+using System.Linq;
 using Edgar.Unity;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class RoomManager : SingletonObject<RoomManager>
 {
@@ -15,6 +18,11 @@ public class RoomManager : SingletonObject<RoomManager>
         OnRoomExit = new UnityEvent();
     }
 
+    private void Start()
+    {
+        GlobalEventManager.Instance.OnRoomClearedEvent.AddListener(DropRandomEffect);
+    }
+
     public void EnterInRoom(RoomInstanceGrid2D room)
     {
         CurrentRoom = room;
@@ -24,5 +32,14 @@ public class RoomManager : SingletonObject<RoomManager>
     public void ExitFormRoom()
     {
         OnRoomExit.Invoke();
+    }
+
+    private void DropRandomEffect() //  Переместить в EffectDropper
+    {
+        var effectsTypes = Enum.GetNames(typeof(EffectType))
+            .Select(creature => (EffectType)Enum.Parse(typeof(EffectType), creature)).ToList();
+        var randomEffect = EffectType.FireEffect;//effectsTypes[Random.Range(0, effectsTypes.Count)];
+        EffectFactory.Instance.CreateObject(FindObjectOfType<HeroSamurai>().gameObject,
+            TypeConvertor.ConvertEnumToType(randomEffect));
     }
 }

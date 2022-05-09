@@ -7,15 +7,18 @@ using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
-public class Spawner : SingletonObject<Spawner> //  Сделать GameManager, который будет вызывать rebake и generate.
+public class Spawner : SingletonObject<Spawner>
 {
     [SerializeField] private Vector2Int _unitsRange;
     [SerializeField] private Vector2Int _currentUnitRange;
+
+    public int SpawnedUnitsCount { get; private set; }
 
     private List<Vector3Int> _currentRoomPoints;
 
     protected override void Awake()
     {
+        base.Awake();
         _currentRoomPoints = new List<Vector3Int>();
     }
 
@@ -31,6 +34,7 @@ public class Spawner : SingletonObject<Spawner> //  Сделать GameManager, который
     {
         data ??= GenerateRandomUnits();
 
+        SpawnedUnitsCount = data.Units.Sum(unit => unit.Count);
         foreach (var unitsData in data.Units)
             CreateUnits(unitsData);
     }
@@ -42,8 +46,14 @@ public class Spawner : SingletonObject<Spawner> //  Сделать GameManager, который
         var creatureObject = new GameObject("Empty");
         creatureObject.transform.position = ValidatePosition(data.Prefab.GetComponent<Creature>());
 
+        var player = FindObjectOfType<HeroSamurai>();
         for (var i = 0; i < unitsData.Count; i++)
-            CreatureFactory.Instance.CreateObject(creatureObject, type);
+        {
+            var creature = CreatureFactory.Instance.CreateObject(creatureObject, type);
+            GlobalEventManager.Instance.OnEnemyDeathEvent.AddListener(() => SpawnedUnitsCount--);
+            creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
+            creature.GetComponent<EnemyMoveController>().SetTarget(player);
+        }
 
         Destroy(creatureObject);
     }
