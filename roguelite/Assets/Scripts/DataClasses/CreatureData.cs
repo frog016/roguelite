@@ -5,9 +5,11 @@ using UnityEngine;
 public class CreatureData : Data
 {
     [SerializeField] private CreatureType _creatureType;
+    [SerializeField] private WeaponType _weapon;
     [SerializeField] private float _maxHealth;
     [SerializeField] private GameObject _prefab;
 
+    public WeaponType Weapon => _weapon;
     public float MaxHealth => _maxHealth;
     public GameObject Prefab => _prefab;
 

@@ -11,10 +11,13 @@ public class EffectsList : MonoBehaviour
         Effects = new List<IEffect>();
     }
 
-    public void AddEffect(Type effectType, EffectData data)
+    public IEffect AddEffect(Type effectType, EffectData data)
     {
         var newEffect = gameObject.AddComponent(effectType);
         (newEffect as Effect)?.InitializeEffect(data);
-        Effects.Add(newEffect as IEffect);
+
+        var effect = newEffect as IEffect;
+        Effects.Add(effect);
+        return effect;
     }
 }

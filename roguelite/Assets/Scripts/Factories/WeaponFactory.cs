@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponFactory : SingletonObject<WeaponFactory>, IFactory<IWeapon>
 {
-    public void CreateObject(GameObject parent, Type weaponType)
+    public IWeapon CreateObject(GameObject parent, Type weaponType)
     {
         var data = WeaponDatabase.Instance.GetDataByType(weaponType);
         var weaponObject = new GameObject(weaponType.Name);
@@ -15,9 +15,13 @@ public class WeaponFactory : SingletonObject<WeaponFactory>, IFactory<IWeapon>
         effects.AddComponent<EffectsList>();
         var weapon = weaponObject.gameObject.AddComponent<Weapon>();
 
-        weapon.SetWeapon((IWeapon)Activator.CreateInstance(weaponType, data, weaponObject.gameObject.AddComponent<TargetsFinder>()), data);
+        var weaponInterface =
+            (IWeapon)Activator.CreateInstance(weaponType, data, weaponObject.gameObject.AddComponent<TargetsFinder>());
+        weapon.SetWeapon(weaponInterface, data);
 
         weaponObject.transform.SetParent(parent.transform);
         effects.transform.SetParent(weaponObject.transform);
+
+        return weaponInterface;
     }
 }

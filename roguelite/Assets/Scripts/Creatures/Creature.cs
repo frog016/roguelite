@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class Creature : DamageableObject
 {
-    [SerializeField] private WeaponType _weaponType;
-
-    protected override void Awake()
+    public void InitializeCreature(WeaponType weaponType)
     {
-        base.Awake();
-        WeaponFactory.Instance.CreateObject(gameObject, TypeConvertor.ConvertEnumToType(_weaponType));
+        WeaponFactory.Instance.CreateObject(gameObject, TypeConvertor.ConvertEnumToType(weaponType));
     }
 }

@@ -3,5 +3,5 @@ using UnityEngine;
 
 public interface IFactory<T>
 {
-    void CreateObject(GameObject parent, Type objectType);
+    T CreateObject(GameObject parent, Type objectType);
 }

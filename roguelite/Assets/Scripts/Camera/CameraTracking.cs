@@ -3,11 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraTracking : MonoBehaviour
 {
-    [SerializeField] private Transform _trackingObject;
     [SerializeField] private float _sensitivity;
 
-    private void Start()
+    private Transform _trackingObject;
+
+    public void SetObject(Transform trackingTransform)
     {
+        _trackingObject = trackingTransform;
         transform.position = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
         _trackingObject.GetComponent<PlayerMoveController>().OnPlayerMove.AddListener(FollowAtObject);
     }
@@ -18,7 +20,7 @@ public class CameraTracking : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, newPosition, _sensitivity * Time.fixedDeltaTime);
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         _trackingObject?.GetComponent<DamageableObject>()?.OnObjectDeath?.RemoveListener(FollowAtObject);
     }
