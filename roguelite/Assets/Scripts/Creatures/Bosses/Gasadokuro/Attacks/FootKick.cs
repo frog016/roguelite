@@ -8,7 +8,7 @@ public class FootKick : Attack, IAttack
 
     public List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(_data.AttackRadius, true);
+        var targets = _targetsFinder.FindTargetsInCircle(_data.AttackRadius, false);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();

@@ -22,7 +22,7 @@ public class TargetsFinder : MonoBehaviour
             .ToList(); ;
     }
 
-    public List<DamageableObject> FindTargetsInCircle(float radius, bool isAround = false) // TODO: Работает верно
+    public List<DamageableObject> FindTargetsInCircle(float radius, bool isAround = true) // TODO: Работает верно
     {
         var position = transform.parent.position;
         if (!isAround)

@@ -14,7 +14,7 @@ public class MoveController : MonoBehaviour
         Direction = Vector2.right;
     }
 
-    public void Move(Vector3 direction) //  Если Dash, то нельзя ходить
+    public void Move(Vector3 direction)
     {
         var normalizedDirection = direction.normalized;
         Direction = Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y)
@@ -22,15 +22,16 @@ public class MoveController : MonoBehaviour
         _rigidbody.MovePosition(transform.position + direction * _speed * Time.fixedDeltaTime);
     }
 
-    public void Dash()
+    public void Dash(Vector2 direction = default)
     {
-        StartCoroutine(DashCoroutine());
+        StartCoroutine(DashCoroutine(direction));
     }
 
-    private IEnumerator DashCoroutine()
+    private IEnumerator DashCoroutine(Vector2 direction)
     {
+        var newDirection = direction == default ? Direction : direction;
         var dashForce = 10f;
-        _rigidbody.velocity = Direction * dashForce;
+        _rigidbody.velocity = newDirection * dashForce;
         yield return new WaitForSeconds(0.1f);
         _rigidbody.velocity = Vector2.zero;
     }
