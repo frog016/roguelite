@@ -71,7 +71,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4449213130970805136
 MonoBehaviour:
@@ -110,8 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ed4c2892260694abd8d2e2e087fa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 25
-  _weaponType: 0
 --- !u!1 &4449213132913984178
 GameObject:
   m_ObjectHideFlags: 0

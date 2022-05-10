@@ -22,8 +22,11 @@ public class TargetsFinder : MonoBehaviour
             .ToList(); ;
     }
 
-    public List<DamageableObject> FindTargetsInCircle(float radius) // TODO: Работает верно
+    public List<DamageableObject> FindTargetsInCircle(float radius, bool isAround = false) // TODO: Работает верно
     {
+        var position = transform.parent.position;
+        if (!isAround)
+            position *= (new Vector3(radius, radius, 0) * _moveController.Direction);
         return Physics2D.CircleCastAll(transform.parent.position, radius, _moveController.Direction, 0)
             .Where(raycast => IsEnemy(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
