@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class FireEffect : Effect, IEffect
 {
+    private List<DamageableObject> TargetsUnderEffect;
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _duration = data.Duration;
+        TargetsUnderEffect = new List<DamageableObject>();
     }
 
     public void ApplyEffect(List<DamageableObject> targets)
@@ -24,9 +26,17 @@ public class FireEffect : Effect, IEffect
         while (counter < _duration)
         {
             foreach (var target in targets)
-                target?.ApplyDamage(_parameters.Damage);
+            {
+                if (!TargetsUnderEffect.Contains(target))
+                {
+                    target.ApplyDamage(_parameters.Damage);
+                    TargetsUnderEffect.Add(target);
+                }
+            }
             yield return new WaitForSeconds(_parameters.AttackSpeed);
             counter++;
         }
+
+        targets.ForEach(x => TargetsUnderEffect.Remove(x));
     }
 }

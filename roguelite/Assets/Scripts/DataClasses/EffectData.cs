@@ -12,7 +12,12 @@ public class EffectData : Data
     [SerializeField] private float _lifeStealAmount;
     [SerializeField] private float _finishingThreshold;
     [SerializeField] private int _maxStacks;
+    [SerializeField] private float _increasedAttackSpeedCoeff;
     [SerializeField] private int _maxChainLinks;
+    [SerializeField] private float _chainLinksDamage;
+    [SerializeField] private float _areaRadius;
+    [SerializeField] private float _criticalHitCoeff;
+
 
     public AttackData AttackParameters => _attackParameters;
     public float ProcProbability => _procProbability;
@@ -21,7 +26,11 @@ public class EffectData : Data
     public float LifeStealAmount => _lifeStealAmount;
     public float FinishingThreshold => _finishingThreshold;
     public int MaxStacks => _maxStacks;
+    public float IncreasedAttackSpeedÑoeff => _increasedAttackSpeedCoeff;
     public int MaxChainLinks => _maxChainLinks;
+    public float ChainLinksDamage => _chainLinksDamage;
+    public float AreaRadius => _areaRadius;
+    public float CriticalHitCoeff => _criticalHitCoeff;
 
     public override Enum GetDataType()
     {

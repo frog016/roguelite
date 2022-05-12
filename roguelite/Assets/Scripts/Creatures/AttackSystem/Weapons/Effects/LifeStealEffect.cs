@@ -13,18 +13,11 @@ public class LifeStealEffect : Effect, IEffect
 
     public void ApplyEffect(List<DamageableObject> targets)
     {
-        IncreaseHealthPoints();
-        StealPowerDamage(targets);
+        IncreaseHealthPoints(targets);
     }
 
-    private void IncreaseHealthPoints()
+    private void IncreaseHealthPoints(List<DamageableObject> targets)
     {
-        
-        //_player.GetComponent<DamageableObject>()._health += _lifestealAmount;
-    }
-
-    private void StealPowerDamage(List<DamageableObject> targets)
-    {
-
+        GetComponentInParent<GameObject>().GetComponentInParent<DamageableObject>().Health += _lifeStealAmount * targets.Count;
     }
 }
