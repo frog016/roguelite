@@ -9,6 +9,7 @@ using Random = UnityEngine.Random;
 
 public class Spawner : SingletonObject<Spawner>
 {
+    [SerializeField] private MobsHpBarManager MobsHpBarManager;
     [SerializeField] private Vector2Int _unitsRange;
     [SerializeField] private Vector2Int _currentUnitRange;
 
@@ -53,6 +54,7 @@ public class Spawner : SingletonObject<Spawner>
             GlobalEventManager.Instance.OnEnemyDeathEvent.AddListener(() => SpawnedUnitsCount--);
             creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
             creature.GetComponent<EnemyMoveController>().SetTarget(player);
+            MobsHpBarManager.AddCreature(creature);
         }
 
         Destroy(creatureObject);

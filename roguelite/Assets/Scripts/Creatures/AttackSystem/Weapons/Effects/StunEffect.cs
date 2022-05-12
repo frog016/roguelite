@@ -34,7 +34,7 @@ public class StunEffect : Effect, IEffect
 
     public IEnumerator Stun(DamageableObject target)
     {
-        target.GetComponent<EnemyMoveController>().
+        //target.GetComponent<EnemyMoveController>().
         yield return new WaitForSeconds(_duration);
     }
 }
