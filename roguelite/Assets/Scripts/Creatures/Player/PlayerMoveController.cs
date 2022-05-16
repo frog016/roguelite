@@ -38,12 +38,11 @@ public class PlayerMoveController : MoveController
 
     private bool TryDash()
     {
-        if (Mathf.Abs(Input.GetAxis("Jump")) < 1e-12)
+        if (Mathf.Abs(Input.GetAxis("Jump")) < 1e-12 || _isDashed)
             return false;
 
         Dash();
         OnPlayerMove.Invoke();
-
         return true;
     }
 }

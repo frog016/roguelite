@@ -1,18 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class SummonAcolytes : MonoBehaviour
+public class SummonAcolytes : Attack, IAttack
 {
-    // Start is called before the first frame update
-    void Start()
+    public SummonAcolytes(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<DamageableObject> Attack()
     {
-        
+        _cooldown.TryRestartCooldown();
+        Spawner.Instance.SpawnUnits(CreateAcolytesData());
+
+        return new List<DamageableObject>();
+    }
+
+    private SpawnData CreateAcolytesData()
+    {
+        var data = new SpawnData();
+        data.AddUnitsData(new SpawnUnitsData(CreatureType.SkeletonSamurai, 2));
+        return data;
+    }
+
+    public bool IsReady()
+    {
+        return _cooldown.IsReady;
     }
 }

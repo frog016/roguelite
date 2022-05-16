@@ -10,4 +10,6 @@ public class SpawnData
     {
         Units = units ?? new List<SpawnUnitsData>();
     }
+
+    public void AddUnitsData(SpawnUnitsData data) => Units.Add(data);
 }

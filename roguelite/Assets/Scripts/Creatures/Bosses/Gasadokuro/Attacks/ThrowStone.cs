@@ -1,18 +1,33 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class ThrowStone : MonoBehaviour
+public class ThrowStone : Attack, IAttack
 {
-    // Start is called before the first frame update
-    void Start()
+    private readonly GameObject _projectilePrefab;
+
+    public ThrowStone(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
     {
-        
+        _projectilePrefab = PrefabsFinder.FindObjectOfType<Projectile>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<DamageableObject> Attack()
     {
+        var targets = _targetsFinder.FindTargetsInCircle(2 * _data.AttackRadius, false);
+        var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
+
+        if (player is null)
+            return new List<DamageableObject>();
+
+        var projectile = Object.Instantiate(_projectilePrefab, _targetsFinder.transform.position, Quaternion.identity).GetComponent<Projectile>();
+        _cooldown.TryRestartCooldown();
+        projectile.Shoot(player, _data.Damage);
         
+        return targets;
+    }
+
+    public bool IsReady()
+    {
+        return _cooldown.IsReady;
     }
 }
