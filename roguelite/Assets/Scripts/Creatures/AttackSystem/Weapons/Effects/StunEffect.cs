@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StunEffect : Effect, IEffect
 {
+    private Dictionary<DamageableObject, Coroutine> Stuns;
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
@@ -11,20 +12,27 @@ public class StunEffect : Effect, IEffect
         _procProbability = data.ProcProbability;
         _duration = data.Duration;
     }
-
     public void ApplyEffect(List<DamageableObject> targets)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
-
         foreach (var target in targets)
             target.ApplyDamage(_parameters.Damage);
 
-        StartCoroutine(Stun(targets));
+        foreach (var target in targets)
+        {
+            if (Stuns.ContainsKey(target))
+            {
+                StopCoroutine(Stuns[target]);
+                Stuns.Remove(target);
+            }
+            Stuns.Add(target, StartCoroutine(Stun(target)));
+        }
     }
 
-    public IEnumerator Stun(List<DamageableObject> targets)
+    public IEnumerator Stun(DamageableObject target)
     {
-        yield return new WaitForSeconds(_duration);
+        target.GetComponent<EnemyMoveController>();
+            yield return new WaitForSeconds(_duration);
     }
 }
