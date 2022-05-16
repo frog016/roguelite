@@ -9,6 +9,7 @@ public class BleedingEffect : Effect, IEffect
     {
         base.InitializeEffect(data);
         _duration = data.Duration;
+        TargetsUnderEffect = new List<DamageableObject>();
     }
 
     public void ApplyEffect(List<DamageableObject> targets)
@@ -16,26 +17,25 @@ public class BleedingEffect : Effect, IEffect
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        StartCoroutine(ApplyDamageOverTime(targets));
+        foreach (var target in targets)
+        {
+            if (!TargetsUnderEffect.Contains(target))
+                StartCoroutine(ApplyDamageOverTime(target));
+        }
     }
 
-    private IEnumerator ApplyDamageOverTime(List<DamageableObject> targets)
+    private IEnumerator ApplyDamageOverTime(DamageableObject target)
     {
+        TargetsUnderEffect.Add(target);
         var counter = 0;
         while (counter < _duration)
         {
-            foreach (var target in targets)
-            {
-                if (!TargetsUnderEffect.Contains(target))
-                {
-                    target.ApplyDamage(_parameters.Damage);
-                    TargetsUnderEffect.Add(target);
-                }
-            }
+            target.ApplyDamage(_parameters.Damage);
+
             yield return new WaitForSeconds(_parameters.AttackSpeed);
             counter++;
         }
 
-        targets.ForEach(x => TargetsUnderEffect.Remove(x));
+        TargetsUnderEffect.Remove(target);
     }
 }

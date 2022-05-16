@@ -15442,6 +15442,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8448010328967505677, guid: 77737425bc2ade14bbac8bcf751388f3, type: 3}
+      propertyPath: _unitsRange.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448010328967505677, guid: 77737425bc2ade14bbac8bcf751388f3, type: 3}
+      propertyPath: _unitsRange.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448010328967505677, guid: 77737425bc2ade14bbac8bcf751388f3, type: 3}
       propertyPath: MobsHpBarManager
       value: 
       objectReference: {fileID: 968000615}

@@ -45,14 +45,8 @@ public enum EffectType
     LifeStealEffect,
     StunEffect,
     BleedingEffect,
-    FinishingEffect,
     AttackSpeedEffect,
     ChainLightningEffect,
     DoubleStrikeEffect,
-    DashIncreasedDamageEffect,
-    WalkSpeedEffect,
-    EvasionEffect,
-    BerserkEffect,
-    HealingEffect,
     CriticalStrikeEffect
 }

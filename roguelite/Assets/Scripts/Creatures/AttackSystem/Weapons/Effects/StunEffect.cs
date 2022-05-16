@@ -23,12 +23,15 @@ public class StunEffect : Effect, IEffect
 
         foreach (var target in targets)
         {
-            if (Stuns.ContainsKey(target))
+            if (target != null)
             {
-                StopCoroutine(Stuns[target]);
-                Stuns.Remove(target);
+                if (Stuns.ContainsKey(target))
+                {
+                    StopCoroutine(Stuns[target]);
+                    Stuns.Remove(target);
+                }
+                Stuns.Add(target, StartCoroutine(Stun(target)));
             }
-            Stuns.Add(target, StartCoroutine(Stun(target)));
         }
     }
 

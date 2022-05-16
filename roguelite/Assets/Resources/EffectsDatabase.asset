@@ -14,9 +14,174 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list:
     _list:
-    - _name: Fire Effect
+    - _name: 
+      _effectType: 0
       _attackParameters:
+        _name: 
         _damage: 1
         _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
       _procProbability: 0.15
       _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 1
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 400
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 2
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 1
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 3
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 4
+      _attackParameters:
+        _name: 
+        _damage: 6
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 5
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 5
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 3
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 6
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 4
+      _chainLinksDamage: 1
+      _areaRadius: 100
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 7
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0
+    - _name: 
+      _effectType: 8
+      _attackParameters:
+        _name: 
+        _damage: 1
+        _attackSpeed: 1
+        _attackRadius: 0
+        _attackAngleDegrees: 0
+      _procProbability: 100
+      _duration: 3
+      _knockBackForce: 0
+      _lifeStealAmount: 0
+      _finishingThreshold: 0
+      _maxStacks: 0
+      _increasedAttackSpeedCoeff: 0
+      _maxChainLinks: 0
+      _chainLinksDamage: 0
+      _areaRadius: 0
+      _criticalHitCoeff: 0.2
