@@ -5,11 +5,18 @@ using UnityEngine;
 public class DoubleStrikeEffect : Effect, IEffect
 {
     private float _criticalHitCoeff;
+<<<<<<< HEAD
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _criticalHitCoeff = data.CriticalHitCoefficient;
+=======
+    public override void InitializeEffect(EffectData data)
+    {
+        base.InitializeEffect(data);
+        _criticalHitCoeff = data.CriticalHitCoeff;
+>>>>>>> weapon-effects
     }
 
     public void ApplyEffect(List<DamageableObject> targets)

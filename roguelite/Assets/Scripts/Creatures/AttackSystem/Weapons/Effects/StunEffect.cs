@@ -21,18 +21,35 @@ public class StunEffect : Effect, IEffect
 
         foreach (var target in targets)
         {
+<<<<<<< HEAD
             if (Stuns.ContainsKey(target))
             {
                 StopCoroutine(Stuns[target]);
                 Stuns.Remove(target);
             }
             Stuns.Add(target, StartCoroutine(Stun(target)));
+=======
+            if (target != null)
+            {
+                if (Stuns.ContainsKey(target))
+                {
+                    StopCoroutine(Stuns[target]);
+                    Stuns.Remove(target);
+                }
+                Stuns.Add(target, StartCoroutine(Stun(target)));
+            }
+>>>>>>> weapon-effects
         }
     }
 
     public IEnumerator Stun(DamageableObject target)
     {
+<<<<<<< HEAD
         target.GetComponent<EnemyMoveController>();
             yield return new WaitForSeconds(_duration);
+=======
+        //target.GetComponent<EnemyMoveController>().
+        yield return new WaitForSeconds(_duration);
+>>>>>>> weapon-effects
     }
 }

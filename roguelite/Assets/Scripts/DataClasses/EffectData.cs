@@ -12,11 +12,20 @@ public class EffectData : Data
     [SerializeField] private float _lifeStealAmount;
     [SerializeField] private float _finishingThreshold;
     [SerializeField] private int _maxStacks;
+<<<<<<< HEAD
     [SerializeField] private float _increasedAttackSpeedCoefficient;
     [SerializeField] private int _maxChainLinks;
     [SerializeField] private float _chainLinksDamage;
     [SerializeField] private float _areaRadius;
     [SerializeField] private float _criticalHitCoefficient;
+=======
+    [SerializeField] private float _increasedAttackSpeedCoeff;
+    [SerializeField] private int _maxChainLinks;
+    [SerializeField] private float _chainLinksDamage;
+    [SerializeField] private float _areaRadius;
+    [SerializeField] private float _criticalHitCoeff;
+
+>>>>>>> weapon-effects
 
     public AttackData AttackParameters => _attackParameters;
     public float ProcProbability => _procProbability;
@@ -25,11 +34,19 @@ public class EffectData : Data
     public float LifeStealAmount => _lifeStealAmount;
     public float FinishingThreshold => _finishingThreshold;
     public int MaxStacks => _maxStacks;
+<<<<<<< HEAD
     public float IncreasedAttackSpeedCoefficient => _increasedAttackSpeedCoefficient;
     public int MaxChainLinks => _maxChainLinks;
     public float ChainLinksDamage => _chainLinksDamage;
     public float AreaRadius => _areaRadius;
     public float CriticalHitCoefficient => _criticalHitCoefficient;
+=======
+    public float IncreasedAttackSpeedÑoeff => _increasedAttackSpeedCoeff;
+    public int MaxChainLinks => _maxChainLinks;
+    public float ChainLinksDamage => _chainLinksDamage;
+    public float AreaRadius => _areaRadius;
+    public float CriticalHitCoeff => _criticalHitCoeff;
+>>>>>>> weapon-effects
 
     public override Enum GetDataType()
     {
@@ -44,14 +61,8 @@ public enum EffectType
     LifeStealEffect,
     StunEffect,
     BleedingEffect,
-    FinishingEffect,
     AttackSpeedEffect,
     ChainLightningEffect,
     DoubleStrikeEffect,
-    DashIncreasedDamageEffect,
-    WalkSpeedEffect,
-    EvasionEffect,
-    BerserkEffect,
-    HealingEffect,
     CriticalStrikeEffect
 }

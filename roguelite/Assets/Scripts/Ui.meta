@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ff8456ce45356fc449905d458cb9b2f9
+=======
+guid: bbb04accdca02884b9c19d17201e1c7b
+>>>>>>> weapon-effects
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

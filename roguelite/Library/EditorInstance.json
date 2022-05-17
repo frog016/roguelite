@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
 	"process_id" : 16048,
 	"version" : "2020.3.20f1",
 	"app_path" : "D:/Unity/2020.3.20f1/Editor/Unity.exe",
 	"app_contents_path" : "D:/Unity/2020.3.20f1/Editor/Data"
+=======
+	"process_id" : 26144,
+	"version" : "2020.3.20f1",
+	"app_path" : "C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Unity.exe",
+	"app_contents_path" : "C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data"
+>>>>>>> weapon-effects
 }

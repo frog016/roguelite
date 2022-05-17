@@ -23,15 +23,18 @@ public class AirEffect : Effect, IEffect
     {
         foreach (var target in targets)
         {
-            target.ApplyDamage(_parameters.Damage);
-            KnockBack(target);
+            if (target.Health >= _parameters.Damage)
+            {
+                target.ApplyDamage(_parameters.Damage);
+                KnockBack(target);
+            }
         }
     }
 
     private void KnockBack(DamageableObject target)
     {
         target.GetComponent<Rigidbody2D>().
-            AddForce((transform.parent.parent.position - target.transform.position) * _knockBackForce,
+            AddForce(-(transform.parent.parent.position - target.transform.position) * _knockBackForce,
                 ForceMode2D.Impulse);
     }
 }

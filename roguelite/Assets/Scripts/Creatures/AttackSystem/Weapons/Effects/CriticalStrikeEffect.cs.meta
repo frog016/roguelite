@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3e666708373fa8f4d9e824d0f04f882a
+=======
+<<<<<<<< HEAD:roguelite/Assets/Scripts/Creatures/AttackSystem/Projectile.cs.meta
+guid: 6c5ba676333fff741b6c3b3c7ba8acb9
+========
+guid: 7f0cbdd4bdec3e54395d35ff7e5a370f
+>>>>>>>> weapon-effects:roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/CriticalStrikeEffect.cs.meta
+>>>>>>> weapon-effects
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

@@ -1,8 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2fcb3c1e2dbbbc747be05783ca504ffb
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+=======
+guid: 4aecb92fff08436c8303b10eab8da368
+folderAsset: yes
+timeCreated: 1441876950
+licenseType: Pro
+DefaultImporter:
+>>>>>>> weapon-effects
   userData: 
   assetBundleName: 
   assetBundleVariant: 

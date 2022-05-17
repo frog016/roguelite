@@ -18,6 +18,10 @@ public class LifeStealEffect : Effect, IEffect
 
     private void IncreaseHealthPoints(List<DamageableObject> targets)
     {
+<<<<<<< HEAD
         GetComponentInParent<GameObject>().GetComponentInParent<DamageableObject>().Health += _lifeStealAmount * targets.Count;
+=======
+        GetComponentInParent<Weapon>().GetComponentInParent<DamageableObject>().Health += _lifeStealAmount * targets.Count;
+>>>>>>> weapon-effects
     }
 }
