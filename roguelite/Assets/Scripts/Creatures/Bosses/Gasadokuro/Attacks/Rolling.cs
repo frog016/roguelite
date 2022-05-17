@@ -42,7 +42,7 @@ public class Rolling : Attack, IAttack
         if (damageableObject == null)
             return;
 
-        damageableObject.ApplyDamage(_data.Damage);
+        damageableObject.ApplyDamage(Data.Damage);
     }
 
     private void CheckWall(Collider2D otherCollider)
@@ -59,7 +59,7 @@ public class Rolling : Attack, IAttack
         if (_bouncesCount > 0)
         {
             var direction = GetRandomDirection();
-            _rigidbody.velocity = direction * _data.AttackSpeed;
+            _rigidbody.velocity = direction * Data.AttackSpeed;
         }
         else
         {

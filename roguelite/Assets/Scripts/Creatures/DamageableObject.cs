@@ -27,6 +27,11 @@ public class DamageableObject : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void ApplyHeath(float healValue)
+    {
+        Health = Mathf.Min(Health + healValue, MaxHealth);
+    }
+
     private void OnDestroy()
     {
         OnObjectDeath?.RemoveAllListeners();

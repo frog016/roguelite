@@ -11,7 +11,7 @@ public class CrushingLeap : Attack, IAttack
 
     public List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(2 * _data.AttackRadius, false);
+        var targets = _targetsFinder.FindTargetsInCircle(2 * Data.AttackRadius, false);
         var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
 
         if (player is null)
@@ -28,12 +28,12 @@ public class CrushingLeap : Attack, IAttack
         var rigidbody = _targetsFinder.GetComponentInParent<Rigidbody>();
         yield return new WaitUntil(() => rigidbody.velocity.magnitude < 1e-12);
 
-        var targets = _targetsFinder.FindTargetsInCircle(_data.AttackRadius);
+        var targets = _targetsFinder.FindTargetsInCircle(Data.AttackRadius);
         _cooldown.TryRestartCooldown();
 
         foreach (var damageableObject in targets)
         {
-            damageableObject.ApplyDamage(_data.Damage);
+            damageableObject.ApplyDamage(Data.Damage);
         }
     }
 

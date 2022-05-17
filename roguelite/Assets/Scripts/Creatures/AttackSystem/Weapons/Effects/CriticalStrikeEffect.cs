@@ -1,37 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class CriticalStrikeEffect : Effect, IEffect
 {
-    private float _criticalHitCoeff;
-<<<<<<< HEAD
+    private float _criticalHitCoefficient;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
-        _criticalHitCoeff = data.CriticalHitCoefficient;
-=======
-    public override void InitializeEffect(EffectData data)
-    {
-        base.InitializeEffect(data);
-        _criticalHitCoeff = data.CriticalHitCoeff;
->>>>>>> weapon-effects
+        _criticalHitCoefficient = data.CriticalHitCoefficient;
     }
 
-    public void ApplyEffect(List<DamageableObject> targets)
+    public void ApplyEffect(AttackEventArgs attackEventArgs) //  Плохая реализвация, но иначе никак
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        //var damage = GetComponentInParent
-        foreach (var target in targets)
-        {
-<<<<<<< HEAD
-            //  target.ApplyDamage();
-=======
-          //  target.ApplyDamage();
->>>>>>> weapon-effects
-        }
+        var damage = (attackEventArgs.UsedAttack as Attack).Data.Damage * _criticalHitCoefficient;
+        foreach (var target in attackEventArgs.DamagedTargets)
+            target.ApplyDamage(damage);
     }
 }

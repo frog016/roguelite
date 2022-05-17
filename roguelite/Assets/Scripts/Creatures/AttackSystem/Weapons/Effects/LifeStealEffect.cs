@@ -1,27 +1,27 @@
 using System.Collections.Generic;
-using UnityEngine;
 
 public class LifeStealEffect : Effect, IEffect
 {
     private float _lifeStealAmount;
+    private DamageableObject _myHealth;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _lifeStealAmount = data.LifeStealAmount;
+
+        _myHealth = GetComponentInParent<DamageableObject>();
     }
 
-    public void ApplyEffect(List<DamageableObject> targets)
+    public void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        IncreaseHealthPoints(targets);
+        foreach (var target in attackEventArgs.DamagedTargets)
+            StealHealth(target);
     }
 
-    private void IncreaseHealthPoints(List<DamageableObject> targets)
+    private void StealHealth(DamageableObject target)
     {
-<<<<<<< HEAD
-        GetComponentInParent<GameObject>().GetComponentInParent<DamageableObject>().Health += _lifeStealAmount * targets.Count;
-=======
-        GetComponentInParent<Weapon>().GetComponentInParent<DamageableObject>().Health += _lifeStealAmount * targets.Count;
->>>>>>> weapon-effects
+        _myHealth.ApplyHeath(_lifeStealAmount);
+        target.ApplyDamage(_lifeStealAmount);
     }
 }

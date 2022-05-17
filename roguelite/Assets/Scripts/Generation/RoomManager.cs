@@ -34,11 +34,11 @@ public class RoomManager : SingletonObject<RoomManager>
         OnRoomExit.Invoke();
     }
 
-    private void DropRandomEffect() //  Переместить в EffectDropper
+    private void DropRandomEffect() //  TODO: Переместить в EffectDropper
     {
         var effectsTypes = Enum.GetNames(typeof(EffectType))
             .Select(creature => (EffectType)Enum.Parse(typeof(EffectType), creature)).ToList();
-        var randomEffect = EffectType.ChainLightningEffect;//effectsTypes[Random.Range(0, effectsTypes.Count)];
+        var randomEffect = effectsTypes[Random.Range(0, effectsTypes.Count)];
         EffectFactory.Instance.CreateObject(FindObjectOfType<HeroSamurai>().gameObject,
             TypeConvertor.ConvertEnumToType(randomEffect));
     }

@@ -13,7 +13,7 @@ public class ThrowStone : Attack, IAttack
 
     public List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(2 * _data.AttackRadius, false);
+        var targets = _targetsFinder.FindTargetsInCircle(2 * Data.AttackRadius, false);
         var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
 
         if (player is null)
@@ -21,7 +21,7 @@ public class ThrowStone : Attack, IAttack
 
         var projectile = Object.Instantiate(_projectilePrefab, _targetsFinder.transform.position, Quaternion.identity).GetComponent<Projectile>();
         _cooldown.TryRestartCooldown();
-        projectile.Shoot(player, _data.Damage);
+        projectile.Shoot(player, Data.Damage);
         
         return targets;
     }

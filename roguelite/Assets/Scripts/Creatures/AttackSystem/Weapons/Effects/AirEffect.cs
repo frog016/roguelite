@@ -11,30 +11,30 @@ public class AirEffect : Effect, IEffect
         _knockBackForce = data.KnockBackForce;
     }
 
-    public void ApplyEffect(List<DamageableObject> targets)
+    public void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        ApplyDamage(targets);
+        ApplyDamage(attackEventArgs.DamagedTargets);
     }
 
     private void ApplyDamage(List<DamageableObject> targets)
     {
         foreach (var target in targets)
         {
-            if (target.Health >= _parameters.Damage)
-            {
-                target.ApplyDamage(_parameters.Damage);
-                KnockBack(target);
-            }
+            target.ApplyDamage(_parameters.Damage);
+            if (target.Health <= 0)
+                continue;
+
+            KnockBack(target);
         }
     }
 
     private void KnockBack(DamageableObject target)
     {
         target.GetComponent<Rigidbody2D>().
-            AddForce(-(transform.parent.parent.position - target.transform.position) * _knockBackForce,
+            AddForce(-(transform.position - target.transform.position) * _knockBackForce,
                 ForceMode2D.Impulse);
     }
 }

@@ -18,16 +18,16 @@ public class Weapon : MonoBehaviour
     {
         CurrentWeapon = weapon;
         Data = data;
-        CurrentWeapon.OnAttack.AddListener(ActivateEffects);
+        CurrentWeapon.OnAttackEvent.AddListener(ActivateEffects);
     }
 
-    private void ActivateEffects(List<DamageableObject> targets)
+    private void ActivateEffects(AttackEventArgs attackEventArgs)
     {
         var effects = _weaponEffects.ToList();
         foreach (var effect in effects)
         {
-            effect.ApplyEffect(targets);
-            Debug.Log($"{effect} worked on {targets.Count} targets.");
+            effect.ApplyEffect(attackEventArgs);
+            Debug.Log($"{effect} worked on {attackEventArgs.DamagedTargets.Count} targets.");
         }
     }
 }

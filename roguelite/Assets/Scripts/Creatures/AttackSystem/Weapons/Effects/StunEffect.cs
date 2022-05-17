@@ -4,52 +4,54 @@ using UnityEngine;
 
 public class StunEffect : Effect, IEffect
 {
-    private Dictionary<DamageableObject, Coroutine> Stuns;
+    private Dictionary<DamageableObject, Coroutine> _stuns;
+
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _parameters = data.AttackParameters;
         _procProbability = data.ProcProbability;
         _duration = data.Duration;
+        _stuns = new Dictionary<DamageableObject, Coroutine>();
     }
-    public void ApplyEffect(List<DamageableObject> targets)
+
+    public void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
-        foreach (var target in targets)
-            target.ApplyDamage(_parameters.Damage);
 
-        foreach (var target in targets)
+        foreach (var target in attackEventArgs.DamagedTargets)
         {
-<<<<<<< HEAD
-            if (Stuns.ContainsKey(target))
+            target.ApplyDamage(_parameters.Damage);
+            if (target.Health <= 0)
+                continue;
+
+            if (_stuns.ContainsKey(target))
             {
-                StopCoroutine(Stuns[target]);
-                Stuns.Remove(target);
+                StopCoroutine(_stuns[target]);
+                _stuns.Remove(target);
             }
-            Stuns.Add(target, StartCoroutine(Stun(target)));
-=======
-            if (target != null)
-            {
-                if (Stuns.ContainsKey(target))
-                {
-                    StopCoroutine(Stuns[target]);
-                    Stuns.Remove(target);
-                }
-                Stuns.Add(target, StartCoroutine(Stun(target)));
-            }
->>>>>>> weapon-effects
+
+            _stuns.Add(target, StartCoroutine(StunTarget(target)));
         }
     }
 
-    public IEnumerator Stun(DamageableObject target)
+    private IEnumerator StunTarget(DamageableObject target)
     {
-<<<<<<< HEAD
-        target.GetComponent<EnemyMoveController>();
-            yield return new WaitForSeconds(_duration);
-=======
-        //target.GetComponent<EnemyMoveController>().
+        var components = new List<MonoBehaviour>
+        {
+            target.GetComponent<MoveController>(),
+            target.GetComponentInChildren<Weapon>()
+        };
+
+        SetEnabled(components, false);
         yield return new WaitForSeconds(_duration);
->>>>>>> weapon-effects
+        SetEnabled(components, true);
+    }
+
+    private void SetEnabled(List<MonoBehaviour> components, bool state)
+    {
+        foreach (var component in components)
+            component.enabled = state;
     }
 }

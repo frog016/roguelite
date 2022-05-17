@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
 public interface IEffect
 {
-    void ApplyEffect(List<DamageableObject> targets);
+    void ApplyEffect(AttackEventArgs attackEventArgs);
 }

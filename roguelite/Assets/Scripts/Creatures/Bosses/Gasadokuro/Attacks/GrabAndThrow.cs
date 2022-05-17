@@ -9,14 +9,14 @@ public class GrabAndThrow : Attack, IAttack
 
     public List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInSector(_data.AttackRadius, _data.AttackAngleDegrees);
+        var targets = _targetsFinder.FindTargetsInSector(Data.AttackRadius, Data.AttackAngleDegrees);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
-            target.ApplyDamage(_data.Damage);
+            target.ApplyDamage(Data.Damage);
             ThrowTarget(target, target.transform.position - _targetsFinder.transform.position);
         }
 

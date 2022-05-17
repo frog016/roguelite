@@ -27,7 +27,7 @@ public class TargetsFinder : MonoBehaviour
         var position = transform.parent.position;
         if (!isAround)
             position *= (new Vector3(radius, radius, 0) * _moveController.Direction);
-        return Physics2D.CircleCastAll(transform.parent.position, radius, _moveController.Direction, 0)
+        return Physics2D.CircleCastAll(position, radius, _moveController.Direction, 0)
             .Where(raycast => IsEnemy(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)

@@ -1,58 +1,43 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackSpeedEffect : Effect, IEffect
 {
     private int _maxStacks;
     private int _stacksCount;
-<<<<<<< HEAD
     private float _increasedAttackSpeedCoefficient;
-=======
-    private float _increasedAttackSpeedÑoeff;
->>>>>>> weapon-effects
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _duration = data.Duration;
         _maxStacks = data.MaxStacks;
-<<<<<<< HEAD
         _increasedAttackSpeedCoefficient = data.IncreasedAttackSpeedCoefficient;
-=======
-        _increasedAttackSpeedÑoeff = data.IncreasedAttackSpeedÑoeff;
->>>>>>> weapon-effects
     }
 
-    public void ApplyEffect(List<DamageableObject> targets)
+    public void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        var Cooldowns = GetComponentsInParent<Cooldown>();
-<<<<<<< HEAD
-        Cooldowns[0].CooldownTime -= Cooldowns[0].InitialCooldown * _increasedAttackSpeedCoefficient * Math.Min(targets.Count, _maxStacks - _stacksCount);
-        Cooldowns[1].CooldownTime -= Cooldowns[1].InitialCooldown * _increasedAttackSpeedCoefficient * Math.Min(targets.Count, _maxStacks - _stacksCount);
-=======
-        Cooldowns[0].CooldownTime -= Cooldowns[0].InitialCooldown * _increasedAttackSpeedÑoeff * Math.Min(targets.Count, _maxStacks - _stacksCount);
-        Cooldowns[1].CooldownTime -= Cooldowns[1].InitialCooldown * _increasedAttackSpeedÑoeff * Math.Min(targets.Count, _maxStacks - _stacksCount);
->>>>>>> weapon-effects
+        var cooldowns = GetComponentsInParent<Cooldown>();
+        foreach (var cooldown in cooldowns)
+            cooldown.CooldownTime = 
+                cooldown.InitialCooldown * _increasedAttackSpeedCoefficient * 
+                Math.Min(attackEventArgs.DamagedTargets.Count, _maxStacks - _stacksCount);
+        
         StopAllCoroutines();
-
-        DropStacks(Cooldowns);
+        StartCoroutine(DropStacks(cooldowns));
     }
 
-    private IEnumerator DropStacks(Cooldown[] Cooldowns)
+    private IEnumerator DropStacks(Cooldown[] cooldowns)
     {
         yield return new WaitForSeconds(_duration);
+
         while (_stacksCount > 0)
         {
             _stacksCount--;
-<<<<<<< HEAD
-            Cooldowns[0].CooldownTime += Cooldowns[0].InitialCooldown * _increasedAttackSpeedCoefficient;
-            Cooldowns[1].CooldownTime += Cooldowns[1].InitialCooldown * _increasedAttackSpeedCoefficient;
-=======
-            Cooldowns[0].CooldownTime += Cooldowns[0].InitialCooldown * _increasedAttackSpeedÑoeff;
-            Cooldowns[1].CooldownTime += Cooldowns[1].InitialCooldown * _increasedAttackSpeedÑoeff;
->>>>>>> weapon-effects
+            foreach (var cooldown in cooldowns)
+                cooldown.CooldownTime += cooldown.InitialCooldown * _increasedAttackSpeedCoefficient;
+
             yield return new WaitForSeconds(1f);
         }
 

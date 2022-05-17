@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Edgar.Legacy.GeneralAlgorithms.Algorithms.Common;
 using UnityEngine;
 
 //TODO: добавить анимацию молнии, добавить различаемость других противников, помимо с классом skeletonsamurai
@@ -7,6 +8,7 @@ public class ChainLightningEffect : Effect, IEffect
     private int _maxChainLinks;
     private float _chainLinksDamage;
     private float _areaRadius;
+    private TargetsFinder _targetsFinder; //    Можно добавить метод поиска цели в области, тогда можно будет сделать перекидывание молнии, как задумывалось
 
     public override void InitializeEffect(EffectData data)
     {
@@ -14,71 +16,40 @@ public class ChainLightningEffect : Effect, IEffect
         _maxChainLinks = data.MaxChainLinks;
         _chainLinksDamage = data.ChainLinksDamage;
         _areaRadius = data.AreaRadius;
+
+        _targetsFinder.GetComponentInParent<TargetsFinder>();
     }
 
-    public void ApplyEffect(List<DamageableObject> targets)
+    public void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        ApplyDamage(GetNearestTarget(targets), GetTargetsInArea());
+        ApplyDamage(GetNearestTarget(attackEventArgs.DamagedTargets), GetTargetsInArea());
     }
 
     private DamageableObject GetNearestTarget(List<DamageableObject> targets)
     {
-        var nearestTarget = new DamageableObject();
-        var shortestDist = float.MaxValue;
-        foreach (var target in targets)
-        {
-            if (shortestDist > Vector3.Distance(target.transform.position, transform.position))
-            {
-                nearestTarget = target;
-                shortestDist = Vector3.Distance(target.transform.position, transform.position);
-            }
-        }
-        return nearestTarget;
-<<<<<<< HEAD
-=======
+        return targets
+            .MinElement(target => Vector2.Distance(
+                target.transform.position, 
+                transform.position));
     }
 
-    private void ApplyDamage(DamageableObject firstLink, List<DamageableObject> links)
+    private void ApplyDamage(DamageableObject firstTarget, List<DamageableObject> links)
     {
-        firstLink.ApplyDamage(_parameters.Damage);
-        links.Remove(firstLink);
+        firstTarget.ApplyDamage(_parameters.Damage);
+        links.Remove(firstTarget);
+
         if (links.Count > _maxChainLinks)
             links = links.GetRange(0, _maxChainLinks - 1);
+
         foreach (var link in links)
             link.ApplyDamage(_chainLinksDamage);
     }
 
     private List<DamageableObject> GetTargetsInArea()
     {
-        var targetsList = new List<DamageableObject>();
-        var objectsInArea = Physics2D.OverlapCircleAll(transform.position, _areaRadius);
-        foreach(var obj in objectsInArea)
-            if (obj.TryGetComponent<SkeletonSamurai>(out SkeletonSamurai a)) //включает в себя только противников с классом skeletonsamurai, может не видеть других
-                targetsList.Add(obj.GetComponent<DamageableObject>());
-        return targetsList;
->>>>>>> weapon-effects
-    }
-
-    private void ApplyDamage(DamageableObject firstLink, List<DamageableObject> links)
-    {
-        firstLink.ApplyDamage(_parameters.Damage);
-        links.Remove(firstLink);
-        if (links.Count > _maxChainLinks)
-            links = links.GetRange(0, _maxChainLinks - 1);
-        foreach (var link in links)
-            link.ApplyDamage(_chainLinksDamage);
-    }
-
-    private List<DamageableObject> GetTargetsInArea()
-    {
-        var targetsList = new List<DamageableObject>();
-        var objectsInArea = Physics2D.OverlapCircleAll(transform.position, _areaRadius);
-        foreach (var obj in objectsInArea)
-            if (obj.TryGetComponent<SkeletonSamurai>(out SkeletonSamurai a))
-                targetsList.Add(obj.GetComponent<DamageableObject>());
-        return targetsList;
+        return _targetsFinder.FindTargetsInCircle(_areaRadius);
     }
 }

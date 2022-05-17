@@ -1,5 +1,6 @@
 public enum CreatureType
 {
     HeroSamurai,
-    SkeletonSamurai
+    SkeletonSamurai,
+    Gasadokuro
 }

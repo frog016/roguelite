@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Creature : DamageableObject
 {
     public void InitializeCreature(WeaponType weaponType)

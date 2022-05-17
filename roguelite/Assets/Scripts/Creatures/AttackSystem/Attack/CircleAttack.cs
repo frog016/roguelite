@@ -8,14 +8,14 @@ public class CircleAttack : Attack, IAttack
 
     public List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(_data.AttackRadius);
+        var targets = _targetsFinder.FindTargetsInCircle(Data.AttackRadius);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
-            target.ApplyDamage(_data.Damage);
+            target.ApplyDamage(Data.Damage);
         }
 
         return targets;

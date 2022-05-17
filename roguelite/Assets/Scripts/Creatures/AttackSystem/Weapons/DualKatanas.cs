@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using UnityEngine.Events;
 
 public class DualKatanas : IWeapon
 {
-    public UnityEvent<List<DamageableObject>> OnAttack { get; set; }
+    public UnityEvent<AttackEventArgs> OnAttackEvent { get; set; }
 
     private IAttack _firstAttack;
     private IAttack _secondAttack;
@@ -12,7 +11,7 @@ public class DualKatanas : IWeapon
     {
         _firstAttack = new CommonAttack(data.FirstAttackData, targetsFinder);
         _secondAttack = new CircleAttack(data.SecondAttackData, targetsFinder);
-        OnAttack = new UnityEvent<List<DamageableObject>>();
+        OnAttackEvent = new UnityEvent<AttackEventArgs>();
     }
 
     public void Attack()
@@ -20,7 +19,7 @@ public class DualKatanas : IWeapon
         if (!_firstAttack.IsReady())
             return;
 
-        OnAttack.Invoke(_firstAttack.Attack());
+        OnAttackEvent.Invoke(new AttackEventArgs(_firstAttack, _firstAttack.Attack()));
     }
 
     public void AlternateAttack()
@@ -28,6 +27,6 @@ public class DualKatanas : IWeapon
         if (!_secondAttack.IsReady())
             return;
 
-        OnAttack.Invoke(_secondAttack.Attack());
+        OnAttackEvent.Invoke(new AttackEventArgs(_secondAttack, _firstAttack.Attack()));
     }
 }
