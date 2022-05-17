@@ -10,7 +10,6 @@ public class EffectData : Data
     [SerializeField] private float _duration;
     [SerializeField] private float _knockBackForce;
     [SerializeField] private float _lifeStealAmount;
-    [SerializeField] private float _finishingThreshold;
     [SerializeField] private int _maxStacks;
     [SerializeField] private float _increasedAttackSpeedCoefficient;
     [SerializeField] private int _maxChainLinks;
@@ -24,7 +23,6 @@ public class EffectData : Data
     public float Duration => _duration;
     public float KnockBackForce => _knockBackForce;
     public float LifeStealAmount => _lifeStealAmount;
-    public float FinishingThreshold => _finishingThreshold;
     public int MaxStacks => _maxStacks;
     public float IncreasedAttackSpeedCoefficient => _increasedAttackSpeedCoefficient;
     public int MaxChainLinks => _maxChainLinks;

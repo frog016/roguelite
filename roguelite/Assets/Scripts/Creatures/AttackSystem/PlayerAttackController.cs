@@ -6,7 +6,7 @@ public class PlayerAttackController : MonoBehaviour
 
     private void Start()
     {
-        _weapon = GetComponentInChildren<Weapon>().CurrentWeapon;
+        _weapon = GetComponentInChildren<Weapon>() as IWeapon;
     }
 
     private void Update()
@@ -20,8 +20,8 @@ public class PlayerAttackController : MonoBehaviour
     private void HandleKeyboardInput()
     {
         if (Mathf.Abs(Input.GetAxis("Fire1")) > 1e-12)
-            _weapon.Attack();
+            _weapon.Attack((_weapon as Weapon)?.AttackTypes[0]);
         if (Mathf.Abs(Input.GetAxis("Fire2")) > 1e-12)
-            _weapon.AlternateAttack();
+            _weapon.Attack((_weapon as Weapon)?.AttackTypes[1]);
     }
 }

@@ -14,31 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list:
     _list:
-    - _name: Dual Katanas
-      _weaponType: 0
-      _firstAttackData:
-        _name: 
-        _damage: 1
-        _attackSpeed: 1
-        _attackRadius: 1
-        _attackAngleDegrees: 180
-      _secondAttackData:
-        _name: 
-        _damage: 1
-        _attackSpeed: 1
-        _attackRadius: 1
-        _attackAngleDegrees: 180
-    - _name: Enemy Weapon
-      _weaponType: 2
-      _firstAttackData:
-        _name: 
-        _damage: 1
-        _attackSpeed: 1
-        _attackRadius: 0.5
-        _attackAngleDegrees: 180
-      _secondAttackData:
-        _name: 
-        _damage: 1
-        _attackSpeed: 0.5
-        _attackRadius: 1
-        _attackAngleDegrees: 180
+    - _weaponType: 0
+      _attackTypes: 0000000001000000
+    - _weaponType: 2
+      _attackTypes: 00000000
+    - _weaponType: 2
+      _attackTypes: 02000000030000000400000005000000060000000700000008000000

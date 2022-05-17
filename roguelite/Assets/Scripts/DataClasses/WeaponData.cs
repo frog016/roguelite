@@ -1,25 +1,17 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
 public class WeaponData : Data
 {
     [SerializeField] private WeaponType _weaponType;
-    [SerializeField] private AttackData _firstAttackData;
-    [SerializeField] private AttackData _secondAttackData;
+    [SerializeField] private List<AttackType> _attackTypes;
 
-    public AttackData FirstAttackData => _firstAttackData;
-    public AttackData SecondAttackData => _secondAttackData;
+    public List<AttackType> AttackTypes => _attackTypes;
 
     public override Enum GetDataType()
     {
         return _weaponType;
     }
-}
-
-public enum WeaponType
-{
-    DualKatanas,
-    TwoHandedTati,
-    EnemyWeapon
 }

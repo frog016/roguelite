@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40a7002a6297374194ecd296c223449, type: 3}
+  m_Name: Attacks
+  m_EditorClassIdentifier: 
+  _list:
+    _list:
+    - _attackType: 0
+      _damage: 1
+      _attackSpeed: 1
+      _attackRadius: 1
+      _attackAngleDegrees: 180
+    - _attackType: 1
+      _damage: 1
+      _attackSpeed: 1
+      _attackRadius: 1
+      _attackAngleDegrees: 360
+    - _attackType: 2
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 3
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 4
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 5
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 6
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 7
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0
+    - _attackType: 8
+      _damage: 0
+      _attackSpeed: 0
+      _attackRadius: 0
+      _attackAngleDegrees: 0

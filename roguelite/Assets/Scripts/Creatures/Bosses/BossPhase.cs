@@ -26,8 +26,8 @@ public class BossPhase
 
     private void RefreshQueue()
     {
-        foreach (var attack in ActiveAttacks)
-            (attack as Attack)?.OnAttackReady.AddListener(() => ReplaceAttack(attack));
+        //foreach (var attack in ActiveAttacks)
+            //(attack as Attack)?.OnAttackReady.AddListener(() => ReplaceAttack(attack));
     }
 
     private void ReplaceAttack(IAttack attack)

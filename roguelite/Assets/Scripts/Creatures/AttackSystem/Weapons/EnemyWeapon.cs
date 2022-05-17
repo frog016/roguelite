@@ -1,29 +1,14 @@
-using UnityEngine.Events;
+using System;
 
-public class EnemyWeapon : IWeapon
+public class EnemyWeapon : Weapon, IWeapon
 {
-    public UnityEvent<AttackEventArgs> OnAttackEvent { get; set; }
-
-    private IAttack _firstAttack;
-    private IAttack _secondAttack;
-
-    public EnemyWeapon(WeaponData data, TargetsFinder targetsFinder)
+    public void Attack(Type attackType)
     {
-        _firstAttack = new CommonAttack(data.FirstAttackData, targetsFinder);
-        _secondAttack = new CircleAttack(data.SecondAttackData, targetsFinder);
-        OnAttackEvent = new UnityEvent<AttackEventArgs>();
-    }
-
-    public void Attack()
-    {
-        if (!_firstAttack.IsReady())
+        var currentAttack = _attacks[TypeConvertor.ConvertTypeToEnum(attackType)];
+        if (!currentAttack.IsReady())
             return;
 
-        OnAttackEvent.Invoke(new AttackEventArgs(_firstAttack, _firstAttack.Attack()));
-    }
-
-    public void AlternateAttack()
-    {
-        return;
+        var targets = currentAttack.Attack();
+        ActivateEffects(new AttackEventArgs(currentAttack, targets));
     }
 }

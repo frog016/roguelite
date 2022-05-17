@@ -16,7 +16,7 @@ public class EnemyMoveController : MoveController
 
     private void Start()
     {
-        _radius = GetComponentInChildren<Weapon>().Data.FirstAttackData.AttackRadius;
+        _radius = GetComponentInChildren<Weapon>().MinimalAttackDistance;
         InitializeAgent();
     }
 
@@ -52,7 +52,7 @@ public class EnemyMoveController : MoveController
     {
         if (Mathf.Abs(Vector2.Distance(_target.transform.position, transform.position)) < _radius)
         {
-            _stateHandler.SetState(new AttackState(this, _target.gameObject));
+            _stateHandler.SetState(new AttackState(this));
             return;
         }
 

@@ -3,16 +3,14 @@ using UnityEngine;
 public class AttackState : IState
 {
     private readonly Weapon _owner;
-    private readonly GameObject _target;
 
-    public AttackState(MoveController owner, GameObject target)
+    public AttackState(MoveController owner)
     {
         _owner = owner.GetComponentInChildren<Weapon>();
-        _target = target;
     }
 
     public void Execute()
     {
-        _owner.CurrentWeapon.Attack();
+        (_owner as IWeapon)?.Attack(_owner.AttackTypes[0]);
     }
 }

@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class Gasadokuro : Creature
+public class Gasadokuro : Boss
 {
     
 }

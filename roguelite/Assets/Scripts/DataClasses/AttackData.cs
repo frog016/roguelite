@@ -4,6 +4,7 @@ using UnityEngine;
 [Serializable]
 public class AttackData : Data
 {
+    [SerializeField] private AttackType _attackType;
     [SerializeField] private float _damage;
     [SerializeField] private float _attackSpeed;
     [SerializeField] private float _attackRadius;
@@ -24,6 +25,6 @@ public class AttackData : Data
 
     public override Enum GetDataType()
     {
-        return default;
+        return _attackType;
     }
 }

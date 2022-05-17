@@ -3676,3 +3676,2569 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2758.314402 seconds.
+  path: Assets/Scripts/Creatures/Bosses
+  artifactKey: Guid(b63e27eae79cd934bb597b83832b946f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses using Guid(b63e27eae79cd934bb597b83832b946f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e64089b11dd3d96b8310e9789d0c47') in 0.012401 seconds 
+  Import took 0.016762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.640065 seconds.
+  path: Assets/Scripts/Creatures/Bosses/BossPhase.cs
+  artifactKey: Guid(f6254fd6181442642b972d8746797db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/BossPhase.cs using Guid(f6254fd6181442642b972d8746797db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce8dc15a87e02e99fdde159d19f8621') in 0.005548 seconds 
+  Import took 0.008823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.275274 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro
+  artifactKey: Guid(6859f7be7cc15e74d969ec10ff1ccb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro using Guid(6859f7be7cc15e74d969ec10ff1ccb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df0116f20b42cef36a68dc80881427d') in 0.005884 seconds 
+  Import took 0.009133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.468374 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Boss.cs
+  artifactKey: Guid(c9b1cdc60bcb82341b4ec5f3ef3fec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Boss.cs using Guid(c9b1cdc60bcb82341b4ec5f3ef3fec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3168d54c5b17b4e002cfd02279f7b3') in 0.010572 seconds 
+  Import took 0.015676 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002725 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF3D33020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC525780 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3686290 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA679010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA679010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDD22D0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0080070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1092F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EEC190 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39218B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF33E4020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDDC020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF3FF30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1A30B30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF394C180 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1350ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1175ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (431ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2735.
+Total: 3.646500 ms (FindLiveObjects: 0.230600 ms CreateObjectMapping: 0.108600 ms MarkObjects: 3.285100 ms  DeleteObjects: 0.020600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 28.132740 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Boss.cs
+  artifactKey: Guid(c9b1cdc60bcb82341b4ec5f3ef3fec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Boss.cs using Guid(c9b1cdc60bcb82341b4ec5f3ef3fec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f14db6f12a241ffb3662b6b3ce722cc') in 0.007505 seconds 
+  Import took 0.013149 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002963 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF9C8C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3682F60 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA679010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4784030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF181370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA679010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDD30E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0080070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EEC190 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39818E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3957080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEFB4E00 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39C2E30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9550E60 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F83020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4784030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.079 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (332ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2738.
+Total: 3.219900 ms (FindLiveObjects: 0.205800 ms CreateObjectMapping: 0.094200 ms MarkObjects: 2.901200 ms  DeleteObjects: 0.017700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1428.519891 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/Attacks
+  artifactKey: Guid(2911668ef1ff4844099d0e7749d74c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/Attacks using Guid(2911668ef1ff4844099d0e7749d74c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9948598fb414cf4e2ca676b27d857c') in 0.008975 seconds 
+  Import took 0.012356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.275662 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/Gasadokuro.cs
+  artifactKey: Guid(d86acddeff49e1a4582d8f3f5430de8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/Gasadokuro.cs using Guid(d86acddeff49e1a4582d8f3f5430de8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b0b08e64c16e0117fc7c6a071830eb') in 0.002437 seconds 
+  Import took 0.005733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.912351 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc83747bcdeeb3d4dbd7edf78175d961') in 0.006719 seconds 
+  Import took 0.009914 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002750 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF4122010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDEFC100 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF367A6E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF4ACD0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3ECD050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4784030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF4ACD0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDDA160 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF31F80B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EEC190 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF397B2B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3404060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2D540C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2227E80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39C8880 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDC5D810 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4784030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.233 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1233ms)
+		BeginReloadAssembly (259ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (917ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (319ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.9 MB.
+System memory in use after: 97.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2742.
+Total: 4.226500 ms (FindLiveObjects: 0.312200 ms CreateObjectMapping: 0.124500 ms MarkObjects: 3.761100 ms  DeleteObjects: 0.027500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002746 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB3E150 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF367C900 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE15C020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF41AC6A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF181370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF41AC6A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE15C020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDD8540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF41AC6A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF419C6E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4679030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC39E030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE92FAB70 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44A8AB0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EA7BE0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED761010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF41AC6A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED761010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED761010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.267 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1268ms)
+		BeginReloadAssembly (279ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (150ms)
+		EndReloadAssembly (930ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (340ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (342ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2744.
+Total: 3.249300 ms (FindLiveObjects: 0.240400 ms CreateObjectMapping: 0.108100 ms MarkObjects: 2.842700 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003517 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF47BA010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4A20CF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF368EB10 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF4ACD0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2B04030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF4ACD0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF234A6C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF4ACD0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF412CAB0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED761010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE92FD7B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44A5480 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA66B170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECE91030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECE91030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF116F070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECE91030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.175 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1002ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (349ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2748.
+Total: 2.981400 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.095200 ms MarkObjects: 2.663600 ms  DeleteObjects: 0.019000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 47.386400 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f29b0bac7dee516978330467d0df3f') in 0.008132 seconds 
+  Import took 0.011827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.720217 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26da77f4a35d6685b42d20e2034033c') in 0.004171 seconds 
+  Import took 0.008521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.947884 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989a122d2da7e60520ba4150064d094c') in 0.002618 seconds 
+  Import took 0.006716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.744091 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a162252b1cc834119cab0022897c337') in 0.004005 seconds 
+  Import took 0.007992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.527791 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bad4c5cc1df63214079567440f0fff') in 0.004188 seconds 
+  Import took 0.009167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 326.166272 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ed6b93e64a34905582d35b17cf0074') in 0.004625 seconds 
+  Import took 0.008179 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002680 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF234E080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF10D300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3690D30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B61020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF10D300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF181370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECAAC0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B7D370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF10D300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF412CAB0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4217BE0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECE91030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9307290 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44B3F50 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE45283C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF428D900 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF10D300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.089 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1090ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (912ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2751.
+Total: 3.625400 ms (FindLiveObjects: 0.221100 ms CreateObjectMapping: 0.109400 ms MarkObjects: 3.270700 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002736 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0F8D510 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF31BC080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E9E30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3909020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF31BC080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECC6E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF31BC080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4D66060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B9D3A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4CB7950 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44B6370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2F309E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B9D3A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4A1D260 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B9D3A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4A25C70 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.275 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1275ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1101ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (463ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (374ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.0 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2753.
+Total: 3.015100 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.095300 ms MarkObjects: 2.685900 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003738 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB7F160 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15F9E20 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC877420 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3909020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF181370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE735170 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EB7030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECAAC0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECA4C030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4D6C690 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ED8050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF517B7B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE97E7010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44B0920 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4528570 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4694070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.320 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1320ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1149ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.9 MB.
+System memory in use after: 97.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2757.
+Total: 3.831800 ms (FindLiveObjects: 0.216400 ms CreateObjectMapping: 0.101200 ms MarkObjects: 3.492200 ms  DeleteObjects: 0.020700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 178.911485 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a575e64e8e7d2b960d4e02dfda59e6cc') in 0.008863 seconds 
+  Import took 0.014342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.992174 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8153ca8c3bdd105e85b674ee225772') in 0.003892 seconds 
+  Import took 0.007395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.524910 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc58e6c34f335e18fdb3fac911e5eab') in 0.003853 seconds 
+  Import took 0.007307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.888529 seconds.
+  path: Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs
+  artifactKey: Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Bosses/Gasadokuro/GasadokuroWeapon.cs using Guid(35308976edad40c459e2d0c020f20d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75e0568b3917cd282653500463c83c4') in 0.004155 seconds 
+  Import took 0.008087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1515.867744 seconds.
+  path: Assets/Scripts/DataClasses/AttackData.cs
+  artifactKey: Guid(db6d6bcacea040b4380e0fcb106bb9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DataClasses/AttackData.cs using Guid(db6d6bcacea040b4380e0fcb106bb9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af54897ef5b22a841afc8d7c186cea71') in 0.006706 seconds 
+  Import took 0.010703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.458827 seconds.
+  path: Assets/Scripts/DataClasses/AttackType.cs
+  artifactKey: Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DataClasses/AttackType.cs using Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0db17c737536f5d4c92b83aa495b11') in 0.011237 seconds 
+  Import took 0.017938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.462794 seconds.
+  path: Assets/Scripts/Creatures/AttackSystem/Attack/Attack.cs
+  artifactKey: Guid(1ac3548fcffcbd64495f3f20d488f5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/AttackSystem/Attack/Attack.cs using Guid(1ac3548fcffcbd64495f3f20d488f5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37b55db5d3ba838a967394c4c6a6ef4') in 0.012356 seconds 
+  Import took 0.016983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.927222 seconds.
+  path: Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs
+  artifactKey: Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs using Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991a36b1f142c0c941755c8153664141') in 0.003616 seconds 
+  Import took 0.009088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.438382 seconds.
+  path: Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs
+  artifactKey: Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs using Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b598e5fe0ef6a38b2a58260c0de9dc7f') in 0.003926 seconds 
+  Import took 0.007195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.027523 seconds.
+  path: Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs
+  artifactKey: Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/AttackSystem/Attack/AttackType.cs using Guid(d289a85a45973354a8e4d3cdbc10c373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9607476771a97f1296ae44e2370ff8a') in 0.002942 seconds 
+  Import took 0.007498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.978096 seconds.
+  path: Assets/Scripts/Factories
+  artifactKey: Guid(e9add253d15ff734083532159ed29ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Factories using Guid(e9add253d15ff734083532159ed29ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c579e60c2150ffb277e5f29d063795') in 0.007010 seconds 
+  Import took 0.010355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.721424 seconds.
+  path: Assets/Scripts/Factories/Attacks.cs
+  artifactKey: Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Factories/Attacks.cs using Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62298e7473ab219f57e984f840216034') in 0.003652 seconds 
+  Import took 0.007913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.980759 seconds.
+  path: Assets/Scripts/Factories/AttacksFactory.cs
+  artifactKey: Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Factories/AttacksFactory.cs using Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6907d0df51eba1e3096479c9d70364') in 0.009469 seconds 
+  Import took 0.013681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.312459 seconds.
+  path: Assets/Scripts/Factories/AttacksFactory.cs
+  artifactKey: Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Factories/AttacksFactory.cs using Guid(3f70390b14fd1944199cec7031afadbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aec855ab0060b0ec527aca8d4073fe7') in 0.004501 seconds 
+  Import took 0.008577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.211265 seconds.
+  path: Assets/Scripts/Database
+  artifactKey: Guid(277ff6eb5ec69f3428e74bcf830e947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Database using Guid(277ff6eb5ec69f3428e74bcf830e947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a3ee9ee8b0e74a369fc1564f3411b6') in 0.006322 seconds 
+  Import took 0.009535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.716673 seconds.
+  path: Assets/Scripts/Database/MutableDatabases/AttacksDatabase.cs
+  artifactKey: Guid(a40a7002a6297374194ecd296c223449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Database/MutableDatabases/AttacksDatabase.cs using Guid(a40a7002a6297374194ecd296c223449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efde6aa7b0efd6d08b96756b4cf5fd14') in 0.011447 seconds 
+  Import took 0.016645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.559993 seconds.
+  path: Assets/Scripts/Database/MutableDatabases/AttacksDatabase.cs
+  artifactKey: Guid(a40a7002a6297374194ecd296c223449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Database/MutableDatabases/AttacksDatabase.cs using Guid(a40a7002a6297374194ecd296c223449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e66cdba4569ef27fa216ea2a14dfb8') in 0.002119 seconds 
+  Import took 0.005449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2568.697218 seconds.
+  path: Assets/Scripts/Creatures/Mobs/EnemyAttackController.cs
+  artifactKey: Guid(fc33ca9f9c879244bbc4b8b6d1b60f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Creatures/Mobs/EnemyAttackController.cs using Guid(fc33ca9f9c879244bbc4b8b6d1b60f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb73f9e092eafbe07f4fd03664cb1fb1') in 0.006070 seconds 
+  Import took 0.010377 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002860 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DE96B5020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4A1F080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3691E40 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC7CF030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC701030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4B61020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EB7030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECD4F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0BD6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEFFEE540 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4D66060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9097050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF517ACA0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F38020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF22325C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF44BE1E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDEFEE10 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC701030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4694070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE286710 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1104ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (907ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (334ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.1 MB.
+System memory in use after: 97.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2762.
+Total: 3.388700 ms (FindLiveObjects: 0.208800 ms CreateObjectMapping: 0.097600 ms MarkObjects: 3.020500 ms  DeleteObjects: 0.060900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 297.538508 seconds.
+  path: Assets/Resources/Attacks.asset
+  artifactKey: Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Attacks.asset using Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468065878df9e35b4604b5c308b37f41') in 0.083159 seconds 
+  Import took 0.087181 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002700 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED722440 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E37D0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDCC010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3C3B050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE9837090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1715030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECC6E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF38F9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5188020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED4466C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF517E3F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39C5250 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE25BBB0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF9B010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (992ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (366ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2765.
+Total: 3.212800 ms (FindLiveObjects: 0.201400 ms CreateObjectMapping: 0.090400 ms MarkObjects: 2.868300 ms  DeleteObjects: 0.051700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002977 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2057420 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E7C10 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDCC010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3C3B050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1715030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EC8090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF38F9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5188020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED4466C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5182650 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE3700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA214D00 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.099 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (919ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2768.
+Total: 3.494800 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.089900 ms MarkObjects: 3.104500 ms  DeleteObjects: 0.092500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002677 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE2472F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15EAF40 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDCC010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3C3B050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4209890 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1715030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECE300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5188020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED440090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF51868B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE9150 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF01FB160 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3226580 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.106 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1107ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2771.
+Total: 3.146400 ms (FindLiveObjects: 0.213800 ms CreateObjectMapping: 0.099400 ms MarkObjects: 2.810300 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003090 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED48B8E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15ED160 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEDCC010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3C3B050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4A17020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ED4570 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5188020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED4444B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4227BF0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDB578E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE3700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1680D10 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF473F970 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1842030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDF9B010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.1 MB.
+System memory in use after: 97.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2774.
+Total: 3.090500 ms (FindLiveObjects: 0.222300 ms CreateObjectMapping: 0.099300 ms MarkObjects: 2.726300 ms  DeleteObjects: 0.041600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 292.999110 seconds.
+  path: Assets/Resources/Attacks.asset
+  artifactKey: Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Attacks.asset using Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28205c2bbc9e1fe10a5dede34cbc85d7') in 0.018715 seconds 
+  Import took 0.022499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.732190 seconds.
+  path: Assets/Scripts/DataClasses/WeaponType.cs
+  artifactKey: Guid(3ab8d0489c5e75a429d99035beff186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DataClasses/WeaponType.cs using Guid(3ab8d0489c5e75a429d99035beff186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629a87955225ce431e0d92a0a95a71d2') in 0.008936 seconds 
+  Import took 0.013326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.329777 seconds.
+  path: Assets/Scripts/DataClasses/WeaponType.cs
+  artifactKey: Guid(3ab8d0489c5e75a429d99035beff186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DataClasses/WeaponType.cs using Guid(3ab8d0489c5e75a429d99035beff186d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e3a9e74bbdc91906a70bb223fa3bad') in 0.004442 seconds 
+  Import took 0.011631 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002711 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8CD68F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E48E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8BB3060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA1E3010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECD4F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5728020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC5CDCE0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEF7E080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0460CE0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE6D30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE20A300 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF473F970 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECE91030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1122ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (934ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.1 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2778.
+Total: 3.743400 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.118900 ms MarkObjects: 3.292100 ms  DeleteObjects: 0.063900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002841 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE7A9E40 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15EC050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8BB3060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF39AF370 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4DA4050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA557020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECAAC0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0CDC0E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5728020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EA5000 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECBAB050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDB53680 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3F02090 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE24F0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF1013730 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF473F970 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC39E030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.115 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1116ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (904ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.1 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2781.
+Total: 3.683800 ms (FindLiveObjects: 0.206600 ms CreateObjectMapping: 0.103600 ms MarkObjects: 3.310000 ms  DeleteObjects: 0.062700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 174.641558 seconds.
+  path: Assets/Resources/WeaponsDatabase.asset
+  artifactKey: Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WeaponsDatabase.asset using Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd2ddbb1968ab72da69bde743a3153e') in 0.019489 seconds 
+  Import took 0.022938 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002688 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF19AA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEEB7B120 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E8D20 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8BB3060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4462990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA1E3010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECAAC0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ED8050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5728020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EA7210 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED1BA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0464430 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EE5B20 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4F1A070 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF473F970 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC39E030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.111 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1111ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (925ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (340ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (334ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2784.
+Total: 3.107200 ms (FindLiveObjects: 0.206600 ms CreateObjectMapping: 0.088800 ms MarkObjects: 2.756300 ms  DeleteObjects: 0.054600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002776 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000013DF12A1010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB85F10 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECB760E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF15E04A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEECEE0A0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF3175050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE48B9010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8BB3060 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8D21050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE95CF010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEC68F030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEA1E3010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4AF6030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED707700 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE93CFC30 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ECC6E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4E971B0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF0048040 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED0F0080 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2ED8050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF5728020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEE6E1B80 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2EB3E70 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Examples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DECBAB050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDB578E0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DED3CE030 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF2E88020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF4EED990 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEDFF8350 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DF473F970 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4ABA020 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DEF1CD3C0 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8A68460 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE8D21050 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000013DE4C27010 doesn't match image D:\2rd course game\roguelite\roguelite\Library\ScriptAssemblies\Edgar.Unity.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1084ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (904ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2787.
+Total: 3.979800 ms (FindLiveObjects: 0.238300 ms CreateObjectMapping: 0.112600 ms MarkObjects: 3.601300 ms  DeleteObjects: 0.026200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 897.922473 seconds.
+  path: Assets/Resources/WeaponsDatabase.asset
+  artifactKey: Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/WeaponsDatabase.asset using Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd12fab58afbfa604754222b0329515') in 0.017704 seconds 
+  Import took 0.022074 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

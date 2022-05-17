@@ -17,15 +17,11 @@ MonoBehaviour:
     x: 0
     y: 43
     width: 1920
-    height: 1007
+    height: 991
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
-<<<<<<< HEAD
-  m_MinSize: {x: 875, y: 300}
-=======
   m_MinSize: {x: 875, y: 542}
->>>>>>> weapon-effects
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -49,7 +45,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
-    height: 1007
+    height: 991
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -97,7 +93,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 987
+    y: 971
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -122,11 +118,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1920
-    height: 957
-  m_MinSize: {x: 676, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+    height: 941
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 67
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1474
-    height: 957
-  m_MinSize: {x: 401, y: 492}
+    width: 1475
+    height: 941
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 140
+  controlID: 68
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,12 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1474
-    height: 621
-  m_MinSize: {x: 401, y: 221}
-  m_MaxSize: {x: 8001, y: 4021}
+    width: 1475
+    height: 609
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 141
+  controlID: 69
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,9 +191,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 241
-    height: 621
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 609
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -213,33 +209,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 241
     y: 0
-<<<<<<< HEAD
     width: 1234
     height: 609
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
-=======
-    width: 1233
-    height: 621
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
->>>>>>> weapon-effects
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,21 +244,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 609
     width: 1475
     height: 332
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
-=======
-    y: 621
-    width: 1474
-    height: 336
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
->>>>>>> weapon-effects
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
@@ -292,17 +271,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1474
+    x: 1475
     y: 0
-<<<<<<< HEAD
     width: 445
     height: 941
-=======
-    width: 446
-    height: 957
->>>>>>> weapon-effects
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -357,8 +331,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 241
     y: 73
-    width: 1231
-    height: 600
+    width: 1232
+    height: 588
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -371,15 +345,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: -0.886909, y: -0.024279464, z: -6.010695}
+    m_Target: {x: 1.0195779, y: -0.44227648, z: -6.8068776}
     speed: 2
-    m_Value: {x: -0.886909, y: -0.024279464, z: -6.010695}
-=======
-    m_Target: {x: -0.3009267, y: 0.25930327, z: 54.708546}
-    speed: 2
-    m_Value: {x: -0.3009267, y: 0.25930327, z: 54.708546}
->>>>>>> weapon-effects
+    m_Value: {x: 1.0195779, y: -0.44227648, z: -6.8068776}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -430,15 +398,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 4.105083
+    m_Target: 4.912434
     speed: 2
-    m_Value: 4.105083
-=======
-    m_Target: 7.4291253
-    speed: 2
-    m_Value: 7.4291253
->>>>>>> weapon-effects
+    m_Value: 4.912434
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -486,18 +448,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 240
-    height: 600
+    height: 588
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 624c0000
       m_LastClickedID: 0
-<<<<<<< HEAD
-      m_ExpandedIDs: c2faffff
-=======
-      m_ExpandedIDs: 12ddfeff26ddfeff4641ffffd644ffffea44ffffb247ffff1054ffff2454ffff6c5affff805affff2066ffff3466ffff8269ffff9669ffffc66cffffda6cffff5e71ffff7271ffff6078ffff7478ffff4e7cffff627cffff6e99ffff8299ffff26a3ffff3aa3ffffc8a9ffffdca9ffffb6acffffcaacffff9eb6ffffb2b6ffffa8c8ffffbcc8ffff4ecbffff62cbffff00ceffff14ceffff7cd4ffff90d4ffff58d8ffff6cd8ffffd6dcffffeadcffffc2f1ffffd6f1ffff3afbffff564500007c45000028460000
->>>>>>> weapon-effects
+      m_ExpandedIDs: 98deffffb0deffffdae7ffffe2e7ffff02e8ffff0ae8ffff60e8ffff64f9ffff1afbffffbe4b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -513,7 +471,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -541,17 +499,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 247
-    y: 81
-    width: 1222
-    height: 578
-=======
     x: 241
     y: 73
-    width: 1231
-    height: 600
->>>>>>> weapon-effects
+    width: 1232
+    height: 588
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -559,11 +510,7 @@ MonoBehaviour:
   m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
-  m_TargetSize: {x: 1222, y: 557}
-=======
-  m_TargetSize: {x: 1231, y: 579}
->>>>>>> weapon-effects
+  m_TargetSize: {x: 1232, y: 567}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -578,17 +525,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-    m_HBaseRangeMin: -611
-    m_HBaseRangeMax: 611
-    m_VBaseRangeMin: -278.5
-    m_VBaseRangeMax: 278.5
-=======
-    m_HBaseRangeMin: -615.5
-    m_HBaseRangeMax: 615.5
-    m_VBaseRangeMin: -289.5
-    m_VBaseRangeMax: 289.5
->>>>>>> weapon-effects
+    m_HBaseRangeMin: -616
+    m_HBaseRangeMax: 616
+    m_VBaseRangeMin: -283.5
+    m_VBaseRangeMax: 283.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -597,7 +537,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -606,40 +546,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-      width: 1222
-      height: 557
+      width: 1232
+      height: 567
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 611, y: 278.5}
-=======
-      width: 1231
-      height: 579
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 615.5, y: 289.5}
->>>>>>> weapon-effects
+    m_Translation: {x: 616, y: 283.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-      x: -611
-      y: -278.5
-      width: 1222
-      height: 557
+      x: -616
+      y: -283.5
+      width: 1232
+      height: 567
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1222, y: 578}
-=======
-      x: -615.5
-      y: -289.5
-      width: 1231
-      height: 579
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1231, y: 600}
->>>>>>> weapon-effects
+  m_LastWindowPixelSize: {x: 1232, y: 588}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -753,9 +676,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 694
-    width: 1473
-    height: 315
+    y: 682
+    width: 1474
+    height: 311
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -770,37 +693,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/Scripts/Creatures/AttackSystem/Weapons/Effects
-=======
     - Assets/Resources
->>>>>>> weapon-effects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/Scripts/Creatures/AttackSystem/Weapons/Effects
-=======
   - Assets/Resources
->>>>>>> weapon-effects
   m_LastFoldersGridSize: 62
-  m_LastProjectPath: C:\Users\Alex\Documents\GitHub\roguelite\roguelite
+  m_LastProjectPath: D:\2rd course game\roguelite\roguelite
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 34480000
-    m_LastClickedID: 18484
-    m_ExpandedIDs: 00000000c2470000c4470000c6470000c8470000ca470000cc470000ce470000d0470000d2470000d4470000d6470000d8470000da470000dc470000de470000e0470000e2470000064800003048000000ca9a3b
-=======
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: fe470000
-    m_LastClickedID: 18430
-    m_ExpandedIDs: 00000000cc470000ce470000d0470000d2470000d4470000d6470000d8470000da470000dc470000de470000e0470000e2470000e4470000e6470000e8470000ea470000ec470000ee470000fc47000004480000
->>>>>>> weapon-effects
+    m_SelectedIDs: b24c0000
+    m_LastClickedID: 19634
+    m_ExpandedIDs: 000000004a4700004c4700004e47000050470000524700005447000056470000584700005a4700005c4700005e47000060470000624700006447000066470000684700006a470000b84c0000ba4c0000c24c0000d24c0000365f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -828,11 +736,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000c2470000c4470000c6470000c8470000ca470000cc470000ce470000d0470000d2470000d4470000d6470000d8470000da470000dc470000de470000e0470000e2470000
-=======
-    m_ExpandedIDs: 00000000cc470000ce470000d0470000d2470000d4470000d6470000d8470000da470000dc470000de470000e0470000e2470000e4470000e6470000e8470000ea470000ec470000ee470000
->>>>>>> weapon-effects
+    m_ExpandedIDs: 000000004a4700004c4700004e47000050470000524700005447000056470000584700005a4700005c4700005e47000060470000624700006447000066470000684700006a470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -909,9 +813,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 694
-    width: 1473
-    height: 315
+    y: 682
+    width: 1474
+    height: 311
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
@@ -933,18 +837,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 690
-    width: 1462
-    height: 311
+    x: 0
+    y: 702
+    width: 1572
+    height: 291
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-<<<<<<< HEAD
-  m_LastSelectedObjectID: 38102
-=======
-  m_LastSelectedObjectID: -52830
->>>>>>> weapon-effects
+  m_LastSelectedObjectID: 19528
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -965,10 +865,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1474
+    x: 1475
     y: 73
-    width: 445
-    height: 936
+    width: 444
+    height: 920
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
