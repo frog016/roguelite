@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 6304618589418651930}
   - component: {fileID: -8072151262112379264}
   - component: {fileID: 2598043352439933471}
-  - component: {fileID: 3967037727901550301}
+  - component: {fileID: 4231945811535169794}
   - component: {fileID: 1366457714898295103}
+  - component: {fileID: 3967037727901550301}
   m_Layer: 0
   m_Name: SkeletonSamurai
   m_TagString: Untagged
@@ -113,6 +114,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26912992d2199f24ebb437801ede7951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4231945811535169794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304618589418651911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc0b6f54d72a6d44bc8c30464789748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1366457714898295103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304618589418651911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efb967ef4b0bde48888ccc3995e6d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!195 &3967037727901550301
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -135,18 +160,6 @@ NavMeshAgent:
   m_BaseOffset: 0.2
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1366457714898295103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6304618589418651911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4efb967ef4b0bde48888ccc3995e6d92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6304618590752870586
 GameObject:
   m_ObjectHideFlags: 0

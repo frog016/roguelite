@@ -53,7 +53,7 @@ public class Spawner : SingletonObject<Spawner>
             var creature = CreatureFactory.Instance.CreateObject(creatureObject, type);
             GlobalEventManager.Instance.OnEnemyDeathEvent.AddListener(() => SpawnedUnitsCount--);
             creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
-            creature.GetComponent<EnemyMoveController>().SetTarget(player);
+            creature.GetComponent<StateChanger>().SetTarget(player);
             MobsHpBarManager.AddCreature(creature);
         }
 

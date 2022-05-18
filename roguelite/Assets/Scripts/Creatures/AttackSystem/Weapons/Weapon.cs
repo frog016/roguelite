@@ -18,6 +18,11 @@ public class Weapon : MonoBehaviour
         CreateAttacks(data.AttackTypes);
     }
 
+    public bool IsReady(Enum attackType)
+    {
+        return _attacks[attackType].IsReady();
+    }
+
     protected void ActivateEffects(AttackEventArgs attackEventArgs)
     {
         var effects = _effects.Effects.ToList();
