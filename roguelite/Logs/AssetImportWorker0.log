@@ -1,118 +1,115 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 19043.1706; Version 2009; 64bit' Language: 'ru' Physical Memory: 16301 MB
+OS: 'Windows 10 Pro for Workstations; OS build 19044.1706; Version 2009; 64bit' Language: 'ru' Physical Memory: 7993 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2020.3.20f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/2rd course game/roguelite/roguelite
+C:/Users/Alex/Documents/GitHub/roguelite/roguelite
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54502
-Successfully changed project path to: D:/2rd course game/roguelite/roguelite
-D:/2rd course game/roguelite/roguelite
+53498
+Successfully changed project path to: C:/Users/Alex/Documents/GitHub/roguelite/roguelite
+C:/Users/Alex/Documents/GitHub/roguelite/roguelite
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 70.41 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
-[Subsystems] Discovering subsystems at path D:/Unity/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/2rd course game/roguelite/roguelite/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   27.21.14.5671
+    VRAM:     3962 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'D:/Unity/2020.3.20f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/Unity/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001630 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001498 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
+- Completed reload, in  3.834 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1142ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (3835ms)
+		BeginReloadAssembly (44ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (446ms)
-			LoadAssemblies (53ms)
+		EndReloadAssembly (384ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (156ms)
+			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (184ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (161ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (84ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				RefreshPlugins (47ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002734 seconds.
+Registered in 0.002695 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.216 seconds
+- Completed reload, in  1.086 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1217ms)
-		BeginReloadAssembly (151ms)
+	ReloadAssembly (1088ms)
+		BeginReloadAssembly (136ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1010ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (893ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (347ms)
+			SetupTypeCache (324ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (382ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (332ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (53ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
 Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2386 Unused Serialized files (Serialized files now loaded: 0)
@@ -120,7 +117,7 @@ System memory in use before: 102.5 MB.
 System memory in use after: 102.7 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2825.
-Total: 3.572400 ms (FindLiveObjects: 0.211100 ms CreateObjectMapping: 0.106500 ms MarkObjects: 3.184500 ms  DeleteObjects: 0.069200 ms)
+Total: 2.894700 ms (FindLiveObjects: 0.257100 ms CreateObjectMapping: 0.117000 ms MarkObjects: 2.460800 ms  DeleteObjects: 0.059000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,16 +131,328 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Attacks.asset
-  artifactKey: Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Attacks.asset using Guid(75f8e2cb74a01674cbf28dd3266de646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6961ada6cf0a85a1ca0086d659c76c') in 0.045732 seconds 
-  Import took 0.049246 seconds .
+  path: Assets/Scenes
+  artifactKey: Guid(97588e20a179f5f47a7f60af37a3a452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(97588e20a179f5f47a7f60af37a3a452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37414b81afc518ea068371d9119a7b8a') in 0.011001 seconds 
+  Import took 0.014863 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Resources/WeaponsDatabase.asset
-  artifactKey: Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/WeaponsDatabase.asset using Guid(67cf928e20874e145a3077a577176543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b2eacf486db1dc386cd9bbdcd3541a') in 0.007033 seconds 
-  Import took 0.010963 seconds .
+  Time since last request: 5.497189 seconds.
+  path: Assets/Scenes/Main menu.unity
+  artifactKey: Guid(8ca1e2362fd732c4f9d509f98ef045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main menu.unity using Guid(8ca1e2362fd732c4f9d509f98ef045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18278d36b2d8453dad848689ff86cef7') in 0.023129 seconds 
+  Import took 0.028067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 765.520414 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f0.png
+  artifactKey: Guid(84c68009aff1154488cfd74c964cc456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f0.png using Guid(84c68009aff1154488cfd74c964cc456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce3ded5bc1ccb64110afcdb4916d1c4') in 0.242141 seconds 
+  Import took 0.373161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f1.png
+  artifactKey: Guid(18fb2d4aee74dfb47beda8d829bf954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f1.png using Guid(18fb2d4aee74dfb47beda8d829bf954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c3d87bdaf371bfa9db9fd185f5367d') in 0.028917 seconds 
+  Import took 0.034288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Edgar/Examples/TestIsometricDungeon/Sprites/isometric/stone.png
+  artifactKey: Guid(e1843028c0509ab45ad22821bff5c188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/TestIsometricDungeon/Sprites/isometric/stone.png using Guid(e1843028c0509ab45ad22821bff5c188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e680b45233f919d5ea45b7590852b2e5') in 0.025917 seconds 
+  Import took 0.035225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000970 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/weapons/weapon_anime_sword.png
+  artifactKey: Guid(af4cf11b0abbf2e4ea51a319ffe90ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/weapons/weapon_anime_sword.png using Guid(af4cf11b0abbf2e4ea51a319ffe90ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73d1e020cc15289cff5bb050d91c5b0') in 0.029837 seconds 
+  Import took 0.037285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f3.png
+  artifactKey: Guid(fa4045eed1b615648906ce7f4b3e8edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f3.png using Guid(fa4045eed1b615648906ce7f4b3e8edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c53512a21f16fb5eb910de8f31e53ec3') in 0.030103 seconds 
+  Import took 0.038336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f2.png
+  artifactKey: Guid(ad94ab32b5dc7864c9567f5930e6b3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_run_anim_f2.png using Guid(ad94ab32b5dc7864c9567f5930e6b3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680ec64bf93952fc43d62d666fe1f46a') in 0.037527 seconds 
+  Import took 0.044495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 600.649686 seconds.
+  path: Assets/Scenes/Main menu settings.unity
+  artifactKey: Guid(c0bdf1bf113e4c34eb2f918d8cc42802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main menu settings.unity using Guid(c0bdf1bf113e4c34eb2f918d8cc42802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd7c13edd8194322e0ba0a0e2718ef8') in 0.026003 seconds 
+  Import took 0.036835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.425863 seconds.
+  path: Assets/Scenes/Main menu.unity
+  artifactKey: Guid(8ca1e2362fd732c4f9d509f98ef045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main menu.unity using Guid(8ca1e2362fd732c4f9d509f98ef045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b19bb0a96c5782a13c70c46b0357e0') in 0.009818 seconds 
+  Import took 0.014996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 671.442738 seconds.
+  path: Assets/Edgar
+  artifactKey: Guid(da07142b2a41b0c45ac5b690caa0c0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar using Guid(da07142b2a41b0c45ac5b690caa0c0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f2a83d4e81d088616437e1cc22880e') in 0.012560 seconds 
+  Import took 0.041590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.178812 seconds.
+  path: Assets/Edgar/Examples
+  artifactKey: Guid(a5c7e84a569e5e947be2fffbd01a5d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples using Guid(a5c7e84a569e5e947be2fffbd01a5d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d8c858e95dec9ba7ab20eba1a1c7ac') in 0.007467 seconds 
+  Import took 0.017599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050841 seconds.
+  path: Assets/Edgar/Examples/Edgar.Unity.Examples.asmdef
+  artifactKey: Guid(0b514a9a754ce1e4ca7341dab798555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Edgar.Unity.Examples.asmdef using Guid(0b514a9a754ce1e4ca7341dab798555d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293defc749aee022e2f0ac5cbc7bf5de') in 0.021597 seconds 
+  Import took 0.025332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.080408 seconds.
+  path: Assets/Edgar/Examples/TestIsometricDungeon
+  artifactKey: Guid(bcd98b45b98f7d445a55d4c93ee84c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/TestIsometricDungeon using Guid(bcd98b45b98f7d445a55d4c93ee84c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10317409556be545ed22b2082d22b071') in 0.011477 seconds 
+  Import took 0.017664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068207 seconds.
+  path: Assets/Edgar/Examples/TestIsometricDungeon/CustomTilemapLayersHandler.asset
+  artifactKey: Guid(e67365c7ffe666241aa47c6e43632a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/TestIsometricDungeon/CustomTilemapLayersHandler.asset using Guid(e67365c7ffe666241aa47c6e43632a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c1e798ac104cc1d1ba53feb6b30b6f') in 0.046361 seconds 
+  Import took 0.050400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.696853 seconds.
+  path: Assets/Edgar/Examples/TestIsometricDungeon/IsometricDungeon.unity
+  artifactKey: Guid(289d5fd15d4b0b74c8714776e424802f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/TestIsometricDungeon/IsometricDungeon.unity using Guid(289d5fd15d4b0b74c8714776e424802f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67914727c5c956121ef8e74cd759ac3') in 0.009281 seconds 
+  Import took 0.013730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 219.645478 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Example2/example2_tileset.png
+  artifactKey: Guid(512a3a5212bdfc048b89d9ef214b8cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Example2/example2_tileset.png using Guid(512a3a5212bdfc048b89d9ef214b8cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089c02713d766e6c21b0481bba4cc59c') in 1.272201 seconds 
+  Import took 1.285519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.518170 seconds.
+  path: Assets/Edgar/Examples/TestIsometricDungeon/Sprites/isometric/brickpavers2.png
+  artifactKey: Guid(8e677fb845b26ba45812b8bce01c3495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/TestIsometricDungeon/Sprites/isometric/brickpavers2.png using Guid(8e677fb845b26ba45812b8bce01c3495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3208932d5d1bf227736009a9cf3ae1') in 0.020733 seconds 
+  Import took 0.025157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Example1/example1_tileset.png
+  artifactKey: Guid(782602a5433e7b643ac15ba97e602c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Example1/example1_tileset.png using Guid(782602a5433e7b643ac15ba97e602c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7072e9643b9462321b7239819ae48ff') in 0.293933 seconds 
+  Import took 0.298668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f3.png
+  artifactKey: Guid(513bd9f8555cc3e40acf61e4ca70d8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f3.png using Guid(513bd9f8555cc3e40acf61e4ca70d8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcff854ad8ee60e630ae4ff78ca1cf8') in 0.029968 seconds 
+  Import took 0.033568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Sprites/Hp bar.png
+  artifactKey: Guid(35b5382a270052f4cb77d36c5942975d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hp bar.png using Guid(35b5382a270052f4cb77d36c5942975d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707e38d2bad7281fb477fcf42a5cc3c5') in 0.032407 seconds 
+  Import took 0.036422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f0.png
+  artifactKey: Guid(ae84db1b203207e43a50cdb606a4f489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f0.png using Guid(ae84db1b203207e43a50cdb606a4f489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0680844a72e69c62085c0c16b3b32faa') in 0.026904 seconds 
+  Import took 0.030860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f3.png
+  artifactKey: Guid(13bc99c5d69998e42bacd5e6a78ff573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f3.png using Guid(13bc99c5d69998e42bacd5e6a78ff573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1549e98b12a31251ba3e62a0315ba6c0') in 0.026368 seconds 
+  Import took 0.030139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f1.png
+  artifactKey: Guid(ec5eb3ee24dceae47b58f965e5d337e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f1.png using Guid(ec5eb3ee24dceae47b58f965e5d337e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94045e66d15531baefd20a0c320539a7') in 0.026906 seconds 
+  Import took 0.031025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f2.png
+  artifactKey: Guid(179334d6c9c17c247b247573dd1c8a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f2.png using Guid(179334d6c9c17c247b247573dd1c8a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c85b534fc0de265cd3d97de8016996') in 0.024099 seconds 
+  Import took 0.030715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f0.png
+  artifactKey: Guid(dc26c7179e9f252479151a5b6c2a1459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f0.png using Guid(dc26c7179e9f252479151a5b6c2a1459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978fcfc5b869dd0fcd85d027fa972c51') in 0.027462 seconds 
+  Import took 0.033328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f0.png
+  artifactKey: Guid(066f2d8aea4b254408f0d3be3a340137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f0.png using Guid(066f2d8aea4b254408f0d3be3a340137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc9d2a88fb5f47e514a273eefea49aa') in 0.021960 seconds 
+  Import took 0.026457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f3.png
+  artifactKey: Guid(3af0d0f0f7570694c95c273ab504ef0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f3.png using Guid(3af0d0f0f7570694c95c273ab504ef0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cc03f387d73d6cc0ff11e2a1770d1e') in 0.027171 seconds 
+  Import took 0.031483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f1.png
+  artifactKey: Guid(000edfb39ceebe545909ea197165bb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f1.png using Guid(000edfb39ceebe545909ea197165bb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3409bb49038904b957f0c5925ceb5d') in 0.034710 seconds 
+  Import took 0.040797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f2.png
+  artifactKey: Guid(a3a1a171e14ba3641b2cc543e663d03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f2.png using Guid(a3a1a171e14ba3641b2cc543e663d03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4ef9261982924c9117b6b2c4a64fb4') in 0.034468 seconds 
+  Import took 0.039652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f3.png
+  artifactKey: Guid(883cd9c5cac93ec4e94820b2fd548ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f3.png using Guid(883cd9c5cac93ec4e94820b2fd548ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29feb115a9a0020672102b35978b7259') in 0.036757 seconds 
+  Import took 0.043385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f0.png
+  artifactKey: Guid(4a52c2bc9e446704e87adeb96135cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f0.png using Guid(4a52c2bc9e446704e87adeb96135cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0ee3cb378e2c91b825f30aff245533') in 0.030968 seconds 
+  Import took 0.038532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f2.png
+  artifactKey: Guid(f2137f8ec1fab03479b9cb2dcbe8b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f2.png using Guid(f2137f8ec1fab03479b9cb2dcbe8b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59fd70d9b90db3b5bd9c8879b29411e') in 0.030979 seconds 
+  Import took 0.037049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f3.png
+  artifactKey: Guid(053778b72874c524f8b1e53bb827606d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f3.png using Guid(053778b72874c524f8b1e53bb827606d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466925e3efca708dfe287e4c36597aa7') in 0.036013 seconds 
+  Import took 0.042098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f1.png
+  artifactKey: Guid(72b0de6b3ac727a458ce664dfb551ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f1.png using Guid(72b0de6b3ac727a458ce664dfb551ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a523095b2a3d6328ede54141cb7c19') in 0.025451 seconds 
+  Import took 0.030930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f1.png
+  artifactKey: Guid(fe29444af972bfa42a861ba65a4fc491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_run_anim_f1.png using Guid(fe29444af972bfa42a861ba65a4fc491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b10cbd2ffe2e0fe2833add74c22cd0') in 0.030250 seconds 
+  Import took 0.034416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f0.png
+  artifactKey: Guid(421734e3ac65b044f9ec09de643cac91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/MaskedOrc/Sprites/masked_orc_idle_anim_f0.png using Guid(421734e3ac65b044f9ec09de643cac91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d60400da52e40dc28e6e3a00ebdbfb') in 0.029129 seconds 
+  Import took 0.034360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f2.png
+  artifactKey: Guid(6a7c4fa5e8ffe2c478701dadf43e44ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_run_anim_f2.png using Guid(6a7c4fa5e8ffe2c478701dadf43e44ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd191dcf7578bb0793f1bc06c0377eb03') in 0.025824 seconds 
+  Import took 0.030237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f1.png
+  artifactKey: Guid(5106094c8edff3a4bb33e3884f6d69f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_idle_anim_f1.png using Guid(5106094c8edff3a4bb33e3884f6d69f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f237794da94f5f75c37c61910d0501') in 0.022798 seconds 
+  Import took 0.027300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f2.png
+  artifactKey: Guid(543e60c805b5da145bb3ef5543527c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Ogre/Sprites/ogre_idle_anim_f2.png using Guid(543e60c805b5da145bb3ef5543527c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95435f5d0a77f1410d0d3223d0b56c31') in 0.028217 seconds 
+  Import took 0.033909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_hit_anim_f0.png
+  artifactKey: Guid(d9762d37a89c62c4389e013a234190fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Edgar/Examples/Grid2D/Prefabs/Knight/Sprites/knight_m_hit_anim_f0.png using Guid(d9762d37a89c62c4389e013a234190fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b44112a653d46e2518dc72d8fee048e') in 0.026014 seconds 
+  Import took 0.031288 seconds .
 
