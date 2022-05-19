@@ -7,7 +7,7 @@ public class MoveController : MonoBehaviour
     [SerializeField] protected float _speed;
     [SerializeField] private float _dashCooldown;
 
-    public Vector2 Direction { get; private set; }
+    public Vector2 Direction { get; protected set; }
     protected Rigidbody2D _rigidbody;
 
     protected bool _isDashed;
@@ -17,7 +17,7 @@ public class MoveController : MonoBehaviour
         Direction = Vector2.right;
     }
 
-    public void Move(Vector3 direction)
+    public virtual void Move(Vector3 direction)
     {
         var normalizedDirection = direction.normalized;
         Direction = Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y)

@@ -34,12 +34,16 @@ public static class TypeConvertor
             Tuple.Create(typeof(WeaponBase), typeof(WeaponType)), 
             Tuple.Create(typeof(EffectBase), typeof(EffectType)),
             Tuple.Create(typeof(Creature), typeof(CreatureType)),
-            Tuple.Create(typeof(AttackBase), typeof(AttackType))
+            Tuple.Create(typeof(AttackBase), typeof(AttackType)),
+            Tuple.Create(typeof(Boss), typeof(CreatureType))
         };
 
         foreach (var parent in typesParents)
             foreach (var type in parent.Item1.Assembly.ExportedTypes.Where(t => parent.Item1.IsAssignableFrom(t) && t != parent.Item1))
             {
+                if (!Enum.IsDefined(parent.Item2, type.Name))
+                    continue;
+
                 var enumValue = (Enum)Enum.Parse(parent.Item2, type.Name);
                 types[type] = enumValue;
                 enums[enumValue] = type;

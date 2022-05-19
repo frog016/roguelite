@@ -29,6 +29,7 @@ public abstract class WeaponBase : MonoBehaviour
             return;
 
         var targets = currentAttack.Attack();
+        Debug.Log($"{gameObject.name} deal damage to {targets.Count} targets using {currentAttack}.");
         GlobalCooldown.TryRestartCooldown();
         ActivateEffects(new AttackEventArgs(currentAttack, targets));
     }

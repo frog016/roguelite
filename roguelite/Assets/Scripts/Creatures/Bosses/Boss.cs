@@ -1,3 +1,3 @@
-public class Boss : DamageableObject
+public class Boss : Creature
 {
 }

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class TargetsFinder : MonoBehaviour
 {
+    private DamageableObject _owner;
     private MoveController _moveController;
     private HashSet<Collider2D> _myColliders;
 
-    private void Start() //TODO: Отладить геометрию
+    private void Awake() //TODO: Отладить геометрию
     {
-        _moveController = GetComponentInParent<MoveController>();
-        _myColliders = new HashSet<Collider2D>(_moveController.GetComponentsInChildren<Collider2D>());
+        _owner = GetComponentInParent<DamageableObject>();
+        _moveController = _owner.GetComponent<MoveController>();
+        _myColliders = new HashSet<Collider2D>(_owner.GetComponentsInChildren<Collider2D>());
     }
 
     public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle) // TODO: Работает верно
@@ -28,9 +30,11 @@ public class TargetsFinder : MonoBehaviour
         if (!isAround)
             position *= (new Vector3(radius, radius, 0) * _moveController.Direction);
         return Physics2D.CircleCastAll(position, radius, _moveController.Direction, 0)
-            .Where(raycast => IsEnemy(raycast.collider))
+            .Where(raycast => IsOtherCollider(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)
+            .Where(damageableObject => 
+                EnemyDetector.Instance.IsEnemy(_owner.GetType(), damageableObject.GetType()))
             .ToList();
     }
 
@@ -38,11 +42,13 @@ public class TargetsFinder : MonoBehaviour
     {
         var angle = Vector2.Angle(Vector2.right, _moveController.Direction);
         return Physics2D.BoxCastAll(transform.parent.position, size, angle, _moveController.Direction)
-            .Where(raycast => IsEnemy(raycast.collider))
+            .Where(raycast => IsOtherCollider(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)
+            .Where(damageableObject => 
+                EnemyDetector.Instance.IsEnemy(_owner.GetType(), damageableObject.GetType()))
             .ToList(); ;
     }
 
-    private bool IsEnemy(Collider2D otherCollider) => !_myColliders.Contains(otherCollider);
+    private bool IsOtherCollider(Collider2D otherCollider) => !_myColliders.Contains(otherCollider);
 }

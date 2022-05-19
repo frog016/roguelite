@@ -3,12 +3,12 @@ using UnityEngine.AI;
 
 public class EnemyStateChanger : StateChanger
 {
-    private NavMeshAgent _agent;
+    private EnemyMoveController _moveController;
 
     protected override void Awake()
     {
         base.Awake();
-        _agent = GetComponent<NavMeshAgent>();
+        _moveController = GetComponent<EnemyMoveController>();
     }
 
     private void Update()
@@ -24,16 +24,16 @@ public class EnemyStateChanger : StateChanger
         _target?.OnObjectDeath.RemoveListener(SetStandState);
         base.SetTarget(target);
         _target.OnObjectDeath.AddListener(SetStandState);
-        _stateHandler.SetState(new FollowState(_agent, _target.gameObject));
+        _stateHandler.SetState(new FollowState(_moveController, _target.gameObject));
     }
 
     protected override void ChangeState()   //  TODO: Рефакторинг
     {
         var distance = Vector2.Distance(_target.transform.position, transform.position);
-        if (distance < _agent.stoppingDistance)
+        if (distance < _moveController.Agent.stoppingDistance)
             _stateHandler.SetState(new AttackState(GetComponent<AttackController>()));
         else
-            _stateHandler.SetState(new FollowState(_agent, _target.gameObject));
+            _stateHandler.SetState(new FollowState(_moveController, _target.gameObject));
     }
 
     private void SetStandState()
