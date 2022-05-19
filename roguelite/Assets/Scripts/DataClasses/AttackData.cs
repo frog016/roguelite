@@ -11,7 +11,7 @@ public class AttackData : Data
     [SerializeField] private float _attackAngleDegrees;
 
     public float Damage => _damage;
-    public float AttackSpeed => _attackSpeed; //TODO: Убрать это
+    public float AttackSpeed => _attackSpeed;
     public float AttackRadius => _attackRadius;
     public float AttackAngleDegrees => _attackAngleDegrees;
 
@@ -20,7 +20,7 @@ public class AttackData : Data
     public void AddCooldown(Cooldown cooldown)
     {
         Cooldown = cooldown;
-        Cooldown.CooldownTime = _attackSpeed;
+        Cooldown.InitializeCooldownTime(_attackSpeed);
     }
 
     public override Enum GetDataType()

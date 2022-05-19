@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
@@ -14,11 +15,17 @@ public class BossAttackController : AttackController
 
     public override void HandleInput(AttackType attackType = default)
     {
-        var attack = GetRandomAttackType();
-        _weapon.Attack(attack);
+        if (!(_weapon as Weapon).GlobalCooldown.IsReady)
+            return;
+
+        var attack = TryGetRandomAttackType();
+        if (attack == null)
+            return;
+
+        _weapon.TryAttack(attack);
     }
 
-    private Type GetRandomAttackType()
+    private Type TryGetRandomAttackType()
     {
         var index = Random.Range(0, _activeAttacks.Count);
         while (!(_weapon as Weapon).IsReady(TypeConvertor.ConvertTypeToEnum(_activeAttacks[index])))

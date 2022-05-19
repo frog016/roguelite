@@ -7,6 +7,7 @@ public class EnemyStateChanger : StateChanger
 
     protected override void Awake()
     {
+        base.Awake();
         _agent = GetComponent<NavMeshAgent>();
     }
 
@@ -20,7 +21,7 @@ public class EnemyStateChanger : StateChanger
 
     public override void SetTarget(DamageableObject target)
     {
-        _target.OnObjectDeath.RemoveListener(SetStandState);
+        _target?.OnObjectDeath.RemoveListener(SetStandState);
         base.SetTarget(target);
         _target.OnObjectDeath.AddListener(SetStandState);
         _stateHandler.SetState(new FollowState(_agent, _target.gameObject));

@@ -15,8 +15,11 @@ MonoBehaviour:
   _list:
     _list:
     - _weaponType: 0
+      _globalCooldownTime: 1
       _attackTypes: 0000000001000000
-    - _weaponType: 2
+    - _weaponType: 1
+      _globalCooldownTime: 1
       _attackTypes: 00000000
     - _weaponType: 2
+      _globalCooldownTime: 2
       _attackTypes: 02000000030000000400000005000000060000000700000008000000

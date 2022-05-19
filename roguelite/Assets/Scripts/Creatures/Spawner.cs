@@ -66,6 +66,7 @@ public class Spawner : SingletonObject<Spawner>
         var creatureTypes = Enum.GetNames(typeof(CreatureType))
             .Select(creature => (CreatureType)Enum.Parse(typeof(CreatureType), creature)).ToList();
         creatureTypes.Remove(CreatureType.HeroSamurai);
+        creatureTypes.Remove(CreatureType.Gasadokuro);
 
         var count = Random.Range(_unitsRange.x, _unitsRange.y);
         for (var i = 0; i < count; i++)

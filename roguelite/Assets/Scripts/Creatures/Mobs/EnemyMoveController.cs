@@ -18,10 +18,11 @@ public class EnemyMoveController : MoveController
     {
         var agent = GetComponent<NavMeshAgent>();
         var capsuleCollider = GetComponent<CapsuleCollider2D>();
+        var weapon = GetComponentInChildren<Weapon>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         agent.speed = _speed;
-        agent.stoppingDistance = GetComponentInChildren<Weapon>().MinimalAttackDistance;
+        agent.stoppingDistance = weapon.MinimalAttackDistance;
         agent.baseOffset = capsuleCollider.size.y / 2;
         agent.radius = capsuleCollider.size.x / 2;
         agent.height = capsuleCollider.size.y;

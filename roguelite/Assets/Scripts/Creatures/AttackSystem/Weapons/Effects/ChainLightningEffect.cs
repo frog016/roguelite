@@ -17,7 +17,7 @@ public class ChainLightningEffect : Effect, IEffect
         _chainLinksDamage = data.ChainLinksDamage;
         _areaRadius = data.AreaRadius;
 
-        _targetsFinder.GetComponentInParent<TargetsFinder>();
+        _targetsFinder = GetComponentInParent<TargetsFinder>();
     }
 
     public void ApplyEffect(AttackEventArgs attackEventArgs)

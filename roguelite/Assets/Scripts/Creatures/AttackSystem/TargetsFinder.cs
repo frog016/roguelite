@@ -10,7 +10,7 @@ public class TargetsFinder : MonoBehaviour
     private void Start() //TODO: Отладить геометрию
     {
         _moveController = GetComponentInParent<MoveController>();
-        _myColliders = new HashSet<Collider2D>(transform.parent.GetComponentsInChildren<Collider2D>());
+        _myColliders = new HashSet<Collider2D>(_moveController.GetComponentsInChildren<Collider2D>());
     }
 
     public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle) // TODO: Работает верно

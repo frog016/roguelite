@@ -1,5 +1,3 @@
-using UnityEngine.Events;
-
 public class Attack
 {
     public readonly AttackData Data;

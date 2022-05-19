@@ -2,13 +2,16 @@ using System;
 
 public class EnemyWeapon : Weapon, IWeapon
 {
-    public void Attack(Type attackType)
+    public bool TryAttack(Type attackType)
     {
         var currentAttack = _attacks[TypeConvertor.ConvertTypeToEnum(attackType)];
-        if (!currentAttack.IsReady())
-            return;
+        if (!GlobalCooldown.IsReady || !currentAttack.IsReady())
+            return false;
 
         var targets = currentAttack.Attack();
+        GlobalCooldown.TryRestartCooldown();
         ActivateEffects(new AttackEventArgs(currentAttack, targets));
+
+        return true;
     }
 }

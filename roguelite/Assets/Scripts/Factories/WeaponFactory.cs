@@ -11,13 +11,12 @@ public class WeaponFactory : SingletonObject<WeaponFactory>, IFactory<IWeapon>
 
         var effects = new GameObject("Effects");
         effects.AddComponent<EffectsList>();
+        effects.transform.SetParent(weaponObject.transform);
 
-        var weapon = weaponObject.gameObject.AddComponent<Weapon>();
+        var weapon = weaponObject.gameObject.AddComponent(weaponType) as Weapon;
         weaponObject.AddComponent<TargetsFinder>();
         weapon.InitializeWeapon(data);
-
         weaponObject.transform.SetParent(parent.transform);
-        effects.transform.SetParent(weaponObject.transform);
 
         return (IWeapon)weapon;
     }

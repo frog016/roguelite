@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
 {
     public float MinimalAttackDistance { get; private set; }
     public List<Type> AttackTypes { get; private set; }
+    public GlobalCooldown GlobalCooldown { get; private set; }
 
     protected Dictionary<Enum, IAttack> _attacks;
 
@@ -15,6 +16,11 @@ public class Weapon : MonoBehaviour
     public virtual void InitializeWeapon(WeaponData data)
     {
         _effects = GetComponentInChildren<EffectsList>();
+        GlobalCooldown = gameObject.AddComponent<GlobalCooldown>();
+        GlobalCooldown.InitializeCooldownTime(data.GlobalCooldownTime);
+
+        AttackTypes = new List<Type>();
+        _attacks = new Dictionary<Enum, IAttack>();
         CreateAttacks(data.AttackTypes);
     }
 
