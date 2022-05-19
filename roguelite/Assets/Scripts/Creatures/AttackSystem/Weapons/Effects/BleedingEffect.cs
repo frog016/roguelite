@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class BleedingEffect : Effect, IEffect
+public class BleedingEffect : EffectBase
 {
     private HashSet<DamageableObject> _targetsUnderEffect;
 
@@ -14,7 +14,7 @@ public class BleedingEffect : Effect, IEffect
         _targetsUnderEffect = new HashSet<DamageableObject>();
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;

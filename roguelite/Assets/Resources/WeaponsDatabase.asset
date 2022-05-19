@@ -15,11 +15,11 @@ MonoBehaviour:
   _list:
     _list:
     - _weaponType: 0
-      _globalCooldownTime: 1
-      _attackTypes: 0000000001000000
+      _prefab: {fileID: 1541617649059585481, guid: 3447b08b701d92146aef47f1e24817cb, type: 3}
+      _weaponAttacks: 0000000001000000
     - _weaponType: 1
-      _globalCooldownTime: 1
-      _attackTypes: 00000000
+      _prefab: {fileID: 1576514264540440176, guid: 20ed170209dea6f469b0b62e3afc8c4c, type: 3}
+      _weaponAttacks: 00000000
     - _weaponType: 2
-      _globalCooldownTime: 2
-      _attackTypes: 02000000030000000400000005000000060000000700000008000000
+      _prefab: {fileID: 297710760577586906, guid: d465a6ae525a8f14cab69516ae54ad80, type: 3}
+      _weaponAttacks: 02000000030000000400000005000000060000000700000008000000

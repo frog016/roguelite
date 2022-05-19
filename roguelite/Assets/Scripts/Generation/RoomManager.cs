@@ -39,7 +39,7 @@ public class RoomManager : SingletonObject<RoomManager>
         var effectsTypes = Enum.GetNames(typeof(EffectType))
             .Select(creature => (EffectType)Enum.Parse(typeof(EffectType), creature)).ToList();
         var randomEffect = effectsTypes[Random.Range(0, effectsTypes.Count)];
-        EffectFactory.Instance.CreateObject(FindObjectOfType<HeroSamurai>().gameObject,
+        EffectsFactory.Instance.CreateObject(FindObjectOfType<HeroSamurai>().gameObject,
             TypeConvertor.ConvertEnumToType(randomEffect));
     }
 }

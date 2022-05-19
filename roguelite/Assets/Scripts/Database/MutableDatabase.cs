@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 using ExtendedScriptableObject;
 using UnityEngine;
 
@@ -7,10 +8,11 @@ namespace Database
 {
     public class MutableDatabase<T> : SingletonScriptableObject<MutableDatabase<T>>, IJSONSerializable where T: Data
     {
-        [SerializeField] private ObservableList<T> _list;
+        [SerializeField][InspectorName("Database")] private ObservableList<T> _list;
 
         private void OnEnable()
         {
+            var a = typeof(T);
            LoadFromFile();
             _list.Updated += SaveDataToFile;
         }

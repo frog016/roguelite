@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class AttackSpeedEffect : Effect, IEffect
+public class AttackSpeedEffect : EffectBase
 {
     private int _maxStacks;
     private int _stacksCount;
@@ -16,7 +16,7 @@ public class AttackSpeedEffect : Effect, IEffect
         _increasedAttackSpeedCoefficient = data.IncreasedAttackSpeedCoefficient;
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         var cooldowns = GetComponentsInParent<Cooldown>();
         foreach (var cooldown in cooldowns)

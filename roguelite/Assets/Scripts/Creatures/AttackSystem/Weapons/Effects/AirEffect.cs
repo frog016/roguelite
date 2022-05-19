@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirEffect : Effect, IEffect
+public class AirEffect : EffectBase
 {
     private float _knockBackForce;
 
@@ -11,7 +11,7 @@ public class AirEffect : Effect, IEffect
         _knockBackForce = data.KnockBackForce;
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;

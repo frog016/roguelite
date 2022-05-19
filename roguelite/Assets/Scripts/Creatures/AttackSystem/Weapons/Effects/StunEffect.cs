@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StunEffect : Effect, IEffect
+public class StunEffect : EffectBase
 {
     private Dictionary<DamageableObject, Coroutine> _stuns;
 
@@ -15,7 +15,7 @@ public class StunEffect : Effect, IEffect
         _stuns = new Dictionary<DamageableObject, Coroutine>();
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
@@ -41,7 +41,7 @@ public class StunEffect : Effect, IEffect
         var components = new List<MonoBehaviour>
         {
             target.GetComponent<MoveController>(),
-            target.GetComponentInChildren<Weapon>()
+            target.GetComponentInChildren<WeaponBase>()
         };
 
         SetEnabled(components, false);

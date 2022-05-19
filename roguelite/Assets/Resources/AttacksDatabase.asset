@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40a7002a6297374194ecd296c223449, type: 3}
+  m_Name: AttacksDatabase
+  m_EditorClassIdentifier: 
+  _list:
+    _list:
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 3393747118056610376, guid: 716e90e0b20598c4bb96ec85e61eab14, type: 3}
+      _attackType: 0
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 4764758125682858610, guid: e4a698ae278fa384eb0e2e0d7f90bc15, type: 3}
+      _attackType: 1
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 5973150990267449054, guid: 93c3b1d66b555cb4897c5a0278c9c322, type: 3}
+      _attackType: 2
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 3126601292898549932, guid: afbfc86297b23a04697b55419cbbdb4f, type: 3}
+      _attackType: 3
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 177719916171234705, guid: 2b178986619c2bb42b3f99cdd12d10c4, type: 3}
+      _attackType: 4
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 82357184724425317, guid: 3b483d32d459cdc498c163ce31004df6, type: 3}
+      _attackType: 5
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 6865896985584552493, guid: e6bed0620279c1343a7790d246eddeb5, type: 3}
+      _attackType: 6
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 6287538718661207848, guid: a85d57b8cc8b3774aa81cc5702a52ea3, type: 3}
+      _attackType: 7
+    - _damage: 1
+      _attackRadius: 1
+      _attackSpeed: 1
+      _prefab: {fileID: 5467316626570439851, guid: ecf6113002df21f47bb40c6276f6b210, type: 3}
+      _attackType: 8

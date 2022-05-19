@@ -1,6 +1,6 @@
-public class DoubleStrikeEffect : Effect, IEffect
+public class DoubleStrikeEffect : EffectBase
 {
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;

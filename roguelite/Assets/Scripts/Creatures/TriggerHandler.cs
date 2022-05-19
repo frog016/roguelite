@@ -5,6 +5,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider2D))]
 public class TriggerHandler : MonoBehaviour
 {
+    public Collider2D AttachedCollider { get; private set; }
     public UnityEvent<Collider2D> OnTriggerEnter { get; private set; }
     public UnityEvent<Collider2D> OnTriggerStay { get; private set; }
     public UnityEvent<Collider2D> OnTriggerExit { get; private set; }
@@ -13,6 +14,8 @@ public class TriggerHandler : MonoBehaviour
 
     private void Awake()
     {
+        AttachedCollider = GetComponent<Collider2D>();
+
         OnTriggerEnter = new UnityEvent<Collider2D>();
         OnTriggerStay = new UnityEvent<Collider2D>();
         OnTriggerExit = new UnityEvent<Collider2D>();

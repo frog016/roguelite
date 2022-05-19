@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-public class LifeStealEffect : Effect, IEffect
+public class LifeStealEffect : EffectBase
 {
     private float _lifeStealAmount;
     private DamageableObject _myHealth;
@@ -13,7 +11,7 @@ public class LifeStealEffect : Effect, IEffect
         _myHealth = GetComponentInParent<DamageableObject>();
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         foreach (var target in attackEventArgs.DamagedTargets)
             StealHealth(target);

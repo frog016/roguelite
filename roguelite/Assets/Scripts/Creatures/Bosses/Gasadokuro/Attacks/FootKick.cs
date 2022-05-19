@@ -1,28 +1,19 @@
 using System.Collections.Generic;
 
-public class FootKick : Attack, IAttack
+public class FootKick : AttackBase
 {
-    public FootKick(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
+    public override List<DamageableObject> Attack()
     {
-    }
-
-    public List<DamageableObject> Attack()
-    {
-        var targets = _targetsFinder.FindTargetsInCircle(Data.AttackRadius, false);
+        var targets = _targetsFinder.FindTargetsInCircle(AttackData.AttackRadius, false);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
-            target.ApplyDamage(Data.Damage);
+            target.ApplyDamage(AttackData.Damage);
         }
 
         return targets;
-    }
-
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
     }
 }

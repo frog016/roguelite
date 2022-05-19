@@ -1,28 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rolling : Attack, IAttack
+public class Rolling : AttackBase
 {
-    private int _bouncesCount;
-    private TriggerHandler _triggerHandler;
+    [SerializeField] private int _bouncesCount;
+    
     private Rigidbody2D _rigidbody;
     private MoveController _moveController;
-    private Collider2D _hitBox;
+    private TriggerHandler _triggerHandler;
 
-    public Rolling(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
+    protected override void Awake()
     {
-        _triggerHandler = targetsFinder.GetComponentInParent<TriggerHandler>();
-        _rigidbody = targetsFinder.GetComponentInParent<Rigidbody2D>();
-        _moveController = targetsFinder.GetComponentInParent<MoveController>();
-        _hitBox = targetsFinder.GetComponentInParent<Collider2D>();
+        base.Awake();
+        _rigidbody = GetComponentInParent<Rigidbody2D>();
+        _moveController = _rigidbody.GetComponent<MoveController>();
+        _triggerHandler = _rigidbody.GetComponent<TriggerHandler>();
     }
 
-    public List<DamageableObject> Attack()
+    public override List<DamageableObject> Attack()
     {
         _bouncesCount = 2;
         _moveController.gameObject.SetActive(false);
 
-        _hitBox.isTrigger = true;
+        _triggerHandler.AttachedCollider.isTrigger = true;
         _cooldown.TryRestartCooldown();
         RollInDirection();
         _triggerHandler.OnTriggerEnter.AddListener(CheckWall);
@@ -31,18 +31,13 @@ public class Rolling : Attack, IAttack
         return new List<DamageableObject>();
     }
 
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
-    }
-
     private void TryApplyDamage(Collider2D otherCollider)
     {
         var damageableObject = otherCollider.GetComponent<DamageableObject>();
         if (damageableObject == null)
             return;
 
-        damageableObject.ApplyDamage(Data.Damage);
+        damageableObject.ApplyDamage(AttackData.Damage);
     }
 
     private void CheckWall(Collider2D otherCollider)
@@ -59,14 +54,14 @@ public class Rolling : Attack, IAttack
         if (_bouncesCount > 0)
         {
             var direction = GetRandomDirection();
-            _rigidbody.velocity = direction * Data.AttackSpeed;
+            _rigidbody.velocity = direction * AttackData.AttackSpeed;
         }
         else
         {
             _triggerHandler.OnTriggerEnter.RemoveListener(CheckWall);
             _triggerHandler.OnTriggerEnter.RemoveListener(TryApplyDamage);
             _moveController.gameObject.SetActive(true);
-            _hitBox.isTrigger = false;
+            _triggerHandler.AttachedCollider.isTrigger = false;
         }
     }
 

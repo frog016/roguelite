@@ -3,7 +3,7 @@ using Edgar.Legacy.GeneralAlgorithms.Algorithms.Common;
 using UnityEngine;
 
 //TODO: добавить анимацию молнии, добавить различаемость других противников, помимо с классом skeletonsamurai
-public class ChainLightningEffect : Effect, IEffect 
+public class ChainLightningEffect : EffectBase 
 {
     private int _maxChainLinks;
     private float _chainLinksDamage;
@@ -20,7 +20,7 @@ public class ChainLightningEffect : Effect, IEffect
         _targetsFinder = GetComponentInParent<TargetsFinder>();
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;

@@ -1,4 +1,4 @@
-public class CriticalStrikeEffect : Effect, IEffect
+public class CriticalStrikeEffect : EffectBase
 {
     private float _criticalHitCoefficient;
 
@@ -8,12 +8,12 @@ public class CriticalStrikeEffect : Effect, IEffect
         _criticalHitCoefficient = data.CriticalHitCoefficient;
     }
 
-    public void ApplyEffect(AttackEventArgs attackEventArgs) //  Плохая реализвация, но иначе никак
+    public override void ApplyEffect(AttackEventArgs attackEventArgs) //  Плохая реализвация, но иначе никак
     {
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        var damage = (attackEventArgs.UsedAttack as Attack).Data.Damage * _criticalHitCoefficient;
+        var damage = (attackEventArgs.UsedAttack as AttackBase).AttackData.Damage * _criticalHitCoefficient;
         foreach (var target in attackEventArgs.DamagedTargets)
             target.ApplyDamage(damage);
     }

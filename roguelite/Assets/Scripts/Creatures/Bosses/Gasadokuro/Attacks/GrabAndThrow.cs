@@ -1,22 +1,21 @@
 using System.Collections.Generic;
+using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 
-public class GrabAndThrow : Attack, IAttack
+public class GrabAndThrow : AttackBase
 {
-    public GrabAndThrow(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
-    {
-    }
+    [SerializeField][Range(0, 360)] private float _attackAngleDegrees;
 
-    public List<DamageableObject> Attack()
+    public override List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInSector(Data.AttackRadius, Data.AttackAngleDegrees);
+        var targets = _targetsFinder.FindTargetsInSector(AttackData.AttackRadius, _attackAngleDegrees);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
-            target.ApplyDamage(Data.Damage);
+            target.ApplyDamage(AttackData.Damage);
             ThrowTarget(target, target.transform.position - _targetsFinder.transform.position);
         }
 
@@ -26,10 +25,5 @@ public class GrabAndThrow : Attack, IAttack
     private void ThrowTarget(DamageableObject target, Vector2 direction)
     {
         target.GetComponent<MoveController>().Dash(direction);
-    }
-
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
     }
 }

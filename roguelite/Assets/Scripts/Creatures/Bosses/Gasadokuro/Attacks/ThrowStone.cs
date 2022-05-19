@@ -2,18 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ThrowStone : Attack, IAttack
+public class ThrowStone : AttackBase
 {
-    private readonly GameObject _projectilePrefab;
+    [SerializeField] private GameObject _projectilePrefab;
 
-    public ThrowStone(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
+    public override List<DamageableObject> Attack()
     {
-        _projectilePrefab = PrefabsFinder.FindObjectOfType<Projectile>();
-    }
-
-    public List<DamageableObject> Attack()
-    {
-        var targets = _targetsFinder.FindTargetsInCircle(2 * Data.AttackRadius, false);
+        var targets = _targetsFinder.FindTargetsInCircle(2 * AttackData.AttackRadius, false);
         var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
 
         if (player is null)
@@ -21,13 +16,8 @@ public class ThrowStone : Attack, IAttack
 
         var projectile = Object.Instantiate(_projectilePrefab, _targetsFinder.transform.position, Quaternion.identity).GetComponent<Projectile>();
         _cooldown.TryRestartCooldown();
-        projectile.Shoot(player, Data.Damage);
+        projectile.Shoot(player, AttackData.Damage);
         
         return targets;
-    }
-
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
     }
 }

@@ -1,28 +1,22 @@
 using System.Collections.Generic;
+using UnityEngine;
 
-public class CommonAttack : Attack, IAttack
+public class CommonAttack : AttackBase
 {
-    public CommonAttack(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
-    {
-    }
+    [SerializeField][Range(0, 360)] private float _attackAngleDegrees;
 
-    public List<DamageableObject> Attack()
+    public override List<DamageableObject> Attack()
     {
-        var targets = _targetsFinder.FindTargetsInSector(Data.AttackRadius, Data.AttackAngleDegrees);
+        var targets = _targetsFinder.FindTargetsInSector(AttackData.AttackRadius, _attackAngleDegrees);
         _cooldown.TryRestartCooldown();
         if (targets.Count == 0)
             return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
-            target.ApplyDamage(Data.Damage);
+            target.ApplyDamage(AttackData.Damage);
         }
 
         return targets;
-    }
-
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
     }
 }

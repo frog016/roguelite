@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class EffectsList : MonoBehaviour
 {
-    public List<IEffect> Effects { get; private set; }
+    public List<EffectBase> Effects { get; private set; }
 
     private void Awake()
     {
-        Effects = new List<IEffect>();
+        Effects = new List<EffectBase>();
     }
 
-    public IEffect AddEffect(Type effectType, EffectData data)
+    public EffectBase AddEffect(Type effectType, EffectData data)
     {
-        var newEffect = gameObject.AddComponent(effectType);
-        (newEffect as Effect)?.InitializeEffect(data);
+        var effect = gameObject.AddComponent(effectType) as EffectBase;
+        effect.InitializeEffect(data);
 
-        var effect = newEffect as IEffect;
-        Effects.Add(effect);
         return effect;
     }
 }

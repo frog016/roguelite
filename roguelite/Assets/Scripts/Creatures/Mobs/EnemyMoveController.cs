@@ -18,7 +18,7 @@ public class EnemyMoveController : MoveController
     {
         var agent = GetComponent<NavMeshAgent>();
         var capsuleCollider = GetComponent<CapsuleCollider2D>();
-        var weapon = GetComponentInChildren<Weapon>();
+        var weapon = GetComponentInChildren<WeaponBase>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         agent.speed = _speed;

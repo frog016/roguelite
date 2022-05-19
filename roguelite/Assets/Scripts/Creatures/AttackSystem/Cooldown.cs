@@ -1,24 +1,18 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Cooldown : MonoBehaviour
 {
-    public float InitialCooldown { get; protected set; }
+    [SerializeField] protected float _initialCooldown;
+
     public float CooldownTime { get; set; }
+    public float InitialCooldown => _initialCooldown;
     public bool IsReady { get; private set; }
-    public UnityEvent OnCooldownRestarted { get; private set; }
 
     private void Awake()
     {
         IsReady = true;
-        OnCooldownRestarted = new UnityEvent();
-    }
-
-    public virtual void InitializeCooldownTime(float cooldownTime)
-    {
-        CooldownTime = cooldownTime;
-        InitialCooldown = CooldownTime;
+        ResetCooldownTime();
     }
 
     public bool TryRestartCooldown()
@@ -32,10 +26,14 @@ public class Cooldown : MonoBehaviour
         return true;
     }
 
+    public void ResetCooldownTime()
+    {
+        CooldownTime = _initialCooldown;
+    }
+
     private IEnumerator WaitCooldownTime()
     {
         yield return new WaitForSeconds(CooldownTime);
         IsReady = true;
-        OnCooldownRestarted.Invoke();
     }
 }

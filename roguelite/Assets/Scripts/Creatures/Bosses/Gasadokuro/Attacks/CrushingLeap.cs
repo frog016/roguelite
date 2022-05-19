@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class CrushingLeap : Attack, IAttack
+public class CrushingLeap : AttackBase
 {
-    public CrushingLeap(AttackData attackData, TargetsFinder targetsFinder) : base(attackData, targetsFinder)
+    public override List<DamageableObject> Attack()
     {
-    }
-
-    public List<DamageableObject> Attack()
-    {
-        var targets = _targetsFinder.FindTargetsInCircle(2 * Data.AttackRadius, false);
+        var targets = _targetsFinder.FindTargetsInCircle(2 * AttackData.AttackRadius, false);
         var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
 
         if (player is null)
@@ -28,17 +24,12 @@ public class CrushingLeap : Attack, IAttack
         var rigidbody = _targetsFinder.GetComponentInParent<Rigidbody>();
         yield return new WaitUntil(() => rigidbody.velocity.magnitude < 1e-12);
 
-        var targets = _targetsFinder.FindTargetsInCircle(Data.AttackRadius);
+        var targets = _targetsFinder.FindTargetsInCircle(AttackData.AttackRadius);
         _cooldown.TryRestartCooldown();
 
         foreach (var damageableObject in targets)
         {
-            damageableObject.ApplyDamage(Data.Damage);
+            damageableObject.ApplyDamage(AttackData.Damage);
         }
-    }
-
-    public bool IsReady()
-    {
-        return _cooldown.IsReady;
     }
 }
