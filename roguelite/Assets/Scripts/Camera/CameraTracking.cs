@@ -7,7 +7,7 @@ public class CameraTracking : MonoBehaviour
 
     private Transform _trackingObject;
 
-    public void SetObject(Transform trackingTransform)
+    public void SetObject(Transform trackingTransform) //  TODO: Следит только за игроком
     {
         _trackingObject = trackingTransform;
         transform.position = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
@@ -18,10 +18,5 @@ public class CameraTracking : MonoBehaviour
     {
         var newPosition = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, newPosition, _sensitivity * Time.fixedDeltaTime);
-    }
-
-    private void OnDestroy()
-    {
-        _trackingObject?.GetComponent<DamageableObject>()?.OnObjectDeath?.RemoveListener(FollowAtObject);
     }
 }

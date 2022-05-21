@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Edgar.Geometry;
 using UnityEngine;
 
 public class GizmosAttackDrawer : MonoBehaviour
 {
-    private Vector2 _center;
     private Vector2 _direction;
     private float _angle;
     private bool _isDraw;
@@ -20,7 +18,6 @@ public class GizmosAttackDrawer : MonoBehaviour
         if (value != null)
             angle = (float)value;
 
-        _center = attack.transform.position;
         _direction = attack.GetComponentInParent<MoveController>().Direction;
         _angle = angle;
         _isDraw = true;
@@ -60,7 +57,7 @@ public class GizmosAttackDrawer : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (_isDraw)
-            DrawPolygon(_center, _direction, _angle);
+            DrawPolygon(transform.position, _direction, _angle);
     }
 
     private IEnumerator Deactivate(float time)

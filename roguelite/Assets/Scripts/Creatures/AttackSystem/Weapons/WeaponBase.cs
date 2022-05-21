@@ -33,9 +33,9 @@ public abstract class WeaponBase : MonoBehaviour
         GlobalCooldown.TryRestartCooldown();
     }
 
-    public bool IsReady(Type attackType)
+    public AttackData GetAttackData(Type attackType)
     {
-        return _attacks[attackType].IsReady();
+        return _attacks[attackType].AttackData;
     }
 
     protected void ActivateEffects(AttackEventArgs attackEventArgs)

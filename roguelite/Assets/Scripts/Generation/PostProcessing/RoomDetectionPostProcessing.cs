@@ -17,7 +17,7 @@ public class RoomDetectionPostProcessing : DungeonGeneratorPostProcessingGrid2D
             var floor = tilemaps.Single(x => x.name == "Floor").gameObject;
             AddFloorCollider(floor);
 
-            if (roomInstance.IsCorridor || roomTemplateInstance.GetComponent<HeroSpawn>() != null)
+            if (roomInstance.IsCorridor || roomTemplateInstance.GetComponent<PlayerSpawner>() != null)
                 continue;
 
             floor.AddComponent<RoomDetector>();

@@ -67,6 +67,7 @@ MonoBehaviour:
     DisableRoomTemplatesColliders: 1
   CustomPostProcessTasks:
   - {fileID: 11400000, guid: ce0e273aabdaa1d4c81d999a00f123b9, type: 2}
+  - {fileID: 11400000, guid: fe5b13d3a84be9e47ba95b06af78d8f3, type: 2}
   OtherConfig:
     UseRandomSeed: 1
     RandomGeneratorSeed: 0
@@ -75,7 +76,7 @@ MonoBehaviour:
     ThrowExceptionsImmediately: 0
   UseRandomSeed: 1
   RandomGeneratorSeed: 0
-  GenerateOnStart: 1
+  GenerateOnStart: 0
   ThrowExceptionsImmediately: 0
   DisableCustomPostProcessing: 0
 --- !u!114 &8666961424271943980

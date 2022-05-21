@@ -7,7 +7,7 @@ using UnityEngine.AI;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
-public class Spawner : SingletonObject<Spawner>
+public class Spawner : SingletonObject<Spawner>, ISpawner
 {
     [SerializeField] private MobsHpBarManager MobsHpBarManager;
     [SerializeField] private Vector2Int _unitsRange;
@@ -37,10 +37,10 @@ public class Spawner : SingletonObject<Spawner>
 
         SpawnedUnitsCount = data.Units.Sum(unit => unit.Count);
         foreach (var unitsData in data.Units)
-            CreateUnits(unitsData);
+            CreateUnit(unitsData);
     }
 
-    private void CreateUnits(SpawnUnitsData unitsData)
+    private void CreateUnit(SpawnUnitsData unitsData)
     {
         var type = TypeConvertor.ConvertEnumToType(unitsData.CreatureType);
         var data = CreatureDatabase.Instance.GetDataByType(type);
