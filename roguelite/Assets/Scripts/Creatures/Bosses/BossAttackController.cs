@@ -14,7 +14,7 @@ public class BossAttackController : AttackController
 
     public override void HandleInput(AttackType attackType = default)
     {
-        if (!(_weapon as WeaponBase).GlobalCooldown.IsReady)
+        if (!_weapon.GlobalCooldown.IsReady)
             return;
 
         var attack = TryGetRandomAttackType();
@@ -27,9 +27,6 @@ public class BossAttackController : AttackController
     private Type TryGetRandomAttackType()
     {
         var index = Random.Range(0, _activeAttacks.Count);
-        while (!_weapon.IsReady(_activeAttacks[index]))
-            index = Random.Range(0, _activeAttacks.Count);
-
         return _activeAttacks[index];
     }
 }

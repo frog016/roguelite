@@ -8,28 +8,25 @@ public class TargetsFinder : MonoBehaviour
     private MoveController _moveController;
     private HashSet<Collider2D> _myColliders;
 
-    private void Awake() //TODO: Отладить геометрию
+    private void Awake()
     {
         _owner = GetComponentInParent<DamageableObject>();
         _moveController = _owner.GetComponent<MoveController>();
         _myColliders = new HashSet<Collider2D>(_owner.GetComponentsInChildren<Collider2D>());
     }
 
-    public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle) // TODO: Работает верно
+    public List<DamageableObject> FindTargetsInSector(float radius, float sectorAngle)
     {
         return FindTargetsInCircle(radius)
             .Where(damageableObject => Vector2.Angle(
                 _moveController.Direction, 
-                damageableObject.transform.position - transform.parent.position) < sectorAngle / 2)
+                damageableObject.transform.position - transform.position) < sectorAngle / 2)
             .ToList(); ;
     }
 
-    public List<DamageableObject> FindTargetsInCircle(float radius, bool isAround = true) // TODO: Работает верно
+    public List<DamageableObject> FindTargetsInCircle(float radius)
     {
-        var position = transform.parent.position;
-        if (!isAround)
-            position *= (new Vector3(radius, radius, 0) * _moveController.Direction);
-        return Physics2D.CircleCastAll(position, radius, _moveController.Direction, 0)
+        return Physics2D.CircleCastAll(transform.position, radius, _moveController.Direction, 0)
             .Where(raycast => IsOtherCollider(raycast.collider))
             .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)

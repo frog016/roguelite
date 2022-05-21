@@ -95,9 +95,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576514264540440172}
-  - component: {fileID: 1576514264540440175}
+  - component: {fileID: 586198223197451573}
   - component: {fileID: 1576514264540440177}
   - component: {fileID: 1576514264540440174}
+  - component: {fileID: 8520392783543466051}
   m_Layer: 0
   m_Name: EnemyWeapon
   m_TagString: Untagged
@@ -121,7 +122,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1576514264540440175
+--- !u!114 &586198223197451573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1576514264540440176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439b1ac899be22443a126967c5c9c9be, type: 3}
+  m_Script: {fileID: 11500000, guid: 36a7c2ba87f4ca9449de27acd303dfd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1576514264540440177
@@ -145,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf9fa71c9acf99409e5210d130e1668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialCooldown: 0.5
 --- !u!114 &1576514264540440174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,5 +156,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b23e640d7eb6d4a42a5b5d47c3c46ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8520392783543466051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576514264540440176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5313f2ca52d7146ad728e48b0e7cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297710760577586886}
-  - component: {fileID: 297710760577586885}
+  - component: {fileID: 1854057190027700525}
   - component: {fileID: 297710760577586907}
   - component: {fileID: 297710760577586884}
+  - component: {fileID: 1618487704090543985}
   m_Layer: 0
   m_Name: GasadokuroWeapon
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &297710760577586885
+--- !u!114 &1854057190027700525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 297710760577586906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439b1ac899be22443a126967c5c9c9be, type: 3}
+  m_Script: {fileID: 11500000, guid: 35308976edad40c459e2d0c020f20d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &297710760577586907
@@ -59,7 +60,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf9fa71c9acf99409e5210d130e1668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialCooldown: 1.5
 --- !u!114 &297710760577586884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +70,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b23e640d7eb6d4a42a5b5d47c3c46ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1618487704090543985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297710760577586906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5313f2ca52d7146ad728e48b0e7cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &297710761416828086

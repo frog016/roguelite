@@ -1,19 +1,19 @@
-using System.Collections.Generic;
+using System.Collections;
 
 public class FootKick : AttackBase
 {
-    public override List<DamageableObject> Attack()
+    protected override IEnumerator AttackCoroutine()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(AttackData.AttackRadius, false);
+        yield return base.AttackCoroutine();
+
+        var targets = _targetsFinder.FindTargetsInCircle(AttackData.AttackRadius);
         _cooldown.TryRestartCooldown();
-        if (targets.Count == 0)
-            return new List<DamageableObject>();
 
         foreach (var target in targets)
         {
             target.ApplyDamage(AttackData.Damage);
         }
 
-        return targets;
+        OnAttackCompletedEvent.Invoke(new AttackEventArgs(this, targets));
     }
 }

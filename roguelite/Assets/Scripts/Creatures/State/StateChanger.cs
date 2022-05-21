@@ -4,12 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(StateHandler))]
 public abstract class StateChanger : MonoBehaviour
 {
+    public StateHandler StateHandler { get; protected set; }
+
     protected DamageableObject _target;
-    protected StateHandler _stateHandler;
 
     protected virtual void Awake()
     {
-        _stateHandler = GetComponent<StateHandler>();
+        StateHandler = GetComponent<StateHandler>();
     }
 
     public virtual void SetTarget(DamageableObject target)
@@ -21,6 +22,6 @@ public abstract class StateChanger : MonoBehaviour
 
     protected bool IsOtherState(Type stateType)
     {
-        return _stateHandler.CurrentState.GetType() != stateType;
+        return StateHandler.CurrentState.GetType() != stateType;
     }
 }

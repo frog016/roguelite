@@ -1,13 +1,16 @@
+using System.Collections;
 using System.Collections.Generic;
 
 public class SummonAcolytes : AttackBase
 {
-    public override List<DamageableObject> Attack()
+    protected override IEnumerator AttackCoroutine()
     {
+        yield return base.AttackCoroutine();
+
         _cooldown.TryRestartCooldown();
         Spawner.Instance.SpawnUnits(CreateAcolytesData());
 
-        return new List<DamageableObject>();
+        OnAttackCompletedEvent.Invoke(new AttackEventArgs(this, new List<DamageableObject>()));
     }
 
     private SpawnData CreateAcolytesData()

@@ -3,10 +3,8 @@ using UnityEngine;
 
 public class Cooldown : MonoBehaviour
 {
-    [SerializeField] protected float _initialCooldown;
-
     public float CooldownTime { get; set; }
-    public float InitialCooldown => _initialCooldown;
+    public float InitialCooldown { get; protected set; }
     public bool IsReady { get; private set; }
 
     private void Awake()
@@ -26,9 +24,11 @@ public class Cooldown : MonoBehaviour
         return true;
     }
 
-    public void ResetCooldownTime()
+    public void ResetCooldownTime(float time = 0f)
     {
-        CooldownTime = _initialCooldown;
+        if (time != 0f)
+            InitialCooldown = time;
+        CooldownTime = InitialCooldown;
     }
 
     private IEnumerator WaitCooldownTime()

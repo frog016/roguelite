@@ -19,7 +19,10 @@ public class EnemyMoveController : MoveController
 
     public override void Move(Vector3 direction)
     {
-        var normalizedDirection = direction.normalized;
+        if (!_canMove)
+            return;
+
+        var normalizedDirection = (direction - transform.position).normalized;
         Direction = Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y)
             ? new Vector2(normalizedDirection.x, 0) : new Vector2(0, normalizedDirection.y);
 

@@ -6,7 +6,7 @@ public enum AttackType
     CrushingLeap,
     FootKick,
     GrabAndThrow,
-    Rolling,
+    RollWithPush,
     SummonAcolytes,
     ThrowStone
 }

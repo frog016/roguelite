@@ -11,18 +11,33 @@ public class MoveController : MonoBehaviour
     protected Rigidbody2D _rigidbody;
 
     protected bool _isDashed;
+    protected bool _canMove;
 
-    private void Start()
+    private void Awake()
     {
         Direction = Vector2.right;
+        _canMove = true;
     }
 
     public virtual void Move(Vector3 direction)
     {
+        if (!_canMove)
+            return;
+
         var normalizedDirection = direction.normalized;
         Direction = Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y)
             ? new Vector2(normalizedDirection.x, 0) : new Vector2(0, normalizedDirection.y);
         _rigidbody.MovePosition(transform.position + direction * _speed * Time.fixedDeltaTime);
+    }
+
+    public void ContinueMoving()
+    {
+        _canMove = true;
+    }
+
+    public void StopMoving()
+    {
+        _canMove = false;
     }
 
     public void Dash(Vector2 direction = default)

@@ -31,7 +31,7 @@ public class FireEffect : EffectBase
         {
             target.ApplyDamage(_parameters.Damage);
 
-            yield return new WaitForSeconds(_parameters.AttackSpeed);
+            yield return new WaitForSeconds(_parameters.CooldownTime);
             counter++;
         }
 

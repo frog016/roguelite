@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 1541617649059585494}
   - component: {fileID: 1541617649059585480}
   - component: {fileID: 1541617649059585495}
+  - component: {fileID: 6564087876611927090}
   m_Layer: 0
   m_Name: DualKatanas
   m_TagString: Untagged
@@ -145,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf9fa71c9acf99409e5210d130e1668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialCooldown: 1
 --- !u!114 &1541617649059585495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,5 +156,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b23e640d7eb6d4a42a5b5d47c3c46ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6564087876611927090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541617649059585481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5313f2ca52d7146ad728e48b0e7cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

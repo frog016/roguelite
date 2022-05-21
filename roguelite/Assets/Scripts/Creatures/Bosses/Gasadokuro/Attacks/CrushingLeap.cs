@@ -5,24 +5,34 @@ using UnityEngine;
 
 public class CrushingLeap : AttackBase
 {
-    public override List<DamageableObject> Attack()
+    private MoveController _moveController;
+    private Rigidbody2D _rigidbody;
+
+    protected override void Awake()
     {
-        var targets = _targetsFinder.FindTargetsInCircle(2 * AttackData.AttackRadius, false);
-        var player = targets.FirstOrDefault(target => target.GetComponent<HeroSamurai>() != null);
+        base.Awake();
+        _moveController = GetComponentInParent<MoveController>();
+        _rigidbody = GetComponentInParent<Rigidbody2D>();
+    }
 
-        if (player is null)
-            return new List<DamageableObject>();
+    protected override IEnumerator AttackCoroutine()
+    {
+        yield return base.AttackCoroutine();
 
-        _targetsFinder.GetComponentInParent<Creature>().StartCoroutine(LeapAndStomp(player.transform.position - _targetsFinder.transform.position));
+        var targets = _targetsFinder.FindTargetsInCircle(2 * AttackData.AttackRadius);
+        var target = targets.FirstOrDefault();
 
-        return targets;
+        var direction = _moveController.Direction;
+        if (target != null)
+            direction = (target.transform.position - transform.position).normalized;
+
+        StartCoroutine(LeapAndStomp(direction));
     }
 
     private IEnumerator LeapAndStomp(Vector2 direction)
     {
-        _targetsFinder.GetComponentInParent<MoveController>().Dash(direction);
-        var rigidbody = _targetsFinder.GetComponentInParent<Rigidbody>();
-        yield return new WaitUntil(() => rigidbody.velocity.magnitude < 1e-12);
+        _moveController.Dash(direction);
+        yield return new WaitUntil(() => _rigidbody.velocity.magnitude < 1e-12);
 
         var targets = _targetsFinder.FindTargetsInCircle(AttackData.AttackRadius);
         _cooldown.TryRestartCooldown();
@@ -31,5 +41,7 @@ public class CrushingLeap : AttackBase
         {
             damageableObject.ApplyDamage(AttackData.Damage);
         }
+
+        OnAttackCompletedEvent.Invoke(new AttackEventArgs(this, targets));
     }
 }
