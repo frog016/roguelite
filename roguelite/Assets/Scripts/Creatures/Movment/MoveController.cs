@@ -13,7 +13,7 @@ public class MoveController : MonoBehaviour
     protected bool _isDashed;
     protected bool _canMove;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         Direction = Vector2.right;
         _canMove = true;

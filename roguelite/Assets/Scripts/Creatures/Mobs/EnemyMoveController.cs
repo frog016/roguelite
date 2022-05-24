@@ -6,8 +6,9 @@ public class EnemyMoveController : MoveController
 {
     public NavMeshAgent Agent { get; protected set; }
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         _rigidbody = GetComponent<Rigidbody2D>();
         Agent = GetComponent<NavMeshAgent>();
     }

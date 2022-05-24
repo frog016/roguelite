@@ -16,13 +16,7 @@ namespace Edgar.Unity
 
         protected readonly PipelineRunner<TPayload> PipelineRunner = new PipelineRunner<TPayload>();
 
-        public UnityEvent OnEndGeneration { get; private set; }
         public bool EnableDiagnostics = false;
-
-        private void Awake()
-        {
-            OnEndGeneration = new UnityEvent();
-        }
 
         protected virtual Random GetRandomNumbersGenerator(bool useRandomSeed, int seed)
         {
@@ -48,16 +42,10 @@ namespace Edgar.Unity
             PipelineRunner.Run(pipelineItems, payload, EnableDiagnostics);
 
             Debug.Log($"--- Level generated in {stopwatch.ElapsedMilliseconds / 1000f:F}s ---");
-            OnEndGeneration.Invoke();
 
             return payload;
         }
 
         protected abstract (List<IPipelineTask<TPayload>> pipelineItems, TPayload payload) GetPipelineItemsAndPayload();
-
-        private void OnDestroy()
-        {
-            OnEndGeneration.RemoveAllListeners();
-        }
     }
 }

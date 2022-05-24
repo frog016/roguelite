@@ -1,10 +1,13 @@
 using System.Collections;
 using Edgar.Unity;
+using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
 public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
 {
+    [SerializeField] private bool _generateOnStart;
+
     public UnityEvent OnEndGeneration { get; private set; }
 
     private DungeonGeneratorGrid2D _generator;
@@ -30,10 +33,14 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
 
     private IEnumerator GenerateLevelCoroutine()
     {
-        yield return null;
-        _generator.Generate();
-        yield return null;
-        _surface.BuildNavMesh();
+        if (_generateOnStart)
+        {
+            yield return null;
+            _generator.Generate();
+            yield return null;
+            _surface.BuildNavMesh();
+        }
+
         OnEndGeneration.Invoke();
     }
 }

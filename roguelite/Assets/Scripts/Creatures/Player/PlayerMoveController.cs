@@ -6,8 +6,9 @@ public class PlayerMoveController : MoveController
 {
     public UnityEvent OnPlayerMove { get; private set; }
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         _rigidbody = GetComponent<Rigidbody2D>();
         OnPlayerMove = new UnityEvent();
     }

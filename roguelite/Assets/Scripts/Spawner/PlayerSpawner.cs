@@ -8,7 +8,11 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
     protected override void Awake()
     {
         base.Awake();
-        LevelGenerationManager.Instance.OnEndGeneration.AddListener(() => SpawnUnits());
+    }
+
+    private void Start()
+    {
+        SpawnUnits();
     }
 
     public void SpawnUnits(SpawnData data = null)
@@ -24,7 +28,7 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
         Destroy(creatureObject);
     }
 
-    private Vector2 FindPosition()
+    private Vector2 FindPosition()  // Вынести в класс для поиска позиций
     {
         var grid = GetComponentInChildren<Grid>();
         var cell = grid.LocalToWorld(grid.GetComponentInChildren<Tilemap>().localBounds.center);

@@ -5,10 +5,15 @@ using UnityEngine;
 
 public static class PrefabsFinder
 {
-    public static GameObject FindObjectOfType<T>()
+    public static GameObject FindObjectOfType<T>(string path = "")
     {
-        var prefabs = Resources.FindObjectsOfTypeAll(typeof(T)) as IEnumerable<T>;
-        return GetNonSceneObject(prefabs);
+        return FindObjectsOfType<T>().FirstOrDefault();
+    }
+
+    public static List<GameObject> FindObjectsOfType<T>(string path = "")
+    {
+        var prefabs = Resources.LoadAll("Prefabs" + path, typeof(GameObject));
+        return prefabs.Cast<GameObject>().Where(gameObject => gameObject.GetComponent<T>() != null).ToList();
     }
 
     private static GameObject GetNonSceneObject<T>(IEnumerable<T> prefabs)
