@@ -1,22 +1,24 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Database.MutableDatabases;
 using UnityEngine.UI;
 
-public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
+public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel> //  TODO: Рефакторинг 
 {
+    private EffectsAltar _altar;
+
     protected override void Awake()
     {
         base.Awake();
         gameObject.SetActive(false);
     }
 
-    public void ShowPanel(List<Type> effectTypes)
+    public void ShowPanel(EffectsAltar altar)
     {
         var cards = GetComponentsInChildren<Button>().ToList();
+        _altar = altar;
 
-        foreach (var pair in cards.Zip(effectTypes, Tuple.Create))
+        foreach (var pair in cards.Zip(_altar.Types.ToList(), Tuple.Create))
         {
             pair.Item1.onClick.RemoveAllListeners();
             pair.Item1.onClick.AddListener(() => CreateSelectedEffect(pair.Item2));
@@ -31,6 +33,7 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
     {
         PlayerSpawner.Instance.Player.GetComponentInChildren<EffectsList>().AddOrUpdate(effectType);
         PauseManager.Instance.Continue();
+        Destroy(_altar.gameObject);
         gameObject.SetActive(false);
     }
 

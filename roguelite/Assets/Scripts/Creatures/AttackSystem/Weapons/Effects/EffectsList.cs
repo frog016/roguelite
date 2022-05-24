@@ -23,12 +23,19 @@ public class EffectsList : MonoBehaviour    //  TODO: Сделать выбор среди не пол
         if (Effects.Count != _maxCapacity)
         {
             var newEffect = gameObject.AddComponent(effectType) as EffectBase;
-            newEffect.InitializeEffect(data);
+            AddEffect(newEffect, data);
             return;
         }
 
-        Effects
-            .FirstOrDefault(effect => effect.GetType() == effectType)
-            ?.InitializeEffect(data);
+        var effect = Effects
+            .FirstOrDefault(effect => effect.GetType() == effectType);
+        if (effect != null)
+            AddEffect(effect, data);
+    }
+
+    private void AddEffect(EffectBase effect, EffectData data)
+    {
+        Effects.Add(effect);
+        effect.InitializeEffect(data);
     }
 }

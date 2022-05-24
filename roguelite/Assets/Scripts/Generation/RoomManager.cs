@@ -19,7 +19,6 @@ public class RoomManager : SingletonObject<RoomManager>
     private void Start()
     {
         GlobalEventManager.Instance.OnRoomClearedEvent.AddListener(DropItemsAfterRoom);
-        GlobalEventManager.Instance.OnPlayerDeathEvent.AddListener(Lose);
     }
 
     public void EnterInRoom(RoomInstanceGrid2D room)
@@ -31,11 +30,6 @@ public class RoomManager : SingletonObject<RoomManager>
     public void ExitFormRoom()
     {
         OnRoomExit.Invoke();
-    }
-
-    private void Lose()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     private void DropItemsAfterRoom()

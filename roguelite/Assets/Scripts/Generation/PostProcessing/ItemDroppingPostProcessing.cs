@@ -16,7 +16,7 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
 
         foreach (var roomInstance in level.RoomInstances
                      .Select(room => room.RoomTemplateInstance)
-                     .Where(room => room.GetComponent(typeof(ISpawner)) == null))
+                     .Where(room => room.GetComponent<PlayerSpawner>() == null))
             AddRandomItemDropper(roomInstance);
     }
 
