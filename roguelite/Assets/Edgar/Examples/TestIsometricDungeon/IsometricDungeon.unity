@@ -19016,6 +19016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1993598205272390823, guid: a54da2943a52a8e4dadbd1e068e1bf01, type: 3}
+      propertyPath: _generateOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8666961424271943969, guid: a54da2943a52a8e4dadbd1e068e1bf01, type: 3}
       propertyPath: m_Name
       value: DungeonGenerator

@@ -16,11 +16,11 @@ MonoBehaviour:
     _list:
     - _creatureType: 0
       _weapon: 0
-      _maxHealth: 1
+      _maxHealth: 25
       _prefab: {fileID: 4449213130970805148, guid: 6112b179b1207e34394fa4baca9798d0, type: 3}
     - _creatureType: 1
       _weapon: 1
-      _maxHealth: 5
+      _maxHealth: 10
       _prefab: {fileID: 6304618589418651911, guid: deaaa7d79b38ca148bfc366485672329, type: 3}
     - _creatureType: 2
       _weapon: 2

@@ -29,7 +29,7 @@ public class MobsHpBarManager : MonoBehaviour
         var creaturesToDelete = new List<MobHpBar>();
         foreach (var creature in Bars)
         {
-            Debug.Log("ключ" + creature.Key);
+            //Debug.Log("ключ" + creature.Key);
             if (creature.Value == null)
             {
                 creaturesToDelete.Add(creature.Key);
@@ -46,9 +46,7 @@ public class MobsHpBarManager : MonoBehaviour
 
     private void Follow(Creature creature, MobHpBar hpBar)
     {
-        hpBar.BarFront.transform.position = creature.transform.position + Vector3.up * 0.5f + Vector3.left * 0.35f;
-        hpBar.BarBack.transform.position = creature.transform.position + Vector3.up * 0.5f + Vector3.left * 0.35f;
-        hpBar.HpText.transform.position = creature.transform.position + Vector3.up * 0.5f + Vector3.left * 0.35f;
+        hpBar.transform.position = creature.transform.position + Vector3.up * 0.25f;
     }
 
     private void DeleteBars(List<MobHpBar> bars)
