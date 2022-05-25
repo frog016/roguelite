@@ -3,7 +3,7 @@ using System.Linq;
 using Database.MutableDatabases;
 using UnityEngine.UI;
 
-public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel> //  TODO: Рефакторинг 
+public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
 {
     private EffectsAltar _altar;
 
@@ -36,7 +36,7 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel> //  
         Destroy(_altar.gameObject);
         gameObject.SetActive(false);
     }
-
+       
     private EffectData GetEffectData(Type type)
     {
         var data = EffectsDatabase.Instance.GetDataByType(type);

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class StunEffect : EffectBase
@@ -51,7 +52,7 @@ public class StunEffect : EffectBase
 
     private void SetEnabled(List<MonoBehaviour> components, bool state)
     {
-        foreach (var component in components)
+        foreach (var component in components.Where(component => component != null))
             component.enabled = state;
     }
 }

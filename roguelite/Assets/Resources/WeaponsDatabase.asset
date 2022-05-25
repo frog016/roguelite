@@ -25,4 +25,4 @@ MonoBehaviour:
     - _weaponType: 2
       _globalCooldownTime: 1
       _prefab: {fileID: 297710760577586906, guid: d465a6ae525a8f14cab69516ae54ad80, type: 3}
-      _weaponAttacks: 02000000
+      _weaponAttacks: 020000000300000004000000050000000600000008000000

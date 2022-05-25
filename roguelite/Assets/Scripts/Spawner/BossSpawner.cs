@@ -12,6 +12,8 @@ public class BossSpawner : SingletonObject<BossSpawner>, ISpawner
         boss.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
         boss.OnObjectDeath.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex)); //  Костыль
         boss.GetComponent<StateChanger>().SetTarget(PlayerSpawner.Instance.Player);
+
+        FindObjectOfType<MobsHpBarManager>().AddCreature(boss);
         LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(() => SpawnUnits());
         Destroy(creatureObject);
     }

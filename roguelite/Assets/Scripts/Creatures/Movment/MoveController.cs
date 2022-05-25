@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class MoveController : MonoBehaviour
+public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 {
     [SerializeField] protected float _speed;
     [SerializeField] private float _dashCooldown;
@@ -42,16 +42,20 @@ public class MoveController : MonoBehaviour
 
     public void Dash(Vector2 direction = default)
     {
+        if (_isDashed)
+            return;
         StartCoroutine(DashCoroutine(direction));
     }
 
     private IEnumerator DashCoroutine(Vector2 direction)
     {
         _isDashed = true;
+        _canMove = false;
         var newDirection = direction == default ? Direction : direction;
         var dashForce = 10f;
         _rigidbody.velocity = newDirection * dashForce;
         yield return new WaitForSeconds(0.1f);
+        _canMove = true;
         _rigidbody.velocity = Vector2.zero;
         yield return new WaitForSeconds(_dashCooldown);
         _isDashed = false;
