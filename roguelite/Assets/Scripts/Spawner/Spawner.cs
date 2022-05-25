@@ -23,10 +23,17 @@ public class Spawner : SingletonObject<Spawner>, ISpawner
         _currentRoomPoints = new List<Vector3Int>();
     }
 
-    private void Start()
+    private void Start()    //  Рефакторинг (Повесить на отдельные комнаты, каждая комната будет обращаться к генератору врагов для данных)
     {
         RoomManager.Instance.OnRoomEnter.AddListener(GetCurrentRoomPoints);
-        RoomManager.Instance.OnRoomEnter.AddListener(() => SpawnUnits());
+        RoomManager.Instance.OnRoomEnter.AddListener(() =>
+        {
+            var spawner = RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponent(typeof(ISpawner));
+            if (spawner == null)
+                SpawnUnits();
+            else
+                (spawner as BossSpawner).SpawnUnits();
+        });
         RoomManager.Instance.OnRoomExit.AddListener(() => Destroy(RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponentInChildren<RoomDetector>()));
         FindObjectOfType<NavMeshSurface>().BuildNavMesh();
     }

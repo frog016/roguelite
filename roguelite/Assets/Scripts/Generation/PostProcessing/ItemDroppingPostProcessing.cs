@@ -12,7 +12,7 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
     public override void Run(DungeonGeneratorLevelGrid2D level)
     {
         var itemDropperType = typeof(ItemDropperRoomBase);
-        _dropperTypes = itemDropperType.Assembly.ExportedTypes.Where(type => itemDropperType.IsAssignableFrom(type) && type != itemDropperType).ToList();
+        _dropperTypes = itemDropperType.Assembly.ExportedTypes.Where(type => itemDropperType.IsAssignableFrom(type) && !type.IsAbstract).ToList();
 
         foreach (var roomInstance in level.RoomInstances
                      .Select(room => room.RoomTemplateInstance)

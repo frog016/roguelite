@@ -1,21 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class BossSpawner : SingletonObject<BossSpawner>, ISpawner
 {
-    protected override void Awake()
-    {
-        base.Awake();
-        LevelGenerationManager.Instance.OnEndGeneration.AddListener(() => SpawnUnits());
-    }
-
-    public void SpawnUnits(SpawnData data = null)
+    public void SpawnUnits(SpawnData data = null)   //  Рефакторинг
     {
         var creatureObject = new GameObject("Empty");
         creatureObject.transform.position = FindPosition();
         var boss = CreatureFactory.Instance.CreateObject(creatureObject, typeof(Gasadokuro));
         boss.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
-
+        boss.OnObjectDeath.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex)); //  Костыль
+        boss.GetComponent<StateChanger>().SetTarget(PlayerSpawner.Instance.Player);
         LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(() => SpawnUnits());
         Destroy(creatureObject);
     }

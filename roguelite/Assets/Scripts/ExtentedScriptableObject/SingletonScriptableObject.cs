@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace ExtendedScriptableObject
@@ -12,21 +11,18 @@ namespace ExtendedScriptableObject
         {
             get
             {
-                if (_instance is null)
-                {
-                    var assets = Resources.LoadAll<T>("");
-                    if (assets is null || !assets.Any())
-                    {
-                        throw new Exception("Couldn't find any scriptable object instances in the Resources");
-                    }
-                    if (assets.Length > 1)
-                    {
-                        Debug.LogWarning("Multiple instances of the singleton found in the Resources");
-                    }
+                if (_instance != null)
+                    return _instance;
+                
+                var assets = Resources.LoadAll<T>("");
 
-                    _instance = assets.First();
-                }
+                if (assets is null || !assets.Any())
+                    Debug.LogWarning("Couldn't find any scriptable object instances in the Resources");
 
+                if (assets.Length > 1)
+                    Debug.LogWarning("Multiple instances of the singleton found in the Resources");
+
+                _instance = assets.First();
                 return _instance;
             }
         }

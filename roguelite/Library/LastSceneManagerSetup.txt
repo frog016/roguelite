@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Edgar/Examples/TestIsometricDungeon/IsometricDungeon.unity
+- path: Assets/Scenes/RunningDungeon.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

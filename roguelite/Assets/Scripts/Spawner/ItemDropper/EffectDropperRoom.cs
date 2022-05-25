@@ -8,6 +8,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
 {
     public static EffectsAltar Altar;
 
+    private Type _droppableItemType;
     private static List<Type> _allEffectsType;
 
     private void Awake()
