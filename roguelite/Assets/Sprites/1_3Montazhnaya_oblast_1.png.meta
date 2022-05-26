@@ -1,0 +1,3000 @@
+fileFormatVersion: 2
+guid: 0790b609b7b47564c8fea58489ccfe2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1881373095416095148
+    second: 1_3Montazhnaya_oblast_1_0
+  - first:
+      213: -8538832715533287494
+    second: 1_3Montazhnaya_oblast_1_1
+  - first:
+      213: 128615276103068886
+    second: 1_3Montazhnaya_oblast_1_2
+  - first:
+      213: -548761636584174364
+    second: 1_3Montazhnaya_oblast_1_3
+  - first:
+      213: 873405802060944598
+    second: 1_3Montazhnaya_oblast_1_4
+  - first:
+      213: 2990312396742830803
+    second: 1_3Montazhnaya_oblast_1_5
+  - first:
+      213: 8478745364168791542
+    second: 1_3Montazhnaya_oblast_1_6
+  - first:
+      213: 3903695816759611050
+    second: 1_3Montazhnaya_oblast_1_7
+  - first:
+      213: 1292966007518777784
+    second: 1_3Montazhnaya_oblast_1_8
+  - first:
+      213: 8396750886801263193
+    second: 1_3Montazhnaya_oblast_1_9
+  - first:
+      213: -4204464879616627741
+    second: 1_3Montazhnaya_oblast_1_10
+  - first:
+      213: 982258809427822987
+    second: 1_3Montazhnaya_oblast_1_11
+  - first:
+      213: -4387472329563338746
+    second: 1_3Montazhnaya_oblast_1_12
+  - first:
+      213: -1847133452709213447
+    second: 1_3Montazhnaya_oblast_1_13
+  - first:
+      213: -7240812624684087331
+    second: 1_3Montazhnaya_oblast_1_14
+  - first:
+      213: 6372948022904071312
+    second: 1_3Montazhnaya_oblast_1_15
+  - first:
+      213: 4237076827838537506
+    second: 1_3Montazhnaya_oblast_1_16
+  - first:
+      213: -149958399883007188
+    second: 1_3Montazhnaya_oblast_1_17
+  - first:
+      213: 7979619129103435860
+    second: 1_3Montazhnaya_oblast_1_18
+  - first:
+      213: 8263525767934768629
+    second: 1_3Montazhnaya_oblast_1_19
+  - first:
+      213: 8850403764598762971
+    second: 1_3Montazhnaya_oblast_1_20
+  - first:
+      213: -7037747604890683963
+    second: 1_3Montazhnaya_oblast_1_21
+  - first:
+      213: -6183810399525818485
+    second: 1_3Montazhnaya_oblast_1_22
+  - first:
+      213: 6522091063494063743
+    second: 1_3Montazhnaya_oblast_1_23
+  - first:
+      213: 2492364956796295362
+    second: 1_3Montazhnaya_oblast_1_24
+  - first:
+      213: 5088651104285612296
+    second: 1_3Montazhnaya_oblast_1_25
+  - first:
+      213: -2621836733185830074
+    second: 1_3Montazhnaya_oblast_1_26
+  - first:
+      213: 2306516730311515063
+    second: 1_3Montazhnaya_oblast_1_27
+  - first:
+      213: 2026577454121512112
+    second: 1_3Montazhnaya_oblast_1_28
+  - first:
+      213: -1538114558671437665
+    second: 1_3Montazhnaya_oblast_1_29
+  - first:
+      213: -1533501622585997619
+    second: 1_3Montazhnaya_oblast_1_30
+  - first:
+      213: 3024274459019208917
+    second: 1_3Montazhnaya_oblast_1_31
+  - first:
+      213: 2985348600249919239
+    second: 1_3Montazhnaya_oblast_1_32
+  - first:
+      213: 4127178918694172672
+    second: 1_3Montazhnaya_oblast_1_33
+  - first:
+      213: -4551852518141211957
+    second: 1_3Montazhnaya_oblast_1_34
+  - first:
+      213: 4084072076777608791
+    second: 1_3Montazhnaya_oblast_1_35
+  - first:
+      213: -4539574057864028161
+    second: 1_3Montazhnaya_oblast_1_36
+  - first:
+      213: 7441074974581209307
+    second: 1_3Montazhnaya_oblast_1_37
+  - first:
+      213: 2731254057281712360
+    second: 1_3Montazhnaya_oblast_1_38
+  - first:
+      213: -962193338973389176
+    second: 1_3Montazhnaya_oblast_1_39
+  - first:
+      213: -3377345035439876007
+    second: 1_3Montazhnaya_oblast_1_40
+  - first:
+      213: 8416544950265343995
+    second: 1_3Montazhnaya_oblast_1_41
+  - first:
+      213: 8055290096097403371
+    second: 1_3Montazhnaya_oblast_1_42
+  - first:
+      213: 5781172517484550921
+    second: 1_3Montazhnaya_oblast_1_43
+  - first:
+      213: 291642258363846951
+    second: 1_3Montazhnaya_oblast_1_44
+  - first:
+      213: -3003627439114356786
+    second: 1_3Montazhnaya_oblast_1_45
+  - first:
+      213: 8840584407619434226
+    second: 1_3Montazhnaya_oblast_1_46
+  - first:
+      213: -2860525098699512812
+    second: 1_3Montazhnaya_oblast_1_47
+  - first:
+      213: 8403197582712400193
+    second: 1_3Montazhnaya_oblast_1_48
+  - first:
+      213: 2889594723910820733
+    second: 1_3Montazhnaya_oblast_1_49
+  - first:
+      213: -8367823210474250586
+    second: 1_3Montazhnaya_oblast_1_50
+  - first:
+      213: 7727359354517902181
+    second: 1_3Montazhnaya_oblast_1_51
+  - first:
+      213: 2500260821067734793
+    second: 1_3Montazhnaya_oblast_1_52
+  - first:
+      213: 6011060521935683754
+    second: 1_3Montazhnaya_oblast_1_53
+  - first:
+      213: -7795149960310645919
+    second: 1_3Montazhnaya_oblast_1_54
+  - first:
+      213: -5936133311233567676
+    second: 1_3Montazhnaya_oblast_1_55
+  - first:
+      213: -4587392516642183450
+    second: 1_3Montazhnaya_oblast_1_56
+  - first:
+      213: 8934083227360992638
+    second: 1_3Montazhnaya_oblast_1_57
+  - first:
+      213: 3066497090932333166
+    second: 1_3Montazhnaya_oblast_1_58
+  - first:
+      213: 4928544365190563204
+    second: 1_3Montazhnaya_oblast_1_59
+  - first:
+      213: 7511482407329731396
+    second: 1_3Montazhnaya_oblast_1_60
+  - first:
+      213: -8684072077478894021
+    second: 1_3Montazhnaya_oblast_1_61
+  - first:
+      213: -4739455546120552773
+    second: 1_3Montazhnaya_oblast_1_62
+  - first:
+      213: -6263419549855238088
+    second: 1_3Montazhnaya_oblast_1_63
+  - first:
+      213: -2590806148784838977
+    second: 1_3Montazhnaya_oblast_1_64
+  - first:
+      213: -9023081239399021861
+    second: 1_3Montazhnaya_oblast_1_65
+  - first:
+      213: 3138619778010737439
+    second: 1_3Montazhnaya_oblast_1_66
+  - first:
+      213: 8883036360555382967
+    second: 1_3Montazhnaya_oblast_1_67
+  - first:
+      213: -3971821941858579084
+    second: 1_3Montazhnaya_oblast_1_68
+  - first:
+      213: 8135183534962979654
+    second: 1_3Montazhnaya_oblast_1_69
+  - first:
+      213: -6854719073753957600
+    second: 1_3Montazhnaya_oblast_1_70
+  - first:
+      213: 2693778976891357450
+    second: 1_3Montazhnaya_oblast_1_71
+  - first:
+      213: -6996197266683639354
+    second: 1_3Montazhnaya_oblast_1_72
+  - first:
+      213: -4662209588865891376
+    second: 1_3Montazhnaya_oblast_1_73
+  - first:
+      213: 8759277789130752854
+    second: 1_3Montazhnaya_oblast_1_74
+  - first:
+      213: 1888425146505738462
+    second: 1_3Montazhnaya_oblast_1_75
+  - first:
+      213: 4459969073162781515
+    second: 1_3Montazhnaya_oblast_1_76
+  - first:
+      213: 4086847245580719014
+    second: 1_3Montazhnaya_oblast_1_77
+  - first:
+      213: -4157417241583590300
+    second: 1_3Montazhnaya_oblast_1_78
+  - first:
+      213: -4357929553298156412
+    second: 1_3Montazhnaya_oblast_1_79
+  - first:
+      213: -6595710367561404356
+    second: 1_3Montazhnaya_oblast_1_80
+  - first:
+      213: 8688513710110301494
+    second: 1_3Montazhnaya_oblast_1_81
+  - first:
+      213: -8189065864663077964
+    second: 1_3Montazhnaya_oblast_1_82
+  - first:
+      213: -6899363283821795197
+    second: 1_3Montazhnaya_oblast_1_83
+  - first:
+      213: -1203648253965483631
+    second: 1_3Montazhnaya_oblast_1_84
+  - first:
+      213: -6107932808483478006
+    second: 1_3Montazhnaya_oblast_1_85
+  - first:
+      213: 7762292051193471206
+    second: 1_3Montazhnaya_oblast_1_86
+  - first:
+      213: -1769332120272733506
+    second: 1_3Montazhnaya_oblast_1_87
+  - first:
+      213: 7970176691244633370
+    second: 1_3Montazhnaya_oblast_1_88
+  - first:
+      213: 4859915081467849218
+    second: 1_3Montazhnaya_oblast_1_89
+  - first:
+      213: 7970714596721225047
+    second: 1_3Montazhnaya_oblast_1_90
+  - first:
+      213: -2003582364651021828
+    second: 1_3Montazhnaya_oblast_1_91
+  - first:
+      213: -2196154695461730124
+    second: 1_3Montazhnaya_oblast_1_92
+  - first:
+      213: 3311224753626923944
+    second: 1_3Montazhnaya_oblast_1_93
+  - first:
+      213: 1113548702124047798
+    second: 1_3Montazhnaya_oblast_1_94
+  - first:
+      213: 277253869614835889
+    second: 1_3Montazhnaya_oblast_1_95
+  - first:
+      213: -3820623187167822456
+    second: 1_3Montazhnaya_oblast_1_96
+  - first:
+      213: -29379580454566910
+    second: 1_3Montazhnaya_oblast_1_97
+  - first:
+      213: 6309663259827058809
+    second: 1_3Montazhnaya_oblast_1_98
+  - first:
+      213: 2114854909346647357
+    second: 1_3Montazhnaya_oblast_1_99
+  - first:
+      213: -9198474464271708036
+    second: 1_3Montazhnaya_oblast_1_100
+  - first:
+      213: -6261301947741322983
+    second: 1_3Montazhnaya_oblast_1_101
+  - first:
+      213: 1370241073531871839
+    second: 1_3Montazhnaya_oblast_1_102
+  - first:
+      213: 8446050749826334724
+    second: 1_3Montazhnaya_oblast_1_103
+  - first:
+      213: 4416865093225239638
+    second: 1_3Montazhnaya_oblast_1_104
+  - first:
+      213: -1243970285809121441
+    second: 1_3Montazhnaya_oblast_1_105
+  - first:
+      213: 3405100410418901503
+    second: 1_3Montazhnaya_oblast_1_106
+  - first:
+      213: -5014903199209653847
+    second: 1_3Montazhnaya_oblast_1_107
+  - first:
+      213: -3603341952917246494
+    second: 1_3Montazhnaya_oblast_1_108
+  - first:
+      213: 6928906696093461593
+    second: 1_3Montazhnaya_oblast_1_109
+  - first:
+      213: -4630628674360510028
+    second: 1_3Montazhnaya_oblast_1_110
+  - first:
+      213: -5491485164126818546
+    second: 1_3Montazhnaya_oblast_1_111
+  - first:
+      213: 7744277324969629298
+    second: 1_3Montazhnaya_oblast_1_112
+  - first:
+      213: 8458863164470048066
+    second: 1_3Montazhnaya_oblast_1_113
+  - first:
+      213: -4892020079401606277
+    second: 1_3Montazhnaya_oblast_1_114
+  - first:
+      213: 4295736039447151668
+    second: 1_3Montazhnaya_oblast_1_115
+  - first:
+      213: -2900671473723793558
+    second: 1_3Montazhnaya_oblast_1_116
+  - first:
+      213: -1293913259446950070
+    second: 1_3Montazhnaya_oblast_1_117
+  - first:
+      213: 3203916870005164957
+    second: 1_3Montazhnaya_oblast_1_118
+  - first:
+      213: -8685714102898688297
+    second: 1_3Montazhnaya_oblast_1_119
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 4074
+        width: 133
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1e042ccdafb1a10800000000000000
+      internalID: 1881373095416095148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 4074
+        width: 132
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf772ac2e8ff7980800000000000000
+      internalID: -8538832715533287494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 4158
+        width: 277
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcefc489eee8c100800000000000000
+      internalID: 128615276103068886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_3
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2537
+        width: 2139
+        height: 1642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecc901f2386268f0800000000000000
+      internalID: -548761636584174364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_4
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 2694
+        width: 2732
+        height: 1472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d49b9013f5fe1c00800000000000000
+      internalID: 873405802060944598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4039
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daad4f0849bf7920800000000000000
+      internalID: 2990312396742830803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4008
+        width: 221
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f555448cfd8aa570800000000000000
+      internalID: 8478745364168791542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_7
+      rect:
+        serializedVersion: 2
+        x: 6190
+        y: 2551
+        width: 1875
+        height: 1570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8225a9a6bc2630800000000000000
+      internalID: 3903695816759611050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_8
+      rect:
+        serializedVersion: 2
+        x: 8690
+        y: 2568
+        width: 2514
+        height: 1553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1dfc0cbb981f110800000000000000
+      internalID: 1292966007518777784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3987
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a4c339170478470800000000000000
+      internalID: 8396750886801263193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3856
+        width: 61
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb68dbd77db6a5c0800000000000000
+      internalID: -4204464879616627741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_11
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 3855
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b898175de2fa1ad00800000000000000
+      internalID: 982258809427822987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_12
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 3855
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608858e79219c13c0800000000000000
+      internalID: -4387472329563338746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_13
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 3848
+        width: 222
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fac68a49e9ad56e0800000000000000
+      internalID: -1847133452709213447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3678
+        width: 176
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd78a840847738b90800000000000000
+      internalID: -7240812624684087331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_15
+      rect:
+        serializedVersion: 2
+        x: 8147
+        y: 3600
+        width: 225
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094a9352672417850800000000000000
+      internalID: 6372948022904071312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_16
+      rect:
+        serializedVersion: 2
+        x: 8453
+        y: 3613
+        width: 174
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fda590dee1dca30800000000000000
+      internalID: 4237076827838537506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 3544
+        width: 65
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b23eb31ad3bedf0800000000000000
+      internalID: -149958399883007188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 3544
+        width: 66
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4584f11f15d4dbe60800000000000000
+      internalID: 7979619129103435860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 3550
+        width: 471
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5f90667e0fda270800000000000000
+      internalID: 8263525767934768629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_20
+      rect:
+        serializedVersion: 2
+        x: 8147
+        y: 3352
+        width: 225
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd60bb1553f2da70800000000000000
+      internalID: 8850403764598762971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3271
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c572a747d5e45e90800000000000000
+      internalID: -7037747604890683963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_22
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 3271
+        width: 211
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fa5e17431be2aa0800000000000000
+      internalID: -6183810399525818485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_23
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 3350
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f763058444f138a50800000000000000
+      internalID: 6522091063494063743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_24
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3350
+        width: 62
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8997c19b8a69220800000000000000
+      internalID: 2492364956796295362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_25
+      rect:
+        serializedVersion: 2
+        x: 8457
+        y: 3358
+        width: 173
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d7d0f7358e9640800000000000000
+      internalID: 5088651104285612296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_26
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 3193
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643536bd16d5d9bd0800000000000000
+      internalID: -2621836733185830074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_27
+      rect:
+        serializedVersion: 2
+        x: 8253
+        y: 3229
+        width: 29
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb96baeeb4620020800000000000000
+      internalID: 2306516730311515063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_28
+      rect:
+        serializedVersion: 2
+        x: 8299
+        y: 3229
+        width: 29
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc6abe0579df1c10800000000000000
+      internalID: 2026577454121512112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_29
+      rect:
+        serializedVersion: 2
+        x: 8534
+        y: 3222
+        width: 23
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90488a45f487aae0800000000000000
+      internalID: -1538114558671437665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_30
+      rect:
+        serializedVersion: 2
+        x: 8570
+        y: 3222
+        width: 23
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6c64b2668e7bae0800000000000000
+      internalID: -1533501622585997619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_31
+      rect:
+        serializedVersion: 2
+        x: 8209
+        y: 3033
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d86021e89168f920800000000000000
+      internalID: 3024274459019208917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_32
+      rect:
+        serializedVersion: 2
+        x: 8504
+        y: 3033
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7072b902cb61e6920800000000000000
+      internalID: 2985348600249919239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_33
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2488
+        width: 530
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0083f3d1c5fa64930800000000000000
+      internalID: 4127178918694172672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_34
+      rect:
+        serializedVersion: 2
+        x: 8147
+        y: 2768
+        width: 225
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcac932604294d0c0800000000000000
+      internalID: -4551852518141211957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_35
+      rect:
+        serializedVersion: 2
+        x: 8457
+        y: 2779
+        width: 173
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756db6d5ae98da830800000000000000
+      internalID: 4084072076777608791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_36
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1319
+        width: 741
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff9f6132713001c0800000000000000
+      internalID: -4539574057864028161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_37
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 631
+        width: 2555
+        height: 1634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd836fec342044760800000000000000
+      internalID: 7441074974581209307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_38
+      rect:
+        serializedVersion: 2
+        x: 4017
+        y: 1493
+        width: 297
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0fe93281d57e520800000000000000
+      internalID: 2731254057281712360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_39
+      rect:
+        serializedVersion: 2
+        x: 4468
+        y: 1675
+        width: 731
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e7e31914a95a2f0800000000000000
+      internalID: -962193338973389176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_40
+      rect:
+        serializedVersion: 2
+        x: 5275
+        y: 1638
+        width: 265
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9585dae85924121d0800000000000000
+      internalID: -3377345035439876007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_41
+      rect:
+        serializedVersion: 2
+        x: 5637
+        y: 1593
+        width: 2005
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff6cac1a039dc470800000000000000
+      internalID: 8416544950265343995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_42
+      rect:
+        serializedVersion: 2
+        x: 7715
+        y: 840
+        width: 2514
+        height: 1553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ab94e9a32acf60800000000000000
+      internalID: 8055290096097403371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_43
+      rect:
+        serializedVersion: 2
+        x: 4468
+        y: 1602
+        width: 731
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bdae156c9da3050800000000000000
+      internalID: 5781172517484550921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_44
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 1473
+        width: 942
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721154bb61f1c0400800000000000000
+      internalID: 291642258363846951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_45
+      rect:
+        serializedVersion: 2
+        x: 5637
+        y: 1202
+        width: 2005
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7f8fd02c8f056d0800000000000000
+      internalID: -3003627439114356786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_46
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 1220
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f67307eda010ba70800000000000000
+      internalID: 8840584407619434226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_47
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 1388
+        width: 943
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4142de4149f5d48d0800000000000000
+      internalID: -2860525098699512812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_48
+      rect:
+        serializedVersion: 2
+        x: 4333
+        y: 1248
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1496efeeda72e9470800000000000000
+      internalID: 8403197582712400193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_49
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 1248
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d732c877717e91820800000000000000
+      internalID: 2889594723910820733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_50
+      rect:
+        serializedVersion: 2
+        x: 4574
+        y: 1248
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aed96cef158fdb80800000000000000
+      internalID: -8367823210474250586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_51
+      rect:
+        serializedVersion: 2
+        x: 4678
+        y: 1248
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d4d144681d3b60800000000000000
+      internalID: 7727359354517902181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_52
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1015
+        width: 106
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f919548f5b2b220800000000000000
+      internalID: 2500260821067734793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_53
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1014
+        width: 99
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0c95d52b39b6350800000000000000
+      internalID: 6011060521935683754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_54
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1016
+        width: 23
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b98cc596012d390800000000000000
+      internalID: -7795149960310645919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_55
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1016
+        width: 159
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4445f84543e9e9da0800000000000000
+      internalID: -5936133311233567676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_56
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1016
+        width: 92
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e148afce4650c0800000000000000
+      internalID: -4587392516642183450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_57
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1016
+        width: 82
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d90a84c5d3cfb70800000000000000
+      internalID: 8934083227360992638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_58
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1015
+        width: 111
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a5ac17bd26e8a20800000000000000
+      internalID: 3066497090932333166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_59
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1015
+        width: 105
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485cfe2dcf4b56440800000000000000
+      internalID: 4928544365190563204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_60
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1014
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4431c71b3752e3860800000000000000
+      internalID: 7511482407329731396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_61
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1016
+        width: 22
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b366bf9a47afb7780800000000000000
+      internalID: -8684072077478894021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_62
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 1156
+        width: 12
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbebab0aa421a3eb0800000000000000
+      internalID: -4739455546120552773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_63
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 1178
+        width: 11
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83834abba1dd319a0800000000000000
+      internalID: -6263419549855238088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_64
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 1164
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb628cbc88b9b0cd0800000000000000
+      internalID: -2590806148784838977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_65
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1082
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2412a4b6397c280800000000000000
+      internalID: -9023081239399021861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_66
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1082
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b68591f0e9e8b20800000000000000
+      internalID: 3138619778010737439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_67
+      rect:
+        serializedVersion: 2
+        x: 3921
+        y: 662
+        width: 488
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b848cd6182e64b70800000000000000
+      internalID: 8883036360555382967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 924
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47dca6cccf041e8c0800000000000000
+      internalID: -3971821941858579084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_69
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 924
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6433310b25af5e070800000000000000
+      internalID: 8135183534962979654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_70
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 924
+        width: 76
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bfccdf1552fd0a0800000000000000
+      internalID: -6854719073753957600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_71
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 924
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09460d05b9326520800000000000000
+      internalID: 2693778976891357450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_72
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 924
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c943c447a388ee90800000000000000
+      internalID: -6996197266683639354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_73
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 924
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d38a3394118c4fb0800000000000000
+      internalID: -4662209588865891376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_74
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 924
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6538b169db43f8970800000000000000
+      internalID: 8759277789130752854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_75
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 924
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8b36a5aa8053a10800000000000000
+      internalID: 1888425146505738462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_76
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 924
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43881bfd3ef4ed30800000000000000
+      internalID: 4459969073162781515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_77
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 914
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a35f14bae567b830800000000000000
+      internalID: 4086847245580719014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 924
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4646354bb03ed46c0800000000000000
+      internalID: -4157417241583590300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_79
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 924
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4849c7b19268583c0800000000000000
+      internalID: -4357929553298156412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_80
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 924
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c303424cd545774a0800000000000000
+      internalID: -6595710367561404356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_81
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 924
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d5c358f2dc39870800000000000000
+      internalID: 8688513710110301494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_82
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 924
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbea7ecbf79a5e80800000000000000
+      internalID: -8189065864663077964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_83
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 914
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388ed63d5a98040a0800000000000000
+      internalID: -6899363283821795197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_84
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 917
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1914edb4a48cb4fe0800000000000000
+      internalID: -1203648253965483631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_85
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 924
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06636ec8734c3ba0800000000000000
+      internalID: -6107932808483478006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_86
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 924
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0a9328e7339bb60800000000000000
+      internalID: 7762292051193471206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_87
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 924
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba74799fc11277e0800000000000000
+      internalID: -1769332120272733506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_88
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 914
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d0cbe0971cb9e60800000000000000
+      internalID: 7970176691244633370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_89
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 924
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a64758403e17340800000000000000
+      internalID: 4859915081467849218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_90
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 917
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75de69fe1baad9e60800000000000000
+      internalID: 7970714596721225047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_91
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 924
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf91dbc6478d134e0800000000000000
+      internalID: -2003582364651021828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_92
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 924
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b88231b0f0b581e0800000000000000
+      internalID: -2196154695461730124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_93
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 924
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3c96bae55d3fd20800000000000000
+      internalID: 3311224753626923944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_94
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 924
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd733e05ae147f00800000000000000
+      internalID: 1113548702124047798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_95
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 924
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8aefaece009d300800000000000000
+      internalID: 277253869614835889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_96
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 924
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dbd3c247b6afac0800000000000000
+      internalID: -3820623187167822456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_97
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 924
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2040b5f5d6f979ff0800000000000000
+      internalID: -29379580454566910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_98
+      rect:
+        serializedVersion: 2
+        x: 4487
+        y: 833
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97833560e4d609750800000000000000
+      internalID: 6309663259827058809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_99
+      rect:
+        serializedVersion: 2
+        x: 4803
+        y: 833
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d0917c559795d10800000000000000
+      internalID: 2114854909346647357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_100
+      rect:
+        serializedVersion: 2
+        x: 5151
+        y: 833
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c705599d534785080800000000000000
+      internalID: -9198474464271708036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_101
+      rect:
+        serializedVersion: 2
+        x: 5503
+        y: 833
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911ca656d036b19a0800000000000000
+      internalID: -6261301947741322983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_102
+      rect:
+        serializedVersion: 2
+        x: 5835
+        y: 833
+        width: 236
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52648c1ff2140310800000000000000
+      internalID: 1370241073531871839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_103
+      rect:
+        serializedVersion: 2
+        x: 10353
+        y: 240
+        width: 478
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400025a6866663570800000000000000
+      internalID: 8446050749826334724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_104
+      rect:
+        serializedVersion: 2
+        x: 10914
+        y: 240
+        width: 478
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6545386966bdb4d30800000000000000
+      internalID: 4416865093225239638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_105
+      rect:
+        serializedVersion: 2
+        x: 4487
+        y: 461
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57c43bad978cbee0800000000000000
+      internalID: -1243970285809121441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_106
+      rect:
+        serializedVersion: 2
+        x: 4803
+        y: 461
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff13e8348c8514f20800000000000000
+      internalID: 3405100410418901503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_107
+      rect:
+        serializedVersion: 2
+        x: 5151
+        y: 461
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a973244c1c776ab0800000000000000
+      internalID: -5014903199209653847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_108
+      rect:
+        serializedVersion: 2
+        x: 5503
+        y: 461
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edea1cc59b5efdc0800000000000000
+      internalID: -3603341952917246494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_109
+      rect:
+        serializedVersion: 2
+        x: 5835
+        y: 461
+        width: 236
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ce97eddeb682060800000000000000
+      internalID: 6928906696093461593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_110
+      rect:
+        serializedVersion: 2
+        x: 6437
+        y: 313
+        width: 140
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9f00a31c3bcbfb0800000000000000
+      internalID: -4630628674360510028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_111
+      rect:
+        serializedVersion: 2
+        x: 6713
+        y: 306
+        width: 192
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fa4ee96535ac3b0800000000000000
+      internalID: -5491485164126818546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_112
+      rect:
+        serializedVersion: 2
+        x: 7060
+        y: 326
+        width: 129
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2765de43233397b60800000000000000
+      internalID: 7744277324969629298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_113
+      rect:
+        serializedVersion: 2
+        x: 7317
+        y: 323
+        width: 221
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245bfd92b3be36570800000000000000
+      internalID: 8458863164470048066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_114
+      rect:
+        serializedVersion: 2
+        x: 7644
+        y: 330
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73603528ad0c1cb0800000000000000
+      internalID: -4892020079401606277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_115
+      rect:
+        serializedVersion: 2
+        x: 7791
+        y: 485
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43447180b258d9b30800000000000000
+      internalID: 4295736039447151668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_116
+      rect:
+        serializedVersion: 2
+        x: 7969
+        y: 313
+        width: 120
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f959eb9aebeb7d0800000000000000
+      internalID: -2900671473723793558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_117
+      rect:
+        serializedVersion: 2
+        x: 4820
+        y: 102
+        width: 265
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a472f78feb81b0ee0800000000000000
+      internalID: -1293913259446950070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_118
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 99
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b0a8e0b69967c20800000000000000
+      internalID: 3203916870005164957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_3Montazhnaya_oblast_1_119
+      rect:
+        serializedVersion: 2
+        x: 5420
+        y: 99
+        width: 266
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de7f14da05267780800000000000000
+      internalID: -8685714102898688297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

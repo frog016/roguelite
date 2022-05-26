@@ -59,6 +59,22 @@ sysinfo.txt
 crashlytics-build.properties
 
 roguelite/Temp/UnityLockfile
+<<<<<<< HEAD
 roguelite/Library/Artifacts/
 roguelite/UserSettings/EditorUserSettings.asset
 roguelite/UserSettings/EditorUserSettings.asset
+=======
+roguelite/Library/Artifacts/b6/b6ec6ea4bc422f2ee06483e2a2b78188
+roguelite/Library/Artifacts/b7/b7435685095e056ab072d549e99b0b13
+roguelite/Library/Artifacts/5d/5d23b8b9f5daebe55c7cfe645c7bafc3
+roguelite/Library/Artifacts/1d/1d6635346e02453480fb2e2cc57e02a5
+roguelite/Library/Artifacts/dd/dd94d0681e1b0d4cb8f8445eda8227f8
+roguelite/Library/Artifacts/f5/f53de5c719492c92b3e9e935892b32f5
+roguelite/Library/Artifacts/70/70d163529a84bdac3abdf62960e4f88d
+roguelite/Library/Artifacts/14/14618276215e9db38205aa5335b20920
+roguelite/Library/Artifacts/67/67da21a1c609b82c22d3cdee3c8c8d0d
+roguelite/Library/Artifacts/0a/0abfd88050af1a93debbb29b67a0c227
+roguelite/Library/Artifacts/10/103ebcbeb53f6abdfcc4daf6a6c1fca1
+roguelite/Library/Artifacts/b5/b5576117c45088e0c65cc17da73a53a5
+roguelite/Library/Artifacts/ed/ed5c04cfaf498527658d0608b56674dd
+>>>>>>> origin/ux/ui

@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/RunningDungeon.unity
+=======
+- path: Assets/Scenes/UX UI.unity
+>>>>>>> origin/ux/ui
   isLoaded: 1
   isActive: 1
   isSubScene: 0
