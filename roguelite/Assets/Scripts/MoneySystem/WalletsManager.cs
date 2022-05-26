@@ -8,6 +8,8 @@ public class WalletsManager : SingletonScriptableObject<WalletsManager>
 {
     [SerializeField] private List<MoneyWallet> _wallets;
 
+    public List<MoneyWallet> Wallets => _wallets;
+
     public MoneyWallet FindWallet<T>() where T : MoneyWallet
     {
         return _wallets.FirstOrDefault(wallet => wallet.GetType() == typeof(T));

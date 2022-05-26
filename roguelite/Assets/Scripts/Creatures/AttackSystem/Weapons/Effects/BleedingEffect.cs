@@ -29,7 +29,7 @@ public class BleedingEffect : EffectBase
         var counter = 0;
         while (counter < _duration)
         {
-            target.ApplyDamage(_parameters.Damage);
+            target?.ApplyDamage(_parameters.Damage);
 
             yield return new WaitForSeconds(_parameters.CooldownTime);
             counter++;

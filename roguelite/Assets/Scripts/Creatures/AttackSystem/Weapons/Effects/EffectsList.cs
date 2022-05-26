@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Database.MutableDatabases;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EffectsList : MonoBehaviour    //  TODO: Сделать выбор среди не полученных эффектов, если не _maxCapacity
 {
     public List<EffectBase> Effects { get; private set; }
+    public UnityEvent<EffectData> OnEffectAddedEvent { get; private set; }
 
     private int _maxCapacity;
 
@@ -14,6 +16,7 @@ public class EffectsList : MonoBehaviour    //  TODO: Сделать выбор среди не пол
     {
         _maxCapacity = 4;
         Effects = new List<EffectBase>();
+        OnEffectAddedEvent = new UnityEvent<EffectData>();
     }
 
     public void AddOrUpdate(Type effectType)
@@ -37,5 +40,7 @@ public class EffectsList : MonoBehaviour    //  TODO: Сделать выбор среди не пол
     {
         Effects.Add(effect);
         effect.InitializeEffect(data);
+
+        OnEffectAddedEvent.Invoke(data);
     }
 }

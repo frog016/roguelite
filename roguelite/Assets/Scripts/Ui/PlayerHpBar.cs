@@ -4,21 +4,24 @@ using UnityEngine.UI;
 
 public class PlayerHpBar : MonoBehaviour
 {
-    private HeroSamurai Player;
-    [SerializeField] private Image BarFront;
-    [SerializeField] private TMP_Text HpText;
+    private DamageableObject _player;
+    [SerializeField] private Image _bar;
 
-    void Update()
+    private void Update()
     {
-        if (Player == null)
-        {
-            var obj = GameObject.Find("/Player(Clone)");
-            Player = obj == null ? null : obj.GetComponent<HeroSamurai>();
-        }
-        else
-        {
-            BarFront.fillAmount = Player.Health / Player.MaxHealth;
-            HpText.text = Player.Health.ToString();
-        }
+        if (_player != null)
+            return;
+
+        _player = PlayerSpawner.Instance?.Player;
+        ChangeHpValue();
+        _player?.OnHealthChanged?.AddListener(ChangeHpValue);
+    }
+
+    private void ChangeHpValue()
+    {
+        if (_player == null)
+            return;
+
+        _bar.fillAmount = _player.Health / _player.MaxHealth;
     }
 }
