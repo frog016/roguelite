@@ -20,7 +20,7 @@ MonoBehaviour:
       _delayBeforeAttack: 1
       _prefab: {fileID: 3393747118056610376, guid: 716e90e0b20598c4bb96ec85e61eab14, type: 3}
       _attackType: 0
-    - _damage: 5
+    - _damage: 2
       _attackRadius: 1
       _cooldownTime: 1
       _delayBeforeAttack: 1
@@ -32,9 +32,9 @@ MonoBehaviour:
       _delayBeforeAttack: 1
       _prefab: {fileID: 5973150990267449054, guid: 93c3b1d66b555cb4897c5a0278c9c322, type: 3}
       _attackType: 2
-    - _damage: 1
+    - _damage: 3
       _attackRadius: 1
-      _cooldownTime: 1
+      _cooldownTime: 4
       _delayBeforeAttack: 1
       _prefab: {fileID: 3126601292898549932, guid: afbfc86297b23a04697b55419cbbdb4f, type: 3}
       _attackType: 3
@@ -68,3 +68,15 @@ MonoBehaviour:
       _delayBeforeAttack: 1
       _prefab: {fileID: 5467316626570439851, guid: ecf6113002df21f47bb40c6276f6b210, type: 3}
       _attackType: 8
+    - _damage: 1
+      _attackRadius: 1.5
+      _cooldownTime: 1
+      _delayBeforeAttack: 1
+      _prefab: {fileID: 6483878179808576814, guid: 2b359a194bd9e6048b35e63e98deb505, type: 3}
+      _attackType: 9
+    - _damage: 1
+      _attackRadius: 2
+      _cooldownTime: 1
+      _delayBeforeAttack: 0.5
+      _prefab: {fileID: 4960372068706419781, guid: 6adab1ce7de731149aebe5cfa8a4c372, type: 3}
+      _attackType: 10

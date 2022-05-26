@@ -667,6 +667,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyDetector
       objectReference: {fileID: 0}
+    - target: {fileID: 411216848735991073, guid: eb25abae2c2b15c488c2cb137de9fdcc, type: 3}
+      propertyPath: _relations.Array.data[0]._enemies.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 411216848735991073, guid: eb25abae2c2b15c488c2cb137de9fdcc, type: 3}
+      propertyPath: _relations.Array.data[0]._enemies.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 411216848735991073, guid: eb25abae2c2b15c488c2cb137de9fdcc, type: 3}
+      propertyPath: _relations.Array.data[0]._enemies.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 411216848735991073, guid: eb25abae2c2b15c488c2cb137de9fdcc, type: 3}
+      propertyPath: _relations.Array.data[0]._enemies.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 411216848735991078, guid: eb25abae2c2b15c488c2cb137de9fdcc, type: 3}
       propertyPath: m_RootOrder
       value: 6

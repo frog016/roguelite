@@ -8,5 +8,7 @@ public enum AttackType
     GrabAndThrow,
     RollWithPush,
     SummonAcolytes,
-    ThrowStone
+    ThrowStone,
+    SpearLunge,
+    BowShoot
 }

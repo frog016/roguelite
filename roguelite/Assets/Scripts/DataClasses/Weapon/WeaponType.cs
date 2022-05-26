@@ -1,6 +1,9 @@
 public enum WeaponType
 {
     DualKatanas,
-    MobWeapon,
+    SkeletonWeapon,
+    ArcherWeapon,
+    SpearWeapon,
+    HugeWeapon,
     GasadokuroWeapon
 }
