@@ -11,6 +11,6 @@ public class EffectsAltar : MonoBehaviour
     private void OnMouseDown()
     {
         if (!EffectsSelectionPanel.Instance.gameObject.activeInHierarchy)
-            EffectsSelectionPanel.Instance.ShowPanel(this);
+            EffectsSelectionPanel.Instance.ShowPanel();
     }
 }

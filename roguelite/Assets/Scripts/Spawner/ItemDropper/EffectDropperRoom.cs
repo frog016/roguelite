@@ -14,7 +14,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
     private void Awake()
     {
         _droppableItemType = typeof(EffectBase);
-        _itemsCount = 3;
+        _itemsCount = 4;
 
         _allEffectsType ??= _droppableItemType.Assembly.ExportedTypes.Where(type => _droppableItemType.IsAssignableFrom(type) && type != _droppableItemType).ToList();
         Altar ??= PrefabsFinder.FindObjectOfType<EffectsAltar>().GetComponent<EffectsAltar>();

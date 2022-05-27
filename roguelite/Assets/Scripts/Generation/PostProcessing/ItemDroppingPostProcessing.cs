@@ -23,5 +23,6 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
     private void AddRandomItemDropper(GameObject room)
     {
         room.AddComponent(_dropperTypes.GetRandomItemsInCollection(1).First());
+        //room.AddComponent(typeof(EffectDropperRoom));
     }
 }
