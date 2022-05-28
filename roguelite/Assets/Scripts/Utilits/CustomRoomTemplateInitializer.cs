@@ -10,9 +10,11 @@ public class CustomRoomTemplateInitializer: RoomTemplateInitializerBaseGrid2D
         tilemapLayersHandler.InitializeTilemaps(tilemapsRoot);
     }
 
+    #if UNITY_EDITOR
     [MenuItem("Assets/Create/Dungeon generator/Custom room template")]
     public static void CreateRoomTemplatePrefab()
     {
         RoomTemplateInitializerUtilsGrid2D.CreateRoomTemplatePrefab<CustomRoomTemplateInitializer>();
     }
+    #endif
 }
