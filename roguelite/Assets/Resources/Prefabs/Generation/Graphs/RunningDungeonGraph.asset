@@ -282,8 +282,8 @@ MonoBehaviour:
   - {fileID: -1338746556886320417}
   - {fileID: -5649779607078461426}
   EditorData:
-    PanOffset: {x: -315.5436, y: -98.738815}
-    Zoom: 1.797564
+    PanOffset: {x: 15.024071, y: 105.38565}
+    Zoom: 0.92692584
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
 --- !u!114 &102475973427176492
