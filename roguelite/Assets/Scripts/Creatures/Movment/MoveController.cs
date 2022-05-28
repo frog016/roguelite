@@ -24,9 +24,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
         if (!_canMove)
             return;
 
-        var normalizedDirection = direction.normalized;
-        Direction = Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y)
-            ? new Vector2(normalizedDirection.x, 0) : new Vector2(0, normalizedDirection.y);
+        Direction = direction.normalized;
         _rigidbody.MovePosition(transform.position + direction * _speed * Time.fixedDeltaTime);
     }
 
