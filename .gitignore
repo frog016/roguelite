@@ -59,11 +59,8 @@ sysinfo.txt
 crashlytics-build.properties
 
 roguelite/Temp/UnityLockfile
-<<<<<<< HEAD
 roguelite/Library/Artifacts/
 roguelite/UserSettings/EditorUserSettings.asset
-roguelite/UserSettings/EditorUserSettings.asset
-=======
 roguelite/Library/Artifacts/b6/b6ec6ea4bc422f2ee06483e2a2b78188
 roguelite/Library/Artifacts/b7/b7435685095e056ab072d549e99b0b13
 roguelite/Library/Artifacts/5d/5d23b8b9f5daebe55c7cfe645c7bafc3
@@ -77,4 +74,4 @@ roguelite/Library/Artifacts/0a/0abfd88050af1a93debbb29b67a0c227
 roguelite/Library/Artifacts/10/103ebcbeb53f6abdfcc4daf6a6c1fca1
 roguelite/Library/Artifacts/b5/b5576117c45088e0c65cc17da73a53a5
 roguelite/Library/Artifacts/ed/ed5c04cfaf498527658d0608b56674dd
->>>>>>> origin/ux/ui
+roguelite/Library/ArtifactDB

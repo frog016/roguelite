@@ -116,6 +116,7 @@ MonoBehaviour:
       _lifeStealAmount: 0
       _maxStacks: 3
       _increasedAttackSpeedCoefficient: 1
+      _increasedAttackSpeedCoefficient: 0
       _maxChainLinks: 0
       _chainLinksDamage: 0
       _areaRadius: 0
@@ -140,6 +141,8 @@ MonoBehaviour:
       _criticalHitCoefficient: 0
       _sprite: {fileID: 21300000, guid: c3ba2e9578debff4d8ba702164fcd14d, type: 3}
       _description: 
+      _areaRadius: 100
+      _criticalHitCoefficient: 0
     - _effectType: 7
       _attackParameters:
         _damage: 1
@@ -176,3 +179,4 @@ MonoBehaviour:
       _criticalHitCoefficient: 1.5
       _sprite: {fileID: 21300000, guid: cd17510be78442942a67ecbcec542f96, type: 3}
       _description: 
+      _criticalHitCoefficient: 0
