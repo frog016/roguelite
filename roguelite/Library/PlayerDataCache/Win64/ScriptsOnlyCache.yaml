@@ -119,8 +119,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -360,7 +358,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6322}
     - Class: 114
-      Script: {instanceID: 18020}
+      Script: {instanceID: 18018}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
