@@ -1,6 +1,5 @@
 using Edgar.Unity;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class RoomManager : SingletonObject<RoomManager>
 {

@@ -5013,6 +5013,7 @@ GameObject:
   - component: {fileID: 9071872615920394805}
   - component: {fileID: 7136776593310017111}
   - component: {fileID: 434137312694374826}
+  - component: {fileID: 3218506496517800814}
   m_Layer: 0
   m_Name: Boss room
   m_TagString: Untagged
@@ -5085,6 +5086,18 @@ MonoBehaviour:
       Margin1: 1
       Margin2: 1
       Enabled: 1
+--- !u!114 &3218506496517800814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743050738140390131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed493c41a7c090d46a3d4a5e7a287b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2774330880008533507
 GameObject:
   m_ObjectHideFlags: 0

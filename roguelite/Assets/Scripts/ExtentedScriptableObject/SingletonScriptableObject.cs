@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using UnityEngine;
 
 namespace ExtendedScriptableObject
 {
-    public class SingletonScriptableObject<T> : ScriptableObject where T: SingletonScriptableObject<T>
+    public class SingletonScriptableObject<T> : ScriptableObject where T : SingletonScriptableObject<T>
     {
         private static T _instance;
 
@@ -13,7 +13,7 @@ namespace ExtendedScriptableObject
             {
                 if (_instance != null)
                     return _instance;
-                
+
                 var assets = Resources.LoadAll<T>("");
 
                 if (assets is null || !assets.Any())
