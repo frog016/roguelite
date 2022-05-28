@@ -14,13 +14,13 @@ public class EffectsPanel : MonoBehaviour
         _angle = -100 * Mathf.PI / 360;
     }
 
-    private void Update()
+    private void Start()
     {
-        if (_effectsList != null)
-            return;
-
-        _effectsList = PlayerSpawner.Instance?.Player?.GetComponentInChildren<EffectsList>();
-        _effectsList?.OnEffectAddedEvent.AddListener(AddEffectCard);
+        LevelGenerationManager.Instance.OnEndGeneration.AddListener(() =>
+        {
+            var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectsList>();
+            effectsList.OnEffectAddedEvent.AddListener(AddEffectCard);
+        });
     }
 
     private void AddEffectCard(EffectData data)

@@ -1,11 +1,10 @@
 ﻿using System;
-using Edgar.GraphBasedGenerator.Grid2D;
 using UnityEditor;
 using UnityEngine;
 
 namespace Edgar.Unity.Editor
 {
-    [CustomEditor(typeof(DoorGrid2D))]
+    [CustomEditor(typeof(DoorsGrid2D))]
     public class DoorsInspector : UnityEditor.Editor
     {
         private HybridDoorModeInspector hybridDoorModeInspector;

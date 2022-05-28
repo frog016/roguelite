@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061081d55061fb2468de7b6d56e05ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _unitsRange: {x: 1, y: 2}
-  _currentUnitRange: {x: 1, y: 2}
+  MobsHpBarManager: {fileID: 0}
+  _unitsRange: {x: 1, y: 3}
+  _currentUnitRange: {x: 1, y: 3}
