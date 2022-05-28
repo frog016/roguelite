@@ -8,7 +8,7 @@ public class SummonAcolytes : AttackBase
         yield return base.AttackCoroutine();
 
         _cooldown.TryRestartCooldown();
-        Spawner.Instance.SpawnUnits(CreateAcolytesData());
+        //RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponent<ISpawner>().SpawnUnits(CreateAcolytesData());
 
         OnAttackCompletedEvent.Invoke(new AttackEventArgs(this, new List<DamageableObject>()));
     }

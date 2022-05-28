@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MobsHpBarManager : MonoBehaviour
+public class MobsHpBarManager : SingletonObject<MobsHpBarManager>
 {
     [SerializeField] private Canvas Canv;
     [SerializeField] private GameObject HpBarPrefab;

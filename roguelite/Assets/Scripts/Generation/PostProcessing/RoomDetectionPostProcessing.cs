@@ -34,8 +34,6 @@ public class RoomDetectionPostProcessing : DungeonGeneratorPostProcessingGrid2D
         compositeCollider2d.isTrigger = true;
         compositeCollider2d.generationType = CompositeCollider2D.GenerationType.Manual;
 
-        
-
         floor.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     }
 }

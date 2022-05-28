@@ -2,8 +2,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
-public class BossSpawner : SingletonObject<BossSpawner>, ISpawner
+public class BossSpawner : MonoBehaviour, ISpawner
 {
+    private RoomDetector _detector;
+    private DamageableObject _target;
+
+    private void Start()
+    {
+        _detector = GetComponentInChildren<RoomDetector>();
+        _detector.OnPlayerRoomEnterEvent.AddListener(player =>
+        {
+            _target = player;
+            SpawnUnits();
+        });
+    }
+
     public void SpawnUnits(SpawnData data = null)   //  Рефакторинг
     {
         var creatureObject = new GameObject("Empty");
@@ -11,10 +24,16 @@ public class BossSpawner : SingletonObject<BossSpawner>, ISpawner
         var boss = CreatureFactory.Instance.CreateObject(creatureObject, typeof(Gasadokuro));
         boss.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
         boss.OnObjectDeath.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex)); //  Костыль
-        boss.GetComponent<StateChanger>().SetTarget(PlayerSpawner.Instance.Player);
+        boss.GetComponent<StateChanger>().SetTarget(_target);
 
         FindObjectOfType<MobsHpBarManager>().AddCreature(boss);
-        LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(() => SpawnUnits());
+
+        _detector.OnPlayerRoomEnterEvent.RemoveListener(player =>
+        {
+            _target = player;
+            SpawnUnits();
+        });
+
         Destroy(creatureObject);
     }
 

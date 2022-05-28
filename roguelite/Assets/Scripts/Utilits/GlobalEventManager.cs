@@ -18,7 +18,7 @@ public class GlobalEventManager : SingletonObject<GlobalEventManager>
 
     private void CheckRoomCleared()
     {
-        if (Spawner.Instance.SpawnedUnitsCount > 1)
+        if (RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponent<EnemySpawner>()?.SpawnedUnitsCount > 1)
             return;
 
         OnRoomClearedEvent.Invoke();
