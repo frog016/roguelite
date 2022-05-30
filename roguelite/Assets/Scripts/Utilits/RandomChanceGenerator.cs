@@ -14,7 +14,7 @@ public static class RandomChanceGenerator
         return Random.value;
     }
 
-    public static List<T> GetRandomItemsInCollection<T>(this IEnumerable<T> collection, int count)
+    public static List<T> GetRandomItems<T>(this IEnumerable<T> collection, int count)
     {
         var listCollection = collection.ToList();
         var used = new HashSet<T>();
@@ -25,8 +25,8 @@ public static class RandomChanceGenerator
         {
             var randomValue = listCollection[Random.Range(0, listCollection.Count)];
             if (used.Contains(randomValue))
-                randomValue = listCollection[Random.Range(0, listCollection.Count)];
-
+                continue;
+                
             items.Add(randomValue);
             used.Add(randomValue);
         }

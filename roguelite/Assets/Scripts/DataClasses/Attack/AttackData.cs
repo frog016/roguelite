@@ -9,7 +9,7 @@ public class AttackData : Data
     [SerializeField] private float _cooldownTime;
     [SerializeField] private float _delayBeforeAttack;
 
-    public float Damage => _damage;
+    public float Damage { get => _damage; set => _damage = value; }
     public float AttackRadius => _attackRadius;
     public float CooldownTime => _cooldownTime;
     public float DelayBeforeAttack => _delayBeforeAttack;

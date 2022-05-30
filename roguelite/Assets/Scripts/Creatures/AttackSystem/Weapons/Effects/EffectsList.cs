@@ -36,6 +36,19 @@ public class EffectsList : MonoBehaviour    //  TODO: Сделать выбор среди не пол
             AddEffect(effect, data);
     }
 
+    public void Replace(Type oldEffectType, Type newEffectType)
+    {
+        var data = EffectsDatabase.Instance.GetDataByType(newEffectType);
+
+        var effect = Effects.FirstOrDefault(effect => effect.GetType() == oldEffectType);
+        if (effect == null)
+            return;
+
+        Effects.Remove(effect);
+        var newEffect = gameObject.AddComponent(newEffectType) as EffectBase;
+        AddEffect(newEffect, data);
+    }
+
     private void AddEffect(EffectBase effect, EffectData data)
     {
         Effects.Add(effect);

@@ -35,7 +35,8 @@ public static class TypeConvertor
             Tuple.Create(typeof(EffectBase), typeof(EffectType)),
             Tuple.Create(typeof(Creature), typeof(CreatureType)),
             Tuple.Create(typeof(AttackBase), typeof(AttackType)),
-            Tuple.Create(typeof(Boss), typeof(CreatureType))
+            Tuple.Create(typeof(Boss), typeof(CreatureType)),
+            Tuple.Create(typeof(Item), typeof(ItemType))
         };
 
         foreach (var parent in typesParents)

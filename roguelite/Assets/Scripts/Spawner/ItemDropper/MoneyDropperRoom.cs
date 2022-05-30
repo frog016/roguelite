@@ -6,6 +6,6 @@ public abstract class MoneyDropperRoom : ItemDropperRoomBase
 
     protected virtual void Awake()
     {
-        _itemsCount = Random.Range(1, 10);
+        ItemsCount = Random.Range(1, 10);
     }
 }

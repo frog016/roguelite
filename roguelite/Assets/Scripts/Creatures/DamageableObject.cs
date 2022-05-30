@@ -19,22 +19,23 @@ public class DamageableObject : MonoBehaviour
     {
         Health -= damage;
         Debug.Log($"{gameObject?.name} took {damage} damage. Remaining health is {Health}");
-        OnHealthChanged?.Invoke();
+        OnHealthChanged.Invoke();
         if (Health > 0)
             return;
 
-        OnObjectDeath?.Invoke();
+        OnObjectDeath.Invoke();
         Destroy(gameObject);
     }
 
     public void ApplyHeath(float healValue)
     {
         Health = Mathf.Min(Health + healValue, MaxHealth);
+        OnHealthChanged.Invoke();
     }
 
     private void OnDestroy()
     {
-        OnObjectDeath?.RemoveAllListeners();
-        OnHealthChanged?.RemoveAllListeners();
+        OnObjectDeath.RemoveAllListeners();
+        OnHealthChanged.RemoveAllListeners();
     }
 }

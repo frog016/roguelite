@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class ItemDropperRoomBase : MonoBehaviour
 {
-    protected int _itemsCount;
+    public int ItemsCount { get; set; }
     
     public abstract void DropItems();
 }

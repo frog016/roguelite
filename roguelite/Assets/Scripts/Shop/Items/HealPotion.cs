@@ -1,7 +1,12 @@
 public class HealPotion : Item
 {
-    public override void UseItem()
+    protected override void UseItem()
     {
-        throw new System.NotImplementedException();
+        if (_usesCount <= 0)
+            return;
+
+        GetComponentInParent<DamageableObject>().ApplyHeath(_data.RestoredHealth);
+        _usesCount--;
+        Destroy(this);
     }
 }

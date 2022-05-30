@@ -8,6 +8,6 @@ public class EntityMoneyDropperRoom : MoneyDropperRoom
 
     public override void DropItems()
     {
-        _wallet.AddMoney(_itemsCount);
+        _wallet.AddMoney(ItemsCount);
     }
 }
