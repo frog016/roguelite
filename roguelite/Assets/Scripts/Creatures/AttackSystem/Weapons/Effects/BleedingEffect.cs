@@ -6,11 +6,13 @@ using UnityEngine;
 public class BleedingEffect : EffectBase
 {
     private HashSet<DamageableObject> _targetsUnderEffect;
+    private GameObject _visualEffect;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _duration = data.Duration;
+        _visualEffect = (data as EffectDataInfo).VisualEffect;
         _targetsUnderEffect = new HashSet<DamageableObject>();
     }
 
@@ -20,7 +22,12 @@ public class BleedingEffect : EffectBase
             return;
 
         foreach (var target in attackEventArgs.DamagedTargets.Where(target => !_targetsUnderEffect.Contains(target)))
+        {
+            var visualEffect = Instantiate(_visualEffect, target.transform);
+            var particle = visualEffect.GetComponent<ParticleSystem>().main;
+            particle.duration = _duration;
             StartCoroutine(ApplyDamageOverTime(target));
+        }
     }
 
     private IEnumerator ApplyDamageOverTime(DamageableObject target)

@@ -85,9 +85,9 @@ public class Shop : SingletonObject<Shop>
     private void LoadInfo(GameObject card, Type type)   //  TODO: Доделать
     {
         var data = GetItemData(type);
-        var image = card.GetComponentInChildren<Image>();
-        image.GetComponentInChildren<Image>().sprite = data.Sprite;
-        image.GetComponentInChildren<Image>().SetNativeSize();
+        var image = card.GetComponentsInChildren<Image>().First();
+        image.GetComponentsInChildren<Image>().Last().sprite = data.Sprite;
+        image.GetComponentsInChildren<Image>().Last().SetNativeSize();
         card.GetComponentInChildren<TextMeshProUGUI>().text = data.Description;
     }
 
