@@ -22,7 +22,7 @@ public class EffectsInfoPanel : MonoBehaviour
     {
         LevelGenerationManager.Instance.OnEndGeneration.AddListener(() =>
         {
-            var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectsList>();
+            var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>();
             effectsList.OnEffectAddedEvent.AddListener(AddEffectCard);
         });
     }

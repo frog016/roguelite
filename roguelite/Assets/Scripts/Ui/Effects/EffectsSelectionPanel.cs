@@ -62,7 +62,7 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
 
     private void CreateSelectedEffect(EffectsAltar altar)
     {
-        PlayerSpawner.Instance.Player.GetComponentInChildren<EffectsList>().AddOrUpdate(_currentType);
+        PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().AddOrUpdate(_currentType);
         PauseManager.Instance.Continue();
         Destroy(altar.gameObject);
         _cards.ForEach(Destroy);

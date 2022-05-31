@@ -15,26 +15,24 @@ public class EnemySpawner : MonoBehaviour, ISpawner
     private void Start()
     {
         _detector = GetComponentInChildren<RoomDetector>();
-        _detector.OnPlayerRoomEnterEvent.AddListener(player =>
-        {
-            _target = player;
-            SpawnUnits();
-        });
+        _detector.OnPlayerRoomEnterEvent.AddListener(StartSpawning);
     }
 
     public void SpawnUnits(SpawnData data = null)
     {
         data ??= EnemyGenerator.Instance.GenerateRandomUnits();
 
-        _detector.OnPlayerRoomEnterEvent.RemoveListener(player =>
-        {
-            _target = player;
-            SpawnUnits();
-        });
+        _detector.OnPlayerRoomEnterEvent.RemoveListener(StartSpawning);
 
         SpawnedUnitsCount = data.Units.Sum(unit => unit.Count);
         foreach (var unitsData in data.Units)
             CreateUnit(unitsData);
+    }
+
+    private void StartSpawning(DamageableObject target)
+    {
+        _target = target;
+        SpawnUnits();
     }
 
     private void CreateUnit(SpawnUnitsData unitsData)
@@ -67,19 +65,16 @@ public class EnemySpawner : MonoBehaviour, ISpawner
                .Any(cast => !cast.collider.isTrigger))
             position = GetRandomPosition();
 
-        return position;
+        var grid = GetComponentInChildren<Grid>();
+        return grid.LocalToWorld(position);
     }
 
     private Vector2 GetRandomPosition()
     {
-        var tilemap = _detector.GetComponent<Tilemap>();
-
         var points = GetCurrentRoomPoints();
-        var grid = tilemap.gameObject.GetComponentInParent<Grid>();
         var randomIndex = Random.Range(0, points.Count);
-        var point = grid.CellToWorld(new Vector3Int(points[randomIndex].x, points[randomIndex].y, 0));
 
-        return point;
+        return new Vector2(points[randomIndex].x, points[randomIndex].y);
     }
 
     private List<Vector3Int> GetCurrentRoomPoints()

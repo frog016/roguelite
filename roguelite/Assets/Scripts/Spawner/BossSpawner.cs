@@ -10,11 +10,13 @@ public class BossSpawner : MonoBehaviour, ISpawner
     private void Start()
     {
         _detector = GetComponentInChildren<RoomDetector>();
-        _detector.OnPlayerRoomEnterEvent.AddListener(player =>
-        {
-            _target = player;
-            SpawnUnits();
-        });
+        _detector.OnPlayerRoomEnterEvent.AddListener(StartSpawning);
+    }
+
+    private void StartSpawning(DamageableObject target)
+    {
+        _target = target;
+        SpawnUnits();
     }
 
     public void SpawnUnits(SpawnData data = null)   //  Рефакторинг
@@ -28,11 +30,7 @@ public class BossSpawner : MonoBehaviour, ISpawner
 
         FindObjectOfType<MobsHpBarManager>().AddCreature(boss);
 
-        _detector.OnPlayerRoomEnterEvent.RemoveListener(player =>
-        {
-            _target = player;
-            SpawnUnits();
-        });
+        _detector.OnPlayerRoomEnterEvent.RemoveListener(StartSpawning);
 
         Destroy(creatureObject);
     }
@@ -40,7 +38,6 @@ public class BossSpawner : MonoBehaviour, ISpawner
     private Vector2 FindPosition()
     {
         var grid = GetComponentInChildren<Grid>();
-        var cell = grid.LocalToWorld(grid.GetComponentInChildren<Tilemap>().localBounds.center);
-        return cell;
+        return grid.LocalToWorld(GetComponentInChildren<Tilemap>().localBounds.center);
     }
 }

@@ -3,11 +3,11 @@ using System.Linq;
 
 public class RandomReplacementBag : Item
 {
-    private EffectsList _effectsList;
+    private EffectList _effectList;
 
     private void Awake()
     {
-        _effectsList = transform.parent.GetComponentInChildren<EffectsList>();
+        _effectList = transform.parent.GetComponentInChildren<EffectList>();
     }
 
     protected override void UseItem()
@@ -20,9 +20,9 @@ public class RandomReplacementBag : Item
             .Where(type => effectType.IsAssignableFrom(type) && !type.IsAbstract)
             .GetRandomItems(4);
 
-        var oldEffects = _effectsList.Effects.ToList();
+        var oldEffects = _effectList.Effects.ToList();
         foreach (var pair in oldEffects.Zip(randomEffectTypes, Tuple.Create))
-            _effectsList.Replace(pair.Item1.GetType(), pair.Item2);
+            _effectList.Replace(pair.Item1.GetType(), pair.Item2);
 
         _usesCount--;
         Destroy(this);

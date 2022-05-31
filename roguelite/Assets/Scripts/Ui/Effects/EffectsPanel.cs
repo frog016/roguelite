@@ -7,7 +7,7 @@ public class EffectsPanel : MonoBehaviour
     [SerializeField] private GameObject _effectCardPrefab;
 
     private float _angle;
-    private EffectsList _effectsList;
+    private EffectList _effectList;
 
     private void Awake()
     {
@@ -18,7 +18,7 @@ public class EffectsPanel : MonoBehaviour
     {
         LevelGenerationManager.Instance.OnEndGeneration.AddListener(() =>
         {
-            var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectsList>();
+            var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>();
             effectsList.OnEffectAddedEvent.AddListener(AddEffectCard);
         });
     }

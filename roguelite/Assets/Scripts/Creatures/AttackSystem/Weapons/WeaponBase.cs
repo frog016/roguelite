@@ -12,13 +12,13 @@ public abstract class WeaponBase : MonoBehaviour
 
     protected Dictionary<Type, AttackBase> _attacks;
 
-    private EffectsList _effects;
+    private EffectList _effects;
 
     public virtual void InitializeWeapon(WeaponDataInfo dataInfo)
     {
         GlobalCooldown = GetComponent<GlobalCooldown>();
         GlobalCooldown.ResetCooldownTime(dataInfo.GlobalCooldownTime);
-        _effects = GetComponentInChildren<EffectsList>();
+        _effects = GetComponentInChildren<EffectList>();
 
         CreateAttacks(dataInfo.WeaponAttacks);
     }

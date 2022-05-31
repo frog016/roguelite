@@ -11,6 +11,7 @@ public class Shop : SingletonObject<Shop>
     [SerializeField] private GameObject _itemCardPrefab;
     [SerializeField] private GameObject _cardList;
 
+    private bool _isOpened;
     private float _step;
     private List<Type> _itemTypes;
     private ItemBag _bag;
@@ -38,7 +39,8 @@ public class Shop : SingletonObject<Shop>
     {
         PauseManager.Instance.Stop();
         gameObject.SetActive(true);
-        ShowCards();
+        if (!_isOpened)
+            GenerateCards();
     }
 
     public void ClosePanel()
@@ -49,8 +51,9 @@ public class Shop : SingletonObject<Shop>
         //_cards = new List<GameObject>();
     }
 
-    private void ShowCards()
+    private void GenerateCards()
     {
+        _isOpened = true;
         var position = new Vector2(-_step, 0);
         foreach (var itemType in _itemTypes.GetRandomItems(3))
         {

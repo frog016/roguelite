@@ -10,6 +10,7 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
 
     public UnityEvent OnEndGeneration { get; private set; }
 
+    private Grid _grid;
     private DungeonGeneratorGrid2D _generator;
     private NavMeshSurface _surface;
 
@@ -35,7 +36,7 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
     {
         if (_generateOnStart)
         {
-            yield return null;
+            yield return null; 
             _generator.Generate();
             yield return null;
             _surface.BuildNavMesh();

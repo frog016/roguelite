@@ -5,11 +5,6 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
 {
     public DamageableObject Player { get; private set; }
 
-    protected override void Awake()
-    {
-        base.Awake();
-    }
-
     private void Start()
     {
         SpawnUnits();
@@ -31,7 +26,6 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
     private Vector2 FindPosition()  // Вынести в класс для поиска позиций
     {
         var grid = GetComponentInChildren<Grid>();
-        var cell = grid.LocalToWorld(grid.GetComponentInChildren<Tilemap>().localBounds.center);
-        return cell;
+        return grid.LocalToWorld(GetComponentInChildren<Tilemap>().localBounds.center);
     }
 }
