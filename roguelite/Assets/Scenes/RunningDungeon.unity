@@ -676,6 +676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8601034378083425014, guid: 7ed52ae4708483f4bb7d9314e70fddfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8601034378623596325, guid: 7ed52ae4708483f4bb7d9314e70fddfd, type: 3}
       propertyPath: m_IsActive
       value: 1

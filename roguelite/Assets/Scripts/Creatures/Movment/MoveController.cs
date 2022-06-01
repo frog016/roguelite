@@ -25,7 +25,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
             return;
 
         Direction = direction.normalized;
-        _rigidbody.MovePosition(transform.position + direction * _speed * Time.fixedDeltaTime);
+        _rigidbody.MovePosition(transform.position + direction.normalized * _speed * Time.fixedDeltaTime);
     }
 
     public void ContinueMoving()

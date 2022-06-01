@@ -1,9 +1,13 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class BossSpawner : MonoBehaviour, ISpawner
 {
+    [SerializeField] private GameObject _hpCardPrefab;
+
     private RoomDetector _detector;
     private DamageableObject _target;
 
@@ -28,7 +32,10 @@ public class BossSpawner : MonoBehaviour, ISpawner
         boss.OnObjectDeath.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex)); //  Костыль
         boss.GetComponent<StateChanger>().SetTarget(_target);
 
-        FindObjectOfType<MobsHpBarManager>().AddCreature(boss);
+        var hpCard = Instantiate(_hpCardPrefab, FindObjectOfType<PauseManager>().transform);
+        var imgae = hpCard.GetComponentsInChildren<Image>().Last();
+        boss.OnHealthChanged.AddListener(() => imgae.fillAmount = boss.Health / boss.MaxHealth);
+        boss.OnObjectDeath.AddListener(() => Destroy(hpCard));
 
         _detector.OnPlayerRoomEnterEvent.RemoveListener(StartSpawning);
 

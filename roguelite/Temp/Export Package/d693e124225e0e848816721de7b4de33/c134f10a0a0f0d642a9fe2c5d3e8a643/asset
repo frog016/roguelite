@@ -1,0 +1,339 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+//[ExecuteInEditMode]
+public class SpinePerson : MonoBehaviour {
+
+	public static Spine.RegionAttachment setSpineImageActive (SkeletonAnimation _anim, string _boneName, string _slotName, bool _active,
+	                                                        tk2dSpriteCollectionData _tk2d_atlas = null) {
+		
+		SkeletonDataAsset _skeleton_asset=_anim.skeletonDataAsset;
+		Spine.SkeletonData _skeleton_data=_skeleton_asset.GetSkeletonData(true);
+		Spine.SlotData _left_arm_slot=null;
+		int _slotIndex=0;
+		for(int i=0;i<_skeleton_data.Slots.Count;i++){
+			Spine.SlotData _slot_data=_skeleton_asset.GetSkeletonData(true).Slots[i];
+			Spine.BoneData _bone_data=_slot_data.BoneData;
+			if(_bone_data.Name==_boneName&&_slot_data.Name==_slotName){
+				_left_arm_slot=_slot_data;
+				_slotIndex=i;
+				//Debug.Log (_bone_data.Name+" / "+_left_arm_slot.Name+" / "+_left_arm_slot.AttachmentName);
+				break;
+			}
+		}
+		
+		if(_left_arm_slot==null){
+			//throw new UnityException("Error: bone with name "+_boneName+" not found!");
+			Debug.LogError("Error: bone with name '"+_boneName+"' or slot with name '"+_slotName+"', not found!");
+			return null;
+		}
+		
+		//int _slotIndex = _skeleton_data.FindSlotIndex(_left_arm_slot.Name);
+		
+		Spine.Skin _left_arm_skin=_skeleton_data.FindSkin("default");
+		Spine.RegionAttachment _left_arm_reg=_left_arm_skin.GetAttachment(_slotIndex,_left_arm_slot.AttachmentName) as Spine.RegionAttachment;
+		if(_left_arm_reg==null){
+			_left_arm_reg=_left_arm_skin.GetAttachment(_slotIndex,_left_arm_slot.Name) as Spine.RegionAttachment;
+		}
+		
+		if(_tk2d_atlas==null){
+			_tk2d_atlas=_skeleton_asset.spriteCollection;
+		}
+		
+		if(!_active){
+			_left_arm_reg.offset=new float[8];
+
+			return _left_arm_reg;
+		}
+		
+		_left_arm_reg.UpdateOffset();
+
+		return _left_arm_reg;
+	}
+
+	public static Spine.RegionAttachment replaceSpineImage (SkeletonAnimation _anim, string _boneName, string _spriteName,
+	                                                        tk2dSpriteCollectionData _tk2d_atlas = null, 
+	                                                        float _x=0, float _y=0, float _scaleX=1, float _scaleY=1, 
+	                                                        float _rotation=0, float _width=64, float _height=64) {
+		
+		SkeletonDataAsset _skeleton_asset=_anim.skeletonDataAsset;
+		Spine.SkeletonData _skeleton_data=_skeleton_asset.GetSkeletonData(true);
+		Spine.SlotData _left_arm_slot=null;
+		int _slotIndex=0;
+		for(int i=0;i<_skeleton_data.Slots.Count;i++){
+			Spine.SlotData _slot_data=_skeleton_asset.GetSkeletonData(true).Slots[i];
+			Spine.BoneData _bone_data=_slot_data.BoneData;
+			if(_bone_data.Name==_boneName){
+				_left_arm_slot=_slot_data;
+				_slotIndex=i;
+				//Debug.Log (_bone_data.Name+" / "+_left_arm_slot.Name+" / "+_left_arm_slot.AttachmentName);
+				break;
+			}
+		}
+		
+		if(_left_arm_slot==null){
+			//throw new UnityException("Error: bone with name "+_boneName+" not found!");
+			Debug.LogError("Error: bone with name '"+_boneName+"' not found!");
+			return null;
+		}
+		
+		//int _slotIndex = _skeleton_data.FindSlotIndex(_left_arm_slot.Name);
+		
+		Spine.Skin _left_arm_skin=_skeleton_data.FindSkin("default");
+		Spine.RegionAttachment _left_arm_reg=_left_arm_skin.GetAttachment(_slotIndex,_left_arm_slot.AttachmentName) as Spine.RegionAttachment;
+		if(_left_arm_reg==null){
+			_left_arm_reg=_left_arm_skin.GetAttachment(_slotIndex,_left_arm_slot.Name) as Spine.RegionAttachment;
+		}
+		
+		if(_tk2d_atlas==null){
+			_tk2d_atlas=_skeleton_asset.spriteCollection;
+		}
+		
+		tk2dSpriteDefinition _def = _tk2d_atlas.inst.GetSpriteDefinition(_spriteName);
+		if(_def==null){
+			//throw new UnityException("Error: Cant change bone texture, sprite with name "+_spriteName+" not found!");
+			Debug.LogError("Error: Cant change bone texture, sprite with name '"+_spriteName+"' not found!");
+			return _left_arm_reg;
+		}
+		
+		Vector2 minTexCoords = Vector2.one;
+		Vector2 maxTexCoords = Vector2.zero;
+		for (int i = 0; i < _def.uvs.Length; ++i) {
+			Vector2 uv = _def.uvs[i];
+			minTexCoords = Vector2.Min(minTexCoords, uv);
+			maxTexCoords = Vector2.Max(maxTexCoords, uv);
+		}
+		bool rotated = _def.flipped == tk2dSpriteDefinition.FlipMode.Tk2d;
+		if (rotated) {
+			float temp = minTexCoords.x;
+			minTexCoords.x = maxTexCoords.x;
+			maxTexCoords.x = temp;
+		}
+		_left_arm_reg.SetUVs(
+			minTexCoords.x,
+			maxTexCoords.y,
+			maxTexCoords.x,
+			minTexCoords.y,
+			rotated
+			);
+		
+		_left_arm_reg.RegionOriginalWidth = (int)(_def.untrimmedBoundsData[1].x / _def.texelSize.x);
+		_left_arm_reg.RegionOriginalHeight = (int)(_def.untrimmedBoundsData[1].y / _def.texelSize.y);
+		
+		_left_arm_reg.RegionWidth = (int)(_def.boundsData[1].x / _def.texelSize.x);
+		_left_arm_reg.RegionHeight = (int)(_def.boundsData[1].y / _def.texelSize.y);
+		
+		float x0 = _def.untrimmedBoundsData[0].x - _def.untrimmedBoundsData[1].x / 2;
+		float x1 = _def.boundsData[0].x - _def.boundsData[1].x / 2;
+		_left_arm_reg.RegionOffsetX = (int)((x1 - x0) / _def.texelSize.x);
+		
+		float y0 = _def.untrimmedBoundsData[0].y - _def.untrimmedBoundsData[1].y / 2;
+		float y1 = _def.boundsData[0].y - _def.boundsData[1].y / 2;
+		_left_arm_reg.RegionOffsetY = (int)((y1 - y0) / _def.texelSize.y);
+		
+		_left_arm_reg.RendererObject = _def.material;
+		
+		float _scale = 1.0f / (_tk2d_atlas.invOrthoSize * _tk2d_atlas.halfTargetHeight) * _skeleton_asset.scale;
+		
+		_left_arm_reg.x = _x * _scale;
+		_left_arm_reg.y = _y * _scale;
+		_left_arm_reg.scaleX = _scaleX;
+		_left_arm_reg.scaleY = _scaleY;
+		_left_arm_reg.rotation = _rotation;
+		_left_arm_reg.width = _width * _scale;
+		_left_arm_reg.height = _height * _scale;
+		_left_arm_reg.UpdateOffset();
+		
+		return _left_arm_reg;
+	}
+
+	[HideInInspector]
+	public int tex_max_size=10;
+	[HideInInspector]
+	public int tex_max_quality=10;
+	[HideInInspector]
+	public int tex_pack_method=2;
+	[HideInInspector]
+	public int tex_padding=1;
+
+	[HideInInspector]
+	public SkeletonAnimation spine_anim;
+
+	[HideInInspector]
+	public List<Spine.Bone> bones;
+	[HideInInspector]
+	public SpinePerson self;
+
+	public List<SpinePersonEffect> linked_effects;
+
+	void Start(){
+		initEffects();
+	}
+
+	public void initEffects () {
+		Transform last_effects_trfm=transform.Find("effects");
+		GameObject last_effects=null;
+		if(last_effects_trfm!=null){
+			DestroyImmediate(last_effects_trfm.gameObject,false);
+		}
+		last_effects=new GameObject("effects");
+		last_effects.transform.parent=transform;
+		last_effects.transform.localPosition=Vector3.zero;
+		last_effects.transform.localScale=Vector3.one;
+		last_effects.transform.localRotation=Quaternion.identity;
+
+		bones=spine_anim.skeleton.Bones;
+		int _bone_len=bones.Count;
+		Dictionary<string,Spine.Bone> _bones_dict=new Dictionary<string, Spine.Bone>();
+		for(int i=0;i<_bone_len;i++){
+			_bones_dict.Add(bones[i].Data.Name,bones[i]);
+		}
+
+		for(int i=0;i<linked_effects.Count;i++){
+			SpinePersonEffect _pers_effect=linked_effects[i];
+			if(_pers_effect!=null&&_pers_effect.effect_prefab!=null){
+				GameObject _effect=_pers_effect.effect=Instantiate(_pers_effect.effect_prefab) as GameObject;
+				//_effect.name="effect"+i;
+				_effect.transform.parent=last_effects.transform;
+				if(_bones_dict.ContainsKey(_pers_effect.bone_name)){
+					_pers_effect.bone=_bones_dict[_pers_effect.bone_name];
+					_pers_effect.bone_id=bones.IndexOf(_pers_effect.bone);
+				}
+				_pers_effect.scale=_effect.transform.localScale;
+				_pers_effect.update(transform);
+			}
+		}
+	}
+
+	public SpinePersonEffect addEffect(GameObject _effect, string _bone_name, bool _is_prefab) {
+		SpinePersonEffect _pers_effect=new SpinePersonEffect();
+		if(_is_prefab){
+			_pers_effect.effect_prefab=_effect;
+			_effect=_pers_effect.effect=Instantiate(_effect) as GameObject;
+		}else{
+			_pers_effect.effect=_effect;
+		}
+		_effect.transform.parent=transform.Find("effects");
+		_pers_effect.type=1;
+		_pers_effect.bone=spine_anim.skeleton.FindBone(_bone_name);
+		_pers_effect.scale=_effect.transform.localScale;
+
+		linked_effects.Add(_pers_effect);
+		return _pers_effect;
+	}
+
+	string test_atlas = "Assets/ExampleEffects/testReplaceAtlas Data/testReplaceAtlas.prefab";
+	string test_star = "Assets/ExampleEffects/star_sprite.prefab";
+	bool test_actihe_hand = false;
+
+	void LateUpdate () {
+
+		setPosition();
+	}
+
+	void OnGUI(){
+		if(GUI.Button(new Rect(0,0,200,20),"replaceSpineImage")){
+			Debug.Log("replaceSpineImage from 'bone8' with star");
+			replaceSpineImage(spine_anim,"bone8","star3",
+			                  UnityEditor.AssetDatabase.LoadAssetAtPath(test_atlas,typeof(tk2dSpriteCollectionData)) as tk2dSpriteCollectionData);
+		}
+
+		if(GUI.Button(new Rect(0,30,200,20),"setSpineImageActive")){
+			Debug.Log("setSpineImageActive 'head' from 'bone8' to "+test_actihe_hand);
+			setSpineImageActive(spine_anim,"bone8","head",test_actihe_hand);
+			test_actihe_hand=!test_actihe_hand;
+		}
+
+		if(GUI.Button(new Rect(0,60,200,20),"addStarEffect")){
+			Debug.Log("addStarEffect ");
+			SpinePersonEffect _effect = addEffect(UnityEditor.AssetDatabase.LoadAssetAtPath(test_star,typeof(GameObject)) as GameObject,
+			          "bone4",true);
+			_effect.pivot=new Vector3(0,1.1f,-0.5f);
+			_effect.rotation=new Vector3(0,0,-93f);
+			_effect.to_scale=new Vector3(3,0.5f,1f);
+		}
+	}
+
+	void setPosition () {
+		for(int i=0;i<linked_effects.Count;i++){
+			linked_effects[i].update(transform);
+		}
+	}
+
+}
+
+[System.Serializable]
+public class SpinePersonEffect{
+	
+	public SpinePersonEffect(){
+		//Debug.Log("new SpinePersonAnimation");
+		pivot=new Vector3();
+		rotation=new Vector3();
+		scale=Vector3.one;
+		to_scale=Vector3.one;
+		bone_name="";
+		z_free=true;
+	}
+	
+	public void update(Transform _transform) {
+		if(effect!=null){
+			if(type==1&&bone!=null){
+				Vector3 _rot_ang=Vector3.zero;
+				_rot_ang.z+=bone.WorldRotation-90f;
+				Quaternion _rot=effect.transform.rotation;
+				_rot.eulerAngles=_rot_ang;
+				Vector3 _pivot=_rot*pivot;
+				Vector3 _pos=_transform.rotation*Vector3.Scale(new Vector3(bone.WorldX,bone.WorldY)+_pivot,_transform.localScale);
+				_rot_ang=_rot_ang+rotation;
+				_rot.eulerAngles=_rot_ang;
+				effect.transform.localRotation=_rot;
+
+				/*#if UNITY_EDITOR
+				debugBoneEffect(_transform.position,_pos,bone);
+				#endif*/
+
+				_pos=_pos+_transform.position;
+				if(!z_free)_pos.z=fixed_z;
+				effect.transform.position=_pos;
+
+				effect.transform.localScale=Vector3.Scale(to_scale,scale);
+			}else{
+				Quaternion _rot=_transform.rotation;
+				_rot.eulerAngles=_rot.eulerAngles+rotation;
+				effect.transform.rotation=_rot;
+				Vector3 _pos=_transform.position+pivot;
+				if(!z_free)_pos.z=fixed_z;
+				effect.transform.position=_pos;
+				Vector3 _scale=Vector3.Scale(_transform.localScale,scale);
+				effect.transform.localScale=Vector3.Scale(_scale,to_scale);
+			}
+		}
+	}
+
+	/*#if UNITY_EDITOR
+	public void debugBoneEffect(Vector3 _anim_pos, Vector3 _effect_pos, Spine.Bone _bone) {
+		Vector3 _bone_pos=new Vector3(_bone.WorldX,_bone.WorldY);
+		Vector3 _bone_result=_anim_pos+_bone_pos;
+		Vector3 _effect_result=_anim_pos+_effect_pos;
+
+		Debug.DrawLine(_anim_pos,_effect_result,Color.yellow);
+		Debug.DrawLine(_anim_pos,_bone_result,Color.white);
+	}
+	#endif*/
+	
+	public GameObject effect_prefab;
+	public GameObject effect;
+	public string scene_path;
+	public bool z_free;
+	public float fixed_z;
+	public Vector3 pivot;
+	public Vector3 rotation;
+	public Vector3 scale;
+	public Vector3 to_scale;
+	public int type;
+	public Spine.Bone bone;
+	public string bone_name;
+	public int bone_id;
+	
+}

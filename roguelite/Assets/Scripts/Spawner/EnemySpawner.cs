@@ -61,20 +61,21 @@ public class EnemySpawner : MonoBehaviour, ISpawner
         var position = GetRandomPosition();
 
         while (Physics2D
-               .CapsuleCastAll(position, size, CapsuleDirection2D.Vertical, 360, Vector2.right, 0)
+               .CapsuleCastAll(new Vector3(position.x, position.y), size, CapsuleDirection2D.Vertical, 360, Vector2.right, 0)
                .Any(cast => !cast.collider.isTrigger))
             position = GetRandomPosition();
 
         var grid = GetComponentInChildren<Grid>();
-        return grid.LocalToWorld(position);
+        var a = grid.CellToWorld(position);
+        return a;
     }
 
-    private Vector2 GetRandomPosition()
+    private Vector3Int GetRandomPosition()
     {
         var points = GetCurrentRoomPoints();
         var randomIndex = Random.Range(0, points.Count);
 
-        return new Vector2(points[randomIndex].x, points[randomIndex].y);
+        return points[randomIndex];
     }
 
     private List<Vector3Int> GetCurrentRoomPoints()

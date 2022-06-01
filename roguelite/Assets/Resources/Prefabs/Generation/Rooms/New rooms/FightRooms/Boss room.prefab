@@ -5104,6 +5104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed493c41a7c090d46a3d4a5e7a287b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hpCardPrefab: {fileID: 7075868811713758767, guid: 11be285e1cad50b45af8ca04261d6c83, type: 3}
 --- !u!1 &2774330880008533507
 GameObject:
   m_ObjectHideFlags: 0

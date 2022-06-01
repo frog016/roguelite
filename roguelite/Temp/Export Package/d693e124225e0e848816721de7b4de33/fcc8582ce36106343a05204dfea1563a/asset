@@ -1,0 +1,576 @@
+﻿using UnityEngine;
+using UnityEditor;
+using System.Collections.Generic;
+using System.IO;
+using System;
+
+public class SpinePersonWindow : EditorWindow {
+
+	public string asset_path="SpineImport/animations";
+
+	public SpinePerson spine_person;
+	public string folder_path="NewSpineAnimation";
+	List<string> last_load_pathes=new List<string>();
+	string skeleton_json="";
+
+	[MenuItem("Window/Spine Import Window")]
+	public static void Init () {
+		SpinePersonWindow window = (SpinePersonWindow)EditorWindow.GetWindow (typeof (SpinePersonWindow));
+		window.spine_person=null;
+		window.folder_path="NewSpinePerson";
+
+		window.pack_method_nms=Enum.GetNames(typeof(MaxRectsBinPack.FreeRectChoiceHeuristic));
+	}
+
+	public static void Init (SpinePerson _spine_person) {
+		SpinePersonWindow window = (SpinePersonWindow)EditorWindow.GetWindow (typeof (SpinePersonWindow));
+
+		window.pack_method_nms=Enum.GetNames(typeof(MaxRectsBinPack.FreeRectChoiceHeuristic));
+
+		UnityEngine.Object _prefab_object=PrefabUtility.GetPrefabParent(_spine_person.gameObject);
+		string _path=AssetDatabase.GetAssetPath(_spine_person.gameObject);
+		if(_prefab_object==null){
+			if(_path==""){
+				window.spine_person=null;
+				window.folder_path="NewSpinePerson";
+				return;
+			}else{
+				_prefab_object=_spine_person.gameObject;
+			}
+		}
+
+		_path=AssetDatabase.GetAssetPath(_prefab_object);
+		//Debug.Log("prefab "+_prefab_object+" ; "+_path);
+		GameObject _prefab=AssetDatabase.LoadAssetAtPath(_path,typeof(GameObject)) as GameObject;
+		SpinePerson _person = _prefab.GetComponent<SpinePerson>();
+
+		string[] _path_ar=_path.Split(new char[]{'/'});
+		ArrayUtility.RemoveAt(ref _path_ar,_path_ar.Length-1);
+		ArrayUtility.RemoveAt(ref _path_ar,0);
+
+		window.folder_path=_path_ar[_path_ar.Length-1];
+		ArrayUtility.RemoveAt(ref _path_ar,_path_ar.Length-1);
+		_path=String.Join("/",_path_ar);
+		window.asset_path=_path;
+		window.spine_person=_person;
+		window.max_size_ind=_person.tex_max_size;
+		window.max_quality_ind=_person.tex_max_quality;
+		window.pack_method_ind=_person.tex_pack_method;
+		window.padding=_person.tex_padding;
+		
+		window.textures.Clear();
+		window.skeleton_json="";
+
+		string _asset_path=window.asset_path+"/"+window.folder_path;
+		string _prefab_path=Application.dataPath+"/"+_asset_path;
+
+		if(!Directory.Exists(_prefab_path)){
+			return;
+		}
+
+		string[] _resources=Directory.GetFiles(_prefab_path+"/resources", "*.*", SearchOption.AllDirectories);
+		window.searchSpineFiles(_resources,"");
+		
+		window.drawTrimmedAtlas();
+	}
+
+	string[] max_size_nms = new string[]{"2", "4", "8", "16", "32", "64", "128", "256", "512", "1024", "2048"};
+	int[] max_size_vls = new int[]{2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048};
+	int max_size_ind=10;
+	int max_quality_ind=10;
+
+	string[] pack_method_nms = new string[0];
+	int pack_method_ind=2;
+	MaxRectsBinPack.FreeRectChoiceHeuristic pack_method=MaxRectsBinPack.FreeRectChoiceHeuristic.RectBestAreaFit;
+
+	int padding=1;
+	int max_tex_size=2048;
+	int max_tex_quality=2048;
+
+	Texture2D atlas;
+
+	Vector2 scrollWinPos=new Vector2();
+	void OnGUI () {
+		//GUILayout.Label ("Base Settings", EditorStyles.boldLabel);
+
+		scrollWinPos=EditorGUILayout.BeginScrollView(scrollWinPos,true,true);
+
+		int _error_type=0;
+		string _error="";
+
+		if(spine_person==null){
+			folder_path=EditorGUILayout.TextField("Set person name: ",folder_path);
+		}
+		string _asset_path=asset_path+"/"+folder_path;
+		string _prefab_path=Application.dataPath+"/"+_asset_path;
+		if(Directory.Exists(_prefab_path)){
+			if(spine_person==null){
+				_error_type=1;
+				_error="A character with that name already exists!\n" +
+					"Please choose another name or delete it.";
+			}else{
+				GUILayout.Label ("Person name: "+folder_path, EditorStyles.textField);
+				GUILayout.Label ("Folder path: Assets/"+asset_path+"/"+folder_path, EditorStyles.textField);
+			}
+		}
+
+
+		GUILayout.Space(10);
+		//GUILayout.Label ("Spine export data", EditorStyles.toolbar);
+		getDropFiles();
+
+		GUILayout.Space(10);
+
+		if(skeleton_string==""){
+			_error_type=2;
+			_error+="\nSkeleton data not loaded!";
+		}
+
+		if(textures.Count==0){
+			_error_type=3;
+			_error+="\nTextures not loaded!";
+		}
+
+		GUILayout.Label ("Resources", EditorStyles.boldLabel);
+
+		if(skeleton_json!=""){
+			GUILayout.Label ("JSON file: "+skeleton_json, EditorStyles.textField);
+		}else {
+			EditorGUILayout.HelpBox("JSON file not yet loaded!", MessageType.Info);
+		}
+
+		if(atlas!=null){
+			GUILayout.Label ("Loaded "+textures.Count+" images.", EditorStyles.textField);
+
+			int _pack_method_ind=EditorGUILayout.Popup("Pack method: ",pack_method_ind,pack_method_nms);
+
+			int _padding=EditorGUILayout.IntField("Padding: ",padding);
+
+			max_size_ind=EditorGUILayout.Popup("Max atlas size: ",max_size_ind,max_size_nms);
+			max_quality_ind=EditorGUILayout.Popup("Max texture size: ",max_quality_ind,max_size_nms);
+			max_tex_quality=max_size_vls[max_quality_ind];
+			int _max_tex_size=max_size_vls[max_size_ind];
+			if(_padding<0){
+				_padding=0;
+			}
+			if(_max_tex_size<2){
+				_max_tex_size=2;
+			}
+			if(padding!=_padding||max_tex_size!=_max_tex_size||pack_method_ind!=_pack_method_ind){
+				padding=_padding;
+				max_tex_size=_max_tex_size;
+
+				pack_method_ind=_pack_method_ind;
+				pack_method=(MaxRectsBinPack.FreeRectChoiceHeuristic)Enum.GetValues(typeof(MaxRectsBinPack.FreeRectChoiceHeuristic)).GetValue(pack_method_ind);
+				drawTrimmedAtlas();
+			}
+
+			GUILayout.Label("Atlas size: "+atlas.width+"x"+atlas.height);
+
+			float _diff=256f/atlas.height;
+			Rect _rect=GUILayoutUtility.GetLastRect();
+			_rect.y+=20;
+			_rect.x=10;
+			_rect.width=(atlas.width*_diff);
+			_rect.height=(atlas.height*_diff);
+			//Color _clr=GUI.color;
+			//GUI.color = Color.grey;
+			GUI.Box(_rect, "");
+			GUI.DrawTexture(_rect,atlas, ScaleMode.ScaleToFit);
+			//GUI.color = _clr;
+
+			GUILayout.Space(_rect.height+10);
+
+			/*float _diff=300/atlas.height;
+			int _w=(int)(atlas.width*_diff);
+			int _h=(int)(atlas.height*_diff);
+			GUILayout.Box(atlas, 
+			              GUILayout.Width(_w), 
+			              GUILayout.Height(_h),
+			              GUILayout.MinWidth(_w), 
+			              GUILayout.MaxWidth(_w), 
+			              GUILayout.MinHeight(_h), 
+			              GUILayout.MaxHeight(_h));
+			//GUILayout.Box(atlas);
+
+			GUILayout.Space(10);*/
+		}else {
+			EditorGUILayout.HelpBox("Atlas images not yet loaded!", MessageType.Info);
+		}
+
+		if(_error_type!=0){
+			EditorGUILayout.HelpBox(_error, MessageType.Error);
+		}else if(GUILayout.Button((spine_person==null)?"OK":"UPDATE")){
+
+			if(!Directory.Exists(_prefab_path)){
+				Directory.CreateDirectory(_prefab_path);
+				Directory.CreateDirectory(_prefab_path+"/resources");
+			}
+
+			if(textures_rects==null){
+				//Debug.Log("textures_rects  is null!");
+				if(last_load_pathes.Count==0){
+					if(Directory.Exists(_prefab_path+"/resources")){
+						last_load_pathes.Add(_prefab_path+"/resources");
+					}else{
+						atlas=null;
+						textures.Clear();
+						skeleton_json="";
+						skeleton_string="";
+						return;
+					}
+				}
+				
+				textures.Clear();
+				skeleton_json="";
+				
+				//string[] _resources=Directory.GetFiles(_prefab_path+"/resources", "*.*", SearchOption.AllDirectories);
+				//searchSpineFiles(_resources,"");
+				
+				foreach (string dragged_path in last_load_pathes) {
+					
+					if(Directory.Exists(dragged_path)){
+						string[] _files=Directory.GetFiles(dragged_path, "*.*", SearchOption.AllDirectories);
+						searchSpineFiles(_files,"");
+					}else{
+						searchSpineFiles(new string[]{dragged_path},"");
+					}
+				}
+				
+				drawTrimmedAtlas();
+			}
+
+			Directory.Delete(_prefab_path+"/resources",true);
+			Directory.CreateDirectory(_prefab_path+"/resources");
+
+			File.WriteAllText(_prefab_path+"/resources/skeleton.txt", skeleton_string);
+			File.WriteAllText(_prefab_path+"/resources/skeleton.json", skeleton_string);
+			SaveTextureToFile(atlas, _prefab_path+"/atlas.png");
+
+			float _atlas_height=atlas.height;
+			int _t_len=textures.Count;
+			string[] _names=new string[_t_len];
+			Vector2[] _anchors=new Vector2[_t_len];
+			Rect[] _regions=new Rect[_t_len];
+			//Debug.Log("textures "+_t_len+" / "+_regions.Length+" / "+textures_rects.Length);
+			for (int i=0;i<_t_len;i++) {
+				Texture2D _texture=textures[i];
+
+				_names[i]=_texture.name;
+				_anchors[i]=new Vector2(0,0);
+				Rect _place=textures_rects[i].rect;
+				_regions[i]=new Rect(
+					_place.x+padding,
+					_atlas_height-_place.y-_place.height+padding,
+					_place.width-padding*2,
+					_place.height-padding*2
+				);
+
+				SaveTextureToFile(_texture, _prefab_path+"/resources/"+_texture.name+".png");
+				//Debug.Log ("_region "+_regions[i]);
+			}
+
+			tk2dSpriteCollectionData _atlas_data = tk2dSpriteCollectionData.CreateFromTexture(
+				atlas, 
+				tk2dSpriteCollectionSize.Default(),
+				_names,
+				_regions,
+				_anchors
+			);
+
+			Material _material=new Material(Shader.Find("tk2d/BlendVertexColor"));
+			AssetDatabase.CreateAsset(_material, "Assets/"+_asset_path+"/material.mat");
+
+			/*GameObject _atlas_data_prefab = */PrefabUtility.CreatePrefab("Assets/"+_asset_path+"/atlas_data.prefab", _atlas_data.gameObject, ReplacePrefabOptions.Default);
+
+			SkeletonDataAsset _skeleton_data=SkeletonDataAsset.CreateInstance<SkeletonDataAsset>();
+			AssetDatabase.CreateAsset(_skeleton_data, "Assets/"+_asset_path+"/skeleton_data.asset");
+
+			if(spine_person==null){
+				GameObject _animation = new GameObject("animation", typeof(SpinePerson));
+				_animation.AddComponent<SkeletonAnimation>();
+				/*GameObject _animation_prefab = */PrefabUtility.CreatePrefab("Assets/"+_asset_path+"/animation.prefab", _animation, ReplacePrefabOptions.ReplaceNameBased);
+				DestroyImmediate(_animation,false);
+			}
+
+			AssetDatabase.Refresh(ImportAssetOptions.Default);
+
+			DestroyImmediate(_atlas_data.gameObject,false);
+
+			setPrefabsConnected(_asset_path);
+
+		}
+
+		if(spine_person!=null){
+			if(GUILayout.Button("ADD COPY TO SCENE")){
+				UnityEngine.Object _object=PrefabUtility.InstantiatePrefab(spine_person.gameObject);
+				Selection.objects=new UnityEngine.Object[]{_object};
+			}
+			if(GUILayout.Button("SELECT PARENT PREFAB")){
+				Selection.objects=new UnityEngine.Object[]{spine_person.gameObject};
+			}
+		}
+
+		if(Directory.Exists(_prefab_path)){
+			if(want_delete){
+				GUILayout.Label("Do you really want to delete animation and all scene objects?");
+				if(GUILayout.Button("Yes")){
+					Directory.Delete(_prefab_path,true);
+					AssetDatabase.Refresh(ImportAssetOptions.Default);
+					want_delete=false;
+				}else if(GUILayout.Button("No")){
+					want_delete=false;
+				}
+			}else if(GUILayout.Button("DELETE")){
+				want_delete=true;
+			}
+		}
+
+		EditorGUILayout.EndScrollView();
+	}
+
+	bool want_delete=false;
+
+	void setPrefabsConnected(string _asset_path){
+
+		Texture2D _texture=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/atlas.png", typeof(Texture2D)) as Texture2D;
+		//_texture.alphaIsTransparency=true;
+		TextureImporter tImporter = TextureImporter.GetAtPath("Assets/"+_asset_path+"/atlas.png") as TextureImporter;
+		tImporter.maxTextureSize = max_tex_quality;
+		AssetDatabase.ImportAsset( "Assets/"+_asset_path+"/atlas.png", ImportAssetOptions.ForceUpdate );
+
+		Material _material=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/material.mat", typeof(Material)) as Material;
+		_material.mainTexture=_texture;
+
+
+		tk2dSpriteCollectionData _atlas_data=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/atlas_data.prefab", typeof(tk2dSpriteCollectionData)) as tk2dSpriteCollectionData;
+		_atlas_data.material=_material;
+		_atlas_data.materials=new Material[]{_material};
+		_atlas_data.textures=new Texture[]{_texture};
+		int _t_len=textures.Count;
+		//Debug.Log("spriteDefinitions "+_t_len+" / "+_atlas_data.spriteDefinitions.Length);
+		for (int i=0;i<_t_len;i++) {
+			tk2dSpriteDefinition _def=_atlas_data.spriteDefinitions[i];
+			_def.material=_material;
+			/*Debug.Log("spriteDefinitions "+textures_rects[i].width
+			          +" / "+textures_rects[i].width*_texture.height
+			          +" / "+_def.regionW+" / "+_def.boundsData[1].x*_texture.height);*/
+			if(textures_rects[i].rotated) {
+				_def.flipped=tk2dSpriteDefinition.FlipMode.Tk2d;
+			}
+		}
+
+		SkeletonDataAsset _skeleton_data=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/skeleton_data.asset", typeof(SkeletonDataAsset)) as SkeletonDataAsset;
+		_skeleton_data.spriteCollection=_atlas_data;
+		_skeleton_data.skeletonJSON=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/resources/skeleton.txt", typeof(TextAsset)) as TextAsset;
+
+		SkeletonAnimation _animation=AssetDatabase.LoadAssetAtPath("Assets/"+_asset_path+"/animation.prefab", typeof(SkeletonAnimation)) as SkeletonAnimation;
+		_animation.skeletonDataAsset=_skeleton_data;
+		_animation.name=folder_path;
+
+		SpinePerson _spine_person=_animation.gameObject.GetComponent<SpinePerson>();
+		_spine_person.tex_max_size=max_size_ind;
+		_spine_person.tex_max_quality=max_quality_ind;
+		_spine_person.tex_pack_method=pack_method_ind;
+		_spine_person.tex_padding=padding;
+
+		spine_person=_spine_person;
+
+		EditorUtility.SetDirty(_texture);
+		EditorUtility.SetDirty(_material);
+		EditorUtility.SetDirty(_atlas_data);
+		EditorUtility.SetDirty(_skeleton_data);
+		EditorUtility.SetDirty(_animation);
+		EditorUtility.SetDirty(_spine_person);
+		EditorUtility.SetDirty(_animation.gameObject);
+
+		AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+		EditorApplication.SaveAssets();
+		AssetDatabase.SaveAssets();
+
+		Selection.objects=new UnityEngine.Object[]{_animation.gameObject};
+		//spine_person.updateAnimations();
+	}
+
+	PackerData[] textures_rects;
+	void drawTrimmedAtlas(){
+		int _size_x=64;
+		int _size_y=64;
+
+		atlas = new Texture2D(_size_x, _size_y, TextureFormat.ARGB32, false);
+		textures_rects=PackTextures(pack_method,atlas,textures.ToArray(),_size_x,_size_y,max_tex_size,padding);
+		atlas.Apply();
+
+		//Debug.Log("TEXTURE0 "+textures[0].name+" / "+textures[0].width+" / "+textures[0].height+" / "+_rects[0].width);
+		//Debug.Log("atlas "+atlas.width+"x"+atlas.height+" / "+_size_x);
+	}
+
+	void SaveTextureToFile( Texture2D _texture, string _file_path){
+		byte[] _bytes=_texture.EncodeToPNG();
+		FileStream _file = File.Open(_file_path,FileMode.Create);
+		BinaryWriter _binary= new BinaryWriter(_file);
+		_binary.Write(_bytes);
+		_file.Close();
+	}
+	
+	void getDropFiles () {
+		Event evt = Event.current;
+		Rect drop_area = GUILayoutUtility.GetRect (0.0f, 100.0f, GUILayout.ExpandWidth (true));
+		GUI.Box (drop_area, ">>Drag the folder export character here.<<", EditorStyles.miniButtonMid);
+		
+		switch (evt.type) {
+		case EventType.DragUpdated:
+		case EventType.DragPerform:
+			if (!drop_area.Contains (evt.mousePosition))
+				return;
+			
+			DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+			string _debug="";
+			
+			if (evt.type == EventType.DragPerform) {
+				DragAndDrop.AcceptDrag ();
+				textures.Clear();
+				last_load_pathes.Clear();
+				skeleton_json="";
+
+				foreach (string dragged_path in DragAndDrop.paths) {
+
+					last_load_pathes.Add(dragged_path);
+					if(Directory.Exists(dragged_path)){
+						_debug+="Directory "+dragged_path+"\n";
+						string[] _files=Directory.GetFiles(dragged_path, "*.*", SearchOption.AllDirectories);
+						_debug=searchSpineFiles(_files,_debug);
+					}else{
+						_debug+=searchSpineFiles(new string[]{dragged_path},_debug);
+					}
+				}
+
+				drawTrimmedAtlas();
+
+				//Debug.Log(_debug);
+			}
+			
+			break;
+		}
+	}
+
+	List<Texture2D> textures=new List<Texture2D>();
+	string skeleton_string="";
+	string searchSpineFiles (string[] _file_pathes, string _debug) {
+		foreach (string _file_path in _file_pathes) {
+			_debug+="sub_file="+_file_path+"\n";
+			string[] _path_ar=_file_path.Split(new char[]{'/','\\'});
+			string _full_name=_path_ar[_path_ar.Length-1];
+			string[] _full_name_ar=_full_name.Split(new char[]{'.'});
+			if(_full_name_ar.Length<2){
+				_debug+="error "+_full_name+" / "+_full_name_ar.Length+"\n";
+				continue;
+			}
+			string[] _name_ar=new string[_full_name_ar.Length-1];
+			Array.Copy(_full_name_ar,_name_ar,_full_name_ar.Length-1);
+			string _name=String.Join(".",_name_ar);
+			string _ext=_full_name_ar[_full_name_ar.Length-1].ToLower();
+			if(_ext=="png"){
+				Texture2D _tex = new Texture2D(4, 4);
+				_tex.LoadImage(File.ReadAllBytes(_file_path));
+				_tex.name=_name;
+				textures.Add(_tex);
+				_debug+="TEXTURE "+_tex.name+" / "+_tex.width+" / "+_tex.height+" / "+"\n";
+			}else if(_ext=="json"){
+				skeleton_json=_full_name;
+				StreamReader _sr = new StreamReader(_file_path);
+				skeleton_string = _sr.ReadToEnd();
+				_sr.Close();
+				_debug+="JSON \n"+skeleton_string+"\n";
+			}
+		}
+		return _debug;
+	}
+
+	public PackerData[] PackTextures(MaxRectsBinPack.FreeRectChoiceHeuristic _method,Texture2D _texture, Texture2D[] _textures, 
+	                                 int _width, int _height, int _maxSize, int _padding) {
+		
+		if(_width > _maxSize && _height > _maxSize) return null;
+		if(_width > _maxSize || _height > _maxSize) { int temp = _width; _width = _height; _height = temp; }
+		
+		MaxRectsBinPack bp = new MaxRectsBinPack(_width, _height);
+		PackerData [] _data = new PackerData[_textures.Length];
+		
+		for(int i = 0; i < _textures.Length; i++) {
+			Texture2D _tex1 = _textures[i];
+			Rect rect = bp.Insert(_tex1.width+_padding*2, _tex1.height+_padding*2, _method);
+			
+			if(rect.width == 0 || rect.height == 0) {
+				return PackTextures(_method, _texture, _textures, _width * (_width <= _height ? 2 : 1), _height * (_height < _width ? 2 : 1), _maxSize, _padding);
+			}
+
+			_data[i]=new PackerData();
+			_data[i].rect = rect;
+		}
+		
+		_texture.Resize(_width, _height);
+		_texture.SetPixels(new Color[_width * _height]);
+		
+		for(int i = 0; i < _textures.Length; i++) {
+			
+			Texture2D _tex2 = _textures[i];
+			Rect rect = _data[i].rect;
+			Color[] colors = _tex2.GetPixels();
+
+			if(_padding!=0){
+				Texture2D _padding_tex=new Texture2D(_tex2.width+_padding*2,_tex2.height+_padding*2, TextureFormat.ARGB32, false);
+				_padding_tex.SetPixels(new Color[_padding_tex.width * _padding_tex.height]);
+				_padding_tex.SetPixels(_padding,_padding,_tex2.width,_tex2.height,colors);
+				_tex2=_padding_tex;
+				colors = _tex2.GetPixels();
+			}
+
+
+			
+			if(rect.width != _tex2.width) {
+				
+				Color[] newColors = _tex2.GetPixels();
+				_data[i].rotated = true;
+				
+				for(int x = 0; x < rect.width; x++) {
+					for(int y = 0; y < rect.height; y++) {
+						//int prevIndex = ((int)rect.height - (y + 1)) + x * (int)tex.width;
+						int prevIndex = y + x * (int)_tex2.width;
+						newColors[x + y * (int)rect.width] = colors[prevIndex];
+					}
+				}
+
+				colors = newColors;
+			}
+			
+			_texture.SetPixels((int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height, colors);
+			
+			/*rect.x /= _width;
+			rect.y /= _height;
+			rect.width /= _width;
+			rect.height /= _height;*/
+
+			_data[i].rect = rect;
+			
+		}
+		
+		
+		
+		return _data;
+		
+		
+		
+	}
+
+}
+
+public class PackerData {
+
+	public PackerData(){
+		//rect=_rect;
+		//rotated=_rotated;
+	}
+
+	public Rect rect;
+	public bool rotated;
+}
