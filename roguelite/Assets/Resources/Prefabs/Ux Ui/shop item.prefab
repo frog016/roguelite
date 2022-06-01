@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280095795
+  m_fontColor: {r: 0.2, g: 0.078431375, b: 0.11372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -474,15 +474,15 @@ MonoBehaviour:
     \u0441 \u0438\u0441\u043F\u044B\u0442\u0430\u043D\u0438\u0435\u043C \u043F\u0440\u0438\u043D\u0435\u0441\u0435\u0442
     \u0432\u0434\u0432\u043E\u0435 \u0431\u043E\u043B\u044C\u0448\u0435 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f347d0b9405d6094bb8504a9a4edd346, type: 2}
-  m_sharedMaterial: {fileID: -6422433273051615222, guid: f347d0b9405d6094bb8504a9a4edd346, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cb5d1c126164c674abf592c4381c0846, type: 2}
+  m_sharedMaterial: {fileID: -1770172353888083714, guid: cb5d1c126164c674abf592c4381c0846, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280095795
+  m_fontColor: {r: 0.2, g: 0.078431375, b: 0.11372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -499,8 +499,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
