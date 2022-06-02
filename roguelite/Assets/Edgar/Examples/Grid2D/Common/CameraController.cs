@@ -9,7 +9,7 @@ namespace Edgar.Unity.Examples
     {
         public float ZoomOutSize = 70;
 
-        private new Camera camera;
+        private Camera camera;
         private GameObject player;
 
         private bool isZoomedOut;

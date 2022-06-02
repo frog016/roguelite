@@ -11,7 +11,7 @@ namespace Edgar.Unity.Examples
 
         private Animator animator;
         private Vector2 movement;
-        private new Rigidbody2D rigidbody;
+        private Rigidbody2D rigidbody;
         private SpriteRenderer spriteRenderer;
 
         public void Start()

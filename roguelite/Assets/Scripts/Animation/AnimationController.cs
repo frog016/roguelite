@@ -2,7 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Spine.Unity;
+
+#if UNITY_EDITOR
+
 using Spine.Unity.Editor;
+
+#endif
 using UnityEngine;
 
 [RequireComponent(typeof(SkeletonAnimation))]
@@ -50,11 +55,50 @@ public class AnimationController : MonoBehaviour
 
         _skeletonAnimation.skeletonDataAsset = animation?.DataAsset;
         _skeletonAnimation.AnimationName = animation?.State.ToString();
-        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonAnimation);
+        ReloadAsset(_skeletonAnimation.skeletonDataAsset);
+        ReinitializeComponent(_skeletonAnimation);
         transform.rotation = Quaternion.Euler(0, _moveController.Direction.x > 0 ? 180 : 0, 0);
         _currentAnimationState = state;
         _curentDirection = animationList.Direction;
     }
 
+    private void ReloadAsset(SkeletonDataAsset skeletonDataAsset)
+    {
+        if (skeletonDataAsset != null)
+        {
+            foreach (AtlasAssetBase aa in skeletonDataAsset.atlasAssets)
+            {
+                if (aa != null) aa.Clear();
+            }
+            skeletonDataAsset.Clear();
+        }
+        skeletonDataAsset.GetSkeletonData(true);
+    }
 
+    public static void ReinitializeComponent(SkeletonRenderer component)
+    {
+        if (component == null) return;
+        if (!SkeletonDataAssetIsValid(component.SkeletonDataAsset)) return;
+
+        var stateComponent = component as IAnimationStateComponent;
+        Spine.AnimationState oldAnimationState = null;
+        if (stateComponent != null)
+        {
+            oldAnimationState = stateComponent.AnimationState;
+        }
+
+        component.Initialize(true); // implicitly clears any subscribers
+
+        if (oldAnimationState != null)
+        {
+            stateComponent.AnimationState.AssignEventSubscribersFrom(oldAnimationState);
+        }
+
+        component.LateUpdate();
+    }
+
+    public static bool SkeletonDataAssetIsValid(SkeletonDataAsset asset)
+    {
+        return asset != null && asset.GetSkeletonData(quiet: true) != null;
+    }
 }
