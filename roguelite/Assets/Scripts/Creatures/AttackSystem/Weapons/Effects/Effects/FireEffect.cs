@@ -26,6 +26,7 @@ public class FireEffect : NegativeEffect
             var visualEffect = Instantiate(_visualEffect, target.transform);
             var particle = visualEffect.GetComponent<ParticleSystem>().main;
             particle.duration = _duration;
+            visualEffect.GetComponent<ParticleSystem>().Play();
             StartCoroutine(ApplyDamageOverTime(target));
         }
     }

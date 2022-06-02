@@ -16,7 +16,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
         ItemsCount = 4;
 
         _altar = PrefabsFinder.FindObjectOfType<EffectsAltar>().GetComponent<EffectsAltar>();
-        _allEffectsType = _droppableItemType.Assembly.ExportedTypes.Where(type => _droppableItemType.IsAssignableFrom(type) && type != _droppableItemType).ToList();
+        _allEffectsType = _droppableItemType.Assembly.ExportedTypes.Where(type => _droppableItemType.IsAssignableFrom(type) && !type.IsAbstract).ToList();
     }
 
     public override void DropItems()

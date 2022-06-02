@@ -75,7 +75,7 @@ MonoBehaviour:
       _prefab: {fileID: 6483878179808576814, guid: 2b359a194bd9e6048b35e63e98deb505, type: 3}
       _attackType: 9
     - _damage: 1
-      _attackRadius: 2
+      _attackRadius: 3
       _cooldownTime: 1
       _delayBeforeAttack: 0.5
       _prefab: {fileID: 4960372068706419781, guid: 6adab1ce7de731149aebe5cfa8a4c372, type: 3}

@@ -46,6 +46,7 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
 
     private void LoadInfo(GameObject card, Type type)
     {
+        Debug.Log(type);
         var data = GetEffectData(type);
         var images = card.GetComponentsInChildren<Image>();
         images.Last().sprite = data.Sprite;

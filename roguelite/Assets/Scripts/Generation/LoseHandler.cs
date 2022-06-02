@@ -10,6 +10,6 @@ public class LoseHandler : MonoBehaviour
 
     private void Lose()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
