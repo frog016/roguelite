@@ -5,21 +5,66 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637874130415994581
-    m_Hash: 4176834087
+      ticks: 637897892742984592
+    m_Hash: 143845613
   m_LockFileStatus:
     m_FilePath: D:/2rd course game/roguelite/roguelite/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637874130415994581
-    m_Hash: 1674973428
+      ticks: 637897892743583206
+    m_Hash: 1418202682
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.agava.yandexgames@https://github.com/forcepusher/com.agava.yandexgames.git#8.2.0
+      testable: 0
+      isDirectDependency: 1
+      version: 8.2.0
+      source: 5
+      resolvedPath: D:\2rd course game\roguelite\roguelite\Library\PackageCache\com.agava.yandexgames@fad658c42d
+      assetPath: Packages/com.agava.yandexgames
+      name: com.agava.yandexgames
+      displayName: Yandex Games
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: Yandex Games Unity SDK for the WebGL platform.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.h8man.2d.navmeshplus@https://github.com/h8man/NavMeshPlus.git
       testable: 0
       isDirectDependency: 1
@@ -179,6 +224,7 @@ m_PackageAssets:
         - 8.0.0-pre.4
         - 8.0.0
         - 8.0.1
+        - 8.0.2
         - 9.0.0-pre.1
         compatible:
         - 5.0.6
@@ -393,6 +439,7 @@ m_PackageAssets:
         - 7.0.0-pre.3
         - 7.0.0-pre.4
         - 7.0.0
+        - 7.0.1
         - 8.0.0-pre.1
         compatible:
         - 4.1.0

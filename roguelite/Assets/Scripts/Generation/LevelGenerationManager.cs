@@ -1,4 +1,5 @@
 using System.Collections;
+using Agava.YandexGames;
 using Edgar.Unity;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,6 +18,7 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
     protected override void Awake()
     {
         base.Awake();
+        YandexGamesSdk.CallbackLogging = true;
         OnEndGeneration = new UnityEvent();
         _generator = FindObjectOfType<DungeonGeneratorGrid2D>();
         _surface = FindObjectOfType<NavMeshSurface>();
