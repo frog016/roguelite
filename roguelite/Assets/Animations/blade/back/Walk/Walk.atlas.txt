@@ -1,0 +1,83 @@
+
+Walk.png
+size: 167,142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer11
+  rotate: false
+  xy: 130, 3
+  size: 17, 33
+  orig: 17, 33
+  offset: 0, 0
+  index: -1
+Layer12
+  rotate: true
+  xy: 65, 6
+  size: 22, 63
+  orig: 22, 63
+  offset: 0, 0
+  index: -1
+Layer13
+  rotate: false
+  xy: 141, 107
+  size: 17, 33
+  orig: 17, 33
+  offset: 0, 0
+  index: -1
+Layer14
+  rotate: true
+  xy: 2, 2
+  size: 26, 61
+  orig: 26, 61
+  offset: 0, 0
+  index: -1
+Layer15
+  rotate: false
+  xy: 124, 90
+  size: 15, 50
+  orig: 15, 50
+  offset: 0, 0
+  index: -1
+Layer16
+  rotate: false
+  xy: 124, 38
+  size: 15, 50
+  orig: 15, 50
+  offset: 0, 0
+  index: -1
+Layer17
+  rotate: true
+  xy: 149, 16
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+Layer18
+  rotate: true
+  xy: 141, 75
+  size: 30, 17
+  orig: 30, 17
+  offset: 0, 0
+  index: -1
+Layer19
+  rotate: false
+  xy: 141, 45
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 30
+  size: 62, 110
+  orig: 62, 110
+  offset: 0, 0
+  index: -1
+handsBlade
+  rotate: false
+  xy: 66, 33
+  size: 56, 107
+  orig: 56, 107
+  offset: 0, 0
+  index: -1

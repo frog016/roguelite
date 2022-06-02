@@ -24,9 +24,12 @@ public class EnemyMoveController : MoveController
             return;
 
         var normalizedDirection = (direction - transform.position).normalized;
-        Direction = normalizedDirection;
+        Direction = new Vector2(
+            Mathf.Abs(normalizedDirection.x) < 0.2 ? 0 : normalizedDirection.x,
+            Mathf.Abs(normalizedDirection.y) < 0.2 ? 0 : normalizedDirection.y);
 
         Agent.SetDestination(direction);
+        OnObjectMovedEvent.Invoke();
     }
 
     private void InitializeAgent()

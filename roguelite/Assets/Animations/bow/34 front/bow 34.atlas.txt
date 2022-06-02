@@ -1,0 +1,90 @@
+
+bow 34.png
+size: 233,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Folder5
+  rotate: false
+  xy: 214, 21
+  size: 17, 55
+  orig: 17, 55
+  offset: 0, 0
+  index: -1
+Folder6
+  rotate: true
+  xy: 2, 2
+  size: 14, 51
+  orig: 14, 51
+  offset: 0, 0
+  index: -1
+Folder7
+  rotate: true
+  xy: 168, 4
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+Folder8
+  rotate: true
+  xy: 118, 21
+  size: 12, 48
+  orig: 12, 48
+  offset: 0, 0
+  index: -1
+Folder9
+  rotate: true
+  xy: 2, 18
+  size: 17, 53
+  orig: 17, 53
+  offset: 0, 0
+  index: -1
+Layer4
+  rotate: true
+  xy: 125, 35
+  size: 41, 87
+  orig: 41, 87
+  offset: 0, 0
+  index: -1
+Layer5
+  rotate: true
+  xy: 2, 37
+  size: 39, 121
+  orig: 39, 121
+  offset: 0, 0
+  index: -1
+Layer7
+  rotate: false
+  xy: 189, 17
+  size: 21, 16
+  orig: 21, 16
+  offset: 0, 0
+  index: -1
+Layer8
+  rotate: true
+  xy: 212, 2
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 93, 4
+  size: 23, 31
+  orig: 23, 31
+  offset: 0, 0
+  index: -1
+рука
+  rotate: false
+  xy: 118, 2
+  size: 36, 17
+  orig: 36, 17
+  offset: 0, 0
+  index: -1
+рука(2)
+  rotate: false
+  xy: 57, 12
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1

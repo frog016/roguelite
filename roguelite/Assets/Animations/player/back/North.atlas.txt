@@ -1,0 +1,83 @@
+
+North.png
+size: 71,274
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blade l
+  rotate: false
+  xy: 51, 181
+  size: 18, 91
+  orig: 18, 91
+  offset: 0, 0
+  index: -1
+blade r
+  rotate: false
+  xy: 51, 88
+  size: 18, 91
+  orig: 18, 91
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 177
+  size: 47, 95
+  orig: 47, 95
+  offset: 0, 0
+  index: -1
+leg bottom l
+  rotate: false
+  xy: 32, 113
+  size: 17, 62
+  orig: 17, 62
+  offset: 0, 0
+  index: -1
+leg bottom r
+  rotate: false
+  xy: 26, 51
+  size: 17, 60
+  orig: 17, 60
+  offset: 0, 0
+  index: -1
+leg top l
+  rotate: false
+  xy: 2, 114
+  size: 28, 61
+  orig: 28, 61
+  offset: 0, 0
+  index: -1
+leg top r
+  rotate: false
+  xy: 2, 51
+  size: 22, 61
+  orig: 22, 61
+  offset: 0, 0
+  index: -1
+plech l
+  rotate: true
+  xy: 2, 32
+  size: 17, 37
+  orig: 17, 37
+  offset: 0, 0
+  index: -1
+plecho r
+  rotate: false
+  xy: 45, 41
+  size: 20, 45
+  orig: 20, 45
+  offset: 0, 0
+  index: -1
+predpl r
+  rotate: true
+  xy: 2, 12
+  size: 18, 29
+  orig: 18, 29
+  offset: 0, 0
+  index: -1
+predplech l
+  rotate: false
+  xy: 41, 2
+  size: 16, 37
+  orig: 16, 37
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,76 @@
+
+bow.png
+size: 372,45
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Folder2
+  rotate: true
+  xy: 209, 25
+  size: 18, 55
+  orig: 18, 55
+  offset: 0, 0
+  index: -1
+Layer11
+  rotate: true
+  xy: 266, 26
+  size: 17, 51
+  orig: 17, 51
+  offset: 0, 0
+  index: -1
+Layer12
+  rotate: true
+  xy: 209, 5
+  size: 18, 55
+  orig: 18, 55
+  offset: 0, 0
+  index: -1
+Layer13
+  rotate: true
+  xy: 319, 26
+  size: 17, 51
+  orig: 17, 51
+  offset: 0, 0
+  index: -1
+Layer14
+  rotate: true
+  xy: 266, 2
+  size: 22, 31
+  orig: 22, 31
+  offset: 0, 0
+  index: -1
+Layer15
+  rotate: false
+  xy: 299, 4
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+Layer16
+  rotate: false
+  xy: 318, 5
+  size: 17, 19
+  orig: 17, 19
+  offset: 0, 0
+  index: -1
+Layer17
+  rotate: false
+  xy: 337, 8
+  size: 13, 16
+  orig: 13, 16
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 122, 5
+  size: 38, 85
+  orig: 38, 85
+  offset: 0, 0
+  index: -1
+hands
+  rotate: true
+  xy: 2, 3
+  size: 40, 118
+  orig: 40, 118
+  offset: 0, 0
+  index: -1

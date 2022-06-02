@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(GlobalCooldown))]
 public abstract class WeaponBase : MonoBehaviour
@@ -9,6 +10,8 @@ public abstract class WeaponBase : MonoBehaviour
     public float MinimalAttackDistance { get; private set; }
     public GlobalCooldown GlobalCooldown { get; private set; }
     public List<Type> AttackTypes { get; private set; }
+    public UnityEvent OnAttackEvent { get; private set; }
+    public UnityEvent OnAttackEndedEvent { get; private set; }
 
     protected Dictionary<Type, AttackBase> _attacks;
 
@@ -19,6 +22,8 @@ public abstract class WeaponBase : MonoBehaviour
         GlobalCooldown = GetComponent<GlobalCooldown>();
         GlobalCooldown.ResetCooldownTime(dataInfo.GlobalCooldownTime);
         _effects = GetComponentInChildren<EffectList>();
+        OnAttackEvent = new UnityEvent();
+        OnAttackEndedEvent = new UnityEvent();
 
         CreateAttacks(dataInfo.WeaponAttacks);
     }
@@ -29,6 +34,7 @@ public abstract class WeaponBase : MonoBehaviour
         if (!GlobalCooldown.IsReady || !currentAttack.IsReady())
             return;
 
+        OnAttackEvent.Invoke();
         currentAttack.Attack();
         GlobalCooldown.TryRestartCooldown();
     }
@@ -40,6 +46,7 @@ public abstract class WeaponBase : MonoBehaviour
 
     protected void ActivateEffects(AttackEventArgs attackEventArgs)
     {
+        OnAttackEndedEvent.Invoke();
         var effects = _effects.Effects.ToList();
         foreach (var effect in effects)
         {

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveController : MonoBehaviour //  TODO: Рефакторинг
@@ -8,8 +9,9 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     [SerializeField] private float _dashCooldown;
 
     public Vector2 Direction { get; protected set; }
-    protected Rigidbody2D _rigidbody;
+    public UnityEvent OnObjectMovedEvent { get; private set; }
 
+    protected Rigidbody2D _rigidbody;
     protected bool _isDashed;
     protected bool _canMove;
 
@@ -17,6 +19,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     {
         Direction = Vector2.right;
         _canMove = true;
+        OnObjectMovedEvent = new UnityEvent();
     }
 
     public virtual void Move(Vector3 direction)
@@ -26,6 +29,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 
         Direction = direction.normalized;
         _rigidbody.MovePosition(transform.position + direction.normalized * _speed * Time.fixedDeltaTime);
+        OnObjectMovedEvent.Invoke();
     }
 
     public void ContinueMoving()
