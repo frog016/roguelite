@@ -4,13 +4,11 @@ using Vector2 = UnityEngine.Vector2;
 
 public class GrabAndThrow : AttackBase
 {
-    [SerializeField][Range(0, 360)] private float _attackAngleDegrees;
-
     protected override IEnumerator AttackCoroutine()
     {
         yield return base.AttackCoroutine();
 
-        var targets = _targetsFinder.FindTargetsInSector(AttackData.AttackRadius, _attackAngleDegrees);
+        var targets = _targetsFinder.FindTargetsInSector(AttackData.AttackRadius, AttackData.AngleDegrees);
         _cooldown.TryRestartCooldown();
 
         foreach (var target in targets)

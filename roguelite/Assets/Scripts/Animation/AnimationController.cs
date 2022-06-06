@@ -31,7 +31,7 @@ public class AnimationController : MonoBehaviour
     {
         _moveController.OnObjectMovedEvent.AddListener(() => SetAnimation(AnimationState.Walk));
         var weapon = transform.parent.GetComponentInChildren<WeaponBase>();
-        weapon.OnAttackEvent.AddListener(() => SetAnimation(AnimationState.Fight));
+        weapon.OnAttackEvent.AddListener(_ => SetAnimation(AnimationState.Fight));
         weapon.OnAttackEndedEvent.AddListener(() => SetAnimation(AnimationState.Idle));
     }
 

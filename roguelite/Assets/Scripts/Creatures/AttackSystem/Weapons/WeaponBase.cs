@@ -10,7 +10,7 @@ public abstract class WeaponBase : MonoBehaviour
     public float MinimalAttackDistance { get; private set; }
     public GlobalCooldown GlobalCooldown { get; private set; }
     public List<Type> AttackTypes { get; private set; }
-    public UnityEvent OnAttackEvent { get; private set; }
+    public UnityEvent<AttackData> OnAttackEvent { get; private set; }
     public UnityEvent OnAttackEndedEvent { get; private set; }
 
     protected Dictionary<Type, AttackBase> _attacks;
@@ -22,7 +22,7 @@ public abstract class WeaponBase : MonoBehaviour
         GlobalCooldown = GetComponent<GlobalCooldown>();
         GlobalCooldown.ResetCooldownTime(dataInfo.GlobalCooldownTime);
         _effects = GetComponentInChildren<EffectList>();
-        OnAttackEvent = new UnityEvent();
+        OnAttackEvent = new UnityEvent<AttackData>();
         OnAttackEndedEvent = new UnityEvent();
 
         CreateAttacks(dataInfo.WeaponAttacks);
@@ -34,7 +34,7 @@ public abstract class WeaponBase : MonoBehaviour
         if (!GlobalCooldown.IsReady || !currentAttack.IsReady())
             return;
 
-        OnAttackEvent.Invoke();
+        OnAttackEvent.Invoke(currentAttack.AttackData);
         currentAttack.Attack();
         GlobalCooldown.TryRestartCooldown();
     }
@@ -46,7 +46,6 @@ public abstract class WeaponBase : MonoBehaviour
 
     protected void ActivateEffects(AttackEventArgs attackEventArgs)
     {
-        OnAttackEndedEvent.Invoke();
         var effects = _effects.Effects.ToList();
         foreach (var effect in effects)
         {
@@ -60,14 +59,12 @@ public abstract class WeaponBase : MonoBehaviour
         MinimalAttackDistance = float.MaxValue;
         AttackTypes = new List<Type>();
         _attacks = new Dictionary<Type, AttackBase>();
-        var attackDrawer = GetComponent<GizmosAttackDrawer>();
         var moveController = GetComponentInParent<MoveController>();
 
         foreach (var attackType in attackTypes)
         {
             var type = TypeConvertor.ConvertEnumToType(attackType);
             var attack = AttacksFactory.Instance.CreateObject(GetComponentInChildren<AttacksList>().gameObject, type);
-            attack.OnAttackStartedEvent.AddListener(attackDrawer.DrawAttack);
             attack.OnAttackStartedEvent.AddListener(_ => moveController.StopMoving());
             attack.OnAttackPreparedEvent.AddListener(_ => moveController.ContinueMoving());
             attack.OnAttackCompletedEvent.AddListener(ActivateEffects);
@@ -77,11 +74,6 @@ public abstract class WeaponBase : MonoBehaviour
             SetMinimalDistance(attack.AttackData.AttackRadius);
         }
 
-    }
-
-    private void PrepareBeforeAttack()
-    {
-        GetComponent<MoveController>().StopMoving();
     }
 
     private void SetMinimalDistance(float radius)

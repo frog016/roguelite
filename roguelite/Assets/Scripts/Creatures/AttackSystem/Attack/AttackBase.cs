@@ -39,7 +39,6 @@ public abstract class AttackBase : MonoBehaviour
     protected virtual IEnumerator AttackCoroutine()
     {
         OnAttackStartedEvent.Invoke(this);
-        Debug.Log("Start attack preparing");
         yield return new WaitForSeconds(_attackData.DelayBeforeAttack);
         OnAttackPreparedEvent.Invoke(this);
     }
