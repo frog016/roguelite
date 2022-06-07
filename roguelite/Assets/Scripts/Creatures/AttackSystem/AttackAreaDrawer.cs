@@ -14,7 +14,6 @@ public class AttackAreaDrawer : MonoBehaviour
         _meshFilter = GetComponent<MeshFilter>();
         _meshFilter.mesh = new Mesh();
         _moveController = GetComponentInParent<MoveController>();
-        //GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Standard"));
     }
 
     private void Start()
@@ -25,26 +24,17 @@ public class AttackAreaDrawer : MonoBehaviour
 
     private void DrawAttackMesh(AttackData attackData)
     {
-        var angle = attackData.AngleDegrees;
+        var stepDegrees = 5f;
 
-        var mesh = _meshFilter.mesh;
-        mesh.Clear();
-        var vertexes = CreateCirclePoints(transform.position, _moveController.Direction, 5f)
-            .Where(point => Vector2.Angle(_moveController.Direction, point - transform.position) <= angle / 2).ToList();
-        vertexes.Add(transform.position);
+        var vertexList = CreateAreaPoints(
+            _moveController.Direction, attackData.AttackRadius,
+            attackData.AngleDegrees, stepDegrees);
+        var triangleList = CreateTriangleIndexes(attackData.AngleDegrees / stepDegrees);
+        var uvList = CreateUv(vertexList.Count);
 
-        mesh.vertices = vertexes.ToArray();
-        mesh.triangles = CreateTriangles(vertexes).ToArray();
+        ResetMesh(vertexList, uvList, triangleList);
 
-        var normals = new List<Vector3>();
-        for (var i = 0; i < vertexes.Count; i++)
-            normals.Add(-transform.forward);
-        mesh.normals = normals.ToArray();
-
-        mesh.uv = vertexes.Select(vertex => new Vector2(vertex.x, vertex.y)).ToArray();
-
-        _meshFilter.mesh = mesh;
-        //StartCoroutine(DeleteMesh(attackData.DelayBeforeAttack));
+        StartCoroutine(DeleteMesh(attackData.DelayBeforeAttack));
     }
 
     private IEnumerator DeleteMesh(float delay)
@@ -53,36 +43,50 @@ public class AttackAreaDrawer : MonoBehaviour
         _meshFilter.mesh.Clear(); 
     }
 
-    private List<Vector3> CreateCirclePoints(Vector2 center, Vector2 direction, float stepDegrees)
+    private void ResetMesh(List<Vector3> vertexList, List<Vector2> uvList, List<int> triangleList)
     {
-        var result = new List<Vector3>();
-        var point = center - direction;
-        var step = stepDegrees * Mathf.PI / 180;
-        var angle = step;
-        result.Add(point);
+        _meshFilter.mesh.Clear();
+        _meshFilter.mesh.vertices = vertexList.ToArray();
+        _meshFilter.mesh.uv = uvList.ToArray();
+        _meshFilter.mesh.triangles = triangleList.ToArray();
+        _meshFilter.mesh.RecalculateNormals();
+    }
 
-        for (var i = 0; i < 360 / stepDegrees; i++)
-        {
-            var x = Mathf.Cos(angle) * (point.x - center.x) - Mathf.Sin(angle) * (point.y - center.y) + center.x;
-            var y = Mathf.Sin(angle) * (point.x - center.x) + Mathf.Cos(angle) * (point.y - center.y) + center.y;
-            result.Add(new Vector2(x, y));
-            angle += step;
-        }
+    private List<Vector3> CreateAreaPoints(Vector2 direction, float radius, float angleDegrees, float stepDegrees)
+    {
+        var result = new List<Vector3> { Vector3.zero };
+        var angle = angleDegrees * Mathf.Deg2Rad / 2;
+        var step = stepDegrees * Mathf.Deg2Rad;
+        var point = direction * radius;
+
+        for (; angle + angleDegrees * Mathf.Deg2Rad / 2 + step > 1e-5; angle -= step)
+            result.Add(point.Rotate(angle));
 
         return result;
     }
 
-    private List<int> CreateTriangles(List<Vector3> vertexes)
+    private List<int> CreateTriangleIndexes(float triangleCount)
     {
-        var trianglesIndexes = new List<int>();
-
-        for (var i = 0; i < vertexes.Count - 2; i += 2)
+        var triangleList = new List<int>();
+        for (var i = 0; i < triangleCount; i++)
         {
-            trianglesIndexes.Add(vertexes.Count - 1);
-            trianglesIndexes.Add(i);
-            trianglesIndexes.Add(i + 1);
+            triangleList.Add(0);
+            triangleList.Add(i + 1);
+            triangleList.Add(i + 2);
         }
 
-        return trianglesIndexes;
+        return triangleList;
+    }
+
+    private List<Vector2> CreateUv(int count)
+    {
+        var uvList = new List<Vector2>();
+        for (var i = 0; i < count; i++)
+        {
+            var x = (1.0f / count) * i;
+            uvList.Add(new Vector2(x, 1));
+        }
+
+        return uvList;
     }
 }
