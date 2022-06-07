@@ -9,7 +9,7 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
 {
     [SerializeField] private bool _generateOnStart;
 
-    public UnityEvent OnEndGeneration { get; private set; }
+    public UnityEvent OnGenerationEndedEvent { get; private set; }
 
     private Grid _grid;
     private DungeonGeneratorGrid2D _generator;
@@ -19,7 +19,7 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
     {
         base.Awake();
         YandexGamesSdk.CallbackLogging = true;
-        OnEndGeneration = new UnityEvent();
+        OnGenerationEndedEvent = new UnityEvent();
         _generator = FindObjectOfType<DungeonGeneratorGrid2D>();
         _surface = FindObjectOfType<NavMeshSurface>();
     }
@@ -44,6 +44,6 @@ public class LevelGenerationManager : SingletonObject<LevelGenerationManager>
             _surface.BuildNavMesh();
         }
 
-        OnEndGeneration.Invoke();
+        OnGenerationEndedEvent.Invoke();
     }
 }

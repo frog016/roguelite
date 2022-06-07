@@ -28,7 +28,7 @@ public class Shop : SingletonObject<Shop>
 
     private void Start()
     {
-        LevelGenerationManager.Instance.OnEndGeneration.AddListener(() =>
+        LevelGenerationManager.Instance.OnGenerationEndedEvent.AddListener(() =>
         {
             _bag = PlayerSpawner.Instance.Player.GetComponentInChildren<ItemBag>();
         });

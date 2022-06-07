@@ -9,7 +9,7 @@ public class PlayerHpBar : MonoBehaviour
 
     private void Start()
     {
-        LevelGenerationManager.Instance.OnEndGeneration.AddListener(() =>
+        LevelGenerationManager.Instance.OnGenerationEndedEvent.AddListener(() =>
         {
             _player = PlayerSpawner.Instance?.Player;
             ChangeHpValue();

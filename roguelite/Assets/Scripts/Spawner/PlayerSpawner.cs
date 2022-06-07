@@ -19,7 +19,7 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
         Player.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnPlayerDeathEvent.Invoke);
         Camera.main.GetComponent<CameraTracking>().SetObject(Player.transform);
 
-        LevelGenerationManager.Instance.OnEndGeneration.RemoveListener(() => SpawnUnits());
+        LevelGenerationManager.Instance.OnGenerationEndedEvent.RemoveListener(() => SpawnUnits());
         Destroy(creatureObject);
     }
 
