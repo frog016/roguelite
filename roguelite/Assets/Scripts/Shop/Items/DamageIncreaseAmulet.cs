@@ -7,7 +7,7 @@ public class DamageIncreaseAmulet : Item
         _weapon = transform.parent.GetComponentInChildren<WeaponBase>();
     }
 
-    protected override void Start()
+    protected override void StartUse()
     {
         RoomManager.Instance.OnRoomEnter.AddListener(UseItem);
         IncreaseDamage();

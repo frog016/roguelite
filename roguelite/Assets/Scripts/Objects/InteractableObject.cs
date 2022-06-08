@@ -1,9 +1,10 @@
-using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public abstract class InteractableObject : MonoBehaviour, IInteractable
 {
+    private bool _isNear;
+
     protected void ShowText(string text)
     {
         NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Tooltip, text));
@@ -16,6 +17,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
 
     public virtual void StartInteraction()
     {
+        _isNear = true;
         ShowText("Press E to interact");
     }
 
@@ -26,6 +28,13 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     public virtual void EndInteraction()
     {
         HideText();
+        _isNear = false;
+    }
+
+    protected virtual void Update()
+    {
+        if (_isNear)
+            Interaction();
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
@@ -34,14 +43,6 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
             return;
 
         StartInteraction();
-    }
-
-    private void OnTriggerStay2D(Collider2D otherCollider)
-    {
-        if (otherCollider.GetComponent<HeroSamurai>() == null)
-            return;
-
-        Interaction();
     }
 
     private void OnTriggerExit2D(Collider2D otherCollider)

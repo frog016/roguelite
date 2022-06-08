@@ -24,7 +24,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
         var grid = gameObject.GetComponentInChildren<Grid>();
         var position = grid.LocalToWorld(grid.GetComponentInChildren<Tilemap>().localBounds.center);
         var altar = Instantiate(_altar, position, Quaternion.identity);
-        altar.SetEffects(_allEffectsType.GetRandomItems(ItemsCount));
+        altar.EffectTypes = _allEffectsType.GetRandomItems(ItemsCount);
     }
 
 

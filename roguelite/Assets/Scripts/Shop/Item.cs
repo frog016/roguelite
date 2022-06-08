@@ -6,15 +6,16 @@ public abstract class Item : MonoBehaviour
 
     protected int _usesCount;
 
-    protected virtual void Start()
-    {
-        UseItem();
-    }
-
     public void Initialize(ItemData data)
     {
         _data = data;
         _usesCount = data.UsesCount;
+        StartUse();
+    }
+
+    protected virtual void StartUse()
+    {
+        UseItem();
     }
 
     protected abstract void UseItem();

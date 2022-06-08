@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class EffectsAltar : InteractableObject
 {
-    private List<Type> _types;
-
-    public void SetEffects(List<Type> types) => _types = types;
-
-    private void Start()
-    {
-        EffectsSelectionPanel.Instance.OnEffectChosenEvent.AddListener(DestroyAltar);
-    }
+    public List<Type> EffectTypes { get; set; }
 
     public override void Interaction()
     {
         if (!Input.GetKeyDown(KeyCode.E))
             return;
 
-        EffectsSelectionPanel.Instance.ShowPanel(_types);
+        EffectsSelectionPanel.Instance.OpenPanel(this);
+    }
+
+    public void CreateEffect(Type effectType)
+    {
+        PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().AddOrUpdate(effectType);
+        DestroyAltar();
     }
 
     private void DestroyAltar()
     {
         HideText();
         Destroy(gameObject);
-        EffectsSelectionPanel.Instance.OnEffectChosenEvent.RemoveListener(DestroyAltar);
     }
 }

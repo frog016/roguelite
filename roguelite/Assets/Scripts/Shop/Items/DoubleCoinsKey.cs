@@ -1,6 +1,6 @@
 public class DoubleCoinsKey : Item
 {
-    protected override void Start()
+    protected override void StartUse()
     {
         RoomManager.Instance.OnRoomEnter.AddListener(UseItem);
     }
