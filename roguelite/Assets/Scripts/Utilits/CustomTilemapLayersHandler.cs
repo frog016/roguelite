@@ -12,9 +12,9 @@ public class CustomTilemapLayersHandler : TilemapLayersHandlerBaseGrid2D
         grid.cellSize = new Vector3(1, 0.5f, 1);
         grid.cellLayout = GridLayout.CellLayout.Isometric;
 
-        CreateTilemapGameObject("Floor", gameObject, 0);
+        CreateTilemapGameObject("Floor", gameObject, -32768);
 
-        var walls = CreateTilemapGameObject("Walls", gameObject, 1);
+        var walls = CreateTilemapGameObject("Walls", gameObject, -32768);
         AddCompositeCollider(walls);
         AddNavMeshModifier(walls);
         //CreateTilemapGameObject("Additional layer 1", gameObject, 2);
