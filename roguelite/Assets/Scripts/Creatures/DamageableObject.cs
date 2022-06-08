@@ -23,8 +23,7 @@ public class DamageableObject : MonoBehaviour
         if (Health > 0)
             return;
 
-        OnObjectDeath.Invoke();
-        Destroy(gameObject);
+        Death();
     }
 
     public void ApplyHeath(float healValue)
@@ -33,9 +32,11 @@ public class DamageableObject : MonoBehaviour
         OnHealthChanged.Invoke();
     }
 
-    private void OnDestroy()
+    private void Death()
     {
-        OnObjectDeath.RemoveAllListeners();
+        OnObjectDeath.Invoke();
         OnHealthChanged.RemoveAllListeners();
+        OnObjectDeath.RemoveAllListeners();
+        Destroy(gameObject);
     }
 }

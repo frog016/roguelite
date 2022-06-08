@@ -4,6 +4,7 @@ using System.Linq;
 using Database.MutableDatabases;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
@@ -11,25 +12,26 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
     [SerializeField] private GameObject _cardPrefab;
     [SerializeField] private GameObject _cardList;
 
+    public UnityEvent OnEffectChosenEvent { get; private set; }
+
     private Type _currentType;
-    private EffectsAltar _altar;
     private List<GameObject> _cards;
 
     protected override void Awake()
     {
         base.Awake();
+        OnEffectChosenEvent = new UnityEvent();
         _cards = new List<GameObject>();
-        GetComponentInChildren<Button>().onClick.AddListener(() => CreateSelectedEffect(_altar));
+        GetComponentInChildren<Button>().onClick.AddListener(CreateSelectedEffect);
         gameObject.SetActive(false);
     }
 
-    public void ShowPanel()
+    public void ShowPanel(List<Type> effectTypes)
     {
-        _altar = FindObjectOfType<EffectsAltar>();
         var delta = _cardPrefab.GetComponent<RectTransform>().rect.size.y;
         var position = new Vector2(0, delta);
 
-        foreach (var type in  _altar.Types)
+        foreach (var type in  effectTypes)
         {
             var card = Instantiate(_cardPrefab, _cardList.transform);
             card.GetComponent<RectTransform>().anchoredPosition = position;
@@ -61,11 +63,11 @@ public class EffectsSelectionPanel : SingletonObject<EffectsSelectionPanel>
             c.GetComponent<Image>().color = Color.black;
     }
 
-    private void CreateSelectedEffect(EffectsAltar altar)
+    private void CreateSelectedEffect()
     {
         PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().AddOrUpdate(_currentType);
         PauseManager.Instance.Continue();
-        Destroy(altar.gameObject);
+        OnEffectChosenEvent.Invoke();
         _cards.ForEach(Destroy);
         _cards = new List<GameObject>();
         gameObject.SetActive(false);

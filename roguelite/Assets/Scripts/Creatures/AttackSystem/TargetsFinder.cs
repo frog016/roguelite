@@ -28,7 +28,7 @@ public class TargetsFinder : MonoBehaviour
     {
         return Physics2D.CircleCastAll(transform.position, radius, _moveController.Direction, 0)
             .Where(raycast => IsOtherCollider(raycast.collider))
-            .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
+            .Select(raycast => raycast.collider.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)
             .Where(damageableObject => 
                 EnemyDetector.Instance.IsEnemy(_owner.GetType(), damageableObject.GetType()))
@@ -40,7 +40,7 @@ public class TargetsFinder : MonoBehaviour
         var angle = Vector2.Angle(Vector2.right, _moveController.Direction);
         return Physics2D.BoxCastAll(transform.parent.position, size, angle, _moveController.Direction)
             .Where(raycast => IsOtherCollider(raycast.collider))
-            .Select(raycast => raycast.transform.GetComponent<DamageableObject>())
+            .Select(raycast => raycast.collider.GetComponent<DamageableObject>())
             .Where(damageableObject => damageableObject != null)
             .Where(damageableObject => 
                 EnemyDetector.Instance.IsEnemy(_owner.GetType(), damageableObject.GetType()))

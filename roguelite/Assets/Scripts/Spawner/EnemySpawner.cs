@@ -45,7 +45,7 @@ public class EnemySpawner : MonoBehaviour, ISpawner
         for (var i = 0; i < unitsData.Count; i++)
         {
             var creature = CreatureFactory.Instance.CreateObject(creatureObject, type);
-            GlobalEventManager.Instance.OnEnemyDeathEvent.AddListener(() => SpawnedUnitsCount--);
+            creature.OnObjectDeath.AddListener(() => SpawnedUnitsCount--);
             creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
             creature.GetComponent<StateChanger>().SetTarget(_target);
             MobsHpBarManager.Instance.AddCreature(creature);
