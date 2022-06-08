@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Edgar.Unity;
-using TMPro;
-using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class RoomManager : SingletonObject<RoomManager>
 {
@@ -12,8 +7,6 @@ public class RoomManager : SingletonObject<RoomManager>
 
     public UnityEvent OnRoomEnter { get; private set; }
     public UnityEvent OnRoomExit { get; private set; }
-
-    private TextMeshProUGUI _text;
 
     protected override void Awake()
     {
@@ -24,7 +17,6 @@ public class RoomManager : SingletonObject<RoomManager>
 
     private void Start()
     {
-        _text = FindObjectOfType<ItemDroppingText>().Text;
         GlobalEventManager.Instance.OnRoomClearedEvent.AddListener(DropItemsAfterRoom);
     }
 
@@ -42,15 +34,8 @@ public class RoomManager : SingletonObject<RoomManager>
     private void DropItemsAfterRoom()
     {
         var itemDropperRoomBase = CurrentRoom.RoomTemplateInstance.GetComponent<ItemDropperRoomBase>();
-        _text.text = $"Вам выпало {itemDropperRoomBase.GetType().Name}";
-
         itemDropperRoomBase.DropItems();
-        StartCoroutine(DeleteText());
-    }
 
-    private IEnumerator DeleteText()
-    {
-        yield return new WaitForSeconds(2f);
-        _text.text = "";
+        NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Announcement, $"Вам выпало {itemDropperRoomBase.GetType().Name}"));
     }
 }

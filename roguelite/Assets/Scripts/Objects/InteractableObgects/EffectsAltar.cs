@@ -8,9 +8,8 @@ public class EffectsAltar : InteractableObject
 
     public void SetEffects(List<Type> types) => _types = types;
 
-    protected override void Start()
+    private void Start()
     {
-        base.Start();
         EffectsSelectionPanel.Instance.OnEffectChosenEvent.AddListener(DestroyAltar);
     }
 
@@ -19,7 +18,6 @@ public class EffectsAltar : InteractableObject
         if (!Input.GetKeyDown(KeyCode.E))
             return;
 
-        Debug.Log("Interact");
         EffectsSelectionPanel.Instance.ShowPanel(_types);
     }
 
