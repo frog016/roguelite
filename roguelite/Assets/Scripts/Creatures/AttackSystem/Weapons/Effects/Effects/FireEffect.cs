@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class FireEffect : NegativeEffect
+public class FireEffect : EffectBase
 {
     private HashSet<DamageableObject> _targetsUnderEffect;
-    private GameObject _visualEffect;
 
     public override void InitializeEffect(EffectData data)
     {
         base.InitializeEffect(data);
         _duration = data.Duration;
-        _visualEffect = (data as EffectDataInfo).VisualEffect;
         _targetsUnderEffect = new HashSet<DamageableObject>();
     }
 

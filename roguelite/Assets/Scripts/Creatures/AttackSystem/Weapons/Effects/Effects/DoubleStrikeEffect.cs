@@ -1,4 +1,4 @@
-public class DoubleStrikeEffect : NegativeEffect
+public class DoubleStrikeEffect : EffectBase
 {
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {

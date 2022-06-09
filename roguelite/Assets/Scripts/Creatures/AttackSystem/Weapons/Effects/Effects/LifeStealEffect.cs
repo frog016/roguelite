@@ -1,4 +1,6 @@
-public class LifeStealEffect : NegativeEffect
+using UnityEngine;
+
+public class LifeStealEffect : EffectBase
 {
     private float _lifeStealAmount;
     private DamageableObject _myHealth;
@@ -13,6 +15,11 @@ public class LifeStealEffect : NegativeEffect
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
+        var visualEffect = Instantiate(_visualEffect, transform);
+        var particle = visualEffect.GetComponent<ParticleSystem>().main;
+        particle.duration = _duration;
+        visualEffect.GetComponent<ParticleSystem>().Play();
+
         foreach (var target in attackEventArgs.DamagedTargets)
             StealHealth(target);
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class StunEffect : NegativeEffect
+public class StunEffect : EffectBase
 {
     private Dictionary<DamageableObject, Coroutine> _stuns;
 
@@ -44,6 +44,11 @@ public class StunEffect : NegativeEffect
             target.GetComponent<MoveController>(),
             target.GetComponentInChildren<WeaponBase>()
         };
+
+        var visualEffect = Instantiate(_visualEffect, target.transform);
+        var particle = visualEffect.GetComponent<ParticleSystem>().main;
+        particle.duration = _duration;
+        visualEffect.GetComponent<ParticleSystem>().Play();
 
         SetEnabled(components, false);
         yield return new WaitForSeconds(_duration);

@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class AirEffect : NegativeEffect
+public class AirEffect : EffectBase
 {
     private float _knockBackForce;
 
@@ -16,6 +17,10 @@ public class AirEffect : NegativeEffect
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
+        var visualEffect = Instantiate(_visualEffect, transform);
+        var particle = visualEffect.GetComponent<ParticleSystem>().main;
+        particle.duration = _duration;
+        visualEffect.GetComponent<ParticleSystem>().Play();
         ApplyDamage(attackEventArgs.DamagedTargets);
     }
 

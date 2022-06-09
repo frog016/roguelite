@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class AttackSpeedEffect : PositiveEffect
+public class AttackSpeedEffect : EffectBase
 {
     private int _maxStacks;
     private int _stacksCount;

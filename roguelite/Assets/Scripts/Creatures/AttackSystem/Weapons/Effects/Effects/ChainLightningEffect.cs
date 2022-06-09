@@ -3,7 +3,7 @@ using Edgar.Legacy.GeneralAlgorithms.Algorithms.Common;
 using UnityEngine;
 
 //TODO: добавить анимацию молни
-public class ChainLightningEffect : NegativeEffect
+public class ChainLightningEffect : EffectBase
 {
     private int _maxChainLinks;
     private float _chainLinksDamage;
@@ -39,13 +39,30 @@ public class ChainLightningEffect : NegativeEffect
     private void ApplyDamage(DamageableObject firstTarget, List<DamageableObject> links)
     {
         firstTarget.ApplyDamage(_parameters.Damage);
+        PlayVisualEffect(transform, firstTarget.transform);
         links.Remove(firstTarget);
 
         if (links.Count > _maxChainLinks)
             links = links.GetRange(0, _maxChainLinks - 1);
 
+        var previousTarget = firstTarget;
         foreach (var link in links)
+        {
             link.ApplyDamage(_chainLinksDamage);
+            PlayVisualEffect(previousTarget.transform, link.transform);
+            previousTarget = link;
+        }
+    }
+
+    private void PlayVisualEffect(Transform start, Transform target)
+    {
+        var visualEffect = Instantiate(_visualEffect, target);
+        visualEffect.transform.rotation = Quaternion.LookRotation((target.position - start.position));
+        var particle = visualEffect.GetComponent<ParticleSystem>().main;
+        particle.duration = _duration;
+        var shape = visualEffect.GetComponent<ParticleSystem>().shape.scale;
+        shape.z = (target.position - start.position).sqrMagnitude;
+        visualEffect.GetComponent<ParticleSystem>().Play();
     }
 
     private List<DamageableObject> GetTargetsInArea()
