@@ -30,13 +30,18 @@ public abstract class WeaponBase : MonoBehaviour
 
     public virtual void UseAttack(Type attackType)
     {
-        var currentAttack = _attacks[attackType];
-        if (!GlobalCooldown.IsReady || !currentAttack.IsReady())
+        if (!CanAttack(attackType))
             return;
 
+        var currentAttack = _attacks[attackType];
         OnAttackEvent.Invoke(currentAttack.AttackData);
         currentAttack.Attack();
         GlobalCooldown.TryRestartCooldown();
+    }
+
+    public bool CanAttack(Type attackType)
+    {
+        return GlobalCooldown.IsReady && _attacks[attackType].IsReady();
     }
 
     public AttackData GetAttackData(Type attackType)
@@ -46,6 +51,7 @@ public abstract class WeaponBase : MonoBehaviour
 
     protected void ActivateEffects(AttackEventArgs attackEventArgs)
     {
+        OnAttackEndedEvent.Invoke();
         var effects = _effects.Effects.ToList();
         foreach (var effect in effects)
         {
@@ -65,8 +71,8 @@ public abstract class WeaponBase : MonoBehaviour
         {
             var type = TypeConvertor.ConvertEnumToType(attackType);
             var attack = AttacksFactory.Instance.CreateObject(GetComponentInChildren<AttacksList>().gameObject, type);
-            attack.OnAttackStartedEvent.AddListener(_ => moveController.StopMoving());
-            attack.OnAttackPreparedEvent.AddListener(_ => moveController.ContinueMoving());
+            //attack.OnAttackStartedEvent.AddListener(_ => moveController.StopMoving());
+            //attack.OnAttackPreparedEvent.AddListener(_ => moveController.ContinueMoving());
             attack.OnAttackCompletedEvent.AddListener(ActivateEffects);
             _attacks.Add(type, attack);
             AttackTypes.Add(type);

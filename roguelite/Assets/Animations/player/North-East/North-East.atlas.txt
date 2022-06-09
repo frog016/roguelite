@@ -1,0 +1,90 @@
+
+North-East.png
+size: 205,149
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blade l
+  rotate: true
+  xy: 137, 79
+  size: 68, 66
+  orig: 68, 66
+  offset: 0, 0
+  index: -1
+blde r
+  rotate: false
+  xy: 58, 64
+  size: 52, 83
+  orig: 52, 83
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 25
+  size: 54, 122
+  orig: 54, 122
+  offset: 0, 0
+  index: -1
+dospeh
+  rotate: false
+  xy: 137, 5
+  size: 28, 45
+  orig: 28, 45
+  offset: 0, 0
+  index: -1
+leg bottom l
+  rotate: true
+  xy: 2, 2
+  size: 21, 61
+  orig: 21, 61
+  offset: 0, 0
+  index: -1
+leg bottom r
+  rotate: true
+  xy: 137, 52
+  size: 25, 66
+  orig: 25, 66
+  offset: 0, 0
+  index: -1
+leg top l
+  rotate: false
+  xy: 65, 8
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1
+leg top r
+  rotate: false
+  xy: 107, 8
+  size: 28, 54
+  orig: 28, 54
+  offset: 0, 0
+  index: -1
+plecho
+  rotate: false
+  xy: 167, 11
+  size: 14, 39
+  orig: 14, 39
+  offset: 0, 0
+  index: -1
+plecho r
+  rotate: false
+  xy: 112, 100
+  size: 23, 47
+  orig: 23, 47
+  offset: 0, 0
+  index: -1
+predplech l
+  rotate: false
+  xy: 183, 26
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+predplech r
+  rotate: false
+  xy: 112, 68
+  size: 15, 30
+  orig: 15, 30
+  offset: 0, 0
+  index: -1

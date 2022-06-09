@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(NavMeshAgent))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMoveController : MoveController
 {
     public NavMeshAgent Agent { get; protected set; }
@@ -9,7 +9,6 @@ public class EnemyMoveController : MoveController
     protected override void Awake()
     {
         base.Awake();
-        _rigidbody = GetComponent<Rigidbody2D>();
         Agent = GetComponent<NavMeshAgent>();
     }
 
@@ -20,9 +19,6 @@ public class EnemyMoveController : MoveController
 
     public override void Move(Vector3 direction)
     {
-        if (!_canMove)
-            return;
-
         var normalizedDirection = (direction - transform.position).normalized;
         Direction = new Vector2(
             Mathf.Abs(normalizedDirection.x) < 0.2 ? 0 : normalizedDirection.x,

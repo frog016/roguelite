@@ -1,0 +1,83 @@
+
+South-East.png
+size: 338,92
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blade l
+  rotate: false
+  xy: 122, 25
+  size: 80, 65
+  orig: 80, 65
+  offset: 0, 0
+  index: -1
+blade r
+  rotate: false
+  xy: 204, 24
+  size: 75, 66
+  orig: 75, 66
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 33
+  size: 57, 118
+  orig: 57, 118
+  offset: 0, 0
+  index: -1
+leg bottom l
+  rotate: true
+  xy: 2, 2
+  size: 29, 84
+  orig: 29, 84
+  offset: 0, 0
+  index: -1
+leg bottom r
+  rotate: false
+  xy: 281, 30
+  size: 30, 60
+  orig: 30, 60
+  offset: 0, 0
+  index: -1
+leg top l
+  rotate: true
+  xy: 281, 4
+  size: 24, 51
+  orig: 24, 51
+  offset: 0, 0
+  index: -1
+leg top r
+  rotate: true
+  xy: 88, 2
+  size: 21, 44
+  orig: 21, 44
+  offset: 0, 0
+  index: -1
+plecho l
+  rotate: false
+  xy: 313, 37
+  size: 23, 53
+  orig: 23, 53
+  offset: 0, 0
+  index: -1
+plecho r
+  rotate: true
+  xy: 134, 5
+  size: 18, 42
+  orig: 18, 42
+  offset: 0, 0
+  index: -1
+prdeplech l
+  rotate: true
+  xy: 178, 5
+  size: 17, 38
+  orig: 17, 38
+  offset: 0, 0
+  index: -1
+predplech r
+  rotate: true
+  xy: 218, 5
+  size: 17, 30
+  orig: 17, 30
+  offset: 0, 0
+  index: -1

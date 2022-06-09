@@ -18,6 +18,7 @@ MonoBehaviour:
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 15
@@ -41,6 +42,7 @@ MonoBehaviour:
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -60,11 +62,12 @@ MonoBehaviour:
         \u0443\u0440\u043E\u043D (+10 \u043A \u0431\u0430\u0437\u043E\u0432\u043E\u043C\u0443
         \u0443\u0440\u043E\u043D\u0443) \u0438 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u044E\u0442
         \u0446\u0435\u043B\u044C."
-      _visualEffect: {fileID: 0}
+      _visualEffect: {fileID: 6995678693192782799, guid: a11c408f97d0e274c9540756d594ffe6, type: 3}
     - _effectType: 2
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -81,11 +84,12 @@ MonoBehaviour:
       _description: "\u041F\u0440\u0438 \u043D\u0430\u043D\u0435\u0441\u0435\u043D\u0438\u0438
         \u0443\u0440\u043E\u043D\u0430, \u0438\u0433\u0440\u043E\u043A \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
         \u0441\u0432\u043E\u0435 \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435."
-      _visualEffect: {fileID: 0}
+      _visualEffect: {fileID: 5345808395681593504, guid: df57f8e72dee4ad4ca7fd95ed4e93298, type: 3}
     - _effectType: 3
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -102,11 +106,12 @@ MonoBehaviour:
       _description: "\u0423 \u0432\u0430\u0448\u0438\u0445 \u0430\u0442\u0430\u043A
         \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0448\u0430\u043D\u0441
         15% \u043E\u0433\u043B\u0443\u0448\u0438\u0442\u044C \u0446\u0435\u043B\u044C."
-      _visualEffect: {fileID: 0}
+      _visualEffect: {fileID: 157475460585935466, guid: ec82dc6c28881674ca418bdb503b584a, type: 3}
     - _effectType: 4
       _attackParameters:
         _damage: 6
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -133,6 +138,7 @@ MonoBehaviour:
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -156,6 +162,7 @@ MonoBehaviour:
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -175,11 +182,12 @@ MonoBehaviour:
         \u043C\u043E\u043B\u043D\u0438\u044E, \u043A\u043E\u0442\u043E\u0440\u0430\u044F
         \u043D\u0430\u043D\u043E\u0441\u0438\u0442 \u0443\u0440\u043E\u043D \u0435\u043C\u0443
         \u0438 \u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0438\u043C \u0432\u0440\u0430\u0433\u0430\u043C."
-      _visualEffect: {fileID: 0}
+      _visualEffect: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
     - _effectType: 7
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -201,6 +209,7 @@ MonoBehaviour:
       _attackParameters:
         _damage: 1
         _attackRadius: 0
+        _angleDegrees: 0
         _cooldownTime: 0
         _delayBeforeAttack: 0
       _procProbability: 100
@@ -219,4 +228,4 @@ MonoBehaviour:
         \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u043A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
         \u0443\u0440\u043E\u043D (125% \u043E\u0442 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439
         \u0430\u0442\u0430\u043A\u0438)."
-      _visualEffect: {fileID: 0}
+      _visualEffect: {fileID: 7429459272535452590, guid: d394437f33a4bfc4f91733e3b0551f99, type: 3}

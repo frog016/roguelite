@@ -7,11 +7,11 @@ public class CameraTracking : MonoBehaviour
 
     private Transform _trackingObject;
 
-    public void SetObject(Transform trackingTransform) //  TODO: Следит только за игроком
+    public void SetObject(Transform trackingTransform)
     {
         _trackingObject = trackingTransform;
         transform.position = new Vector3(_trackingObject.position.x, _trackingObject.position.y, transform.position.z);
-        _trackingObject.GetComponent<PlayerMoveController>().OnPlayerMove.AddListener(FollowAtObject);
+        _trackingObject.GetComponent<MoveController>().OnObjectMovedEvent.AddListener(FollowAtObject);
     }
 
     private void FollowAtObject()

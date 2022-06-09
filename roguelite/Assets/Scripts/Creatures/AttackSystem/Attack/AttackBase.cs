@@ -8,7 +8,7 @@ public abstract class AttackBase : MonoBehaviour
     public UnityEvent<AttackBase> OnAttackStartedEvent { get; private set; }
     public UnityEvent<AttackBase> OnAttackPreparedEvent { get; private set; }
     public UnityEvent<AttackEventArgs> OnAttackCompletedEvent { get; private set; }
-
+    
     protected AttackData _attackData;
     protected Cooldown _cooldown;
     protected TargetsFinder _targetsFinder;

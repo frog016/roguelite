@@ -12,16 +12,16 @@ public class BossAttackController : AttackController    //  TODO: Отрефакторить,
     {
         base.Start();
         _moveController = GetComponent<EnemyMoveController>();
-        _activeAttacks = _weapon.AttackTypes;
+        _activeAttacks = Weapon.AttackTypes;
         _nextAttack = TryGetRandomAttack();
     }
 
     public override void HandleInput(AttackType attackType = default)
     {
-        if (!_weapon.GlobalCooldown.IsReady || _nextAttack == null)
+        if (!Weapon.GlobalCooldown.IsReady || _nextAttack == null)
             return;
 
-        _weapon.UseAttack(_nextAttack.Item1);
+        Weapon.UseAttack(_nextAttack.Item1);
         _nextAttack = TryGetRandomAttack();
         _moveController.Agent.stoppingDistance = _nextAttack.Item2.AttackRadius;
     }
@@ -31,6 +31,6 @@ public class BossAttackController : AttackController    //  TODO: Отрефакторить,
         var index = Random.Range(0, _activeAttacks.Count);
         var type = _activeAttacks[index];
         
-        return Tuple.Create(type, _weapon.GetAttackData(type)); ;
+        return Tuple.Create(type, Weapon.GetAttackData(type)); ;
     }
 }

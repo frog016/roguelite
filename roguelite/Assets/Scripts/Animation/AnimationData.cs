@@ -5,9 +5,9 @@ using UnityEngine;
 [Serializable]
 public class AnimationData
 {
-    [SerializeField] private AnimationState _state;
-    [SerializeField] private SkeletonDataAsset _dataAsset;
+    [SerializeField] private string _name;
+    [SerializeField] private SkeletonDataAsset _data;
 
-    public AnimationState State => _state;
-    public SkeletonDataAsset DataAsset => _dataAsset;
+    public string Name => _name;
+    public SkeletonDataAsset Data => _data;
 }

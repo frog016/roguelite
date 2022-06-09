@@ -2,103 +2,88 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Spine.Unity;
-
-#if UNITY_EDITOR
-
-using Spine.Unity.Editor;
-
-#endif
 using UnityEngine;
 
 [RequireComponent(typeof(SkeletonAnimation))]
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] private bool _reversed;
-    [SerializeField] private List<AnimationDirection> _animationDirections;
+    [SerializeField] private List<OrientedAnimationExt> _orientedAnimations;
 
-    private Vector2 _curentDirection;
-    private AnimationState _currentAnimationState;
+    private Vector2 _oldDirection;
     private MoveController _moveController;
     private SkeletonAnimation _skeletonAnimation;
+    private List<AnimationData> _currentAnimation;
 
     private void Awake()
     {
         _moveController = GetComponentInParent<MoveController>();
         _skeletonAnimation = GetComponent<SkeletonAnimation>();
+        _currentAnimation = new List<AnimationData>();
+
+        _oldDirection = _moveController.Direction;
     }
 
     private void Start()
     {
-        _moveController.OnObjectMovedEvent.AddListener(() => SetAnimation(AnimationState.Walk));
-        var weapon = transform.parent.GetComponentInChildren<WeaponBase>();
-        weapon.OnAttackEvent.AddListener(_ => SetAnimation(AnimationState.Fight));
-        weapon.OnAttackEndedEvent.AddListener(() => SetAnimation(AnimationState.Idle));
+        _moveController.OnObjectMovedEvent.AddListener(DefineAnimationDirection);
+        GetComponentInParent<StateChanger>().StateHandler.OnStateChangedEvent.AddListener(PlayAnimation);
     }
 
-    private void SetAnimation(AnimationState state)
+    private void DefineAnimationDirection()
     {
         var x = Math.Abs(_moveController.Direction.x) < 1e-10 ? 0 : -1;
-        var y = Math.Abs(_moveController.Direction.y) < 1e-10 ? 0 : Math.Sign(_moveController.Direction.y) * 1;
+        var y = Math.Abs(_moveController.Direction.y) < 1e-10 ? 0 : Math.Sign(_moveController.Direction.y);
         if (x == -1 && y == 0)
             y = -1;
 
-        
-        var animationList = _animationDirections.FirstOrDefault(animationDirection => animationDirection.Direction == new Vector2(x, y));
-        var animation = animationList?.Animations.FirstOrDefault(a => a.State == state);
-        if (_curentDirection == animationList?.Direction || _currentAnimationState == animation?.State)    //  TODO: Убрать это при рефакторинге (Когда перенесу код управления в IState на вход в состояние)
-            return;
+        var direction = new Vector2(x, y);
+        var currentAnimation = _orientedAnimations
+            .FirstOrDefault(animationDirection => animationDirection.Direction == direction)?.Datas;
 
-        var rotation = new Vector2(180, 0);
-        
-        if (_reversed)
-            (rotation.x, rotation.y) = (rotation.y, rotation.x);
+        _currentAnimation = currentAnimation;
 
-        _skeletonAnimation.skeletonDataAsset = animation?.DataAsset;
-        _skeletonAnimation.AnimationName = animation?.State.ToString();
-        ReloadAsset(_skeletonAnimation.skeletonDataAsset);
-        ReinitializeComponent(_skeletonAnimation);
-        transform.rotation = Quaternion.Euler(0, _moveController.Direction.x > 0 ? 180 : 0, 0);
-        _currentAnimationState = state;
-        _curentDirection = animationList.Direction;
+        //if (_oldDirection != direction)
+        //    _skeletonAnimation.ReloadAsset();
+
+        TryRotate();
+        _oldDirection = direction;
     }
 
-    private void ReloadAsset(SkeletonDataAsset skeletonDataAsset)
+    private void PlayAnimation(IState state)
     {
-        if (skeletonDataAsset != null)
-        {
-            foreach (AtlasAssetBase aa in skeletonDataAsset.atlasAssets)
-            {
-                if (aa != null) aa.Clear();
-            }
-            skeletonDataAsset.Clear();
-        }
-        skeletonDataAsset.GetSkeletonData(true);
+        var type = state.GetType();
+        var newName = GetName(type);
+        _skeletonAnimation.skeletonDataAsset = _currentAnimation.FirstOrDefault(data => data.Name == newName)?.Data;
+        _skeletonAnimation.AnimationName = newName;
+        _skeletonAnimation.ReloadAsset();
     }
 
-    public static void ReinitializeComponent(SkeletonRenderer component)
+    private void TryRotate()
     {
-        if (component == null) return;
-        if (!SkeletonDataAssetIsValid(component.SkeletonDataAsset)) return;
-
-        var stateComponent = component as IAnimationStateComponent;
-        Spine.AnimationState oldAnimationState = null;
-        if (stateComponent != null)
-        {
-            oldAnimationState = stateComponent.AnimationState;
-        }
-
-        component.Initialize(true); // implicitly clears any subscribers
-
-        if (oldAnimationState != null)
-        {
-            stateComponent.AnimationState.AssignEventSubscribersFrom(oldAnimationState);
-        }
-
-        component.LateUpdate();
+        var pair = _reversed ? (0, 180) : (180, 0);
+        var rotation = new Vector2(pair.Item1, pair.Item2);
+        transform.rotation = Quaternion.Euler(0, _moveController.Direction.x > 0 ? rotation.x : rotation.y, 0);
     }
 
-    public static bool SkeletonDataAssetIsValid(SkeletonDataAsset asset)
+    private string GetName(Type state)
     {
-        return asset != null && asset.GetSkeletonData(quiet: true) != null;
+        var stateName = state.Name;
+        var index = stateName.IndexOf("State");
+        var animationName = stateName.Remove(index);
+        if (animationName == "Attack")
+            animationName = "Fight";
+
+        return animationName;
     }
+}
+
+[Serializable]
+public class OrientedAnimationExt
+{
+    [SerializeField] private Vector2 _direction;
+    [SerializeField] private List<AnimationData> _datas;
+
+    public Vector2 Direction => _direction;
+    public List<AnimationData> Datas => _datas;
 }

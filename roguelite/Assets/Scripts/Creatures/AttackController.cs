@@ -2,11 +2,11 @@ using UnityEngine;
 
 public abstract class AttackController : MonoBehaviour
 {
-    protected WeaponBase _weapon;
+    public WeaponBase Weapon;
 
     protected virtual void Start()
     {
-        _weapon = GetComponentInChildren<WeaponBase>();
+        Weapon = GetComponentInChildren<WeaponBase>();
     }
 
     public abstract void HandleInput(AttackType attackType = default);

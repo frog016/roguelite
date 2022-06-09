@@ -10,56 +10,40 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 
     public Vector2 Direction { get; protected set; }
     public UnityEvent OnObjectMovedEvent { get; private set; }
+    public UnityEvent OnDashEndedEvent { get; private set; }
 
     protected Rigidbody2D _rigidbody;
-    protected bool _isDashed;
-    protected bool _canMove;
 
     protected virtual void Awake()
     {
         Direction = Vector2.right;
-        _canMove = true;
         OnObjectMovedEvent = new UnityEvent();
+        OnDashEndedEvent = new UnityEvent();
+
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     public virtual void Move(Vector3 direction)
     {
-        if (!_canMove)
-            return;
-
         Direction = direction.normalized;
         _rigidbody.MovePosition(transform.position + direction.normalized * _speed * Time.fixedDeltaTime);
         OnObjectMovedEvent.Invoke();
     }
 
-    public void ContinueMoving()
-    {
-        _canMove = true;
-    }
-
-    public void StopMoving()
-    {
-        _canMove = false;
-    }
-
     public void Dash(Vector2 direction = default)
     {
-        if (_isDashed)
-            return;
         StartCoroutine(DashCoroutine(direction));
     }
 
     private IEnumerator DashCoroutine(Vector2 direction)
     {
-        _isDashed = true;
-        _canMove = false;
         var newDirection = direction == default ? Direction : direction;
         var dashForce = 10f;
         _rigidbody.velocity = newDirection * dashForce;
         yield return new WaitForSeconds(0.1f);
-        _canMove = true;
+        OnObjectMovedEvent.Invoke();
         _rigidbody.velocity = Vector2.zero;
+        OnDashEndedEvent.Invoke();
         yield return new WaitForSeconds(_dashCooldown);
-        _isDashed = false;
     }
 }

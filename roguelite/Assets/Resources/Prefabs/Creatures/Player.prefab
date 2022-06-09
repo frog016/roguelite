@@ -104,6 +104,8 @@ GameObject:
   - component: {fileID: 470487444414315112}
   - component: {fileID: 4449213130970805136}
   - component: {fileID: 5814013572156057739}
+  - component: {fileID: 1381060076747120063}
+  - component: {fileID: 4192925251472470689}
   - component: {fileID: 1059113426186660257}
   m_Layer: 0
   m_Name: Player
@@ -178,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f162e6c432d2943924eda48052451a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Weapon: {fileID: 0}
 --- !u!114 &4449213130970805136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +205,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27ed4c2892260694abd8d2e2e087fa7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1381060076747120063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449213130970805148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64cd66ed5e412634a8b6b1bf09e58a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4192925251472470689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449213130970805148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26912992d2199f24ebb437801ede7951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1059113426186660257
@@ -311,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: b6966c308a3312d4ab6b7d850b7cb0b5, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 2ce1ece1c23c0c94d8dc037777754c8a, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -349,28 +376,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reversed: 1
-  _animationDirections:
+  _orientedAnimations:
   - _direction: {x: 0, y: -1}
-    _animations:
-    - _state: 3
-      _dataAsset: {fileID: 11400000, guid: b6966c308a3312d4ab6b7d850b7cb0b5, type: 2}
-    - _state: 4
-      _dataAsset: {fileID: 11400000, guid: b6966c308a3312d4ab6b7d850b7cb0b5, type: 2}
+    _animation: {fileID: 11400000, guid: 2ce1ece1c23c0c94d8dc037777754c8a, type: 2}
   - _direction: {x: 0, y: 1}
-    _animations:
-    - _state: 3
-      _dataAsset: {fileID: 11400000, guid: 70d0fc4bf9eea004294a6b3628861050, type: 2}
-    - _state: 4
-      _dataAsset: {fileID: 11400000, guid: 70d0fc4bf9eea004294a6b3628861050, type: 2}
-  - _direction: {x: -1, y: -1}
-    _animations:
-    - _state: 3
-      _dataAsset: {fileID: 11400000, guid: df9e3448a8617f6478218333a9200f6d, type: 2}
-    - _state: 4
-      _dataAsset: {fileID: 11400000, guid: df9e3448a8617f6478218333a9200f6d, type: 2}
+    _animation: {fileID: 11400000, guid: d88c0bd43627a124894f9d9cebccf57d, type: 2}
   - _direction: {x: -1, y: 1}
-    _animations:
-    - _state: 3
-      _dataAsset: {fileID: 11400000, guid: 6d94fa85a382c7f409cd8b447fa69cfc, type: 2}
-    - _state: 4
-      _dataAsset: {fileID: 11400000, guid: 6d94fa85a382c7f409cd8b447fa69cfc, type: 2}
+    _animation: {fileID: 11400000, guid: f5eca9618adf3254ba3bfeb79d2f0619, type: 2}
+  - _direction: {x: -1, y: 0}
+    _animation: {fileID: 11400000, guid: 7a311e3d19d5c7c46875c70d1759f53a, type: 2}
+  - _direction: {x: -1, y: -1}
+    _animation: {fileID: 11400000, guid: 52110581a3838b64a881a6d493a057c7, type: 2}

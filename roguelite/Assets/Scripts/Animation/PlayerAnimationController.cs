@@ -8,96 +8,70 @@ using UnityEngine;
 public class PlayerAnimationController : MonoBehaviour
 {
     [SerializeField] private bool _reversed;
-    [SerializeField] private List<AnimationDirection> _animationDirections;
+    [SerializeField] private List<OrientedAnimation> _orientedAnimations;
 
-    private Vector2 _curentDirection;
-    private AnimationState _currentAnimationState;
+    private Vector2 _oldDirection;
     private MoveController _moveController;
     private SkeletonAnimation _skeletonAnimation;
+    private SkeletonDataAsset _currentAnimation;
 
     private void Awake()
     {
         _moveController = GetComponentInParent<MoveController>();
         _skeletonAnimation = GetComponent<SkeletonAnimation>();
+        _currentAnimation = _skeletonAnimation.SkeletonDataAsset;
+
+        _oldDirection = _moveController.Direction;
     }
 
     private void Start()
     {
-        _moveController.OnObjectMovedEvent.AddListener(() => SetAnimation(AnimationState.walkS));
+        _moveController.OnObjectMovedEvent.AddListener(DefineAnimationDirection);
+        GetComponentInParent<StateChanger>().StateHandler.OnStateChangedEvent.AddListener(PlayAnimation);
     }
 
-    private void Update()
-    {
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-        {
-            Debug.Log("IDLE");
-            SetAnimation(AnimationState.IDLe);
-        }
-    }
-
-    private void SetAnimation(AnimationState state)
+    private void DefineAnimationDirection()
     {
         var x = Math.Abs(_moveController.Direction.x) < 1e-10 ? 0 : -1;
-        var y = Math.Abs(_moveController.Direction.y) < 1e-10 ? 0 : Math.Sign(_moveController.Direction.y) * 1;
-        if (x == -1 && y == 0)
-            y = -1;
+        var y = Math.Abs(_moveController.Direction.y) < 1e-10 ? 0 : Math.Sign(_moveController.Direction.y);
 
-        var animationList = _animationDirections.FirstOrDefault(animationDirection => animationDirection.Direction == new Vector2(x, y));
-        var animation = animationList?.Animations.FirstOrDefault(a => a.State == state);
-        if (_curentDirection == animationList?.Direction || _currentAnimationState == animation?.State)    //  TODO: Убрать это при рефакторинге (Когда перенесу код управления в IState на вход в состояние)
-            return;
+        var direction = new Vector2(x, y);
+        var currentAnimation = _orientedAnimations
+            .FirstOrDefault(animationDirection => animationDirection.Direction == direction)?.Animation;
 
-        var rotation = new Vector2(180, 0);
+        _currentAnimation = currentAnimation;
+        _skeletonAnimation.skeletonDataAsset = _currentAnimation;
 
-        if (_reversed)
-            (rotation.x, rotation.y) = (rotation.y, rotation.x);
+        if (_oldDirection != direction)
+            _skeletonAnimation.ReloadAsset();
 
-        _skeletonAnimation.skeletonDataAsset = animation?.DataAsset;
-        _skeletonAnimation.AnimationName = animation?.State.ToString();
-        ReloadAsset(_skeletonAnimation.SkeletonDataAsset);
-        ReinitializeComponent(_skeletonAnimation);
+        TryRotate();
+        _oldDirection = direction;
+    }
+
+    private void PlayAnimation(IState state)
+    {
+        var type = state.GetType();
+        _skeletonAnimation.skeletonDataAsset = _currentAnimation;
+        _skeletonAnimation.AnimationName = GetName(type);
+        _skeletonAnimation.ReloadAsset();
+    }
+
+    private void TryRotate()
+    {
+        var pair = _reversed ? (0, 180) : (180, 0);
+        var rotation = new Vector2(pair.Item1, pair.Item2);
         transform.rotation = Quaternion.Euler(0, _moveController.Direction.x > 0 ? rotation.x : rotation.y, 0);
-        _currentAnimationState = state;
-        _curentDirection = animationList.Direction;
     }
 
-    private void ReloadAsset(SkeletonDataAsset skeletonDataAsset)
+    private string GetName(Type state)
     {
-        if (skeletonDataAsset != null)
-        {
-            foreach (AtlasAssetBase aa in skeletonDataAsset.atlasAssets)
-            {
-                if (aa != null) aa.Clear();
-            }
-            skeletonDataAsset.Clear();
-        }
-        skeletonDataAsset.GetSkeletonData(true);
-    }
+        var stateName = state.Name;
+        var index = stateName.IndexOf("State");
+        var animationName = stateName.Remove(index);
+        if (animationName == "Attack")
+            animationName += "Left";
 
-    public static void ReinitializeComponent(SkeletonRenderer component)
-    {
-        if (component == null) return;
-        if (!SkeletonDataAssetIsValid(component.SkeletonDataAsset)) return;
-
-        var stateComponent = component as IAnimationStateComponent;
-        Spine.AnimationState oldAnimationState = null;
-        if (stateComponent != null)
-        {
-            oldAnimationState = stateComponent.AnimationState;
-        }
-
-        component.Initialize(true); // implicitly clears any subscribers
-
-        if (oldAnimationState != null)
-        {
-            stateComponent.AnimationState.AssignEventSubscribersFrom(oldAnimationState);
-        }
-
-        component.LateUpdate();
-    }
-
-    public static bool SkeletonDataAssetIsValid(SkeletonDataAsset asset)
-    {
-        return asset != null && asset.GetSkeletonData(quiet: true) != null;
+        return animationName;
     }
 }

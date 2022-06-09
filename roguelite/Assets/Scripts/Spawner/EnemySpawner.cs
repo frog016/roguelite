@@ -47,7 +47,7 @@ public class EnemySpawner : MonoBehaviour, ISpawner
             var creature = CreatureFactory.Instance.CreateObject(creatureObject, type);
             creature.OnObjectDeath.AddListener(() => SpawnedUnitsCount--);
             creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
-            creature.GetComponent<StateChanger>().SetTarget(_target);
+            creature.GetComponent<EnemyStateChanger>().SetTarget(_target);
             MobsHpBarManager.Instance.AddCreature(creature);
             Debug.Log($"Spawned {creature} in position {creature.transform.position}");
         }

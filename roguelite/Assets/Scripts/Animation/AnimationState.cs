@@ -2,7 +2,7 @@ public enum AnimationState
 {
     Idle,
     Walk,
-    Fight,
-    IDLe,
-    walkS,
+    AttackLeft,
+    AttackRight,
+    Dash
 }

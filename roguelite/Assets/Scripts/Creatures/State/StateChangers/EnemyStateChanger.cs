@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyStateChanger : StateChanger
 {
     private EnemyMoveController _moveController;
+    private DamageableObject _target;
 
     protected override void Awake()
     {
@@ -10,7 +11,7 @@ public class EnemyStateChanger : StateChanger
         _moveController = GetComponent<EnemyMoveController>();
     }
 
-    private void FixedUpdate()
+    protected override void Update()
     {
         if (_target == null)
             return;
@@ -18,25 +19,29 @@ public class EnemyStateChanger : StateChanger
         ChangeState();
     }
 
-    public override void SetTarget(DamageableObject target)
+    public void SetTarget(DamageableObject target)
     {
         _target?.OnObjectDeath.RemoveListener(SetStandState);
-        base.SetTarget(target);
+        _target = target;
         _target.OnObjectDeath.AddListener(SetStandState);
-        StateHandler.SetState(new FollowState(_moveController, _target.gameObject));
+        StateHandler.SetState(new WalkState(StateHandler, _target.transform.position));
     }
 
-    protected override void ChangeState()   //  TODO: Рефакторинг
+    protected override void ChangeState()
     {
         var distance = Vector2.Distance(_target.transform.position, transform.position);
-        if (distance < _moveController.Agent.stoppingDistance)
-            StateHandler.SetState(new AttackState(GetComponent<AttackController>()));
+        IState state;
+
+        if (distance < _moveController.Agent.stoppingDistance) 
+            state = new AttackState(StateHandler);
         else
-            StateHandler.SetState(new FollowState(_moveController, _target.gameObject));
+            state = new WalkState(StateHandler, _target.transform.position);
+
+        StateHandler.SetState(state);
     }
 
     private void SetStandState()
     {
-        StateHandler.SetState(new StandState());
+        StateHandler.SetState(new IdleState());
     }
 }

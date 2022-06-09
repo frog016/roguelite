@@ -180,39 +180,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reversed: 0
-  _animationDirections:
+  _orientedAnimations:
   - _direction: {x: 0, y: -1}
-    _animations:
-    - _state: 0
-      _dataAsset: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
-    - _state: 1
-      _dataAsset: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
-    - _state: 2
-      _dataAsset: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
+    _datas:
+    - _name: Idle
+      _data: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
+    - _name: Walk
+      _data: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
+    - _name: Fight
+      _data: {fileID: 11400000, guid: 2c6106a8e262bed439300704dc0e67e8, type: 2}
   - _direction: {x: 0, y: 1}
-    _animations:
-    - _state: 0
-      _dataAsset: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
-    - _state: 1
-      _dataAsset: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
-    - _state: 2
-      _dataAsset: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
+    _datas:
+    - _name: Idle
+      _data: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
+    - _name: Walk
+      _data: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
+    - _name: Fight
+      _data: {fileID: 11400000, guid: 8d3c71a7e32a1304091f66911c226492, type: 2}
   - _direction: {x: -1, y: -1}
-    _animations:
-    - _state: 0
-      _dataAsset: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
-    - _state: 1
-      _dataAsset: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
-    - _state: 2
-      _dataAsset: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
+    _datas:
+    - _name: Idle
+      _data: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
+    - _name: Walk
+      _data: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
+    - _name: Fight
+      _data: {fileID: 11400000, guid: d2da71d5ae76f434b8a6f8e3c4f90b8b, type: 2}
   - _direction: {x: -1, y: 1}
-    _animations:
-    - _state: 0
-      _dataAsset: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
-    - _state: 1
-      _dataAsset: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
-    - _state: 2
-      _dataAsset: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
+    _datas:
+    - _name: Idle
+      _data: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
+    - _name: Walk
+      _data: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
+    - _name: Fight
+      _data: {fileID: 11400000, guid: 4870355809793964b8a83c80f13e5e08, type: 2}
 --- !u!1 &6564062429562474744
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb482f0da5fd44a14803bce5db899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Weapon: {fileID: 0}
 --- !u!114 &6564062429562474725
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,76 @@
+
+East.png
+size: 605,73
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 2
+  size: 69, 193
+  orig: 69, 193
+  offset: 0, 0
+  index: -1
+profile 2 hand
+  rotate: false
+  xy: 549, 15
+  size: 25, 56
+  orig: 25, 56
+  offset: 0, 0
+  index: -1
+profile 2 hand2
+  rotate: true
+  xy: 576, 12
+  size: 15, 27
+  orig: 15, 27
+  offset: 0, 0
+  index: -1
+Слой 3
+  rotate: false
+  xy: 576, 29
+  size: 22, 42
+  orig: 22, 42
+  offset: 0, 0
+  index: -1
+Слой 5
+  rotate: false
+  xy: 197, 3
+  size: 111, 68
+  orig: 111, 68
+  offset: 0, 0
+  index: -1
+Слой 6
+  rotate: false
+  xy: 521, 12
+  size: 26, 59
+  orig: 26, 59
+  offset: 0, 0
+  index: -1
+Слой 7
+  rotate: false
+  xy: 489, 14
+  size: 30, 57
+  orig: 30, 57
+  offset: 0, 0
+  index: -1
+Слой 8
+  rotate: false
+  xy: 423, 7
+  size: 31, 64
+  orig: 31, 64
+  offset: 0, 0
+  index: -1
+Слой 9
+  rotate: false
+  xy: 456, 7
+  size: 31, 64
+  orig: 31, 64
+  offset: 0, 0
+  index: -1
+Слой79
+  rotate: false
+  xy: 310, 4
+  size: 111, 67
+  orig: 111, 67
+  offset: 0, 0
+  index: -1
