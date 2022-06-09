@@ -16,23 +16,23 @@ MonoBehaviour:
     _list:
     - _creatureType: 0
       _weapon: 0
-      _maxHealth: 25
+      _maxHealth: 100
       _prefab: {fileID: 4449213130970805148, guid: 6112b179b1207e34394fa4baca9798d0, type: 3}
     - _creatureType: 1
       _weapon: 1
-      _maxHealth: 10
+      _maxHealth: 40
       _prefab: {fileID: 6304618589418651911, guid: deaaa7d79b38ca148bfc366485672329, type: 3}
     - _creatureType: 2
       _weapon: 5
-      _maxHealth: 100
+      _maxHealth: 900
       _prefab: {fileID: 564122928834063758, guid: 16fe3c6dab59b4942911b37b5ca4c1fd, type: 3}
     - _creatureType: 3
       _weapon: 3
-      _maxHealth: 13
+      _maxHealth: 38
       _prefab: {fileID: 7149842957478511573, guid: 0955f3f4f879712428a3a51b602840b0, type: 3}
     - _creatureType: 4
       _weapon: 2
-      _maxHealth: 8
+      _maxHealth: 30
       _prefab: {fileID: 6564062429562474744, guid: c785152d8d042ae4d923435c78c4f4d7, type: 3}
     - _creatureType: 5
       _weapon: 4

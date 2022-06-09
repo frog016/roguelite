@@ -14,25 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _list:
     _list:
-    - _damage: 1
+    - _damage: 18
       _attackRadius: 1
       _angleDegrees: 180
-      _cooldownTime: 1
-      _delayBeforeAttack: 1
+      _cooldownTime: 0.6
+      _delayBeforeAttack: 0.6
       _prefab: {fileID: 3393747118056610376, guid: 716e90e0b20598c4bb96ec85e61eab14, type: 3}
       _attackType: 0
-    - _damage: 44
+    - _damage: 23
       _attackRadius: 1
       _angleDegrees: 360
       _cooldownTime: 1
       _delayBeforeAttack: 1
       _prefab: {fileID: 4764758125682858610, guid: e4a698ae278fa384eb0e2e0d7f90bc15, type: 3}
       _attackType: 1
-    - _damage: 1
+    - _damage: 16
       _attackRadius: 1
       _angleDegrees: 180
-      _cooldownTime: 1
-      _delayBeforeAttack: 1
+      _cooldownTime: 0.85
+      _delayBeforeAttack: 0.85
       _prefab: {fileID: 5973150990267449054, guid: 93c3b1d66b555cb4897c5a0278c9c322, type: 3}
       _attackType: 2
     - _damage: 3
@@ -77,17 +77,17 @@ MonoBehaviour:
       _delayBeforeAttack: 1
       _prefab: {fileID: 5467316626570439851, guid: ecf6113002df21f47bb40c6276f6b210, type: 3}
       _attackType: 8
-    - _damage: 1
+    - _damage: 14
       _attackRadius: 1.5
       _angleDegrees: 120
-      _cooldownTime: 1
-      _delayBeforeAttack: 1
+      _cooldownTime: 0.85
+      _delayBeforeAttack: 0.85
       _prefab: {fileID: 6483878179808576814, guid: 2b359a194bd9e6048b35e63e98deb505, type: 3}
       _attackType: 9
-    - _damage: 1
+    - _damage: 13
       _attackRadius: 3
       _angleDegrees: 360
-      _cooldownTime: 1
+      _cooldownTime: 0.85
       _delayBeforeAttack: 0.5
       _prefab: {fileID: 4960372068706419781, guid: 6adab1ce7de731149aebe5cfa8a4c372, type: 3}
       _attackType: 10

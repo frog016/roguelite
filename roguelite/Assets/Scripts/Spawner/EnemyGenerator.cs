@@ -17,6 +17,7 @@ public class EnemyGenerator : SingletonScriptableObject<EnemyGenerator>
             .Select(creature => (CreatureType)Enum.Parse(typeof(CreatureType), creature)).ToList();
         creatureTypes.Remove(CreatureType.HeroSamurai);
         creatureTypes.Remove(CreatureType.Gasadokuro);
+        creatureTypes.Remove(CreatureType.HugeSkeleton);
 
         var count = Random.Range(_uniqueUnitsRange.Min, _uniqueUnitsRange.Max + 1);
         for (var i = 0; i < count; i++)
