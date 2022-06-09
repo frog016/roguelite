@@ -4,7 +4,8 @@ public class Creature : DamageableObject
 {
     private void Update()
     {
-        GetComponentInChildren<MeshRenderer>().sortingOrder = -(int)(transform.position.y * 100);
+        var meshRenderer = GetComponentInChildren<MeshRenderer>();
+        meshRenderer.sortingOrder = -(int)(meshRenderer.transform.position.y * 100);
     }
 
     public void InitializeCreature(WeaponType weaponType)
