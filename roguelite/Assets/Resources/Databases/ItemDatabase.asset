@@ -15,7 +15,7 @@ MonoBehaviour:
   _list:
     _list:
     - _itemType: 0
-      _restoredHealth: 10
+      _restoredHealth: 15
       _usesCount: 1
       _increaseDamage: 0
       _sprite: {fileID: -4630628674360510028, guid: 0790b609b7b47564c8fea58489ccfe2a, type: 3}
