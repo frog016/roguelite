@@ -10,7 +10,7 @@ public abstract class WeaponBase : MonoBehaviour
     public float MinimalAttackDistance { get; private set; }
     public GlobalCooldown GlobalCooldown { get; private set; }
     public List<Type> AttackTypes { get; private set; }
-    public UnityEvent<AttackData> OnAttackEvent { get; private set; }
+    public UnityEvent<AttackBase> OnAttackEvent { get; private set; }
     public UnityEvent OnAttackEndedEvent { get; private set; }
 
     protected Dictionary<Type, AttackBase> _attacks;
@@ -22,7 +22,7 @@ public abstract class WeaponBase : MonoBehaviour
         GlobalCooldown = GetComponent<GlobalCooldown>();
         GlobalCooldown.ResetCooldownTime(dataInfo.GlobalCooldownTime);
         _effects = GetComponentInChildren<EffectList>();
-        OnAttackEvent = new UnityEvent<AttackData>();
+        OnAttackEvent = new UnityEvent<AttackBase>();
         OnAttackEndedEvent = new UnityEvent();
 
         CreateAttacks(dataInfo.WeaponAttacks);
@@ -34,7 +34,7 @@ public abstract class WeaponBase : MonoBehaviour
             return;
 
         var currentAttack = _attacks[attackType];
-        OnAttackEvent.Invoke(currentAttack.AttackData);
+        OnAttackEvent.Invoke(currentAttack);
         currentAttack.Attack();
         GlobalCooldown.TryRestartCooldown();
     }

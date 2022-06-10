@@ -22,9 +22,10 @@ public class AttackAreaDrawer : MonoBehaviour
         weapon.OnAttackEvent.AddListener(DrawAttackMesh);
     }
 
-    private void DrawAttackMesh(AttackData attackData)
+    private void DrawAttackMesh(AttackBase attack)
     {
         var stepDegrees = 5f;
+        var attackData = attack.AttackData;
 
         var vertexList = CreateAreaPoints(
             _moveController.Direction, attackData.AttackRadius,

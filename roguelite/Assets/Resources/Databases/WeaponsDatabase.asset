@@ -25,7 +25,7 @@ MonoBehaviour:
     - _weaponType: 5
       _globalCooldownTime: 1
       _prefab: {fileID: 297710760577586906, guid: d465a6ae525a8f14cab69516ae54ad80, type: 3}
-      _weaponAttacks: 020000000300000004000000050000000600000008000000
+      _weaponAttacks: 040000000500000008000000
     - _weaponType: 3
       _globalCooldownTime: 1
       _prefab: {fileID: 2477897254494460646, guid: 4a2a4a2762844e34788403b88f3e2b1c, type: 3}
