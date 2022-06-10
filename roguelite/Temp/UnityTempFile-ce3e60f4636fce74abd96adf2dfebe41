@@ -1,24 +1,26 @@
 /target:library
-/out:Temp/Unity.Rider.Editor.dll
+/out:Temp/spine-unity-editor.dll
 /nowarn:0169
 /nowarn:0649
-/refout:Temp/Unity.Rider.Editor.dll.ref
+/refout:Temp/spine-unity-editor.dll.ref
 /deterministic
 /debug:portable
 /optimize+
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/spine-unity.dll
+/reference:Assets/Edgar/Libraries/EdgarSingleFile.dll
 /reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll
+/reference:C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll
+/reference:C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll
+/reference:C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll
 /reference:C:/Users/Alex/Documents/GitHub/roguelite/roguelite/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
@@ -210,6 +212,10 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /define:CSHARP_7_3_OR_NEWER
 /define:CSHARP_7_OR_LATER
 /define:DEBUG
@@ -265,7 +271,6 @@
 /define:PLATFORM_WEBGL
 /define:RENDER_SOFTWARE_CURSOR
 /define:SCENE_TEMPLATE_MODULE
-/define:TEST_FRAMEWORK
 /define:TRACE
 /define:UNITY_2017_1_OR_NEWER
 /define:UNITY_2017_2_OR_NEWER
@@ -300,35 +305,47 @@
 /define:UNITY_WEBGL
 /define:UNITY_WEBGL_API
 /define:USE_SEARCH_ENGINE_API
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Discovery.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\EditorPluginInterop.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\LoggingLevel.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\PluginSettings.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\PostProcessors\RiderAssetPostprocessor.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\AssemblyNameProvider.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\FileIOProvider.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\GUIDProvider.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IAssemblyNameProvider.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IFileIO.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IGUIDGenerator.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\IGenerator.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGeneration.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\ProjectGenerationFlag.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\ProjectGeneration\SolutionGuidGenerator.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Properties\AssemblyInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderFileSystemWatcher.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderInitializer.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderScriptEditor.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\RiderScriptEditorData.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\CallbackData.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\CallbackInitializer.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\RiderTestRunner.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\SyncTestRunCallback.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\SyncTestRunEventsHandler.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\TestEvent.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\UnitTesting\TestsCallback.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\CommandLineParser.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\FileSystemUtil.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\LibcNativeInterop.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\RiderMenu.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.ide.rider@2.0.7\Rider\Editor\Util\SerializableVersion.cs
+"Assets\Spine\Editor\spine-unity\Editor\Asset Types\AnimationReferenceAssetEditor.cs"
+"Assets\Spine\Editor\spine-unity\Editor\Asset Types\SkeletonDataAssetInspector.cs"
+"Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineAtlasAssetInspector.cs"
+"Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineSpriteAtlasAssetInspector.cs"
+Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerGraphicInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\BoundingBoxFollowerGraphicInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\BoundingBoxFollowerInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\PointFollowerInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonAnimationInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicCustomMaterialsInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonMecanimInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonMecanimRootMotionInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRendererCustomMaterialsInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRendererInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionBaseInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonUtilityBoneInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonUtilityInspector.cs
+Assets\Spine\Editor\spine-unity\Editor\Menus.cs
+Assets\Spine\Editor\spine-unity\Editor\Shaders\SpineShaderWithOutlineGUI.cs
+Assets\Spine\Editor\spine-unity\Editor\Shaders\SpineSpriteShaderGUI.cs
+Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\AssetDatabaseAvailabilityDetector.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\AssetUtility.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\BlendModeMaterialsUtility.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\BuildSettings.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\DataReloadHandler.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\Icons.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\Instantiation.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\Preferences.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\SpineEditorUtilities.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\SpineHandles.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\SpineInspectorUtility.cs
+Assets\Spine\Editor\spine-unity\Editor\Utility\SpineMaskUtilities.cs
+Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBaker.cs
+Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBakingWindow.cs
+Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonDebugWindow.cs
+Assets\Spine\Editor\spine-unity\Editor\Windows\SpinePreferences.cs
+Assets\Spine\Editor\spine-unity\Editor\Windows\SpriteAtlasImportWindow.cs
+Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs
+Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs
+Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs

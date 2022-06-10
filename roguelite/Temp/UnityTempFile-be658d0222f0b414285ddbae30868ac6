@@ -1,16 +1,14 @@
 /target:library
-/out:Temp/Unity.TextMeshPro.dll
+/out:Temp/spine-unity.dll
 /nowarn:0169
 /nowarn:0649
-/refout:Temp/Unity.TextMeshPro.dll.ref
+/refout:Temp/spine-unity.dll.ref
 /deterministic
 /debug:portable
 /optimize+
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /reference:Assets/Edgar/Libraries/EdgarSingleFile.dll
 /reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -207,6 +205,8 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /define:CSHARP_7_3_OR_NEWER
 /define:CSHARP_7_OR_LATER
 /define:DEBUG
@@ -296,62 +296,100 @@
 /define:UNITY_WEBGL
 /define:UNITY_WEBGL_API
 /define:USE_SEARCH_ENGINE_API
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\AssemblyInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\FastAction.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\ITextPreProcessor.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\MaterialReferenceManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Asset.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Character.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_CharacterInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ColorGradient.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Compatibility.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_CoroutineTween.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_DefaultControls.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Dropdown.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_EditorResourceManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAsset.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAssetCommon.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAssetUtilities.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontFeatureTable.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontFeaturesCommon.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_InputField.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_InputValidator.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_LineInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ListPool.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_MaterialManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_MeshInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ObjectPool.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_PackageResourceImporter.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ResourcesManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_RichTextTagsCommon.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ScrollbarEventHandler.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SelectionCaret.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Settings.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ShaderUtilities.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Sprite.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteAnimator.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteAsset.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteCharacter.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SpriteGlyph.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Style.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_StyleSheet.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SubMesh.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SubMeshUI.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Text.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextElement.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextElement_Legacy.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextInfo.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextParsingUtilities.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextProcessingStack.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextUtilities.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_UpdateManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_UpdateRegistery.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_EventManager.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_ExtensionMethods.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_MeshUtilities.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_Private.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_UGUI_Private.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TextContainer.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TextMeshPro.cs
-C:\Users\Alex\Documents\GitHub\roguelite\roguelite\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TextMeshProUGUI.cs
+Assets\Spine\Runtime\spine-csharp\Animation.cs
+Assets\Spine\Runtime\spine-csharp\AnimationState.cs
+Assets\Spine\Runtime\spine-csharp\AnimationStateData.cs
+Assets\Spine\Runtime\spine-csharp\Atlas.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentLoader.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\BoundingBoxAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\PointAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs
+Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs
+Assets\Spine\Runtime\spine-csharp\BlendMode.cs
+Assets\Spine\Runtime\spine-csharp\Bone.cs
+Assets\Spine\Runtime\spine-csharp\BoneData.cs
+Assets\Spine\Runtime\spine-csharp\Collections\OrderedDictionary.cs
+Assets\Spine\Runtime\spine-csharp\ConstraintData.cs
+Assets\Spine\Runtime\spine-csharp\Event.cs
+Assets\Spine\Runtime\spine-csharp\EventData.cs
+Assets\Spine\Runtime\spine-csharp\ExposedList.cs
+Assets\Spine\Runtime\spine-csharp\IUpdatable.cs
+Assets\Spine\Runtime\spine-csharp\IkConstraint.cs
+Assets\Spine\Runtime\spine-csharp\IkConstraintData.cs
+Assets\Spine\Runtime\spine-csharp\Json.cs
+Assets\Spine\Runtime\spine-csharp\MathUtils.cs
+Assets\Spine\Runtime\spine-csharp\PathConstraint.cs
+Assets\Spine\Runtime\spine-csharp\PathConstraintData.cs
+Assets\Spine\Runtime\spine-csharp\Skeleton.cs
+Assets\Spine\Runtime\spine-csharp\SkeletonBinary.cs
+Assets\Spine\Runtime\spine-csharp\SkeletonBounds.cs
+Assets\Spine\Runtime\spine-csharp\SkeletonClipping.cs
+Assets\Spine\Runtime\spine-csharp\SkeletonData.cs
+Assets\Spine\Runtime\spine-csharp\SkeletonJson.cs
+Assets\Spine\Runtime\spine-csharp\Skin.cs
+Assets\Spine\Runtime\spine-csharp\Slot.cs
+Assets\Spine\Runtime\spine-csharp\SlotData.cs
+Assets\Spine\Runtime\spine-csharp\TransformConstraint.cs
+Assets\Spine\Runtime\spine-csharp\TransformConstraintData.cs
+Assets\Spine\Runtime\spine-csharp\Triangulator.cs
+"Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterials.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataCompatibility.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs"
+"Assets\Spine\Runtime\spine-unity\Asset Types\SpineSpriteAtlasAsset.cs"
+Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollower.cs
+Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollowerGraphic.cs
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs
+Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs
+Assets\Spine\Runtime\spine-unity\Components\Following\PointFollower.cs
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonMecanimRootMotion.cs
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotion.cs
+Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonGraphic.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonPartsRenderer.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonRenderSeparator.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonGraphicCustomMaterials.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonRendererCustomMaterials.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\ActivateBasedOnFlipDirection.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody2D.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowSkeletonUtilityRootRotation.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtility.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityBone.cs
+Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityConstraint.cs
+Assets\Spine\Runtime\spine-unity\Deprecated\SlotBlendModes\SlotBlendModes.cs
+Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs
+"Assets\Spine\Runtime\spine-unity\Mesh Generation\DoubleBuffered.cs"
+"Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshGenerator.cs"
+"Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshRendererBuffers.cs"
+"Assets\Spine\Runtime\spine-unity\Mesh Generation\SkeletonRendererInstruction.cs"
+"Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs"
+Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs
+Assets\Spine\Runtime\spine-unity\SkeletonDataModifierAssets\BlendModeMaterials\BlendModeMaterialsAsset.cs
+Assets\Spine\Runtime\spine-unity\SpineAttributes.cs
+Assets\Spine\Runtime\spine-unity\Utility\AtlasUtilities.cs
+Assets\Spine\Runtime\spine-unity\Utility\AttachmentCloneExtensions.cs
+Assets\Spine\Runtime\spine-unity\Utility\AttachmentRegionExtensions.cs
+Assets\Spine\Runtime\spine-unity\Utility\MaterialChecks.cs
+Assets\Spine\Runtime\spine-unity\Utility\SkeletonExtensions.cs
+Assets\Spine\Runtime\spine-unity\Utility\SkinUtilities.cs
+Assets\Spine\Runtime\spine-unity\Utility\TimelineExtensions.cs
+Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimation.cs
+Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationComplete.cs
+Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationEnd.cs
+Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineEvent.cs
+Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineTrackEntryEnd.cs
