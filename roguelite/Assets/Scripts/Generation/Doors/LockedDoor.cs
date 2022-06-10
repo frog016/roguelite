@@ -4,6 +4,8 @@ using UnityEngine;
 public class LockedDoor : MonoBehaviour
 {
     private RoomDetector _detector;
+    private Collider2D collider2D;
+    private SpriteRenderer _renderer;
 
     private void Start()
     {
@@ -11,12 +13,15 @@ public class LockedDoor : MonoBehaviour
         _detector.OnPlayerRoomEnterEvent.AddListener(LockDoor);
         GlobalEventManager.Instance.OnRoomClearedEvent.AddListener(DestroyDoor);
         gameObject.SetActive(false);
+
+        collider2D = GetComponent<Collider2D>();
+        _renderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void LockDoor(DamageableObject player)
     {
-        GetComponent<Collider2D>().enabled = false;
-        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        collider2D.enabled = false;
+        _renderer.enabled = false;
         gameObject.SetActive(true);
         StartCoroutine(LockRoomCoroutine());
     }
@@ -30,8 +35,8 @@ public class LockedDoor : MonoBehaviour
 
     private IEnumerator LockRoomCoroutine()
     {
-        yield return new WaitForSeconds(1f);
-        GetComponent<Collider2D>().enabled = true;
-        GetComponentInChildren<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        collider2D.enabled = true;
+        _renderer.enabled = true;
     }
 }

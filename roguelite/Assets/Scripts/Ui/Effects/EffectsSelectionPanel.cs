@@ -26,7 +26,11 @@ public class EffectsSelectionPanel : CardPanel<EffectsSelectionPanel>
         closeButton.onClick.RemoveAllListeners();
         closeButton.onClick.AddListener(() => CreateSelectedEffect(altar));
 
-        foreach (var type in altar.EffectTypes)
+        foreach (var type in altar.EffectTypes
+                     .Where(eff => !PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().Effects
+                         .Select(effa => effa.GetType())
+                         .Contains(eff))
+                     .GetRandomItems(4))
         {
             var card = Instantiate(_cardPrefab, _cardList.transform);
             card.GetComponent<Card>().LoadInfo(GetEffectData(type));

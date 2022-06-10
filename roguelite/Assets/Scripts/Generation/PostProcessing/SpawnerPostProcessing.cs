@@ -10,7 +10,7 @@ public class SpawnerPostProcessing : DungeonGeneratorPostProcessingGrid2D
         {
             var roomTemplateInstance = roomInstance.RoomTemplateInstance;
 
-            if (roomTemplateInstance.GetComponent<ISpawner>() != null || roomInstance.IsCorridor)
+            if (roomTemplateInstance.GetComponent<ISpawner>() != null || roomInstance.IsCorridor || roomTemplateInstance.GetComponent<ShopRoom>() != null)
                 continue;
             
             roomTemplateInstance.AddComponent<EnemySpawner>();

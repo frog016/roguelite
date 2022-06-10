@@ -38,6 +38,9 @@ public class ChainLightningEffect : EffectBase
 
     private void ApplyDamage(DamageableObject firstTarget, List<DamageableObject> links)
     {
+        if (firstTarget == null || links?.Count == 0 )
+            return;
+
         firstTarget.ApplyDamage(_parameters.Damage);
         PlayVisualEffect(transform, firstTarget.transform);
         links.Remove(firstTarget);

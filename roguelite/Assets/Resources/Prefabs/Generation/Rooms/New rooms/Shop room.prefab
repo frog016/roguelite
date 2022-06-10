@@ -5659,6 +5659,7 @@ GameObject:
   - component: {fileID: 4124186127281340756}
   - component: {fileID: 5922423116767940781}
   - component: {fileID: 2093595683783424186}
+  - component: {fileID: 2248810502936754015}
   m_Layer: 0
   m_Name: Shop room
   m_TagString: Untagged
@@ -5737,6 +5738,18 @@ MonoBehaviour:
       Margin1: 1
       Margin2: 1
       Enabled: 1
+--- !u!114 &2248810502936754015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376853455508570954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34ae74b6bd92f444a5d15f1bce51360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2408209550835704223
 GameObject:
   m_ObjectHideFlags: 0

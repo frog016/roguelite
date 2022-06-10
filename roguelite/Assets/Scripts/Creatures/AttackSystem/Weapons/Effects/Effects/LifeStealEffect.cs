@@ -15,10 +15,13 @@ public class LifeStealEffect : EffectBase
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        var visualEffect = Instantiate(_visualEffect, transform);
-        var particle = visualEffect.GetComponent<ParticleSystem>().main;
-        particle.duration = _duration;
-        visualEffect.GetComponent<ParticleSystem>().Play();
+        if (attackEventArgs.DamagedTargets.Count > 0)
+        {
+            var visualEffect = Instantiate(_visualEffect, transform);
+            var particle = visualEffect.GetComponent<ParticleSystem>().main;
+            particle.duration = _duration;
+            visualEffect.GetComponent<ParticleSystem>().Play();
+        }
 
         foreach (var target in attackEventArgs.DamagedTargets)
             StealHealth(target);

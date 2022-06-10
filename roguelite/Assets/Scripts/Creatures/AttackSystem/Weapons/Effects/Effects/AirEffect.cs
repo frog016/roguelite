@@ -17,10 +17,14 @@ public class AirEffect : EffectBase
         if (!RandomChanceGenerator.IsEventHappened(_procProbability))
             return;
 
-        var visualEffect = Instantiate(_visualEffect, transform);
-        var particle = visualEffect.GetComponent<ParticleSystem>().main;
-        particle.duration = _duration;
-        visualEffect.GetComponent<ParticleSystem>().Play();
+        if (attackEventArgs.DamagedTargets.Count > 0)
+        {
+            var visualEffect = Instantiate(_visualEffect, transform);
+            var particle = visualEffect.GetComponent<ParticleSystem>().main;
+            particle.duration = _duration;
+            visualEffect.transform.rotation = Quaternion.LookRotation((attackEventArgs.DamagedTargets.First().transform.position - transform.position));
+            visualEffect.GetComponent<ParticleSystem>().Play();
+        }
         ApplyDamage(attackEventArgs.DamagedTargets);
     }
 

@@ -36,6 +36,6 @@ public class RoomManager : SingletonObject<RoomManager>
         var itemDropperRoomBase = CurrentRoom.RoomTemplateInstance.GetComponent<ItemDropperRoomBase>();
         itemDropperRoomBase.DropItems();
 
-        NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Announcement, $"Вам выпало {itemDropperRoomBase.GetType().Name}"));
+        NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Announcement, $"You received: {itemDropperRoomBase.ItemName}"));
     }
 }

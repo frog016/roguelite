@@ -13,6 +13,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
     private void Awake()
     {
         _droppableItemType = typeof(EffectBase);
+        ItemName = _droppableItemType.Name;
         ItemsCount = 4;
 
         _altar = PrefabsFinder.FindObjectOfType<EffectsAltar>().GetComponent<EffectsAltar>();
@@ -21,11 +22,48 @@ public class EffectDropperRoom : ItemDropperRoomBase
 
     public override void DropItems()
     {
-        var grid = gameObject.GetComponentInChildren<Grid>();
-        var position = grid.LocalToWorld(grid.GetComponentInChildren<Tilemap>().localBounds.center);
-        var altar = Instantiate(_altar, position, Quaternion.identity);
-        altar.EffectTypes = _allEffectsType.GetRandomItems(ItemsCount);
+        var altar = Instantiate(_altar, ValidatePosition(_altar.gameObject), Quaternion.identity);
+        altar.EffectTypes = _allEffectsType;
     }
 
+    private Vector2 ValidatePosition(GameObject gameObject)
+    {
+        var collider2d = gameObject.GetComponent<PolygonCollider2D>();
+        var size = collider2d.points.Max(point => Vector2.Distance(point, gameObject.transform.position));
+        var result = Vector2.right;
 
+        foreach (var position in GetRandomPosition())
+        {
+            var newPosition = new Vector2(position.x, position.y);
+            if (Physics2D
+                .CircleCastAll(newPosition, size, Vector2.right, 0)
+                .All(cast => cast.collider.isTrigger))
+            {
+                result = newPosition;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    private IEnumerable<Vector3Int> GetRandomPosition()
+    {
+        foreach (var point in GetCurrentRoomPoints())
+            yield return point;
+    }
+
+    private List<Vector3Int> GetCurrentRoomPoints()
+    {
+        var tilemap = GetComponentInChildren<RoomDetector>().GetComponent<Tilemap>();
+        var center = new Vector3Int((int)tilemap.localBounds.center.x, (int)tilemap.localBounds.center.y,
+            (int)tilemap.localBounds.center.z);
+        var insidePoints = new List<Vector3Int>();
+
+        foreach (var insidePoint in tilemap.cellBounds.allPositionsWithin)
+            if (tilemap.GetTile(insidePoint) != null)
+                insidePoints.Add(insidePoint);
+
+        return insidePoints.OrderBy(vector => Vector3Int.Distance(vector, center)).ToList();
+    }
 }

@@ -9,5 +9,9 @@ public class PauseManager : SingletonObject<PauseManager>
 
     public void ReturnToMenu() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
-    public void Exit() => Application.Quit();
+    public void Exit() 
+    {
+        Application.Quit();
+        Continue();
+    }
 }

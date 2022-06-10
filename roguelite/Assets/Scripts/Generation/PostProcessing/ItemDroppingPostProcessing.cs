@@ -12,7 +12,7 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
     public override void Run(DungeonGeneratorLevelGrid2D level)
     {
         var itemDropperType = typeof(ItemDropperRoomBase);
-        _dropperTypes = itemDropperType.Assembly.ExportedTypes.Where(type => itemDropperType.IsAssignableFrom(type) && !type.IsAbstract).ToList();
+        _dropperTypes = itemDropperType.Assembly.ExportedTypes.Where(type => itemDropperType.IsAssignableFrom(type) && !type.IsAbstract).OrderBy(type => type.Name).ToList();
 
         foreach (var roomInstance in level.RoomInstances
                      .Select(room => room.RoomTemplateInstance)
@@ -22,7 +22,7 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
 
     private void AddRandomItemDropper(GameObject room)
     {
-        room.AddComponent(_dropperTypes.GetRandomItems(1).First());
+        room.AddComponent(_dropperTypes.GetRandomItemsWithChances(new List<float> {0.2f, 0.4f, 0.2f, 0.2f}, 1).First());
         //room.AddComponent(typeof(EffectDropperRoom));
     }
 }
