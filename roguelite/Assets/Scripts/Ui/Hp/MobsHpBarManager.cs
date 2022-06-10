@@ -46,7 +46,7 @@ public class MobsHpBarManager : SingletonObject<MobsHpBarManager>
 
     private void Follow(Creature creature, MobHpBar hpBar)
     {
-        hpBar.transform.position = creature.transform.position + Vector3.up * 0.25f;
+        hpBar.transform.position = creature.transform.position + Vector3.up * 0.5f;
     }
 
     private void DeleteBars(List<MobHpBar> bars)
