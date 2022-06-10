@@ -1,4 +1,5 @@
 using System.Collections;
+using Edgar.Unity;
 using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
@@ -9,8 +10,10 @@ public class LockedDoor : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Lock");
         _detector = transform.parent.parent.GetComponentInChildren<RoomDetector>();
         _detector.OnPlayerRoomEnterEvent.AddListener(LockDoor);
+        Debug.Log(_detector);
         GlobalEventManager.Instance.OnRoomClearedEvent.AddListener(DestroyDoor);
         gameObject.SetActive(false);
 
@@ -20,23 +23,24 @@ public class LockedDoor : MonoBehaviour
 
     private void LockDoor(DamageableObject player)
     {
-        collider2D.enabled = false;
-        _renderer.enabled = false;
-        gameObject.SetActive(true);
-        StartCoroutine(LockRoomCoroutine());
+        Invoke(nameof(LockRoomCoroutine), 0.5f);
+        //StartCoroutine(LockRoomCoroutine());
     }
 
     private void DestroyDoor()
     {
+        if (RoomManager.Instance.CurrentRoom.RoomTemplateInstance != _detector.GetComponentInParent<RoomTemplateSettingsGrid2D>().gameObject)
+            return;
+
+        Debug.Log("DESTROY");
         _detector.OnPlayerRoomEnterEvent.RemoveListener(LockDoor);
         GlobalEventManager.Instance.OnRoomClearedEvent.RemoveListener(DestroyDoor);
+        Debug.Log(GlobalEventManager.Instance.OnRoomClearedEvent.GetPersistentEventCount());
         Destroy(gameObject);
     }
 
-    private IEnumerator LockRoomCoroutine()
+    private void LockRoomCoroutine()
     {
-        yield return new WaitForSeconds(0.5f);
-        collider2D.enabled = true;
-        _renderer.enabled = true;
+        gameObject.SetActive(true);
     }
 }

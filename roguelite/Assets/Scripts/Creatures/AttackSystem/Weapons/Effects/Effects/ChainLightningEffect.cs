@@ -60,11 +60,11 @@ public class ChainLightningEffect : EffectBase
     private void PlayVisualEffect(Transform start, Transform target)
     {
         var visualEffect = Instantiate(_visualEffect, target);
+        var shape = visualEffect.GetComponent<ParticleSystem>().shape.scale;
+        shape.z = (target.position - start.position).sqrMagnitude;
         visualEffect.transform.rotation = Quaternion.LookRotation((target.position - start.position));
         var particle = visualEffect.GetComponent<ParticleSystem>().main;
         particle.duration = _duration;
-        var shape = visualEffect.GetComponent<ParticleSystem>().shape.scale;
-        shape.z = (target.position - start.position).sqrMagnitude;
         visualEffect.GetComponent<ParticleSystem>().Play();
     }
 

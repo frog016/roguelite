@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     {
         Initialize(target, damage);
         _rigidbody.velocity = _speed * (target.transform.position - transform.position).normalized;
-        transform.rotation = Quaternion.LookRotation((target.transform.position - transform.position));
+        transform.rotation = Quaternion.Euler(0, 0, Vector2.Angle(target.transform.position, transform.position) - 90);
     }
 
     private void Initialize(DamageableObject target, float damage)
@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
-        if (!otherCollider.isTrigger && damageableObject == null && otherCollider.GetComponentInParent<DamageableObject>() == null)
+        if (!otherCollider.isTrigger && damageableObject == null && otherCollider.name != "Foot")
             DestroyProjectile();
     }
 
