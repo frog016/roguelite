@@ -38,7 +38,7 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
-        if (!otherCollider.isTrigger)
+        if (!otherCollider.isTrigger && damageableObject == null)
             DestroyProjectile();
     }
 

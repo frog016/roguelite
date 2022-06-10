@@ -7,6 +7,7 @@ using UnityEngine.Tilemaps;
 public class RoomDetector : MonoBehaviour
 {
     public UnityEvent<DamageableObject> OnPlayerRoomEnterEvent { get; private set; }
+    public UnityEvent<DamageableObject> OnPlayerRoomExitEvent { get; private set; }
 
     private RoomInstanceGrid2D _thisRoom;
 
@@ -14,7 +15,7 @@ public class RoomDetector : MonoBehaviour
     {
         _thisRoom = GetComponentInParent<RoomInfoGrid2D>().RoomInstance;
         OnPlayerRoomEnterEvent = new UnityEvent<DamageableObject>();
-        Debug.Log(_thisRoom);
+        OnPlayerRoomExitEvent = new UnityEvent<DamageableObject>();
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
@@ -29,9 +30,11 @@ public class RoomDetector : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D otherCollider)
     {
-        if (otherCollider.GetComponent<HeroSamurai>() == null)
+        var player = otherCollider.GetComponent<HeroSamurai>();
+        if (player == null)
             return;
 
+        OnPlayerRoomExitEvent.Invoke(player);
         RoomManager.Instance.ExitFormRoom();
     }
 }
