@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public static class RandomChanceGenerator
 {
@@ -32,42 +34,42 @@ public static class RandomChanceGenerator
         }
     }
 
-    //public static List<T> GetRandomItemsWithChances<T>(this IEnumerable<T> collection, List<float> chances, int count)
-    //{
-    //    var listCollection = collection.ToList();
-    //    var chanceList = CreateChanceList(chances);
-    //    var used = new HashSet<T>();
-
-    //    var maxCount = Mathf.Min(count, listCollection.Count);
-    //    var items = new List<T>();
-    //    while (items.Count < maxCount)
-    //    {
-    //        var probability = Random.value;
-    //        var index = chanceList.FindLastIndex(element => probability <= element);
-    //        var randomValue = listCollection[index];
-    //        if (used.Contains(randomValue))
-    //            continue;
-
-    //        items.Add(randomValue);
-    //        used.Add(randomValue);
-    //    }
-
-    //    return items;
-    //}
-
-    private static List<float> CreateChanceList(List<float> chances)
+    public static IEnumerable<T> GetRandomItemsWithChances<T>(this IEnumerable<T> collection, List<float> chances, int count)
     {
-        var result = new List<float>();
-        var probability = 0f;
-        foreach (var chance in chances)
+        var listCollection = collection.ToList();
+        var dictionaryCollection = listCollection.ToIndexedDictionary();
+        var chanceList = CreateChanceList(chances);
+
+        var maxCount = Mathf.Min(count, dictionaryCollection.Count);
+        for (var i = 0; i < maxCount; i++)
         {
-            probability += chance;
-            result.Add(probability);
+            var probability = Random.value;
+            if (probability > 0.99)
+                probability = 0.99f;
+
+            var key = chanceList.First(pair => probability >= pair.Value.Item1 && probability < pair.Value.Item2).Key;
+            yield return dictionaryCollection[key];
+            dictionaryCollection.Remove(key);
+            chanceList.Remove(key);
+
+            if (key < dictionaryCollection.Count - 1)
+            {
+                dictionaryCollection.RenameKey(key + 1, key);
+                chanceList.RenameKey(key + 1, key);
+            }
+        }
+    }
+
+    private static Dictionary<int, Tuple<float, float>> CreateChanceList(List<float> chances)
+    {
+        var result = new List<Tuple<float, float>>();
+        var probability = 0f;
+        for (var i = 0; i < chances.Count; i++)
+        {
+            result.Add(Tuple.Create(probability, probability + chances[i]));
+            probability += chances[i];
         }
 
-        if (probability == 0)
-            result.Add(1f);
-
-        return result;
+        return result.ToIndexedDictionary(); 
     }
 }

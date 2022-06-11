@@ -18,7 +18,7 @@ public abstract class InteractableObject : MonoBehaviour, IInteractable
     public virtual void StartInteraction()
     {
         _isNear = true;
-        ShowText("Press E to interact");
+        ShowText("Нажмите E для взаимодействия");
     }
 
     public virtual void Interaction()
