@@ -20,4 +20,13 @@ public static class DictionaryExtension
         dictionary.Remove(oldKey);
         dictionary.Add(newKey, value);
     }
+
+    public static void RenameAllKeysFrom<TValue>(this Dictionary<int, TValue> dictionary, int from)
+    {
+        var last = dictionary.Last().Key;
+        for (var i = from; i <= last; i++)
+        {
+            RenameKey(dictionary, i, i - 1);
+        }
+    }
 }

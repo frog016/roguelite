@@ -16,21 +16,36 @@ public static class RandomChanceGenerator
         return Random.value;
     }
 
+    //public static IEnumerable<T> GetRandomItems<T>(this IEnumerable<T> collection, int count)
+    //{
+    //    var listCollection = collection.ToList();
+    //    var dictionaryCollection = listCollection.ToIndexedDictionary();
+
+    //    var maxCount = Mathf.Min(count, dictionaryCollection.Count);
+    //    for (var i = 0; i < maxCount; i++)
+    //    {
+    //        var key = Random.Range(0, dictionaryCollection.Count);
+    //        var randomValue = dictionaryCollection[key];
+    //        yield return randomValue;
+    //        dictionaryCollection.Remove(key);
+
+    //        if (key < dictionaryCollection.Count - 1)
+    //            dictionaryCollection.RenameAllKeysFrom(key + 1);
+    //    }
+    //}
+
     public static IEnumerable<T> GetRandomItems<T>(this IEnumerable<T> collection, int count)
     {
         var listCollection = collection.ToList();
-        var dictionaryCollection = listCollection.ToIndexedDictionary();
+        //var dictionaryCollection = listCollection.ToIndexedDictionary();
 
-        var maxCount = Mathf.Min(count, dictionaryCollection.Count);
+        var maxCount = Mathf.Min(count, listCollection.Count);
         for (var i = 0; i < maxCount; i++)
         {
-            var key = Random.Range(0, dictionaryCollection.Count);
-            var randomValue = dictionaryCollection[key];
+            var key = Random.Range(0, listCollection.Count);
+            var randomValue = listCollection[key];
             yield return randomValue;
-            dictionaryCollection.Remove(key);
-
-            if (key < dictionaryCollection.Count - 1)
-                dictionaryCollection.RenameKey(key + 1, key);
+            listCollection.Remove(randomValue);
         }
     }
 
@@ -54,8 +69,8 @@ public static class RandomChanceGenerator
 
             if (key < dictionaryCollection.Count - 1)
             {
-                dictionaryCollection.RenameKey(key + 1, key);
-                chanceList.RenameKey(key + 1, key);
+                dictionaryCollection.RenameAllKeysFrom(key + 1);
+                chanceList.RenameAllKeysFrom(key + 1);
             }
         }
     }

@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 2506341221319528668}
   _description: {fileID: 591212837154849771}
+  _costText: {fileID: 3402271630082230116}
 --- !u!1 &5529229137542019333
 GameObject:
   m_ObjectHideFlags: 0

@@ -1580,3 +1580,13 @@ candidates check time : 32ms
 >>>>>>> origin/shop-item-fix
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 11.06.2022 12:55:08 : Starting D:/Unity/2020.3.20f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 183,1355ms
+moved types parse time: 52ms
+candidates parse time : 1ms
+C# parse time         : 244ms
+candidates check time : 31ms
+console write time    : 0ms
+

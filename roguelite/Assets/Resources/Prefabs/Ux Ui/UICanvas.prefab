@@ -664,7 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _announcement: {fileID: 5159444718055635368}
   _tooltip: {fileID: 5861551220526203164}
-  _delayBetweenAnnouncements: 1.5
+  _delayBetweenAnnouncements: 3
 --- !u!114 &8390178168808550675
 MonoBehaviour:
   m_ObjectHideFlags: 0

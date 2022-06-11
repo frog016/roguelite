@@ -23,6 +23,7 @@ public class LockedDoor : MonoBehaviour
 
     private void UnlockDoor(DamageableObject player)
     {
+        CancelInvoke(nameof(LockRoomCoroutine));
         gameObject.SetActive(false);
     }
 
