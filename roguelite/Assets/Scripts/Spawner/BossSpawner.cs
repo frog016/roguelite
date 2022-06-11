@@ -29,7 +29,7 @@ public class BossSpawner : MonoBehaviour, ISpawner
         creatureObject.transform.position = FindPosition();
         var boss = CreatureFactory.Instance.CreateObject(creatureObject, typeof(Gasadokuro));
         boss.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
-        boss.OnObjectDeath.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex)); //  Костыль
+        boss.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnBossDeathEvent.Invoke);
         boss.GetComponent<EnemyStateChanger>().SetTarget(_target);
 
         var hpCard = Instantiate(_hpCardPrefab, FindObjectOfType<PauseManager>().transform);

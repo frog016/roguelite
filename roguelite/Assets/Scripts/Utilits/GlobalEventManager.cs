@@ -5,6 +5,7 @@ public class GlobalEventManager : SingletonObject<GlobalEventManager>
     public UnityEvent OnEnemyDeathEvent { get; private set; }
     public UnityEvent OnRoomClearedEvent { get; private set; }
     public UnityEvent OnPlayerDeathEvent { get; private set; }
+    public UnityEvent OnBossDeathEvent { get; private set; }
 
     protected override void Awake()
     {
@@ -12,6 +13,7 @@ public class GlobalEventManager : SingletonObject<GlobalEventManager>
         OnEnemyDeathEvent = new UnityEvent();
         OnRoomClearedEvent = new UnityEvent();
         OnPlayerDeathEvent = new UnityEvent();
+        OnBossDeathEvent = new UnityEvent();
 
         OnEnemyDeathEvent.AddListener(CheckRoomCleared);
     }
@@ -29,5 +31,6 @@ public class GlobalEventManager : SingletonObject<GlobalEventManager>
         OnEnemyDeathEvent.RemoveAllListeners();
         OnPlayerDeathEvent.RemoveAllListeners();
         OnRoomClearedEvent.RemoveAllListeners();
+        OnBossDeathEvent.RemoveAllListeners();
     }
 }

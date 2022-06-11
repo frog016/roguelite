@@ -22,7 +22,7 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
 
     private void AddRandomItemDropper(GameObject room)
     {
-        room.AddComponent(_dropperTypes.GetRandomItemsWithChances(new List<float> {0.2f, 0.4f, 0.2f, 0.2f}, 1).First());
+        room.AddComponent(_dropperTypes.GetRandomItems(1).First());
         //room.AddComponent(typeof(EffectDropperRoom));
     }
 }

@@ -7,11 +7,15 @@ public class PauseManager : SingletonObject<PauseManager>
 
     public void Stop() => Time.timeScale = 0f;
 
-    public void ReturnToMenu() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    public void ReturnToMenu()
+    {
+        Continue();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 
     public void Exit() 
     {
-        Application.Quit();
         Continue();
+        Application.Quit();
     }
 }

@@ -14,39 +14,46 @@ public static class RandomChanceGenerator
         return Random.value;
     }
 
-    public static List<T> GetRandomItems<T>(this IEnumerable<T> collection, int count)
+    public static IEnumerable<T> GetRandomItems<T>(this IEnumerable<T> collection, int count)
     {
         var listCollection = collection.ToList();
+        var dictionaryCollection = listCollection.ToIndexedDictionary();
 
-        var chances = new List<float>();
-        for (var i = 0; i < listCollection.Count; i++)
-            chances.Add(1f / listCollection.Count);
-
-        return GetRandomItemsWithChances(listCollection, chances, count);
-    }
-
-    public static List<T> GetRandomItemsWithChances<T>(this IEnumerable<T> collection, List<float> chances, int count)
-    {
-        var listCollection = collection.ToList();
-        var chanceList = CreateChanceList(chances);
-        var used = new HashSet<T>();
-
-        var maxCount = Mathf.Min(count, listCollection.Count);
-        var items = new List<T>();
-        while (items.Count < maxCount)
+        var maxCount = Mathf.Min(count, dictionaryCollection.Count);
+        for (var i = 0; i < maxCount; i++)
         {
-            var probability = Random.value;
-            var index = chanceList.FindLastIndex(element => probability <= element);
-            var randomValue = listCollection[index];
-            if (used.Contains(randomValue))
-                continue;
+            var key = Random.Range(0, dictionaryCollection.Count);
+            var randomValue = dictionaryCollection[key];
+            yield return randomValue;
+            dictionaryCollection.Remove(key);
 
-            items.Add(randomValue);
-            used.Add(randomValue);
+            if (key < dictionaryCollection.Count - 1)
+                dictionaryCollection.RenameKey(key + 1, key);
         }
-
-        return items;
     }
+
+    //public static List<T> GetRandomItemsWithChances<T>(this IEnumerable<T> collection, List<float> chances, int count)
+    //{
+    //    var listCollection = collection.ToList();
+    //    var chanceList = CreateChanceList(chances);
+    //    var used = new HashSet<T>();
+
+    //    var maxCount = Mathf.Min(count, listCollection.Count);
+    //    var items = new List<T>();
+    //    while (items.Count < maxCount)
+    //    {
+    //        var probability = Random.value;
+    //        var index = chanceList.FindLastIndex(element => probability <= element);
+    //        var randomValue = listCollection[index];
+    //        if (used.Contains(randomValue))
+    //            continue;
+
+    //        items.Add(randomValue);
+    //        used.Add(randomValue);
+    //    }
+
+    //    return items;
+    //}
 
     private static List<float> CreateChanceList(List<float> chances)
     {
@@ -57,7 +64,7 @@ public static class RandomChanceGenerator
             probability += chance;
             result.Add(probability);
         }
-        
+
         if (probability == 0)
             result.Add(1f);
 

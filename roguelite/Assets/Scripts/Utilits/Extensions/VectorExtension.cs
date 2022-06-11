@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class VectorExtended
+public static class VectorExtension
 {
     private static readonly float _isometricAngle = -Mathf.Sqrt(5) / 5;
 
