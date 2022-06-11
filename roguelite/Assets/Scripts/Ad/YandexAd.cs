@@ -1,3 +1,4 @@
+using System;
 using Agava.YandexGames;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class YandexAd : MonoBehaviour
     private void Start()
     {
         GlobalEventManager.Instance.OnPlayerDeathEvent.AddListener(CheckDeath);
+        _deathCount = PlayerStatistic.Instance.DeathCount;
     }
 
     private void CheckDeath()
@@ -19,6 +21,16 @@ public class YandexAd : MonoBehaviour
 
     private void PlayAd()
     {
-        VideoAd.Show();
-}
+        #if UNITY_WEBGL
+        try
+        {
+            VideoAd.Show();
+        }
+        catch (Exception e)
+        {
+            Debug.Log("¬ы не в яндекс играх");
+        }
+        #endif
+        Debug.Log("Ad");
+    }
 }

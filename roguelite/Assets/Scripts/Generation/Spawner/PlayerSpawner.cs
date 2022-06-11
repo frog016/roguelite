@@ -17,6 +17,7 @@ public class PlayerSpawner : SingletonObject<PlayerSpawner>, ISpawner
 
         Player = CreatureFactory.Instance.CreateObject(creatureObject, typeof(HeroSamurai));
         Player.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnPlayerDeathEvent.Invoke);
+        Player.OnObjectDeath.AddListener(() => PlayerStatistic.Instance.DeathCount++);
         Camera.main.GetComponent<CameraTracking>().SetObject(Player.transform);
 
         LevelGenerationManager.Instance.OnGenerationEndedEvent.RemoveListener(() => SpawnUnits());

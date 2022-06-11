@@ -8,6 +8,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     [SerializeField] protected float _speed;
     [SerializeField] private float _dashCooldown;
 
+    public bool IsDashed;
     public Vector2 Direction { get; protected set; }
     public UnityEvent OnObjectMovedEvent { get; private set; }
     public UnityEvent OnDashEndedEvent { get; private set; }
@@ -32,11 +33,15 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 
     public void Dash(Vector2 direction = default)
     {
+        if (IsDashed)
+            return;
+
         StartCoroutine(DashCoroutine(direction));
     }
 
     private IEnumerator DashCoroutine(Vector2 direction)
     {
+        IsDashed = true;
         var newDirection = direction == default ? Direction : direction;
         var dashForce = 10f;
         _rigidbody.velocity = newDirection * dashForce;
@@ -45,5 +50,6 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
         _rigidbody.velocity = Vector2.zero;
         OnDashEndedEvent.Invoke();
         yield return new WaitForSeconds(_dashCooldown);
+        IsDashed = false;
     }
 }

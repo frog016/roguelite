@@ -25,6 +25,7 @@ public class BleedingEffect : EffectBase
             var particle = visualEffect.GetComponent<ParticleSystem>().main;
             particle.duration = _duration;
             visualEffect.GetComponent<ParticleSystem>().Play();
+            target.OnObjectDeath.AddListener(() => StopCoroutine(ApplyDamageOverTime(target)));
             StartCoroutine(ApplyDamageOverTime(target));
         }
     }
