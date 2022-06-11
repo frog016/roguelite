@@ -22,13 +22,14 @@ public class EffectDropperRoom : ItemDropperRoomBase
 
     public override void DropItems()
     {
-        var altar = Instantiate(_altar, ValidatePosition(_altar.gameObject), Quaternion.identity);
+        //var altar = Instantiate(_altar, ValidatePosition(_altar.gameObject), Quaternion.identity);
+        var altar = Instantiate(_altar, PlayerSpawner.Instance.Player.transform.position, Quaternion.identity);
         altar.EffectTypes = _allEffectsType;
     }
 
     private Vector2 ValidatePosition(GameObject gameObject)
     {
-        var collider2d = gameObject.GetComponentInParent<PolygonCollider2D>();
+        var collider2d = gameObject.GetComponentInChildren<PolygonCollider2D>();
         var size = collider2d.points.Max(point => Vector2.Distance(point, gameObject.transform.position));
         var result = Vector2.right;
 
