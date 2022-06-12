@@ -7,7 +7,7 @@ public class CoinPanel : MonoBehaviour
     private void Start()
     {
         var cards = GetComponentsInChildren<CoinItem>();
-        foreach (var tuple in cards.Zip(WalletsManager.Instance.Wallets.ToList(), Tuple.Create))
+        foreach (var tuple in cards.Zip(WalletsRepository.Instance.AllData, Tuple.Create))
         {
             ChangeItemText(tuple.Item1, tuple.Item2.Balance.ToString());
             tuple.Item2.OnBalanceUpdatedEvent.AddListener(() => ChangeItemText(tuple.Item1, tuple.Item2.Balance.ToString()));

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class MoneyWallet : ScriptableObject
+public abstract class MoneyWallet : ScriptableData
 {
     [SerializeField] protected float _balance;
 

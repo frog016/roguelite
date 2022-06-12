@@ -12,11 +12,11 @@ public class DoubleCoinsKey : Item
             RoomManager.Instance.OnRoomEnter.RemoveListener(UseItem);
         }
 
-        var moneyDropper = RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponent<MoneyDropperRoom>();
+        var moneyDropper = RoomManager.Instance.CurrentRoom.RoomTemplateInstance.GetComponent<MoneyDropperRoom<MoneyWallet, MoneyDropperData>>();
         if (moneyDropper == null)
             return;
 
-        moneyDropper.ItemsCount *= 2;
+        moneyDropper.CoinsCount *= 2;
         _usesCount--;
 
         Destroy(this);

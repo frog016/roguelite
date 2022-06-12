@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,7 +21,7 @@ public class GameResultHandler : MonoBehaviour
 
     private void Lose()
     {
-        WalletsManager.Instance.Wallets.ForEach(wallet => wallet.TrySpendMoney(wallet.Balance));
+        WalletsRepository.Instance.AllData.ForEach(wallet => wallet.TrySpendMoney(wallet.Balance));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

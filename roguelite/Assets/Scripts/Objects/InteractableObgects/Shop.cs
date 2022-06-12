@@ -25,7 +25,7 @@ public class Shop : InteractableObject
 
     public bool TryBuyItem(ItemDataInfo data, Type type)
     {
-        if (!WalletsManager.Instance.FindWallet<GoldenMoneyWallet>().TrySpendMoney(data.Cost))
+        if (!WalletsRepository.Instance.FindDataByType<GoldenMoneyWallet>().TrySpendMoney(data.Cost))
             return false;
 
         var item = PlayerSpawner.Instance.Player.GetComponentInChildren<ItemBag>().gameObject.AddComponent(type) as Item;

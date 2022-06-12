@@ -1,12 +1,27 @@
-using UnityEngine;
-
-public abstract class MoneyDropperRoom : ItemDropperRoomBase
+public abstract class MoneyDropperRoom<TItem, TData> : ItemDropperRoomBase
+    where TItem: MoneyWallet
+    where TData: MoneyDropperData
 {
-    protected MoneyWallet _wallet;
+    public int CoinsCount { get; set; }
 
-    protected virtual void Awake()
+    private MoneyWallet _wallet;
+
+    protected override void Awake()
     {
-        ItemsCount = Random.Range(1, 10);
-        ItemName = $"{ItemsCount} ";
+        base.Awake();
+        _wallet = WalletsRepository.Instance.FindDataByType<TItem>();
+    }
+
+    public override void DropItems()
+    {
+        _wallet.AddMoney(CoinsCount);
+    }
+
+    protected override void FindItemData()
+    {
+        var moneyData = ItemDropperDataRepository.Instance.FindDataByType<TData>() as TData;
+        ItemDropperData = moneyData;
+        CoinsCount = moneyData.Range;
+        moneyData.ResultDescription = moneyData.ResultDescription.Replace("{n}", $"{CoinsCount}");
     }
 }

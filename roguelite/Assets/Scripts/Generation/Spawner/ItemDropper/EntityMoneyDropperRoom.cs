@@ -1,14 +1,3 @@
-public class EntityMoneyDropperRoom : MoneyDropperRoom
+public class EntityMoneyDropperRoom : MoneyDropperRoom<EntityMoneyWallet, EntityDropperData>
 {
-    protected override void Awake()
-    {
-        base.Awake();
-        ItemName = " сущностей";
-        _wallet = WalletsManager.Instance.FindWallet<EntityMoneyWallet>();
-    }
-
-    public override void DropItems()
-    {
-        _wallet.AddMoney(ItemsCount);
-    }
 }

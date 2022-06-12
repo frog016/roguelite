@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Money/Entity", fileName = "EntityMoneyWallet")]
+[CreateAssetMenu(menuName = "Repositories/MoneyWallets/Entity", fileName = "EntityMoneyWallet")]
 public class EntityMoneyWallet : MoneyWallet
 {
 }
