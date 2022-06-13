@@ -1,28 +1,17 @@
-using UnityEngine;
-
 public class CriticalStrikeEffect : EffectBase
 {
-    private float _criticalHitCoefficient;
-
-    public override void InitializeEffect(EffectData data)
+    public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        base.InitializeEffect(data);
-        _criticalHitCoefficient = data.CriticalHitCoefficient;
-    }
-
-    public override void ApplyEffect(AttackEventArgs attackEventArgs) //  Плохая реализвация, но иначе никак
-    {
-        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability))
             return;
 
-        var damage = attackEventArgs.UsedAttack.AttackData.Damage * _criticalHitCoefficient;
+        var data = EffectData as CriticalStrikeEffectData;
+        var damage = attackEventArgs.UsedAttack.AttackData.Damage * data.CriticalHitCoefficient;
+
         foreach (var target in attackEventArgs.DamagedTargets)
         {
-            var visualEffect = Instantiate(_visualEffect, target.transform);
-            var particle = visualEffect.GetComponent<ParticleSystem>().main;
-            particle.duration = _duration;
-            visualEffect.GetComponent<ParticleSystem>().Play();
             target.ApplyDamage(damage);
+            PlayVisualEffect(target.transform);
         }
     }
 }

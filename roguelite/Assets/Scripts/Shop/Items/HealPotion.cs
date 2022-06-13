@@ -2,11 +2,13 @@ public class HealPotion : Item
 {
     protected override void UseItem()
     {
-        if (_usesCount <= 0)
+        var data = _itemData as HealPotionData;
+
+        if (data.UsesCount <= 0)
             return;
 
-        GetComponentInParent<DamageableObject>().ApplyHeath(_data.RestoredHealth);
-        _usesCount--;
+        GetComponentInParent<DamageableObject>().ApplyHealth(data.RestoredHealth);
+        data.UsesCount--;
         Destroy(this);
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using Database.MutableDatabases;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +12,7 @@ public class ShopPanel : CardPanel<ShopPanel>
         foreach (var type in shop.ItemTypes.GetRandomItems(3))
         {
             var card = Instantiate(_cardPrefab, _cardList.transform);
-            card.GetComponent<Card>().LoadInfo(GetItemData(type));
+            card.GetComponent<Card>().LoadInfo(GetItemData(type).Info);
 
             var button = card.GetComponentInChildren<Button>();
             button.onClick.RemoveAllListeners();
@@ -29,8 +28,8 @@ public class ShopPanel : CardPanel<ShopPanel>
         Destroy(card);
     }
 
-    private ItemDataInfo GetItemData(Type type)
+    private ItemData GetItemData(Type type)
     {
-        return ItemDatabase.Instance.GetDataByType(type);
+        return ItemDataRepository.Instance.FindDataByAssociatedType(type);
     }
 }

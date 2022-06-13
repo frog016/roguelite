@@ -15,9 +15,9 @@ public class DamageIncreaseAmulet : Item
 
     protected override void UseItem()
     {
-        if (_usesCount > 0)
+        if (_itemData.UsesCount > 0)
         {
-            _usesCount--;
+            _itemData.UsesCount--;
             return;
         }
 
@@ -28,13 +28,15 @@ public class DamageIncreaseAmulet : Item
 
     private void IncreaseDamage()
     {
+        var data = _itemData as DamageIncreaseAmuletData;
         foreach (var type in _weapon.AttackTypes)
-            _weapon.GetAttackData(type).Damage *= _data.IncreaseDamage;
+            _weapon.GetAttackData(type).Damage *= data.IncreaseDamage;
     }
 
     private void DecreaseDamage()
     {
+        var data = _itemData as DamageIncreaseAmuletData;
         foreach (var type in _weapon.AttackTypes)
-            _weapon.GetAttackData(type).Damage /= _data.IncreaseDamage;
+            _weapon.GetAttackData(type).Damage /= data.IncreaseDamage;
     }
 }

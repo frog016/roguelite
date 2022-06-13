@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af67d9b2977595e4ea1c5a0128e3ec2f, type: 3}
+  m_Name: LifeStealEffectData
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _duration: 1.5
+  _procProbability: 1
+  _info:
+    _sprite: {fileID: 21300000, guid: 6b497887f229cad488833822af8a8c20, type: 3}
+    _visualEffect: {fileID: 5345808395681593504, guid: df57f8e72dee4ad4ca7fd95ed4e93298, type: 3}
+    _description: "\u041F\u0440\u0438 \u043D\u0430\u043D\u0435\u0441\u0435\u043D\u0438\u0438
+      \u0443\u0440\u043E\u043D\u0430, \u0438\u0433\u0440\u043E\u043A \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
+      \u0441\u0432\u043E\u0435 \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435."
+  _lifeStealAmount: 5

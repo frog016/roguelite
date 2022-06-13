@@ -7,7 +7,6 @@ public class EffectsPanel : MonoBehaviour
     [SerializeField] private GameObject _effectCardPrefab;
 
     private float _angle;
-    private EffectList _effectList;
 
     private void Awake()
     {
@@ -25,11 +24,10 @@ public class EffectsPanel : MonoBehaviour
 
     private void AddEffectCard(EffectData data)
     {
-        var dataInfo = data as EffectDataInfo;
         var size = _effectCardPrefab.GetComponent<RectTransform>().rect.size.x;
         var card = Instantiate(_effectCardPrefab, transform);
         card.GetComponent<RectTransform>().anchoredPosition = CalculateNextPoint(size);
-        card.GetComponentsInChildren<Image>().Last().sprite = dataInfo.Sprite;
+        card.GetComponentsInChildren<Image>().Last().sprite = data.Info.Sprite;
     }
 
     private Vector2 CalculateNextPoint(float cardSize)

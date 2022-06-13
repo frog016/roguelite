@@ -17,7 +17,7 @@ public abstract class MoneyDropperRoom<TItem, TData> : ItemDropperRoomBase
         _wallet.AddMoney(CoinsCount);
     }
 
-    protected override void FindItemData()
+    public override void Initialize()
     {
         var moneyData = ItemDropperDataRepository.Instance.FindDataByDataType<TData>() as TData;
         ItemDropperData = moneyData;

@@ -7,24 +7,21 @@ public class BleedingEffect : EffectBase
 {
     private HashSet<DamageableObject> _targetsUnderEffect;
 
-    public override void InitializeEffect(EffectData data)
+    public override void Initialize(EffectData data)
     {
-        base.InitializeEffect(data);
-        _duration = data.Duration;
+        base.Initialize(data);
         _targetsUnderEffect = new HashSet<DamageableObject>();
     }
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability))
             return;
 
-        foreach (var target in attackEventArgs.DamagedTargets.Where(target => !_targetsUnderEffect.Contains(target)))
+        foreach (var target in attackEventArgs.DamagedTargets
+                     .Where(target => !_targetsUnderEffect.Contains(target)))
         {
-            var visualEffect = Instantiate(_visualEffect, target.transform);
-            var particle = visualEffect.GetComponent<ParticleSystem>().main;
-            particle.duration = _duration;
-            visualEffect.GetComponent<ParticleSystem>().Play();
+            PlayVisualEffect(target.transform);
             target.OnObjectDeath.AddListener(() => StopCoroutine(ApplyDamageOverTime(target)));
             StartCoroutine(ApplyDamageOverTime(target));
         }
@@ -34,11 +31,10 @@ public class BleedingEffect : EffectBase
     {
         _targetsUnderEffect.Add(target);
         var counter = 0;
-        while (counter < _duration)
+        while (counter < EffectData.Duration)
         {
-            target?.ApplyDamage(_parameters.Damage);
-
-            yield return new WaitForSeconds(_parameters.CooldownTime);
+            target.ApplyDamage(EffectData.Damage);
+            yield return new WaitForSeconds(1f);
             counter++;
         }
 

@@ -5,7 +5,7 @@ using Database.MutableDatabases;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EffectList : MonoBehaviour    //  TODO: Сделать выбор среди не полученных эффектов, если не _maxCapacity
+public class EffectList : MonoBehaviour
 {
     public List<EffectBase> Effects { get; private set; }
     public UnityEvent<EffectData> OnEffectAddedEvent { get; private set; }
@@ -19,41 +19,41 @@ public class EffectList : MonoBehaviour    //  TODO: Сделать выбор среди не полу
         OnEffectAddedEvent = new UnityEvent<EffectData>();
     }
 
-    public void AddOrUpdate(Type effectType)
+    public void AddOrUpgrade(Type effectType)
     {
-        var data = EffectsDatabase.Instance.GetDataByType(effectType);
-
         if (Effects.Count != _maxCapacity)
         {
-            var newEffect = gameObject.AddComponent(effectType) as EffectBase;
-            AddEffect(newEffect, data);
+            AddEffect(effectType);
             return;
         }
 
-        var effect = Effects
-            .FirstOrDefault(effect => effect.GetType() == effectType);
-        if (effect != null)
-            AddEffect(effect, data);
+        Upgrade(effectType);
     }
 
     public void Replace(Type oldEffectType, Type newEffectType)
     {
-        var data = EffectsDatabase.Instance.GetDataByType(newEffectType);
-
         var effect = Effects.FirstOrDefault(effect => effect.GetType() == oldEffectType);
         if (effect == null)
             return;
 
         Effects.Remove(effect);
-        var newEffect = gameObject.AddComponent(newEffectType) as EffectBase;
-        AddEffect(newEffect, data);
+        AddEffect(newEffectType);
     }
 
-    private void AddEffect(EffectBase effect, EffectData data)
+    private void AddEffect(Type effectType)
     {
+        var data = EffectDataRepository.Instance.FindDataByAssociatedType(effectType);
+        var effect = gameObject.AddComponent(effectType) as EffectBase;
+        effect.Initialize(data);
         Effects.Add(effect);
-        effect.InitializeEffect(data);
-
         OnEffectAddedEvent.Invoke(data);
+    }
+
+    private void Upgrade(Type effectType)
+    {
+        var effect = Effects
+            .FirstOrDefault(effect => effect.GetType() == effectType);
+        if (effect != null)
+            return;
     }
 }

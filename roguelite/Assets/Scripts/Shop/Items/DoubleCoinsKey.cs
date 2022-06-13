@@ -7,7 +7,7 @@ public class DoubleCoinsKey : Item
 
     protected override void UseItem()
     {
-        if (_usesCount <= 0)
+        if (_itemData.UsesCount <= 0)
         {
             RoomManager.Instance.OnRoomEnter.RemoveListener(UseItem);
         }
@@ -17,7 +17,7 @@ public class DoubleCoinsKey : Item
             return;
 
         moneyDropper.CoinsCount *= 2;
-        _usesCount--;
+        _itemData.UsesCount--;
 
         Destroy(this);
     }

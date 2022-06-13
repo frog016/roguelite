@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public abstract class ItemDropperRoomBase : MonoBehaviour
+public abstract class ItemDropperRoomBase : MonoBehaviour, IInitializable
 {
     public ItemDropperData ItemDropperData { get; protected set; }
 
     protected virtual void Awake()
     {
-        FindItemData();
+        Initialize();
     }
 
     public abstract void DropItems();
 
-    protected abstract void FindItemData();
+    public abstract void Initialize();
 }

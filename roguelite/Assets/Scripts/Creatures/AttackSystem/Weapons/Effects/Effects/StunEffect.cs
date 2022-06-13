@@ -7,23 +7,20 @@ public class StunEffect : EffectBase
 {
     private Dictionary<DamageableObject, Coroutine> _stuns;
 
-    public override void InitializeEffect(EffectData data)
+    public override void Initialize(EffectData data)
     {
-        base.InitializeEffect(data);
-        _parameters = data.AttackParameters;
-        _procProbability = data.ProcProbability;
-        _duration = data.Duration;
+        base.Initialize(data);
         _stuns = new Dictionary<DamageableObject, Coroutine>();
     }
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability))
             return;
 
         foreach (var target in attackEventArgs.DamagedTargets)
         {
-            target.ApplyDamage(_parameters.Damage);
+            target.ApplyDamage(EffectData.Damage);
             if (target.Health <= 0)
                 continue;
 
@@ -45,13 +42,9 @@ public class StunEffect : EffectBase
             target.GetComponentInChildren<WeaponBase>()
         };
 
-        var visualEffect = Instantiate(_visualEffect, target.transform);
-        var particle = visualEffect.GetComponent<ParticleSystem>().main;
-        particle.duration = _duration;
-        visualEffect.GetComponent<ParticleSystem>().Play();
-
+        PlayVisualEffect(target.transform);
         SetEnabled(components, false);
-        yield return new WaitForSeconds(_duration);
+        yield return new WaitForSeconds(EffectData.Duration);
         SetEnabled(components, true);
     }
 

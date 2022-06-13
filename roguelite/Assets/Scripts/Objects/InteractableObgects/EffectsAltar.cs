@@ -16,7 +16,7 @@ public class EffectsAltar : InteractableObject
 
     public void CreateEffect(Type effectType)
     {
-        PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().AddOrUpdate(effectType);
+        PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().AddOrUpgrade(effectType);
         DestroyAltar();
     }
 

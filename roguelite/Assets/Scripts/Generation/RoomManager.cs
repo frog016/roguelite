@@ -36,6 +36,6 @@ public class RoomManager : SingletonObject<RoomManager>
         var itemDropperRoomBase = CurrentRoom.RoomTemplateInstance.GetComponent<ItemDropperRoomBase>();
         itemDropperRoomBase.DropItems();
 
-        NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Announcement, itemDropperRoomBase.ItemDropperData.ResultDescription));
+        NotificationCreator.Instance.CreateNotification(new Notification(NotificationMode.Announcement, $"Локация пройдена\n{itemDropperRoomBase.ItemDropperData.ResultDescription}"));
     }
 }

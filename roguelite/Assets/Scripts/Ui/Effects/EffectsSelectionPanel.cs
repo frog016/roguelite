@@ -61,8 +61,8 @@ public class EffectsSelectionPanel : CardPanel<EffectsSelectionPanel>
         ClosePanel();
     }
 
-    private EffectDataInfo GetEffectData(Type type)
+    private EffectInfo GetEffectData(Type type)
     {
-        return EffectsDatabase.Instance.GetDataByType(type);
+        return EffectDataRepository.Instance.FindDataByAssociatedType(type).Info;
     }
 }

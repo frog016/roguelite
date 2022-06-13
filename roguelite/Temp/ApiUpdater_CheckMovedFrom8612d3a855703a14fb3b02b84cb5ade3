@@ -1,0 +1,336 @@
+2142920301560
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/EffectBase.cs
+9
+9
+_parameters
+0
+0
+2142920301776
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/EffectBase.cs
+10
+9
+_procProbability
+0
+0
+2142920301992
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/EffectBase.cs
+11
+9
+_duration
+0
+0
+2142920302208
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/EffectBase.cs
+12
+9
+_visualEffect
+0
+0
+2142920302424
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AttackSpeedEffect.cs
+14
+9
+_duration
+0
+0
+2142920302640
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AirEffect.cs
+17
+52
+_procProbability
+0
+0
+2142920302856
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AirEffect.cs
+22
+44
+_visualEffect
+0
+0
+2142920303072
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AirEffect.cs
+24
+33
+_duration
+0
+0
+2142920303288
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AirEffect.cs
+35
+32
+_parameters
+0
+0
+2142920303504
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/AttackSpeedEffect.cs
+33
+41
+_duration
+0
+0
+2142920303720
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+13
+9
+_duration
+0
+0
+2142920303936
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/ChainLightningEffect.cs
+25
+52
+_procProbability
+0
+0
+2142920304152
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/CriticalStrikeEffect.cs
+15
+52
+_procProbability
+0
+0
+2142920304368
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/CriticalStrikeEffect.cs
+21
+44
+_visualEffect
+0
+0
+2142920304584
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/CriticalStrikeEffect.cs
+23
+33
+_duration
+0
+0
+2142920304800
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+19
+52
+_procProbability
+0
+0
+2142920305016
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+24
+44
+_visualEffect
+0
+0
+2142920305232
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+26
+33
+_duration
+0
+0
+2142920305448
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/DoubleStrikeEffect.cs
+5
+52
+_procProbability
+0
+0
+2142920305664
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+13
+9
+_duration
+0
+0
+2142920305880
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+37
+26
+_duration
+0
+0
+2142920306096
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+39
+33
+_parameters
+0
+0
+2142920306312
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/BleedingEffect.cs
+41
+45
+_parameters
+0
+0
+2142920306528
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/ChainLightningEffect.cs
+44
+33
+_parameters
+0
+0
+2142920306744
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/LifeStealEffect.cs
+20
+44
+_visualEffect
+0
+0
+2142920306960
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/LifeStealEffect.cs
+22
+33
+_duration
+0
+0
+2142920307176
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+19
+52
+_procProbability
+0
+0
+2142920307392
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+24
+44
+_visualEffect
+0
+0
+2142920307608
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+26
+33
+_duration
+0
+0
+2142920307824
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+13
+9
+_parameters
+0
+0
+2142920308040
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+14
+9
+_procProbability
+0
+0
+2142920308256
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+15
+9
+_duration
+0
+0
+2142920308472
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/ChainLightningEffect.cs
+62
+40
+_visualEffect
+0
+0
+2142920308688
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/ChainLightningEffect.cs
+68
+25
+_duration
+0
+0
+2142920308904
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+37
+26
+_duration
+0
+0
+2142920309120
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+39
+33
+_parameters
+0
+0
+2142920309336
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/FireEffect.cs
+41
+45
+_parameters
+0
+0
+2142920309552
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+21
+52
+_procProbability
+0
+0
+2142920309768
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+26
+32
+_parameters
+0
+0
+2142920309984
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+48
+40
+_visualEffect
+0
+0
+2142920310200
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+50
+29
+_duration
+0
+0
+2142920310416
+-1485410143
+D:/2rd course game/roguelite/roguelite/Assets/Scripts/Creatures/AttackSystem/Weapons/Effects/Effects/StunEffect.cs
+54
+41
+_duration
+0
+0

@@ -26,7 +26,7 @@ public class DamageableObject : MonoBehaviour
         Death();
     }
 
-    public void ApplyHeath(float healValue)
+    public void ApplyHealth(float healValue)
     {
         Health = Mathf.Min(Health + healValue, MaxHealth);
         OnHealthChanged.Invoke();

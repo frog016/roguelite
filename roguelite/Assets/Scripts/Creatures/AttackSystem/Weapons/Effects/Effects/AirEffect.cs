@@ -1,38 +1,17 @@
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class AirEffect : EffectBase
 {
-    private float _knockBackForce;
-
-    public override void InitializeEffect(EffectData data)
-    {
-        base.InitializeEffect(data);
-        _knockBackForce = data.KnockBackForce;
-    }
-
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        if (!RandomChanceGenerator.IsEventHappened(_procProbability))
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability) || attackEventArgs.DamagedTargets.Count <= 0)
             return;
 
-        if (attackEventArgs.DamagedTargets.Count > 0)
+        PlayVisualEffect(attackEventArgs.DamagedTargets.First().transform);
+        foreach (var target in attackEventArgs.DamagedTargets)
         {
-            var visualEffect = Instantiate(_visualEffect, transform);
-            var particle = visualEffect.GetComponent<ParticleSystem>().main;
-            particle.duration = _duration;
-            visualEffect.transform.rotation = Quaternion.LookRotation((attackEventArgs.DamagedTargets.First().transform.position - transform.position));
-            visualEffect.GetComponent<ParticleSystem>().Play();
-        }
-        ApplyDamage(attackEventArgs.DamagedTargets);
-    }
-
-    private void ApplyDamage(List<DamageableObject> targets)
-    {
-        foreach (var target in targets)
-        {
-            target.ApplyDamage(_parameters.Damage);
+            target.ApplyDamage(EffectData.Damage);
             if (target.Health <= 0)
                 continue;
 
@@ -42,8 +21,9 @@ public class AirEffect : EffectBase
 
     private void KnockBack(DamageableObject target)
     {
+        var data = EffectData as AirEffectData;
         target.GetComponent<Rigidbody2D>().
-            AddForce(-(transform.position - target.transform.position) * _knockBackForce,
+            AddForce(-(transform.position - target.transform.position) * data.KnockBackForce,
                 ForceMode2D.Impulse);
     }
 }

@@ -17,12 +17,11 @@ public class EffectsInfoPanel : CardPanel<EffectsInfoPanel>
 
     protected override void GenerateCards(InteractableObject interactableObject)
     {
-        throw new System.NotImplementedException();
     }
 
     private void AddEffectCard(EffectData data)
     {
         var card = Instantiate(_cardPrefab, transform);
-        card.GetComponent<Card>().LoadInfo(data);
+        card.GetComponent<Card>().LoadInfo(data.Info);
     }
 }

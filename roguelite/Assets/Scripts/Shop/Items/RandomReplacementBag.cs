@@ -12,7 +12,7 @@ public class RandomReplacementBag : Item
 
     protected override void UseItem()
     {
-        if (_usesCount <= 0)
+        if (_itemData.UsesCount <= 0)
             return;
 
         var effectType = typeof(EffectBase);
@@ -24,7 +24,7 @@ public class RandomReplacementBag : Item
         foreach (var pair in oldEffects.Zip(randomEffectTypes, Tuple.Create))
             _effectList.Replace(pair.Item1.GetType(), pair.Item2);
 
-        _usesCount--;
+        _itemData.UsesCount--;
         Destroy(this);
     }
 }

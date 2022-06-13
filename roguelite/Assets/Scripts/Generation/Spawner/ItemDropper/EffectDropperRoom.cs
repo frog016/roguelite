@@ -12,7 +12,7 @@ public class EffectDropperRoom : ItemDropperRoomBase
         altar.EffectTypes = droppableItem.Assembly.ExportedTypes.Where(type => droppableItem.IsAssignableFrom(type) && !type.IsAbstract).ToList(); ;
     }
 
-    protected override void FindItemData()
+    public override void Initialize()
     {
         var effectData = ItemDropperDataRepository.Instance.FindDataByAssociatedType(GetType()) as EffectDropperData;
         ItemDropperData = effectData;

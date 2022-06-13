@@ -1,42 +1,46 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AttackSpeedEffect : EffectBase
 {
-    private int _maxStacks;
     private int _stacksCount;
-    private float _increasedAttackSpeedCoefficient;
+    private List<Cooldown> _cooldowns;
 
-    public override void InitializeEffect(EffectData data)
+    public override void Initialize(EffectData data)
     {
-        base.InitializeEffect(data);
-        _duration = data.Duration;
-        _maxStacks = data.MaxStacks;
-        _increasedAttackSpeedCoefficient = data.IncreasedAttackSpeedCoefficient;
+        base.Initialize(data);
+        _stacksCount = 0;
+        _cooldowns = transform.parent.GetComponentsInChildren<Cooldown>().ToList();
     }
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        var cooldowns = GetComponentsInParent<Cooldown>();
-        foreach (var cooldown in cooldowns)
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability) || attackEventArgs.DamagedTargets.Count <= 0)
+            return;
+
+        var data = EffectData as AttackSpeedEffectData;
+        foreach (var cooldown in _cooldowns)
             cooldown.CooldownTime = 
-                cooldown.InitialCooldown * _increasedAttackSpeedCoefficient * 
-                Math.Min(attackEventArgs.DamagedTargets.Count, _maxStacks - _stacksCount);
+                cooldown.InitialCooldown * data.IncreasedAttackSpeedCoefficient * 
+                Math.Min(attackEventArgs.DamagedTargets.Count, data.MaxStackNumber - _stacksCount);
         
         StopAllCoroutines();
-        StartCoroutine(DropStacks(cooldowns));
+        StartCoroutine(DropStacks());
     }
 
-    private IEnumerator DropStacks(Cooldown[] cooldowns)
+    private IEnumerator DropStacks()
     {
-        yield return new WaitForSeconds(_duration);
+        yield return new WaitForSeconds(EffectData.Damage);
 
+        var data = EffectData as AttackSpeedEffectData;
         while (_stacksCount > 0)
         {
             _stacksCount--;
-            foreach (var cooldown in cooldowns)
-                cooldown.CooldownTime += cooldown.InitialCooldown * _increasedAttackSpeedCoefficient;
+            foreach (var cooldown in _cooldowns)
+                cooldown.CooldownTime += cooldown.InitialCooldown * data.IncreasedAttackSpeedCoefficient;
 
             yield return new WaitForSeconds(1f);
         }

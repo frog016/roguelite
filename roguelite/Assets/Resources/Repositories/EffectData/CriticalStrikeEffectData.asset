@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b3d3a7c7a232b4c9bae0fb3ead3534, type: 3}
+  m_Name: CriticalStrikeEffectData
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _duration: 1
+  _procProbability: 1.25
+  _info:
+    _sprite: {fileID: 21300000, guid: a37e314eeb9e1af42a923a5297cda3cf, type: 3}
+    _visualEffect: {fileID: 7429459272535452590, guid: d394437f33a4bfc4f91733e3b0551f99, type: 3}
+    _description: "\u0423 \u0432\u0430\u0448\u0438\u0445 \u0430\u0442\u0430\u043A
+      \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0448\u0430\u043D\u0441
+      15% \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u043A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+      \u0443\u0440\u043E\u043D (125% \u043E\u0442 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439
+      \u0430\u0442\u0430\u043A\u0438)."
+  _criticalHitCoefficient: 1.25

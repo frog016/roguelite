@@ -1,35 +1,27 @@
-using UnityEngine;
-
 public class LifeStealEffect : EffectBase
 {
-    private float _lifeStealAmount;
     private DamageableObject _myHealth;
 
-    public override void InitializeEffect(EffectData data)
+    public override void Initialize(EffectData data)
     {
-        base.InitializeEffect(data);
-        _lifeStealAmount = data.LifeStealAmount;
-
+        base.Initialize(data);
         _myHealth = GetComponentInParent<DamageableObject>();
     }
 
     public override void ApplyEffect(AttackEventArgs attackEventArgs)
     {
-        if (attackEventArgs.DamagedTargets.Count > 0)
-        {
-            var visualEffect = Instantiate(_visualEffect, transform);
-            var particle = visualEffect.GetComponent<ParticleSystem>().main;
-            particle.duration = _duration;
-            visualEffect.GetComponent<ParticleSystem>().Play();
-        }
+        if (!RandomChanceGenerator.IsEventHappened(EffectData.ProcProbability) || attackEventArgs.DamagedTargets.Count <= 0)
+            return;
 
+        PlayVisualEffect();
         foreach (var target in attackEventArgs.DamagedTargets)
             StealHealth(target);
     }
 
     private void StealHealth(DamageableObject target)
     {
-        _myHealth.ApplyHeath(_lifeStealAmount);
-        target.ApplyDamage(_lifeStealAmount);
+        var data = EffectData as LifeStealEffectData;
+        _myHealth.ApplyHealth(data.LifeStealAmount);
+        target.ApplyDamage(data.LifeStealAmount);
     }
 }
