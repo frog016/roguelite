@@ -9,7 +9,7 @@ public abstract class MoneyDropperRoom<TItem, TData> : ItemDropperRoomBase
     protected override void Awake()
     {
         base.Awake();
-        _wallet = WalletsRepository.Instance.FindDataByType<TItem>();
+        _wallet = WalletsRepository.Instance.FindDataByAssociatedType<TItem>();
     }
 
     public override void DropItems()
@@ -19,7 +19,7 @@ public abstract class MoneyDropperRoom<TItem, TData> : ItemDropperRoomBase
 
     protected override void FindItemData()
     {
-        var moneyData = ItemDropperDataRepository.Instance.FindDataByType<TData>() as TData;
+        var moneyData = ItemDropperDataRepository.Instance.FindDataByDataType<TData>() as TData;
         ItemDropperData = moneyData;
         CoinsCount = moneyData.Range;
         moneyData.ResultDescription = moneyData.ResultDescription.Replace("{n}", $"{CoinsCount}");

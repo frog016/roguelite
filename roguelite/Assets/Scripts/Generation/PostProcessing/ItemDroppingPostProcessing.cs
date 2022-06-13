@@ -17,8 +17,8 @@ public class ItemDroppingPostProcessing : DungeonGeneratorPostProcessingGrid2D
     {
         var itemDropperData = ItemDropperDataRepository.Instance.AllData;
         var chances = itemDropperData.Select(data => data.DroppingChance).ToList();
-        var droppableTypes = itemDropperData.Select(data => data.GetDataType());
-
-        room.AddComponent(droppableTypes.GetRandomItemsWithChances(chances, 1).First());
+        var droppableTypes = itemDropperData.Select(data => data.GetAssociatedObjectType());
+        var type = droppableTypes.GetRandomItemsWithChances(chances, 1).First();
+        room.AddComponent(type);
     }
 }
