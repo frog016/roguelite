@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     {
         Initialize(target, damage);
         _rigidbody.velocity = _speed * (target.transform.position - transform.position).normalized;
-        transform.rotation = Quaternion.Euler(0, 0, Vector2.Angle(target.transform.position, transform.position) - 90);
+        transform.rotation = Quaternion.Euler(0, 0, Vector2.Angle(target.transform.position, transform.position));
     }
 
     private void Initialize(DamageableObject target, float damage)

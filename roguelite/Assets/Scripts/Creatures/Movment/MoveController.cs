@@ -5,13 +5,11 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 {
-    [SerializeField] private float _dashCooldown;
-
-    public bool IsDashed;
-    public float Speed { get; set; }
+    public bool IsDashed { get; private set; }
     public Vector2 Direction { get; protected set; }
     public UnityEvent OnObjectMovedEvent { get; private set; }
     public UnityEvent OnDashEndedEvent { get; private set; }
+    public MovementData MovementData { get; set; }
 
     protected Rigidbody2D _rigidbody;
 
@@ -27,7 +25,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     public virtual void Move(Vector3 direction)
     {
         Direction = direction.normalized;
-        _rigidbody.MovePosition(transform.position + direction.normalized * Speed * Time.fixedDeltaTime);
+        _rigidbody.MovePosition(transform.position + direction.normalized * MovementData.MoveSpeed * Time.fixedDeltaTime);
         OnObjectMovedEvent.Invoke();
     }
 
@@ -43,13 +41,12 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     {
         IsDashed = true;
         var newDirection = direction == default ? Direction : direction;
-        var dashForce = 10f;
-        _rigidbody.velocity = newDirection * dashForce;
-        yield return new WaitForSeconds(0.1f);
+        _rigidbody.velocity = newDirection * MovementData.DashSpeed;
+        yield return new WaitForSeconds(MovementData.DashActiveTime);
         OnObjectMovedEvent.Invoke();
         _rigidbody.velocity = Vector2.zero;
         OnDashEndedEvent.Invoke();
-        yield return new WaitForSeconds(_dashCooldown);
+        yield return new WaitForSeconds(MovementData.DashCooldown);
         IsDashed = false;
     }
 }

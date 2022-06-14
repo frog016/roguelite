@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: SkeletonSpearman
   m_EditorClassIdentifier: 
   _maxHealth: 45
-  _moveSpeed: 1.8
   _creaturePrefab: {fileID: 7149842957478511573, guid: 0955f3f4f879712428a3a51b602840b0, type: 3}
   _weaponPrefab: {fileID: 2477897254494460646, guid: 4a2a4a2762844e34788403b88f3e2b1c, type: 3}
+  _movementData:
+    _moveSpeed: 1.8
+    _dashSpeed: 10
+    _dashActiveTime: 0.1
+    _dashCooldown: 1.5

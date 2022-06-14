@@ -35,7 +35,7 @@ public class EnemyMoveController : MoveController
         var capsuleCollider = GetComponent<CapsuleCollider2D>();
         Agent.updateRotation = false;
         Agent.updateUpAxis = false;
-        Agent.speed = Speed;
+        Agent.speed = MovementData.MoveSpeed;
         Agent.stoppingDistance = 1f;
         Agent.baseOffset = capsuleCollider.size.y / 2;
         Agent.radius = capsuleCollider.size.x / 2;

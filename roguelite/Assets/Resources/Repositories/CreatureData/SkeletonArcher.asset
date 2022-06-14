@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: SkeletonArcher
   m_EditorClassIdentifier: 
   _maxHealth: 35
-  _moveSpeed: 2
   _creaturePrefab: {fileID: 6564062429562474744, guid: c785152d8d042ae4d923435c78c4f4d7, type: 3}
   _weaponPrefab: {fileID: 3205849893853899172, guid: 84e5bf969732c0249adc394c16696b5a, type: 3}
+  _movementData:
+    _moveSpeed: 2
+    _dashSpeed: 10
+    _dashActiveTime: 0.1
+    _dashCooldown: 1.5

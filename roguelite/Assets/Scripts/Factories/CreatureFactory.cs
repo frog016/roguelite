@@ -9,12 +9,7 @@ public class CreatureFactory : SingletonObject<CreatureFactory>, IFactory<Creatu
         var creature = Instantiate(data.CreaturePrefab, parent.transform.position, Quaternion.identity);
 
         var damageableObject = creature.GetComponent<Creature>();
-        damageableObject.Health = data.MaxHealth;
-        damageableObject.MaxHealth = data.MaxHealth;
-
-        creature.GetComponent<MoveController>().Speed = data.MoveSpeed;
-
-        damageableObject.InitializeCreature(data.WeaponType);
+        damageableObject.InitializeCreature(data);
 
         return damageableObject;
     }

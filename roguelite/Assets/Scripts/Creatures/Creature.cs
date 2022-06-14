@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public abstract class Creature : DamageableObject
@@ -9,8 +8,12 @@ public abstract class Creature : DamageableObject
         meshRenderer.sortingOrder = -(int)(meshRenderer.transform.position.y * 100);
     }
 
-    public void InitializeCreature(Type weaponType)
+    public void InitializeCreature(CreatureData data)
     {
-        WeaponFactory.Instance.CreateObject(gameObject, weaponType);
+        Health = data.MaxHealth;
+        MaxHealth = data.MaxHealth;
+
+        WeaponFactory.Instance.CreateObject(gameObject, data.WeaponType);
+        GetComponent<MoveController>().MovementData = data.MovementData;
     }
 }

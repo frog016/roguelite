@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: HeroSamurai
   m_EditorClassIdentifier: 
   _maxHealth: 100
-  _moveSpeed: 4
   _creaturePrefab: {fileID: 4449213130970805148, guid: 6112b179b1207e34394fa4baca9798d0, type: 3}
   _weaponPrefab: {fileID: 1541617649059585481, guid: 3447b08b701d92146aef47f1e24817cb, type: 3}
+  _movementData:
+    _moveSpeed: 2
+    _dashSpeed: 7
+    _dashActiveTime: 0.5
+    _dashCooldown: 3

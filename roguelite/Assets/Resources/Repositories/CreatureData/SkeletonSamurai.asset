@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: SkeletonSamurai
   m_EditorClassIdentifier: 
   _maxHealth: 50
-  _moveSpeed: 2
   _creaturePrefab: {fileID: 6304618589418651911, guid: deaaa7d79b38ca148bfc366485672329, type: 3}
   _weaponPrefab: {fileID: 1576514264540440176, guid: 20ed170209dea6f469b0b62e3afc8c4c, type: 3}
+  _movementData:
+    _moveSpeed: 2
+    _dashSpeed: 10
+    _dashActiveTime: 0.1
+    _dashCooldown: 1.5
