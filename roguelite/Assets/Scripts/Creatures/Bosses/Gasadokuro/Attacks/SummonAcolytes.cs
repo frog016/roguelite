@@ -12,11 +12,4 @@ public class SummonAcolytes : AttackBase
 
         OnAttackCompletedEvent.Invoke(new AttackEventArgs(this, new List<DamageableObject>()));
     }
-
-    private SpawnData CreateAcolytesData()
-    {
-        var data = new SpawnData();
-        data.AddUnitsData(new SpawnUnitsData(CreatureType.SkeletonSamurai, 2));
-        return data;
-    }
 }

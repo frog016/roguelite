@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 public class PlayerAttackController : AttackController
 {
-    public override void HandleInput(AttackType attackType = default)
+    public override void HandleInput(Type attackType = null)
     {
         if (Mathf.Abs(Input.GetAxis("Fire1")) > 1e-12)
             Weapon.UseAttack(Weapon?.AttackTypes[0]);

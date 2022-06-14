@@ -1,27 +1,19 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using Database.MutableDatabases;
-using UnityEngine;
-using UnityEngine.Events;
 
-public class EffectList : MonoBehaviour
+public class EffectList : ComponentList<EffectBase>
 {
-    public List<EffectBase> Effects { get; private set; }
-    public UnityEvent<EffectData> OnEffectAddedEvent { get; private set; }
+    public int MaxCapacity { get; set; }
 
-    private int _maxCapacity;
-
-    private void Awake()
+    protected override void Awake()
     {
-        _maxCapacity = 4;
-        Effects = new List<EffectBase>();
-        OnEffectAddedEvent = new UnityEvent<EffectData>();
+        base.Awake();
+        MaxCapacity = 4;
     }
 
     public void AddOrUpgrade(Type effectType)
     {
-        if (Effects.Count != _maxCapacity)
+        if (_elements.Count != MaxCapacity)
         {
             AddEffect(effectType);
             return;
@@ -30,28 +22,17 @@ public class EffectList : MonoBehaviour
         Upgrade(effectType);
     }
 
-    public void Replace(Type oldEffectType, Type newEffectType)
-    {
-        var effect = Effects.FirstOrDefault(effect => effect.GetType() == oldEffectType);
-        if (effect == null)
-            return;
-
-        Effects.Remove(effect);
-        AddEffect(newEffectType);
-    }
-
     private void AddEffect(Type effectType)
     {
         var data = EffectDataRepository.Instance.FindDataByAssociatedType(effectType);
-        var effect = gameObject.AddComponent(effectType) as EffectBase;
+        var effect = Add(effectType);
         effect.Initialize(data);
-        Effects.Add(effect);
-        OnEffectAddedEvent.Invoke(data);
+        OnListUpdated.Invoke(effect);
     }
 
     private void Upgrade(Type effectType)
     {
-        var effect = Effects
+        var effect = _elements
             .FirstOrDefault(effect => effect.GetType() == effectType);
         if (effect != null)
             return;

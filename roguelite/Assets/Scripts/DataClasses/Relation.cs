@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [Serializable]
 public class Relation
 {
-    [SerializeField] private CreatureType _creature;
-    [SerializeField] private List<CreatureType> _enemies;
+    [SerializeField] private GameObject _creature;
+    [SerializeField] private List<GameObject> _enemies;
 
-    public CreatureType Creature => _creature;
-    public List<CreatureType> Enemies => _enemies;
+    public Type Creature => _creature.GetComponent<Creature>().GetType();
+    public List<Type> Enemies => _enemies.Select(enemy => enemy.GetComponent<Creature>().GetType()).ToList();
 }

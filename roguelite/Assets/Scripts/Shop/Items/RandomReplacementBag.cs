@@ -20,8 +20,7 @@ public class RandomReplacementBag : Item
             .Where(type => effectType.IsAssignableFrom(type) && !type.IsAbstract)
             .GetRandomItems(4);
 
-        var oldEffects = _effectList.Effects.ToList();
-        foreach (var pair in oldEffects.Zip(randomEffectTypes, Tuple.Create))
+        foreach (var pair in _effectList.ToList().Zip(randomEffectTypes, Tuple.Create))
             _effectList.Replace(pair.Item1.GetType(), pair.Item2);
 
         _itemData.UsesCount--;

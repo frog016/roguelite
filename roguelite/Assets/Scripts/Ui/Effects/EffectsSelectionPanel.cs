@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Database.MutableDatabases;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +26,7 @@ public class EffectsSelectionPanel : CardPanel<EffectsSelectionPanel>
         closeButton.onClick.AddListener(() => CreateSelectedEffect(altar));
 
         foreach (var type in altar.EffectTypes
-                     .Where(eff => !PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>().Effects
+                     .Where(eff => !PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>()
                          .Select(effa => effa.GetType())
                          .Contains(eff))
                      .GetRandomItems(4))

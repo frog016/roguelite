@@ -5,10 +5,10 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveController : MonoBehaviour //  TODO: Рефакторинг
 {
-    [SerializeField] protected float _speed;
     [SerializeField] private float _dashCooldown;
 
     public bool IsDashed;
+    public float Speed { get; set; }
     public Vector2 Direction { get; protected set; }
     public UnityEvent OnObjectMovedEvent { get; private set; }
     public UnityEvent OnDashEndedEvent { get; private set; }
@@ -27,7 +27,7 @@ public class MoveController : MonoBehaviour //  TODO: Рефакторинг
     public virtual void Move(Vector3 direction)
     {
         Direction = direction.normalized;
-        _rigidbody.MovePosition(transform.position + direction.normalized * _speed * Time.fixedDeltaTime);
+        _rigidbody.MovePosition(transform.position + direction.normalized * Speed * Time.fixedDeltaTime);
         OnObjectMovedEvent.Invoke();
     }
 

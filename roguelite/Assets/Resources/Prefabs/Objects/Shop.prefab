@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6320800201927910752}
   - component: {fileID: 608532684128938110}
+  - component: {fileID: 7914190398477379352}
   m_Layer: 0
   m_Name: Foot
   m_TagString: Untagged
@@ -62,6 +63,27 @@ PolygonCollider2D:
       - {x: 0.6, y: -0.3}
       - {x: 0.6, y: -0.85}
       - {x: 0.19, y: -1.11}
+--- !u!50 &7914190398477379352
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224305908315959022}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4269692038764720499
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +175,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 539055929103805650}
-  - component: {fileID: 8076639936203583828}
   - component: {fileID: 6325642380719681764}
   - component: {fileID: 181248620370706257}
   m_Layer: 0
@@ -179,27 +200,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &8076639936203583828
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5475230777070241906}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &6325642380719681764
 CircleCollider2D:
   m_ObjectHideFlags: 0

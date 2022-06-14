@@ -26,10 +26,8 @@ public class EnemyDetector : SingletonObject<EnemyDetector>
         {
             foreach (var enemy in relation.Enemies)
             {
-                var creatureType = TypeConvertor.ConvertEnumToType(relation.Creature);
-                var enemyType = TypeConvertor.ConvertEnumToType(enemy);
-                AddInDictionary(creatureType, enemyType);
-                AddInDictionary(enemyType, creatureType);
+                AddInDictionary(relation.Creature, enemy);
+                AddInDictionary(enemy, relation.Creature);
             }
         }
     }

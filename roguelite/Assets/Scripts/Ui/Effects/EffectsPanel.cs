@@ -18,12 +18,13 @@ public class EffectsPanel : MonoBehaviour
         LevelGenerationManager.Instance.OnGenerationEndedEvent.AddListener(() =>
         {
             var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>();
-            effectsList.OnEffectAddedEvent.AddListener(AddEffectCard);
+            effectsList.OnListUpdated.AddListener(AddEffectCard);
         });
     }
 
-    private void AddEffectCard(EffectData data)
+    private void AddEffectCard(EffectBase effect)
     {
+        var data = effect.EffectData;
         var size = _effectCardPrefab.GetComponent<RectTransform>().rect.size.x;
         var card = Instantiate(_effectCardPrefab, transform);
         card.GetComponent<RectTransform>().anchoredPosition = CalculateNextPoint(size);

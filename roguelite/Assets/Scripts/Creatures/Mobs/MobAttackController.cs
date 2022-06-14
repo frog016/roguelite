@@ -1,7 +1,10 @@
+using System;
+
 public class MobAttackController : AttackController
 {
-    public override void HandleInput(AttackType attackType = default)
+    public override void HandleInput(Type attackType = null)
     {
-        Weapon.UseAttack(Weapon.AttackTypes[0]);
+        attackType ??= Weapon.AttackTypes[0];
+        Weapon.UseAttack(attackType);
     }
 }

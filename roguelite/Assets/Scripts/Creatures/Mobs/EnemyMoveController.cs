@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -30,15 +32,21 @@ public class EnemyMoveController : MoveController
 
     private void InitializeAgent()
     {
-        var agent = GetComponent<NavMeshAgent>();
         var capsuleCollider = GetComponent<CapsuleCollider2D>();
+        Agent.updateRotation = false;
+        Agent.updateUpAxis = false;
+        Agent.speed = Speed;
+        Agent.stoppingDistance = 1f;
+        Agent.baseOffset = capsuleCollider.size.y / 2;
+        Agent.radius = capsuleCollider.size.x / 2;
+        Agent.height = capsuleCollider.size.y;
+        StartCoroutine(SetStoppingDistance());
+    }
+
+    private IEnumerator SetStoppingDistance()
+    {
         var weapon = GetComponentInChildren<WeaponBase>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
-        agent.speed = _speed;
-        agent.stoppingDistance = weapon.MinimalAttackDistance;
-        agent.baseOffset = capsuleCollider.size.y / 2;
-        agent.radius = capsuleCollider.size.x / 2;
-        agent.height = capsuleCollider.size.y;
+        yield return new WaitUntil(() => weapon.AttackTypes != null && weapon.AttackTypes.Count > 0);
+        Agent.stoppingDistance = weapon.GetAttackData(weapon.AttackTypes.First()).AttackRadius;
     }
 }

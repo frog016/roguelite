@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05471da2bac102b48aabdfa7e839485e, type: 3}
+  m_Name: SkeletonSamurai
+  m_EditorClassIdentifier: 
+  _maxHealth: 50
+  _moveSpeed: 2
+  _creaturePrefab: {fileID: 6304618589418651911, guid: deaaa7d79b38ca148bfc366485672329, type: 3}
+  _weaponPrefab: {fileID: 1576514264540440176, guid: 20ed170209dea6f469b0b62e3afc8c4c, type: 3}

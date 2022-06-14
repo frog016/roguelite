@@ -1,3 +1,3 @@
-public class Boss : Creature
+public abstract class Boss : Creature
 {
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class AttackController : MonoBehaviour
@@ -9,5 +10,5 @@ public abstract class AttackController : MonoBehaviour
         Weapon = GetComponentInChildren<WeaponBase>();
     }
 
-    public abstract void HandleInput(AttackType attackType = default);
+    public abstract void HandleInput(Type attackType = null);
 }

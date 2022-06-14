@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
-public class BossAttackController : AttackController    //  TODO: Отрефакторить, вынести получение следующей атаки в отдельный класс, и перестановку дистанции для остановки сделать через событие получения следующей атаки
+public class BossAttackController : AttackController
 {
     private EnemyMoveController _moveController;
     private Tuple<Type, AttackData> _nextAttack;
@@ -16,7 +16,7 @@ public class BossAttackController : AttackController    //  TODO: Отрефакторить,
         _nextAttack = TryGetRandomAttack();
     }
 
-    public override void HandleInput(AttackType attackType = default)
+    public override void HandleInput(Type attackType = null)
     {
         if (!Weapon.GlobalCooldown.IsReady || _nextAttack == null)
             return;

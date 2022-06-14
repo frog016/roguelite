@@ -1,15 +1,16 @@
+using System;
 using UnityEngine;
 
-public class Creature : DamageableObject
+public abstract class Creature : DamageableObject
 {
-    private void Update()
+    protected virtual void Update()
     {
         var meshRenderer = GetComponentInChildren<MeshRenderer>();
         meshRenderer.sortingOrder = -(int)(meshRenderer.transform.position.y * 100);
     }
 
-    public void InitializeCreature(WeaponType weaponType)
+    public void InitializeCreature(Type weaponType)
     {
-        WeaponFactory.Instance.CreateObject(gameObject, TypeConvertor.ConvertEnumToType(weaponType));
+        WeaponFactory.Instance.CreateObject(gameObject, weaponType);
     }
 }

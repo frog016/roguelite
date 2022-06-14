@@ -22,12 +22,13 @@ public abstract class AttackBase : MonoBehaviour
         OnAttackCompletedEvent = new UnityEvent<AttackEventArgs>();
 
         _targetsFinder = GetComponentInParent<TargetsFinder>();
-        _cooldown = GetComponent<Cooldown>();
     }
 
     public void Initialize(AttackData data)
     {
         _attackData = data;
+
+        _cooldown = GetComponent<Cooldown>();
         _cooldown.ResetCooldownTime(data.CooldownTime);
     }
 

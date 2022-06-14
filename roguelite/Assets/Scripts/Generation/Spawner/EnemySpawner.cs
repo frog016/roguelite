@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Database.MutableDatabases;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
@@ -37,14 +36,13 @@ public class EnemySpawner : MonoBehaviour, ISpawner
 
     private void CreateUnit(SpawnUnitsData unitsData)
     {
-        var type = TypeConvertor.ConvertEnumToType(unitsData.CreatureType);
-        var data = CreatureDatabase.Instance.GetDataByType(type);
+        var data = CreatureDataRepository.Instance.FindDataByAssociatedType(unitsData.CreatureType);
         var creatureObject = new GameObject("Empty");
-        creatureObject.transform.position = ValidatePosition(data.Prefab.GetComponent<Creature>());
+        creatureObject.transform.position = ValidatePosition(data.CreaturePrefab.GetComponent<Creature>());
 
         for (var i = 0; i < unitsData.Count; i++)
         {
-            var creature = CreatureFactory.Instance.CreateObject(creatureObject, type);
+            var creature = CreatureFactory.Instance.CreateObject(creatureObject, unitsData.CreatureType);
             creature.OnObjectDeath.AddListener(() => SpawnedUnitsCount--);
             creature.OnObjectDeath.AddListener(GlobalEventManager.Instance.OnEnemyDeathEvent.Invoke);
             creature.GetComponent<EnemyStateChanger>().SetTarget(_target);

@@ -10,7 +10,7 @@ public class EffectsInfoPanel : CardPanel<EffectsInfoPanel>
         LevelGenerationManager.Instance.OnGenerationEndedEvent.AddListener(() =>
         {
             var effectsList = PlayerSpawner.Instance.Player.GetComponentInChildren<EffectList>();
-            effectsList.OnEffectAddedEvent.AddListener(AddEffectCard);
+            effectsList.OnListUpdated.AddListener(AddEffectCard);
             _placeholder.gameObject.SetActive(false);
         });
     }
@@ -19,9 +19,9 @@ public class EffectsInfoPanel : CardPanel<EffectsInfoPanel>
     {
     }
 
-    private void AddEffectCard(EffectData data)
+    private void AddEffectCard(EffectBase effect)
     {
-        var card = Instantiate(_cardPrefab, transform);
-        card.GetComponent<Card>().LoadInfo(data.Info);
+        var card = Instantiate(_cardPrefab, _cardList.transform);
+        card.GetComponent<Card>().LoadInfo(effect.EffectData.Info);
     }
 }
