@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EnemyGenerator
   m_EditorClassIdentifier: 
   _uniqueUnitsRange:
-    _min: 1
-    _max: 1
+    _min: 2
+    _max: 3
   _unitRange:
     _min: 1
     _max: 3
