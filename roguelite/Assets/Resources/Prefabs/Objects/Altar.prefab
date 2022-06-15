@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966653836901654675}
   - component: {fileID: 5646058596952078138}
+  - component: {fileID: 8212670852297020958}
   m_Layer: 0
   m_Name: Foot
   m_TagString: Untagged
@@ -61,6 +62,27 @@ PolygonCollider2D:
       - {x: 0.16, y: -0.07}
       - {x: 0.275, y: -0.225}
       - {x: -0.005, y: -0.365}
+--- !u!50 &8212670852297020958
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611944377211993164}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8667573003795185049
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +92,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8667573003795185050}
-  - component: {fileID: 8667573003795185052}
   - component: {fileID: 884630179549851129}
   - component: {fileID: 1573011124107495221}
   m_Layer: 0
@@ -96,27 +117,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &8667573003795185052
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8667573003795185049}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &884630179549851129
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9978c7a0c2f44e848a3e6c345a878aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionText: {fileID: 4877385043515922969, guid: 5f7fd1cf18cf8804788e7c89bf1a4cf3, type: 3}
 --- !u!1 &8667573004233764581
 GameObject:
   m_ObjectHideFlags: 0

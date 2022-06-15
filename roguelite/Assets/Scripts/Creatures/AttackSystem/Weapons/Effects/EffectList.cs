@@ -22,6 +22,17 @@ public class EffectList : ComponentList<EffectBase>
         Upgrade(effectType);
     }
 
+    public void Replace(Type oldElement, Type newElement)
+    {
+        var element = _elements.FirstOrDefault(effect => effect.GetType() == oldElement);
+        if (element == null)
+            return;
+
+        _elements.Remove(element);
+        Destroy(element);
+        AddEffect(newElement);
+    }
+
     private void AddEffect(Type effectType)
     {
         var data = EffectDataRepository.Instance.FindDataByAssociatedType(effectType);

@@ -25,16 +25,6 @@ public abstract class ComponentList<T> : MonoBehaviour, IEnumerable<T> where T: 
         return element;
     }
 
-    public void Replace(Type oldElement, Type newElement)
-    {
-        var element = _elements.FirstOrDefault(effect => effect.GetType() == oldElement);
-        if (element == null)
-            return;
-
-        _elements.Remove(element);
-        Add(newElement);
-    }
-
     public IEnumerator<T> GetEnumerator()
     {
         return _elements.GetEnumerator();

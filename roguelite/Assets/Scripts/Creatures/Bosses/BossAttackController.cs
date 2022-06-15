@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class BossAttackController : AttackController
@@ -12,8 +14,7 @@ public class BossAttackController : AttackController
     {
         base.Start();
         _moveController = GetComponent<EnemyMoveController>();
-        _activeAttacks = Weapon.AttackTypes;
-        _nextAttack = TryGetRandomAttack();
+        StartCoroutine(WaitAttackTypes());
     }
 
     public override void HandleInput(Type attackType = null)
@@ -24,6 +25,13 @@ public class BossAttackController : AttackController
         Weapon.UseAttack(_nextAttack.Item1);
         _nextAttack = TryGetRandomAttack();
         _moveController.Agent.stoppingDistance = _nextAttack.Item2.AttackRadius;
+    }
+
+    private IEnumerator WaitAttackTypes()
+    {
+        yield return new WaitUntil(() => Weapon.AttackTypes != null);
+        _activeAttacks = Weapon.AttackTypes;
+        _nextAttack = TryGetRandomAttack();
     }
 
     private Tuple<Type, AttackData> TryGetRandomAttack()
