@@ -1,8 +1,7 @@
 public class AttackList : ComponentList<AttackBase>
 {
-    protected override void Awake()
+    public void LoadAttacks()
     {
-        base.Awake();
         foreach (var attackBase in GetComponentsInChildren<AttackBase>())
         {
             _elements.Add(attackBase);

@@ -11,7 +11,7 @@ public abstract class WeaponBase : MonoBehaviour
     public UnityEvent OnAttackEndedEvent { get; private set; }
 
     public GlobalCooldown GlobalCooldown { get; private set; }
-    public List<Type> AttackTypes { get; private set; }
+    public List<Type> AttackTypes => _attacks.Keys.ToList();
 
     private AttackList _attackList;
     private EffectList _effectList;
@@ -23,12 +23,10 @@ public abstract class WeaponBase : MonoBehaviour
         OnAttackEndedEvent = new UnityEvent();
 
         _attackList = GetComponentInChildren<AttackList>();
-        _effectList = GetComponentInChildren<EffectList>();
-    }
-
-    protected virtual void Start()
-    {
+        _attackList.LoadAttacks();
         CreateAttackMapping();
+
+        _effectList = GetComponentInChildren<EffectList>();
     }
 
     public virtual void InitializeWeapon(WeaponData data)
@@ -67,14 +65,12 @@ public abstract class WeaponBase : MonoBehaviour
 
     private void CreateAttackMapping()
     {
-        AttackTypes = new List<Type>();
         _attacks = new Dictionary<Type, AttackBase>();
 
         foreach (var attack in _attackList)
         {
             var type = attack.GetType();
             _attacks.Add(type, attack);
-            AttackTypes.Add(type);
             attack.OnAttackCompletedEvent.AddListener(ActivateEffects);
         }
     }
