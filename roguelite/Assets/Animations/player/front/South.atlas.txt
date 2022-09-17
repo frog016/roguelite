@@ -1,0 +1,90 @@
+
+South.png
+size: 469,57
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 4
+  size: 51, 105
+  orig: 51, 105
+  offset: 0, 0
+  index: -1
+foot bootom r
+  rotate: true
+  xy: 289, 5
+  size: 18, 64
+  orig: 18, 64
+  offset: 0, 0
+  index: -1
+foot bottom l
+  rotate: true
+  xy: 222, 5
+  size: 18, 65
+  orig: 18, 65
+  offset: 0, 0
+  index: -1
+foot top l
+  rotate: true
+  xy: 355, 9
+  size: 21, 54
+  orig: 21, 54
+  offset: 0, 0
+  index: -1
+foot top r
+  rotate: true
+  xy: 323, 32
+  size: 23, 62
+  orig: 23, 62
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 411, 2
+  size: 26, 32
+  orig: 26, 32
+  offset: 0, 0
+  index: -1
+left bl
+  rotate: true
+  xy: 109, 25
+  size: 30, 106
+  orig: 30, 106
+  offset: 0, 0
+  index: -1
+left h
+  rotate: false
+  xy: 439, 8
+  size: 17, 28
+  orig: 17, 28
+  offset: 0, 0
+  index: -1
+left sh
+  rotate: true
+  xy: 387, 36
+  size: 19, 44
+  orig: 19, 44
+  offset: 0, 0
+  index: -1
+right blade
+  rotate: true
+  xy: 217, 25
+  size: 30, 104
+  orig: 30, 104
+  offset: 0, 0
+  index: -1
+right h
+  rotate: true
+  xy: 433, 38
+  size: 17, 34
+  orig: 17, 34
+  offset: 0, 0
+  index: -1
+right sh
+  rotate: true
+  xy: 109, 2
+  size: 21, 111
+  orig: 21, 111
+  offset: 0, 0
+  index: -1

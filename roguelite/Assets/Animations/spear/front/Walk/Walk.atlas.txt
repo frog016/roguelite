@@ -1,0 +1,97 @@
+
+Walk.png
+size: 157,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer1
+  rotate: true
+  xy: 106, 11
+  size: 21, 32
+  orig: 21, 32
+  offset: 0, 0
+  index: -1
+Layer2
+  rotate: false
+  xy: 116, 57
+  size: 14, 25
+  orig: 14, 25
+  offset: 0, 0
+  index: -1
+Layer3
+  rotate: true
+  xy: 54, 3
+  size: 11, 29
+  orig: 11, 29
+  offset: 0, 0
+  index: -1
+Layer4
+  rotate: false
+  xy: 132, 39
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+Layer5
+  rotate: false
+  xy: 135, 116
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+Layer6
+  rotate: true
+  xy: 85, 2
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Layer7
+  rotate: false
+  xy: 116, 40
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 54, 55
+  size: 60, 84
+  orig: 60, 84
+  offset: 0, 0
+  index: -1
+hands
+  rotate: false
+  xy: 2, 2
+  size: 50, 137
+  orig: 50, 137
+  offset: 0, 0
+  index: -1
+leg l
+  rotate: true
+  xy: 54, 16
+  size: 16, 50
+  orig: 16, 50
+  offset: 0, 0
+  index: -1
+legl1
+  rotate: false
+  xy: 116, 84
+  size: 17, 55
+  orig: 17, 55
+  offset: 0, 0
+  index: -1
+legr
+  rotate: false
+  xy: 135, 64
+  size: 16, 50
+  orig: 16, 50
+  offset: 0, 0
+  index: -1
+legr1
+  rotate: true
+  xy: 54, 34
+  size: 19, 55
+  orig: 19, 55
+  offset: 0, 0
+  index: -1

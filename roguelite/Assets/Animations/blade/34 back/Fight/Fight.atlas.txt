@@ -1,0 +1,83 @@
+
+Fight.png
+size: 123,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer10
+  rotate: true
+  xy: 2, 63
+  size: 18, 50
+  orig: 18, 50
+  offset: 0, 0
+  index: -1
+Layer11
+  rotate: true
+  xy: 54, 62
+  size: 19, 35
+  orig: 19, 35
+  offset: 0, 0
+  index: -1
+Layer12
+  rotate: false
+  xy: 101, 33
+  size: 20, 51
+  orig: 20, 51
+  offset: 0, 0
+  index: -1
+Layer13
+  rotate: false
+  xy: 101, 86
+  size: 20, 52
+  orig: 20, 52
+  offset: 0, 0
+  index: -1
+Layer14
+  rotate: false
+  xy: 93, 2
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+Layer15
+  rotate: true
+  xy: 82, 33
+  size: 27, 12
+  orig: 27, 12
+  offset: 0, 0
+  index: -1
+Layer16
+  rotate: false
+  xy: 51, 45
+  size: 29, 15
+  orig: 29, 15
+  offset: 0, 0
+  index: -1
+Layer7
+  rotate: true
+  xy: 2, 48
+  size: 13, 47
+  orig: 13, 47
+  offset: 0, 0
+  index: -1
+Layer8
+  rotate: true
+  xy: 2, 37
+  size: 9, 31
+  orig: 9, 31
+  offset: 0, 0
+  index: -1
+Layer9
+  rotate: true
+  xy: 2, 4
+  size: 27, 89
+  orig: 27, 89
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 83
+  size: 55, 97
+  orig: 55, 97
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+
+Idle.png
+size: 191,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Folder3
+  rotate: true
+  xy: 140, 31
+  size: 7, 25
+  orig: 7, 25
+  offset: 0, 0
+  index: -1
+Folder5
+  rotate: false
+  xy: 2, 22
+  size: 17, 54
+  orig: 17, 54
+  offset: 0, 0
+  index: -1
+Folder6
+  rotate: false
+  xy: 21, 26
+  size: 14, 50
+  orig: 14, 50
+  offset: 0, 0
+  index: -1
+Folder7
+  rotate: false
+  xy: 172, 47
+  size: 14, 29
+  orig: 14, 29
+  offset: 0, 0
+  index: -1
+Folder8
+  rotate: false
+  xy: 126, 29
+  size: 12, 47
+  orig: 12, 47
+  offset: 0, 0
+  index: -1
+Folder9
+  rotate: true
+  xy: 2, 3
+  size: 17, 52
+  orig: 17, 52
+  offset: 0, 0
+  index: -1
+Layer1
+  rotate: false
+  xy: 140, 40
+  size: 12, 36
+  orig: 12, 36
+  offset: 0, 0
+  index: -1
+Layer2
+  rotate: true
+  xy: 172, 28
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+blade
+  rotate: true
+  xy: 89, 3
+  size: 22, 100
+  orig: 22, 100
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 37, 27
+  size: 49, 87
+  orig: 49, 87
+  offset: 0, 0
+  index: -1
+h1
+  rotate: true
+  xy: 154, 41
+  size: 35, 16
+  orig: 35, 16
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 56, 2
+  size: 23, 31
+  orig: 23, 31
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef29603dfb1c064f9d5c0ff70d29c63, type: 3}
+  m_Name: FootKickData
+  m_EditorClassIdentifier: 
+  _damage: 18
+  _attackRadius: 2
+  _angleDegrees: 360
+  _cooldownTime: 1
+  _delayBeforeAttack: 0.9
+  _prefab: {fileID: 177719916171234705, guid: 2b178986619c2bb42b3f99cdd12d10c4, type: 3}

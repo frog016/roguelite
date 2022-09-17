@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10044f4501c96634a840261edd2ba008, type: 3}
+  m_Name: ItemDropperDataRepository
+  m_EditorClassIdentifier: 
+  _data:
+    _list:
+    - {fileID: 11400000, guid: e54a6683f55e2d84a82eae3829096f57, type: 2}
+    - {fileID: 11400000, guid: 792e4b18a4ded97429e2d5f6170646b3, type: 2}
+    - {fileID: 11400000, guid: 8d252dfa4addec94cbcfe3047ec27603, type: 2}
+    - {fileID: 11400000, guid: 431798e04dc979149b49adcd97f35229, type: 2}

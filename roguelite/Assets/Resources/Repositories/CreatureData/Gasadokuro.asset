@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05471da2bac102b48aabdfa7e839485e, type: 3}
+  m_Name: Gasadokuro
+  m_EditorClassIdentifier: 
+  _maxHealth: 1000
+  _creaturePrefab: {fileID: 564122928834063758, guid: 16fe3c6dab59b4942911b37b5ca4c1fd, type: 3}
+  _weaponPrefab: {fileID: 297710760577586906, guid: d465a6ae525a8f14cab69516ae54ad80, type: 3}
+  _movementData:
+    _moveSpeed: 1.5
+    _dashSpeed: 10
+    _dashActiveTime: 0.1
+    _dashCooldown: 1.5

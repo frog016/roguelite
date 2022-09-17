@@ -1,0 +1,83 @@
+
+back.png
+size: 92,261
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer12
+  rotate: true
+  xy: 2, 2
+  size: 32, 61
+  orig: 32, 61
+  offset: 0, 0
+  index: -1
+Layer16
+  rotate: false
+  xy: 2, 150
+  size: 69, 109
+  orig: 69, 109
+  offset: 0, 0
+  index: -1
+Layer17
+  rotate: false
+  xy: 73, 209
+  size: 17, 50
+  orig: 17, 50
+  offset: 0, 0
+  index: -1
+Layer18
+  rotate: false
+  xy: 73, 157
+  size: 15, 50
+  orig: 15, 50
+  offset: 0, 0
+  index: -1
+Layer19
+  rotate: false
+  xy: 73, 105
+  size: 15, 50
+  orig: 15, 50
+  offset: 0, 0
+  index: -1
+Layer20
+  rotate: false
+  xy: 48, 120
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+Layer21
+  rotate: true
+  xy: 76, 49
+  size: 22, 14
+  orig: 22, 14
+  offset: 0, 0
+  index: -1
+Layer22
+  rotate: true
+  xy: 65, 18
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+Layer23
+  rotate: true
+  xy: 48, 40
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+Layer24
+  rotate: true
+  xy: 48, 73
+  size: 30, 37
+  orig: 30, 37
+  offset: 0, 0
+  index: -1
+Layer9
+  rotate: false
+  xy: 2, 36
+  size: 44, 112
+  orig: 44, 112
+  offset: 0, 0
+  index: -1

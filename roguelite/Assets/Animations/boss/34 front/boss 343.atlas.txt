@@ -1,0 +1,97 @@
+
+boss 343.png
+size: 192,648
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 305
+  size: 115, 160
+  orig: 115, 160
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: true
+  xy: 98, 2
+  size: 43, 70
+  orig: 43, 70
+  offset: 0, 0
+  index: -1
+hand11
+  rotate: true
+  xy: 2, 106
+  size: 68, 97
+  orig: 68, 97
+  offset: 0, 0
+  index: -1
+hand12
+  rotate: false
+  xy: 164, 337
+  size: 20, 83
+  orig: 20, 83
+  offset: 0, 0
+  index: -1
+hand13
+  rotate: true
+  xy: 127, 264
+  size: 39, 58
+  orig: 39, 58
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: true
+  xy: 98, 47
+  size: 43, 82
+  orig: 43, 82
+  offset: 0, 0
+  index: -1
+hand3
+  rotate: false
+  xy: 127, 182
+  size: 44, 39
+  orig: 44, 39
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 13
+  size: 94, 91
+  orig: 94, 91
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 2, 221
+  size: 123, 82
+  orig: 123, 82
+  offset: 0, 0
+  index: -1
+leg11
+  rotate: false
+  xy: 2, 422
+  size: 188, 224
+  orig: 188, 224
+  offset: 0, 0
+  index: -1
+leg12
+  rotate: true
+  xy: 2, 176
+  size: 43, 106
+  orig: 43, 106
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 110, 92
+  size: 88, 74
+  orig: 88, 74
+  offset: 0, 0
+  index: -1
+leg3
+  rotate: false
+  xy: 127, 223
+  size: 51, 39
+  orig: 51, 39
+  offset: 0, 0
+  index: -1
